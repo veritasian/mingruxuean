@@ -40,8 +40,8 @@ STAGES = {
         ("辅助数据", "scripts/build/build_aux.py"),
         ("卷前三篇", "scripts/build/build_front.py"),
         ("阳明心学", "scripts/ingest/yangming_data.py"),
-        ("打包单文件", "scripts/build/bundle.py"),
-        ("SEO 注入", "scripts/build/seo.py"),
+        ("多页构建", "scripts/build/bundle.py"),
+        ("逐页 SEO", "scripts/build/seo.py"),
     ],
 }
 

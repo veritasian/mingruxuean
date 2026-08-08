@@ -1,113 +1,116 @@
 /**
- * app.controller.js —— 总装
+ * app.controller.js —— 每页启动器（boot）
  *
- * 这里是唯一知道「一共有几个视图」的地方。每个视图控制器只认自己那一块，
- * 页签切换、路由注册、人物卡片的跨视图跳转，都收在这一层。
+ * 站点是多页面结构：每个分类一个独立 HTML，本文件是它们共用的启动逻辑。
+ * 页面入口（src/pages/*.js）各自 import 自己的视图控制器，通过 mount 注入，
+ * 所以这里不认识任何具体视图 —— 也不会把 8 个视图的代码都拉进同一页。
  *
- * 页签不再各自 toggle class 互相干扰 —— 全部走路由：
- * 点页签 = 改地址栏，地址栏变了才切换视图。单向，好追。
+ * 启动顺序：
+ *   1. 还原持久化（主题）
+ *   2. 旧链接（#content/kg、#v12 …）重定向到新页面
+ *   3. 主题切换器
+ *   4. 由 window.__MRXA__（本页内联的数据切片）构建模型
+ *   5. 人物卡（本页需要才挂）
+ *   6. 读地址栏参数（?focus= / ?v= / ?orphans / ?all）→ enter
  */
-import { $, $$ } from '../core/dom.js';
-import { on, EV } from '../core/bus.js';
+import { $ } from '../core/dom.js';
 import * as store from '../core/store.js';
-import * as router from '../router/index.js';
-import * as card from '../views/person-card.view.js';
 import { createModel } from '../data/model.js';
-
+import { coreFromInline } from '../data/repository.js';
 import { create as themeCtl } from './theme.controller.js';
-import { create as graphCtl } from './graph.controller.js';
-import { create as rosterCtl } from './roster.controller.js';
-import { create as timelineCtl } from './timeline.controller.js';
-import { create as geoCtl } from './geo.controller.js';
-import { create as kgCtl } from './kg.controller.js';
-import { create as bookCtl } from './book.controller.js';
-import { create as orphanCtl } from './orphan.controller.js';
-import { create as yangmingCtl } from './yangming.controller.js';
+import { redirectLegacy } from '../router/index.js';
+import * as card from '../views/person-card.view.js';
 
-const VIEWS = [
-  ['kg', '知识图谱'], ['graph', '谱系总图'], ['roster', '人物线索'], ['time', '时间线索'],
-  ['geo', '地理线索'], ['orphan', '孤点现象'], ['book', '学案原文'], ['yangming', '阳明心学'],
-];
+const PAGE_FILE = {
+  kg: 'index.html', graph: 'graph.html', roster: 'roster.html',
+  time: 'time.html', geo: 'geo.html', orphan: 'orphan.html',
+  book: 'book.html', yangming: 'yangming.html',
+};
 
-export function boot(core) {
-  const model = createModel(core);
-  store.set('data', model, { silent: true });
+export function boot(pageId, { needsCard = true, mount } = {}) {
+  store.restore();
+  if (redirectLegacy()) return null;            // 旧书签 → 新页面，本页不再启动
+
   themeCtl();
-  card.mount();
 
-  const pick = (id, anchor) => { store.selectPerson(id); card.show(id, anchor); };
-  const ctl = {
-    graph: graphCtl(model, { onPick: pick }),
-    roster: rosterCtl(model, { onPick: pick }),
-    time: timelineCtl(model, { onPick: pick }),
-    geo: geoCtl(model, { onPick: pick }),
-    kg: kgCtl(model, { onPick: pick }),
-    book: bookCtl(model, { onPick: pick }),
-    orphan: null,
-    yangming: yangmingCtl(),
+  // 内联数据是原始 JSON（relations 是 {relations:[], meta:{}}），
+  // 先经 repository 同步装配成 core（数组 + period/place 挂回人物），再建模型
+  const model = createModel(coreFromInline(window.__MRXA__));
+  store.set('data', model, { silent: true });
+
+  const api = {
+    /** 弹人物卡（本页浮层） */
+    pick(id, anchor) { store.selectPerson(id); if (needsCard) card.show(id, anchor); },
+    /** 人物卡「在 X 定位」：跳到那个分类的页面并聚焦 */
+    locate(where, id) {
+      const file = PAGE_FILE[where] || 'index.html';
+      if (file === currentFile()) {
+        const a = ctl && ctl.locate ? ctl.locate(id) : null;
+        if (a && needsCard) card.show(id, a);
+        return;
+      }
+      location.href = `${file}?focus=${encodeURIComponent(id)}`;
+    },
+    /** 孤点页「去图谱只看孤点」 */
+    showInKG() { location.href = 'index.html?orphans=1'; },
   };
-  ctl.orphan = orphanCtl(model, {
-    onPick: pick,
-    onShowInKG: () => { router.go('kg'); setTimeout(() => ctl.kg.showOrphans(), 60); },
-  });
 
-  card.setContext({
-    persons: model.persons,
-    colorOf: model.colorOf,
-    isFounder: model.isFounder,
-    roleBadge: model.roleBadge,
-    teachersOf: model.teachersOf,
-    studentsOf: model.studentsOf,
-    relationsOf: model.relationsOf,
-    orphanOf: model.orphanOf,
-    onSelect: (id) => store.selectPerson(id),
-    onLocate: (where, id) => locate(where, id),
-  });
+  let ctl = mount ? mount(model, api) : null;
 
-  function locate(where, id) {
-    router.go(where, [id]);
-    setTimeout(() => {
-      const anchor = ctl[where] && ctl[where].locate ? ctl[where].locate(id) : null;
-      if (anchor) card.show(id, anchor);
-      const shell = $(where === 'kg' ? '.kg-shell' : '.graph-shell');
-      if (shell) shell.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 90);
-  }
-
-  buildTabs();
-  registerRoutes();
-  // 先订阅 ROUTE_CHANGED 再启动路由：否则首帧（首次加载/带 hash 刷新）的
-  // dispatch 会落在监听器注册之前，页签与视图拿不到 .on，整页空白。
-  on(EV.ROUTE_CHANGED, ({ name }) => {
-    $$('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.t === name));
-    $$('section.tab').forEach((s) => s.classList.toggle('on', s.id === `sec-${name}`));
-  });
-  router.migrateLegacyHash();
-  router.start();
-
-  function buildTabs() {
-    const tabs = $('#tabs');
-    tabs.innerHTML = VIEWS
-      .map(([id, label]) => `<button data-t="${id}">${label}</button>`).join('');
-    tabs.addEventListener('click', (e) => {
-      const b = e.target.closest('button[data-t]');
-      if (b) router.go(b.dataset.t);
+  if (needsCard) {
+    card.mount();
+    card.setContext({
+      persons: model.persons,
+      colorOf: model.colorOf,
+      isFounder: model.isFounder,
+      roleBadge: model.roleBadge,
+      teachersOf: model.teachersOf,
+      studentsOf: model.studentsOf,
+      relationsOf: model.relationsOf,
+      orphanOf: model.orphanOf,
+      onSelect: (id) => store.selectPerson(id),
+      onLocate: (where, id) => api.locate(where, id),
     });
   }
 
-  function registerRoutes() {
-    for (const [name, title] of VIEWS) {
-      const c = ctl[name];
-      router.register(name, {
-        title,
-        onEnter: (route) => { card.hide(); if (c && c.enter) c.enter(route); },
-        onLeave: () => { if (c && c.leave) c.leave(); },
-      });
-    }
+  reportCoverage(model);
+
+  const { params, query } = readParams();
+  if (ctl && ctl.enter) ctl.enter({ params, query });
+
+  if (query === 'orphans' && ctl && ctl.showOrphans) {
+    setTimeout(() => ctl.showOrphans(), 80);
+  } else if (params[0] && ctl && ctl.locate) {
+    // ?focus=：等 enter 先聚焦，再把人物卡也弹出来（原单页「定位」行为）。
+    // kg 的 enter 已经自己弹了卡，这里检测到已显示就跳过，避免重弹。
+    const id = params[0];
+    setTimeout(() => {
+      if (needsCard && card.element() && card.element().classList.contains('show')) return;
+      const a = ctl.locate(id);
+      if (a && needsCard) card.show(id, a);
+    }, 260);
   }
 
-  reportCoverage(model);
-  return { model, ctl, router };
+  window.__MRXA_APP__ = { model, ctl };
+  return { model, ctl };
+}
+
+/** 把 ?focus= / ?v= / ?orphans / ?all 还原成控制器认识的 {params, query} */
+function readParams() {
+  const q = new URLSearchParams(location.search);
+  const params = [];
+  let query = '';
+  const f = q.get('focus');
+  const v = q.get('v');
+  if (f) params.push(f);
+  else if (v) params.push(v);
+  if (q.get('all')) query = 'all';
+  else if (q.get('orphans')) query = 'orphans';
+  return { params, query };
+}
+
+function currentFile() {
+  return location.pathname.split('/').pop() || 'index.html';
 }
 
 /** 把数据规模写进副标题，读者一眼知道自己在看多大的一张图 */

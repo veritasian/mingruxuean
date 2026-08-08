@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from harness import ROOT, check, sample, main  # noqa: E402
+from harness import ROOT, check, check_eq, sample, main  # noqa: E402
 
 SRC = ROOT / 'src'
 MAX_LINES = 300
@@ -32,7 +32,8 @@ ALLOWED = {
     'router': {'core'},
     'views': {'core', 'data', 'engines'},
     'controllers': {'core', 'data', 'engines', 'views', 'router', 'controllers'},
-    '': {'core', 'data', 'controllers'},          # src/app.js 入口
+    'pages': {'core', 'data', 'engines', 'views', 'router', 'controllers'},  # 每页入口
+    '': {'core', 'data', 'controllers'},          # 顶层入口（如有）
 }
 RE_IMPORT = re.compile(r"^\s*import\s.*?from\s+['\"]([^'\"]+)['\"]", re.M)
 
@@ -146,8 +147,10 @@ def test_no_stray_console_log():
 
 
 def test_dom_ids_exist_in_shell():
-    """控制器要的 #id 必须在 shell.html 里"""
+    """控制器要的 #id 必须在 shell.html + 各 section 里"""
     shell = (SRC / 'shell.html').read_text(encoding='utf-8')
+    for f in sorted((SRC / 'sections').glob('*.html')):
+        shell += '\n' + f.read_text(encoding='utf-8')
     have = set(re.findall(r'id="([^"]+)"', shell))
     # 运行期动态生成的容器，不在骨架里
     dynamic = {'pc'}
@@ -163,34 +166,40 @@ def test_dom_ids_exist_in_shell():
 
 
 def test_css_files_all_bundled():
-    """styles/ 下的文件都被打包脚本收录，没有漏网"""
+    """styles/ 下的文件都被页面清单收录，没有漏网"""
     sys.path.insert(0, str(ROOT / 'scripts' / 'build'))
     import bundle as B                                  # noqa: N813
     on_disk = {f.stem for f in css_files()}
-    listed = set(B.CSS_ORDER)
+    listed = {n for p in B.PAGES for n in p['css']}
     check(not on_disk - listed, '写了却没打包：%s' % sample(on_disk - listed))
     check(not listed - on_disk, '打包清单里有但文件不存在：%s' % sample(listed - on_disk))
     return '%d 份样式全部收录' % len(listed)
 
 
 def test_shell_has_placeholders():
-    """shell.html 保留着两个注入点"""
+    """shell.html 保留着全部注入点"""
     shell = (SRC / 'shell.html').read_text(encoding='utf-8')
-    for mark in ('<!--STYLES-->', '<!--SCRIPTS-->'):
+    for mark in ('<!--STYLES-->', '<!--SCRIPTS-->', '<!--SECTION-->', '<!--SEO-->'):
         check(mark in shell, '缺少注入点 %s' % mark)
-    return 'STYLES / SCRIPTS 就位'
+    return 'STYLES / SCRIPTS / SECTION / SEO 就位'
 
 
-def test_every_view_has_a_section():
-    """app.controller 里登记的每个视图，shell.html 都得有对应 section"""
-    ctl = (SRC / 'controllers' / 'app.controller.js').read_text(encoding='utf-8')
-    block = re.search(r'const VIEWS = \[(.*?)\];', ctl, re.S)
-    check(block is not None, 'app.controller 里找不到 VIEWS')
-    names = re.findall(r"\['(\w+)',", block.group(1))
-    shell = (SRC / 'shell.html').read_text(encoding='utf-8')
-    missing = [n for n in names if ('id="sec-%s"' % n) not in shell]
-    check(not missing, '缺 section：%s' % sample(missing))
-    return '%d 个视图：%s' % (len(names), '、'.join(names))
+def test_every_page_has_entry_and_section():
+    """bundle.PAGES 里每个页面：入口模块 + section + 样式齐全"""
+    sys.path.insert(0, str(ROOT / 'scripts' / 'build'))
+    import bundle as B                                  # noqa: N813
+    bad = []
+    for p in B.PAGES:
+        entry = SRC / p['entry']
+        sec = SRC / 'sections' / ('%s.html' % p['id'])
+        if not entry.exists():
+            bad.append('缺入口 %s' % p['entry'])
+        if not sec.exists():
+            bad.append('缺 section %s' % p['id'])
+    check(not bad, '页面清单与源码对不上：%s' % sample(bad))
+    files = sorted({p['file'] for p in B.PAGES})
+    check_eq(len(files), len(B.PAGES), '页面文件名重复')
+    return '%d 个页面：%s' % (len(B.PAGES), '、'.join(files))
 
 
 def test_docs_present():

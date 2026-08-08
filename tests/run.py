@@ -57,7 +57,7 @@ def run_browser_suite():
 
 
 def ensure_built():
-    dist = ROOT / 'dist' / '明儒学案.html'
+    dist = ROOT / 'dist' / 'index.html'
     src_new = max((f.stat().st_mtime for f in (ROOT / 'src').rglob('*') if f.is_file()),
                   default=0)
     if not dist.exists() or dist.stat().st_mtime < src_new:

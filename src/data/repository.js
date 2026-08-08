@@ -88,6 +88,19 @@ export function peek(name) {
   return cache.get(name) || null;
 }
 
+/** 同步版装配：内联数据（window.__MRXA__）不经 fetch，直接用 normalize 拼成 core */
+export function coreFromInline(inline) {
+  return normalize({
+    persons: inline.persons,
+    relations: inline.relations,
+    schools: inline.schools,
+    orphans: inline.orphans,
+    geo: inline.geo,
+    timeline: inline.timeline,
+    toc: inline.toc,
+  });
+}
+
 /** 阳明心学专页内容（整体内联，不分卷） */
 export async function loadYangming() {
   return loadJSON('yangming');

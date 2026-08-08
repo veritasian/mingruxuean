@@ -4,6 +4,39 @@
 
 ---
 
+## [9.0.0] — 2026-08-08
+
+**架构变更：单文件 + 哈希路由 → 一分类一页面的多页站点。**
+
+重构动机：原「一个 HTML 内联 8 个视图」的形态上线后问题明显——8 个分类共用一份
+meta（SEO 无法按分类优化）、首屏要下载全部 3.4MB、所有视图的 CSS/JS 挤在同一页。
+
+### 变更
+
+- **新增 8 个独立页面**：`dist/index.html`（知识图谱，默认首页）、`graph.html`（谱系总图）、
+  `roster.html`（人物线索）、`time.html`（时间线索）、`geo.html`（地理线索）、
+  `orphan.html`（孤点现象）、`book.html`（学案原文）、`yangming.html`（阳明心学）。
+  菜单为普通 `<a>` 互链，当前页高亮；每页只渲染自己的 section，其他分类内容不出现。
+- **数据按页切片**：`window.__MRXA__` 每页只内联所需数据——volumes（63 卷 + 卷前三篇）
+  只进 book 页、yangming 只进阳明页、d3 只进知识图谱页；其余 6 页体积从 3.4MB 降到 ~0.3MB。
+- **逐页 SEO**（`scripts/build/seo.py` 重写）：每页独立 title/description/keywords/canonical/
+  og/JSON-LD，文案围绕该分类（核心关键词 + 长尾 + 吸引力），数字实时读 data/。
+- **深链改查询参数**：`book.html?v=12`、`index.html?focus=王阳明`、`index.html?orphans=1`、
+  `graph.html?all=1`；旧哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`）
+  由 `src/router/` 的 `redirectLegacy()` 自动重定向到新页面。
+- **结构**：新增 `src/pages/`（每页入口，只引自己的控制器）与 `src/sections/`（每页内容块）；
+  `app.controller.js` 改为每页启动器（boot：主题/人物卡/参数解析/enter）；删除 `src/app.js` 单入口。
+- **页面间跳转**：人物卡「在总图定位 / 在图谱聚焦」改为 `?focus=` 跨页导航，目标页自动定位并弹卡。
+- 测试重构：`smoke.mjs` 改为逐页真浏览器体检（内容纯净/菜单高亮/SEO 独立/数据切片/跨页聚焦/旧链接重定向），
+  `test_build.py` 改为 8 页产物检查。测试总数 **79 → 103**，全绿。
+
+### 兼容
+
+- 旧书签 `#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph` 自动跳转，不 404。
+- `dist/明儒学案.html` 单文件形态取消，改由 `dist/index.html` 等 8 页替代。
+
+---
+
 ## [8.8.1] — 2026-08-08
 
 修复：带 hash 刷新（如 `#content/kg`）页面空白。

@@ -1,0 +1,22 @@
+<section class="tab on" id="sec-graph">
+  <div class="tab-head">门派总览 <small>点击学派即聚焦该派</small></div>
+  <div class="legend" id="legend"></div>
+  <div class="tab-head">谱系总图 <small>拖拽平移 · 滚轮缩放 · 点击人物弹卡</small></div>
+  <div class="graph-shell">
+    <div class="toolbar">
+      <button class="btn" id="reset">总览</button>
+      <label class="tb-lab">聚焦学派</label>
+      <select class="btn" id="focusSel"></select>
+      <label class="tb-lab">列内排序</label>
+      <select class="btn" id="orderSel">
+        <option value="book">原书编次</option>
+        <option value="depth">师承代次</option>
+      </select>
+      <span class="hint">实线带箭头=师徒相传 · 绿虚线=私淑 · 细虚线=尚无原文出处</span>
+    </div>
+    <svg id="graph" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="gcap">读图法：每列为一个学案，列内自上而下依原书编次（可切换为师承代次）；
+      连线自师指向徒，跨列细线为学派之间的师承。虚线描边的空心点是孤点，
+      即在本图中不与任何人相连者 —— 何以如此，见「孤点现象」一页。</div>
+  </div>
+</section>

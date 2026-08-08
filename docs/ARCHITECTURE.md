@@ -82,28 +82,29 @@
 ```
 
 视图从不知道「点了之后会发生什么」，控制器从不知道「是哪个视图点的」。
-加新视图时（现在已有 8 个：谱系总图/人物总录/时间线/地理分布/知识图谱/孤点现象/学案原文/阳明心学），
-不需要修改任何现有视图——只要在 `app.controller.js` 的 `VIEWS` 里登记、在 `shell.html` 补一节、
-新写一个视图文件即可。
+站点是**一分类一页面**的菜单结构（8 个页面），每页只带自己的视图与数据。
+加新页面时不需要修改任何现有视图——在 `scripts/build/bundle.py` 的 `PAGES` 清单里登记一条
+（入口模块 `src/pages/x.js` + 内容块 `src/sections/x.html` + 样式），再写视图文件即可。
+页面间跳转用普通 `<a>`，跨页聚焦用查询参数（`?focus=` / `?v=` / `?orphans`）。
 
 ---
 
-## 四、路由
+## 四、路由（多页面）
 
-地址栏是应用状态的唯一书面记录。
+站点是**一分类一页面**：页面间用普通 `<a>` 互链，地址就是文件名，没有客户端路由。
+深链用查询参数，由每页启动器（`app.controller.js` 的 `boot`）统一解析成控制器认识的 `{params, query}`：
 
 ```
-#/kg              知识图谱（默认）
-#/kg/王阳明        聚焦某人
-#/graph           师承总图
-#/graph?all       带修饰符
-#/book/12         学案原文第 12 卷
-#/orphan          孤点现象
+index.html?focus=王阳明      知识图谱聚焦某人
+index.html?orphans=1         知识图谱只看孤点
+graph.html?all=1             师承总图全览
+book.html?v=12               学案原文第 12 卷
+book.html?v=x2               卷前 · 发凡
 ```
 
-`migrateLegacyHash()` 在启动时把旧版链接改写掉：
-`#v12` → `#/book/12`，`#kgf王阳明` → `#/kg/王阳明`，`#all` → `#/graph?all`。
-用 `history.replaceState` 而不是 `location.hash =`，不给用户留一条脏历史记录。
+`src/router/` 只剩 `redirectLegacy()`：启动时把旧版哈希链接重定向到新页面
+（`#content/kg` → `index.html`、`#v12` → `book.html?v=12`、`#kgf王阳明` → `index.html?focus=王阳明`、
+`#all` → `graph.html?all=1`），老书签不会 404。
 
 ---
 
@@ -152,7 +153,8 @@ legacy/data_final.json      (drawio 谱系 + 旧版挖掘结果)
         ├─ build_relations      四路来源合并（drawio/legacy/mined/mingshi）、算置信度、标 cited
         ├─ analyze_orphans      孤点判读（5 类）
         ├─ build_aux            地理 / 时间轴 / 目录 / 分卷正文
-        └─ bundle               → dist/明儒学案.html
+        └─ bundle               → dist/ 8 个页面（一分类一页，数据按页切片）
+        └─ seo                  → 逐页注入 title/description/keywords/JSON-LD
 ```
 
 一条命令：`python3 scripts/pipeline.py`。任一步失败即中断，不产出半成品。

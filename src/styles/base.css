@@ -39,12 +39,13 @@ header.banner .seal{
 h1.title{margin:0;font-size:44px;letter-spacing:16px;text-indent:16px;font-weight:600;}
 .subtitle{margin-top:8px;color:var(--ink-soft);font-size:13.5px;letter-spacing:4px;text-indent:4px;}
 
-/* ---- tabs ---- */
+/* ---- 分类菜单（多页面：8 个页面互相链接，当前页高亮） ---- */
 nav.tabs{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:22px auto 6px;max-width:900px;}
-nav.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+nav.tabs button,nav.tabs a{border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
   border-radius:2px;padding:8px 20px;font-size:14.5px;letter-spacing:3px;font-family:inherit;cursor:pointer;transition:.2s;}
-nav.tabs button:hover{color:var(--ink);}
-nav.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff;}
+nav.tabs a{display:inline-block;text-decoration:none;}
+nav.tabs button:hover,nav.tabs a:hover{color:var(--ink);}
+nav.tabs button.on,nav.tabs a.on{background:var(--accent);border-color:var(--accent);color:#fff;}
 section.tab{display:none;margin-top:20px;}
 section.tab.on{display:block;}
 .tab-head{font-size:20px;letter-spacing:5px;margin:6px 0 14px;padding-left:13px;

@@ -3,10 +3,15 @@
 > 把黄宗羲《明儒学案》六十三卷读成一张网，再用《明史》儒林传补强。
 
 17 个学案、260 位学者、247 条师承关系（174 条带原文出处），
-每一条关系都能点回原文出处。产物是一个可以双击打开、断网也能用的 HTML 文件。
+每一条关系都能点回原文出处。**一分类一页面**的菜单式站点：
+8 个页面各自独立、只带自己的内容与 SEO，每个页面都能双击打开、断网可用。
 
 ```
-dist/明儒学案.html        ← 成品，1 个文件，无需服务器、无需联网
+dist/index.html           ← 首页（知识图谱），双击即开，无需服务器、无需联网
+dist/graph.html           谱系总图 · roster.html 人物线索 · time.html 时间线索
+dist/geo.html             地理线索 · orphan.html 孤点现象
+dist/book.html            学案原文（63 卷 + 卷前三篇，体量最大）
+dist/yangming.html        阳明心学
 ```
 
 ---
@@ -14,17 +19,18 @@ dist/明儒学案.html        ← 成品，1 个文件，无需服务器、无�
 ## 快速开始
 
 ```bash
-# 看成品
-open dist/明儒学案.html
+# 看成品（首页 = 知识图谱）
+open dist/index.html
 
-# 改完源码重新打包
+# 改完源码重新打包（8 个页面一次生成）
 python3 scripts/build/bundle.py
+python3 scripts/build/seo.py           # 逐页注入 title/description/keywords/JSON-LD
 
 # 数据也要重跑（改了抽取规则、订正了人物时）
 python3 scripts/pipeline.py          # ingest + build 全跑
 python3 scripts/pipeline.py build    # 数据已就绪，只重打包
 
-# 跑测试（79 项：数据 / 架构 / 产物 / 浏览器）
+# 跑测试（103 项：数据 / 架构 / 产物 / 浏览器）
 python3 tests/run.py
 python3 tests/run.py --no-web        # 跳过浏览器冒烟，快
 
@@ -42,11 +48,13 @@ python3 -m http.server 8080 && open http://localhost:8080/
 │   ├── core/               总线 / 状态 / DOM 工具——不认识业务
 │   ├── data/               仓库 / 领域模型 / 图模型 / 古文渲染
 │   ├── engines/            布局与交互引擎（纯函数，零 import）
-│   ├── router/             哈希路由
-│   ├── controllers/        编排：听事件、取数据、喂视图
+│   ├── router/             旧链接重定向（多页面下已无哈希路由）
+│   ├── controllers/        编排：听事件、取数据、喂视图；app.controller = 每页启动器
 │   ├── views/              只管画，不存状态
+│   ├── pages/              每页入口（只引自己的控制器，控制本页打包体积）
+│   ├── sections/           每个分类一个 <section> 内容块
 │   ├── styles/             一视图一份 CSS
-│   └── shell.html          页面骨架 + 两个注入点
+│   └── shell.html          页面骨架（菜单 / 页脚）+ 四个注入点
 ├── data/                   ★ JSON 数据库（可溯源）
 │   ├── persons.json        260 人：字号、籍贯、生卒、学案归属
 │   ├── relations.json      247 条关系 + 每条的 provenance
@@ -71,23 +79,26 @@ python3 -m http.server 8080 && open http://localhost:8080/
 
 ---
 
-## 八个视图
+## 八个页面（菜单互链，一分类一页）
 
-| 路由 | 视图 | 看什么 |
-|---|---|---|
-| `#content/kg` | 知识图谱 | d3 力导向，可聚焦某人的关系网（默认首页） |
-| `#content/graph` | 谱系总图 | 纵向树，一眼看清代际 |
-| `#content/roster` | 人物线索 | 17 学案分组展开 |
-| `#content/time` | 时间线索 | 按生卒年排布 |
-| `#content/geo` | 地理线索 | 17 省份，可与名录联动 |
-| `#content/orphan` | **孤点现象** | 52 个孤点为什么孤——见下 |
-| `#content/book/12` | 学案原文 | 卷前三篇 + 63 卷正文，古文竖读排版 |
-| `#content/book/x2` | 卷前 · 师说 | 刘宗周评骘明儒二十五家，排在卷一之前 |
-| `#content/yangming` | 阳明心学 | 四句教 + 14 章（镜像/矩阵/四象），顶部章节目录随滚动高亮，移动端横滑 |
-| `#content/kg/王阳明` | 聚焦 | 任一视图点人名都跳这里 |
+| 页面 | 分类 | 看什么 | 本页专属 SEO |
+|---|---|---|---|
+| `index.html` | 知识图谱 | d3 力导向，可聚焦某人的关系网（默认首页） | 师承知识图谱 |
+| `graph.html` | 谱系总图 | 纵向树，一眼看清代际 | 师承树状总览 |
+| `roster.html` | 人物线索 | 17 学案分组展开 | 儒者名录 |
+| `time.html` | 时间线索 | 按生卒年排布 | 生卒年时间轴 |
+| `geo.html` | 地理线索 | 17 省份，可与名录联动 | 籍贯地理分布 |
+| `orphan.html` | **孤点现象** | 52 个孤点为什么孤——见下 | 孤点因由详解 |
+| `book.html` | 学案原文 | 卷前三篇 + 63 卷正文，古文竖读排版 | 六十三卷全文 |
+| `yangming.html` | 阳明心学 | 四句教 + 14 章（镜像/矩阵/四象），顶部章节目录随滚动高亮 | 四句教图解 |
 
-URL 统一为 `#content/<视图>[/参数]` 单词组合；旧版链接（`#v12`、`#kgf王阳明`、`#all`、`#/graph`）
-会自动改写/兼容，不会 404。
+页面之间用普通 `<a>` 互链；每页只带自己的 CSS/JS/数据，meta 标题、描述、关键词、
+JSON-LD 都围绕本分类生成（`scripts/build/seo.py`）。深链用查询参数：
+`book.html?v=12`（第 12 卷）、`book.html?v=x2`（发凡）、`index.html?focus=王阳明`（图谱聚焦）、
+`graph.html?all=1`（全览）、`index.html?orphans=1`（只看孤点）。
+
+旧版哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`）会自动重定向到
+对应新页面，老书签不会 404。
 
 ---
 
@@ -172,9 +183,10 @@ URL 统一为 `#content/<视图>[/参数]` 单词组合；旧版链接（`#v12`�
 tests/
 ├── harness.py       零依赖的极简测试框架
 ├── test_data.py     20 项：数据完整性、外键、孤点自洽、明史方向、卷前三篇、阳明心学、简体一致
-├── test_source.py   13 项：分层方向、行数上限、单一入口、文档在不在
-├── test_build.py    12 项：产物完整、离线可用、无模块环、语法可过
-├── smoke.mjs        34 项：真浏览器跑 8 个视图、默认首页/菜单次序、带hash刷新、点人物、验箭头朝向、验卷前三篇、默认页、阳明心学章节目录/置顶/原版结构/渐入/滚动监听、旧链接兼容
+├── test_source.py   13 项：分层方向、行数上限、页面清单与源码对账、文档在不在
+├── test_build.py    13 项：8 页产物完整、数据切片正确、逐页 SEO、无模块环、语法可过
+├── smoke.mjs        57 项：真浏览器逐个开 8 页，验内容纯净/菜单高亮/SEO 独立/数据切片、
+│                    跨页聚焦（?focus/?v/?orphans）、旧链接重定向、箭头朝向、阳明心学全检
 └── run.py           串起来，源码比产物新时自动重打包
 ```
 
