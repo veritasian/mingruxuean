@@ -5,15 +5,17 @@
  * 谁想知道现在在哪就听 ROUTE_CHANGED —— 视图之间不用互相调用
  * 「你先关掉我再打开」这种命令式代码。
  *
- * 形如：#/graph            总图
- *       #/book/12         学案原文第 12 卷
- *       #/kg/王阳明        知识图谱聚焦某人
- *       #/graph?all       带修饰符
+ * 形如：#content/graph          总图
+ *       #content/book/12       学案原文第 12 卷
+ *       #content/kg/王阳明     知识图谱聚焦某人
+ *       #content/graph?all     带修饰符
+ * 旧式 #/graph 仍可解析（兼容旧书签），但新生成的链接一律走 #content/ 前缀。
  */
 import { emit, EV } from '../core/bus.js';
 import * as store from '../core/store.js';
 
 const DEFAULT = 'kg';
+const PREFIX = 'content';
 let routes = [];
 let current = null;
 let started = false;
@@ -28,13 +30,15 @@ export function parse(hash) {
   const raw = String(hash || '').replace(/^#\/?/, '');
   if (!raw) return { name: DEFAULT, params: [], query: '' };
   const [path, query = ''] = raw.split('?');
-  const segs = path.split('/').filter(Boolean).map(decodeURIComponent);
+  let segs = path.split('/').filter(Boolean).map(decodeURIComponent);
+  // 新格式 #content/<view>；兼容旧格式 #/<view>
+  if (segs[0] === PREFIX) segs = segs.slice(1);
   return { name: segs[0] || DEFAULT, params: segs.slice(1), query };
 }
 
 export function stringify({ name, params = [], query = '' }) {
   const tail = params.length ? `/${params.map(encodeURIComponent).join('/')}` : '';
-  return `#/${name}${tail}${query ? `?${query}` : ''}`;
+  return `#${PREFIX}/${name}${tail}${query ? `?${query}` : ''}`;
 }
 
 /** 跳转。replace=true 时不留历史记录，适合视图内部的状态同步 */

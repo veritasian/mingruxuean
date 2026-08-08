@@ -4,6 +4,29 @@
 
 ---
 
+## [8.8.0] — 2026-08-08
+
+首页默认知识图谱并置顶菜单；菜单更名（线索化）；URL 改为 `#content/` 单词组合；新增 SEO 注入脚本。
+
+### 变更
+
+- **首页默认知识图谱**。`VIEWS` 重排：知识图谱置首、谱系总图第二（原谱系总图在前）；路由 `DEFAULT` 仍为 `kg`，
+  首次打开落在 `#content/kg`。
+- **菜单更名**：人物总录 → **人物线索**、时间线 → **时间线索**、地理分布 → **地理线索**
+  （其余：知识图谱/谱系总图/孤点现象/学案原文/阳明心学 不变）。
+- **URL 调整为 `#content/<视图>`**（`src/router/index.js`）。新增 `PREFIX='content'`：
+  `stringify` 一律输出 `#content/graph`、`#content/book/12`、`#content/kg/王阳明` 这类单词组合；
+  `parse` 兼容旧格式 `#/graph` 与旧链接 `#v12`/`#all`/`#kgf王阳明`（migrateLegacyHash 改写为 `#content/…`）。
+- **SEO 注入脚本**（`scripts/build/seo.py`，bundle 之后跑，幂等 `<!--SEO-->` 块）：
+  - `<title>`：核心关键词（名儒学案图谱/明儒学案师承）+ 长尾（黄宗羲 · 260 位明代大儒 · 六十三卷全文）+ 吸引力（在线阅读）。
+  - `<meta description>`：核心关键词 + 长尾 + 吸引力文案（含真实统计：17 学案 · 260 人 · 247 关系 · 174 有出处）。
+  - `<meta keywords>` + **JSON-LD**（WebSite + Book @graph，inLanguage zh-CN，指向 `https://mingruxuean.vercel.app/`）。
+  - 统计数字实时读 `data/`，不硬编码；另写 `dist/seo.json` 供检查；`shell.html` 静态 `<title>` 同步为 SEO 标题。
+- 测试 **76 → 78**：`smoke.mjs` +2（默认首页 = `#content/kg`、菜单次序与名称）。全绿 14.9s。
+- README 路由表改 `#content/…` + 新视图名；smoke 描述同步。
+
+---
+
 ## [8.7.0] — 2026-08-08
 
 阳明心学「章节目录」从左悬浮侧边栏改为置顶横向导航，正文真正居中。

@@ -41,6 +41,7 @@ STAGES = {
         ("卷前三篇", "scripts/build/build_front.py"),
         ("阳明心学", "scripts/ingest/yangming_data.py"),
         ("打包单文件", "scripts/build/bundle.py"),
+        ("SEO 注入", "scripts/build/seo.py"),
     ],
 }
 

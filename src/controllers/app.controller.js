@@ -25,9 +25,8 @@ import { create as orphanCtl } from './orphan.controller.js';
 import { create as yangmingCtl } from './yangming.controller.js';
 
 const VIEWS = [
-  ['graph', '谱系总图'], ['roster', '人物总录'], ['time', '时间线'],
-  ['geo', '地理分布'], ['kg', '知识图谱'], ['orphan', '孤点现象'],
-  ['book', '学案原文'], ['yangming', '阳明心学'],
+  ['kg', '知识图谱'], ['graph', '谱系总图'], ['roster', '人物线索'], ['time', '时间线索'],
+  ['geo', '地理线索'], ['orphan', '孤点现象'], ['book', '学案原文'], ['yangming', '阳明心学'],
 ];
 
 export function boot(core) {

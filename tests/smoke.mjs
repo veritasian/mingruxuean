@@ -78,6 +78,17 @@ if (meta) {
   meta.coverage.length > 8 ? ok('概览行', meta.coverage) : bad('概览行', '为空');
 } else bad('模型', '取不到 model');
 
+/* ---------- 默认首页 = 知识图谱（#content/kg）+ 菜单次序/名称 ---------- */
+const home = await page.evaluate(() => ({
+  hash: location.hash,
+  tabs: [...document.querySelectorAll('#tabs button')].map((b) => b.textContent.trim()),
+}));
+home.hash === '#content/kg' ? ok('默认首页', '知识图谱 #content/kg') : bad('默认首页', `实得 ${home.hash}`);
+const wantTabs = ['知识图谱', '谱系总图', '人物线索', '时间线索', '地理线索', '孤点现象', '学案原文', '阳明心学'];
+home.tabs.join(',') === wantTabs.join(',')
+  ? ok('菜单次序', wantTabs.join(' / '))
+  : bad('菜单次序', `实得 ${home.tabs.join(',')}`);
+
 /* ---------- 逐视图 ---------- */
 const PROBE = {
   graph: '#graph .node', roster: '#roster details', time: '#tline rect',
@@ -85,7 +96,7 @@ const PROBE = {
   book: '#tocPane .toc-item', yangming: '#yangmingRoot .ym-chapter',
 };
 for (const v of VIEWS) {
-  await page.evaluate((n) => { location.hash = `#/${n}`; }, v);
+  await page.evaluate((n) => { location.hash = `#content/${n}`; }, v);
   await new Promise((r) => setTimeout(r, v === 'kg' ? 1200 : 450));
   const r = await page.evaluate((sel, name) => ({
     shown: document.querySelector(`#sec-${name}`)?.classList.contains('on'),
@@ -97,7 +108,7 @@ for (const v of VIEWS) {
 }
 
 /* ---------- 阳明心学专页：侧边栏 / 原版结构 / 滚动监听 / 移动折叠 ---------- */
-await page.evaluate(() => { location.hash = '#/yangming'; });
+await page.evaluate(() => { location.hash = '#content/yangming'; });
 await new Promise((r) => setTimeout(r, 800));
 const ym = await page.evaluate(() => ({
   links: document.querySelectorAll('#yangmingRoot .ym-link').length,
@@ -139,7 +150,7 @@ const spy = await page.evaluate(() => new Promise((resolve) => {
 spy === 'ch13' ? ok('阳明心学 滚动监听', `滚到 拾叁 后高亮 ${spy}`) : bad('阳明心学 滚动监听', `高亮 ${spy}`);
 
 /* ---------- 交互 ---------- */
-await page.evaluate(() => { location.hash = '#/graph'; });
+await page.evaluate(() => { location.hash = '#content/graph'; });
 await new Promise((r) => setTimeout(r, 400));
 const card = await page.evaluate(() => {
   const n = document.querySelector('#graph .node');
@@ -151,7 +162,7 @@ const card = await page.evaluate(() => {
 card.show ? ok('人物卡', card.text.replace(/\s+/g, ' ')) : bad('人物卡', card.err || '点击后未弹出');
 
 /* 两页的箭头必须同向：都从师指向徒。反了就会读成「徒教师」 */
-await page.evaluate(() => { location.hash = '#/kg'; });
+await page.evaluate(() => { location.hash = '#content/kg'; });
 await new Promise((r) => setTimeout(r, 900));
 const dir = await page.evaluate(() => {
   const edges = window.__MRXA_APP__.ctl.kg.view?.edges?.();
@@ -181,7 +192,7 @@ for (const [legacy, want] of [['#v12', 'book'], ['#all', 'graph'], ['#kgf王阳�
 }
 
 /* ---------- 全文 ---------- */
-await page.evaluate(() => { location.hash = '#/book/12'; });
+await page.evaluate(() => { location.hash = '#content/book/12'; });
 await new Promise((r) => setTimeout(r, 1500));
 const vol = await page.evaluate(() => ({
   chars: (document.querySelector('#reader')?.textContent || '').length,
@@ -190,7 +201,7 @@ vol.chars > 500 ? ok('卷次正文', `第 12 卷 ${vol.chars} 字`) : bad('卷�
 
 // 卷前三篇：路由参数是字符串 x1/x2/x3，走的分支跟数字卷号不同，必须单独验
 for (const [key, label] of [['x1', '原序'], ['x2', '发凡'], ['x3', '师说']]) {
-  await page.evaluate((k) => { location.hash = `#/book/${k}`; }, key);
+  await page.evaluate((k) => { location.hash = `#content/book/${k}`; }, key);
   await new Promise((r) => setTimeout(r, 900));
   const fm = await page.evaluate(() => ({
     title: document.querySelector('#reader .reader-head h3')?.textContent || '',
@@ -211,7 +222,7 @@ order.join(',') === 'x1,x2,x3,1'
 
 // 打开学案原文（不带篇目参数）默认应落在卷前首篇 原序
 const def = await page.evaluate(() => {
-  location.hash = '#/book';
+  location.hash = '#content/book';
   return new Promise((resolve) => setTimeout(() => resolve(
     document.querySelector('#tocPane .toc-item.on')?.dataset.v || ''), 1100));
 });
