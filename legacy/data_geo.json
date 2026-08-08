@@ -1,0 +1,2401 @@
+{
+ "geo": {
+  "16": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县",
+   "raw": "江西泰和人"
+  },
+  "17": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "江西安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-124": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县",
+   "raw": "江西永丰人"
+  },
+  "aZOgffvFExYyYC5foWOi-128": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县",
+   "raw": "吉水人"
+  },
+  "aZOgffvFExYyYC5foWOi-129": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-130": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "安福县人"
+  },
+  "aZOgffvFExYyYC5foWOi-131": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-132": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-133": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福（古称安成）",
+   "raw": "安成人"
+  },
+  "aZOgffvFExYyYC5foWOi-134": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-135": {
+   "prov": "江西",
+   "city": "赣州",
+   "note": "于都县（雩→于）",
+   "raw": "江西雩县人"
+  },
+  "aZOgffvFExYyYC5foWOi-136": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县",
+   "raw": "泰和人"
+  },
+  "aZOgffvFExYyYC5foWOi-137": {
+   "prov": "江西",
+   "city": "赣州",
+   "note": "于都县（雩→于）",
+   "raw": "江西雩县人"
+  },
+  "aZOgffvFExYyYC5foWOi-138": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "临川区",
+   "raw": "临川人"
+  },
+  "aZOgffvFExYyYC5foWOi-139": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "新建区",
+   "raw": "南昌新建人"
+  },
+  "aZOgffvFExYyYC5foWOi-140": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-141": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-142": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-143": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "新建区",
+   "raw": "南昌新建人"
+  },
+  "aZOgffvFExYyYC5foWOi-144": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "庐陵（今吉安）",
+   "raw": "庐陵人"
+  },
+  "aZOgffvFExYyYC5foWOi-145": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "东溪",
+   "raw": "南昌之东溪人"
+  },
+  "aZOgffvFExYyYC5foWOi-146": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-147": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县",
+   "raw": "吉之泰和人"
+  },
+  "aZOgffvFExYyYC5foWOi-148": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县",
+   "raw": "豫之吉水人"
+  },
+  "aZOgffvFExYyYC5foWOi-149": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-150": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "南城县",
+   "raw": "江西南城人"
+  },
+  "aZOgffvFExYyYC5foWOi-151": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县",
+   "raw": "吉之永豊人"
+  },
+  "aZOgffvFExYyYC5foWOi-152": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "",
+   "raw": "南昌人"
+  },
+  "aZOgffvFExYyYC5foWOi-153": {
+   "prov": "江苏",
+   "city": "淮安",
+   "note": "盱眙县",
+   "raw": "盱眙人"
+  },
+  "aZOgffvFExYyYC5foWOi-155": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "兰溪市",
+   "raw": "金华兰溪人"
+  },
+  "aZOgffvFExYyYC5foWOi-156": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市",
+   "raw": "浙之余姚人"
+  },
+  "aZOgffvFExYyYC5foWOi-163": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-167": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "",
+   "raw": "宣州人"
+  },
+  "aZOgffvFExYyYC5foWOi-168": {
+   "prov": "安徽",
+   "city": "滁州",
+   "note": "全椒县",
+   "raw": "江北之全椒人"
+  },
+  "aZOgffvFExYyYC5foWOi-169": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "泾县",
+   "raw": "泾县人"
+  },
+  "aZOgffvFExYyYC5foWOi-170": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "",
+   "raw": "宣城人"
+  },
+  "aZOgffvFExYyYC5foWOi-171": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "泾县",
+   "raw": "泾县人"
+  },
+  "aZOgffvFExYyYC5foWOi-172": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "",
+   "raw": "宣城人"
+  },
+  "aZOgffvFExYyYC5foWOi-173": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-174": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "泾县",
+   "raw": "泾县人"
+  },
+  "aZOgffvFExYyYC5foWOi-175": {
+   "prov": "安徽",
+   "city": "池州",
+   "note": "青阳县",
+   "raw": "青阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-176": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "歙县",
+   "raw": "歙人"
+  },
+  "aZOgffvFExYyYC5foWOi-183": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今绍兴）",
+   "raw": "浙之山阴人"
+  },
+  "aZOgffvFExYyYC5foWOi-201": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "休宁县",
+   "raw": "休宁人"
+  },
+  "aZOgffvFExYyYC5foWOi-202": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "歙县",
+   "raw": "歙人"
+  },
+  "aZOgffvFExYyYC5foWOi-204": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "南城县",
+   "raw": "江西南城人"
+  },
+  "aZOgffvFExYyYC5foWOi-205": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "",
+   "raw": "南京人"
+  },
+  "aZOgffvFExYyYC5foWOi-207": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "留守卫（南京）",
+   "raw": "留守卫人"
+  },
+  "aZOgffvFExYyYC5foWOi-209": {
+   "prov": "江苏",
+   "city": "镇江",
+   "note": "丹阳市",
+   "raw": "丹阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-211": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-213": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "",
+   "raw": "苏州人"
+  },
+  "aZOgffvFExYyYC5foWOi-214": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "宜兴市",
+   "raw": "常之宜兴人"
+  },
+  "aZOgffvFExYyYC5foWOi-215": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "增城区",
+   "raw": "广东增城人"
+  },
+  "aZOgffvFExYyYC5foWOi-218": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "靖江市",
+   "raw": "直隶靖江人"
+  },
+  "aZOgffvFExYyYC5foWOi-219": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "太平（今黄山区）",
+   "raw": "宣州太平人"
+  },
+  "aZOgffvFExYyYC5foWOi-222": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "aZOgffvFExYyYC5foWOi-224": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "江阴市",
+   "raw": "江阴人"
+  },
+  "aZOgffvFExYyYC5foWOi-225": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "aZOgffvFExYyYC5foWOi-226": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-228": {
+   "prov": "上海",
+   "city": "上海",
+   "note": "华亭（今松江区）",
+   "raw": "松江华亭人"
+  },
+  "aZOgffvFExYyYC5foWOi-231": {
+   "prov": "上海",
+   "city": "上海",
+   "note": "华亭（今松江区）",
+   "raw": "华亭人"
+  },
+  "aZOgffvFExYyYC5foWOi-232": {
+   "prov": "湖南",
+   "city": "常德",
+   "note": "",
+   "raw": "楚之常德人"
+  },
+  "aZOgffvFExYyYC5foWOi-234": {
+   "prov": "湖南",
+   "city": "常德",
+   "note": "武陵（今常德）",
+   "raw": "楚之武陵人"
+  },
+  "aZOgffvFExYyYC5foWOi-238": {
+   "prov": "山东",
+   "city": "聊城",
+   "note": "堂邑镇（今属东昌府区）",
+   "raw": "山东堂邑人"
+  },
+  "aZOgffvFExYyYC5foWOi-239": {
+   "prov": "山东",
+   "city": "聊城",
+   "note": "茌平区",
+   "raw": "山东茌平人"
+  },
+  "aZOgffvFExYyYC5foWOi-240": {
+   "prov": "山东",
+   "city": "聊城",
+   "note": "茌平区",
+   "raw": "山东茌平人"
+  },
+  "aZOgffvFExYyYC5foWOi-241": {
+   "prov": "河南",
+   "city": "洛阳",
+   "note": "",
+   "raw": "河南洛阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-244": {
+   "prov": "河南",
+   "city": "洛阳",
+   "note": "新安县",
+   "raw": "河南新安人"
+  },
+  "aZOgffvFExYyYC5foWOi-246": {
+   "prov": "河南",
+   "city": "商丘",
+   "note": "虞城县",
+   "raw": "河南虞城人"
+  },
+  "aZOgffvFExYyYC5foWOi-247": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "",
+   "raw": "陜之渭南人"
+  },
+  "aZOgffvFExYyYC5foWOi-250": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "广之南海人"
+  },
+  "aZOgffvFExYyYC5foWOi-251": {
+   "prov": "广东",
+   "city": "潮州",
+   "note": "饶平县",
+   "raw": "饶平人"
+  },
+  "aZOgffvFExYyYC5foWOi-252": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-254": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "南海人"
+  },
+  "aZOgffvFExYyYC5foWOi-255": {
+   "prov": "广东",
+   "city": "揭阳",
+   "note": "",
+   "raw": "揭阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-256": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": "",
+   "raw": "莆人"
+  },
+  "aZOgffvFExYyYC5foWOi-257": {
+   "prov": "广东",
+   "city": "揭阳",
+   "note": "",
+   "raw": "广东揭阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-258": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "罗浮山（博罗）",
+   "raw": "罗浮人"
+  },
+  "aZOgffvFExYyYC5foWOi-265": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚马堰",
+   "raw": "馀姚之马堰人"
+  },
+  "aZOgffvFExYyYC5foWOi-267": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "会稽（今绍兴）",
+   "raw": "越之会稽人"
+  },
+  "aZOgffvFExYyYC5foWOi-268": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "黄岩区",
+   "raw": "台之黄岩人"
+  },
+  "aZOgffvFExYyYC5foWOi-269": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-270": {
+   "prov": "浙江",
+   "city": "嘉兴",
+   "note": "海盐县",
+   "raw": "海盐人"
+  },
+  "aZOgffvFExYyYC5foWOi-271": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "归安（今吴兴区）",
+   "raw": "湖之归安人"
+  },
+  "aZOgffvFExYyYC5foWOi-272": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "长兴县",
+   "raw": "湖之长兴人"
+  },
+  "aZOgffvFExYyYC5foWOi-273": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区",
+   "raw": "宁波鄞县人"
+  },
+  "aZOgffvFExYyYC5foWOi-275": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市",
+   "raw": "婺之永康人"
+  },
+  "aZOgffvFExYyYC5foWOi-276": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今越城/柯桥）",
+   "raw": "越之山阴人"
+  },
+  "aZOgffvFExYyYC5foWOi-278": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-279": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "临海市",
+   "raw": "台之临海人"
+  },
+  "aZOgffvFExYyYC5foWOi-280": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市",
+   "raw": "馀姚人"
+  },
+  "aZOgffvFExYyYC5foWOi-281": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今越城/柯桥）",
+   "raw": "越之山阴人"
+  },
+  "aZOgffvFExYyYC5foWOi-294": {
+   "prov": "江西",
+   "city": "宜春",
+   "note": "丰城市",
+   "raw": "丰城人"
+  },
+  "aZOgffvFExYyYC5foWOi-300": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县",
+   "raw": "吉州永丰人"
+  },
+  "aZOgffvFExYyYC5foWOi-301": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "",
+   "raw": "吉安人"
+  },
+  "aZOgffvFExYyYC5foWOi-302": {
+   "prov": "四川",
+   "city": "内江",
+   "note": "",
+   "raw": "蜀之内江人"
+  },
+  "aZOgffvFExYyYC5foWOi-303": {
+   "prov": "湖北",
+   "city": "武汉",
+   "note": "黄陂区",
+   "raw": "黄陂人"
+  },
+  "aZOgffvFExYyYC5foWOi-305": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "aZOgffvFExYyYC5foWOi-306": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-310": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-311": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": "兴化府（今莆田）",
+   "raw": "福之兴化人"
+  },
+  "aZOgffvFExYyYC5foWOi-312": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "太仓市",
+   "raw": "苏之太仓人"
+  },
+  "aZOgffvFExYyYC5foWOi-313": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-314": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-315": {
+   "prov": "江苏",
+   "city": "盐城",
+   "note": "草堰场（今大丰草堰）",
+   "raw": "泰州草偃场人"
+  },
+  "aZOgffvFExYyYC5foWOi-321": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "兴化市",
+   "raw": "兴化人"
+  },
+  "aZOgffvFExYyYC5foWOi-322": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-328": {
+   "prov": "江西",
+   "city": "鹰潭",
+   "note": "贵溪市",
+   "raw": "贵溪人"
+  },
+  "aZOgffvFExYyYC5foWOi-331": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "",
+   "raw": "泰州人"
+  },
+  "aZOgffvFExYyYC5foWOi-333": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "",
+   "raw": "泰州人"
+  },
+  "aZOgffvFExYyYC5foWOi-335": {
+   "prov": "四川",
+   "city": "内江",
+   "note": "",
+   "raw": "蜀之内江人"
+  },
+  "aZOgffvFExYyYC5foWOi-341": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "归善（今惠阳区）",
+   "raw": "广东归善人"
+  },
+  "aZOgffvFExYyYC5foWOi-345": {
+   "prov": "湖北",
+   "city": "黄冈",
+   "note": "黄安（今红安县）",
+   "raw": "楚之黄安人"
+  },
+  "aZOgffvFExYyYC5foWOi-346": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "aZOgffvFExYyYC5foWOi-347": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "旗手卫（南京）",
+   "raw": "南京旗手卫人"
+  },
+  "aZOgffvFExYyYC5foWOi-350": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "婺源县（原属徽州）",
+   "raw": "徽之婺源人"
+  },
+  "aZOgffvFExYyYC5foWOi-351": {
+   "prov": "安徽",
+   "city": "安庆",
+   "note": "桐城市",
+   "raw": "桐城人"
+  },
+  "aZOgffvFExYyYC5foWOi-352": {
+   "prov": "四川",
+   "city": "内江",
+   "note": "",
+   "raw": "四川内江人"
+  },
+  "aZOgffvFExYyYC5foWOi-353": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "鄱阳县",
+   "raw": "鄱阳人"
+  },
+  "aZOgffvFExYyYC5foWOi-354": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "嵊州市",
+   "raw": "嵊县人"
+  },
+  "aZOgffvFExYyYC5foWOi-355": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "会稽（今绍兴）",
+   "raw": "会稽人"
+  },
+  "aZOgffvFExYyYC5foWOi-356": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "会稽（今绍兴）",
+   "raw": "会稽人"
+  },
+  "STSbwmwu5GfzBW4jki-n-26": {
+   "prov": "江西",
+   "city": "九江",
+   "note": "德安县",
+   "raw": "江西德安人"
+  },
+  "STSbwmwu5GfzBW4jki-n-27": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "永丰（今广丰区）",
+   "raw": "广信永丰人"
+  },
+  "STSbwmwu5GfzBW4jki-n-28": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "归安（今吴兴区）",
+   "raw": "浙之归安人"
+  },
+  "STSbwmwu5GfzBW4jki-n-29": {
+   "prov": "广东",
+   "city": "汕头",
+   "note": "澄海区",
+   "raw": "广之澄海人"
+  },
+  "STSbwmwu5GfzBW4jki-n-30": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "德清县",
+   "raw": "浙之德清人"
+  },
+  "STSbwmwu5GfzBW4jki-n-32": {
+   "prov": "山东",
+   "city": "德州",
+   "note": "武城县",
+   "raw": "山东之武城人"
+  },
+  "STSbwmwu5GfzBW4jki-n-35": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "",
+   "raw": "常之无锡人"
+  },
+  "STSbwmwu5GfzBW4jki-n-36": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "常之武进人"
+  },
+  "STSbwmwu5GfzBW4jki-n-37": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "常州武进人"
+  },
+  "STSbwmwu5GfzBW4jki-n-38": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "",
+   "raw": "常州之无锡人"
+  },
+  "STSbwmwu5GfzBW4jki-n-39": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "STSbwmwu5GfzBW4jki-n-40": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "常之武进人"
+  },
+  "STSbwmwu5GfzBW4jki-n-41": {
+   "prov": "江苏",
+   "city": "扬州",
+   "note": "宝应县",
+   "raw": "扬州宝应人"
+  },
+  "STSbwmwu5GfzBW4jki-n-42": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "宜兴市",
+   "raw": "常州宜兴人"
+  },
+  "STSbwmwu5GfzBW4jki-n-43": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "",
+   "raw": "无锡人"
+  },
+  "STSbwmwu5GfzBW4jki-n-44": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "STSbwmwu5GfzBW4jki-n-45": {
+   "prov": "河北",
+   "city": "沧州",
+   "note": "河间市",
+   "raw": "北直河间人"
+  },
+  "STSbwmwu5GfzBW4jki-n-46": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "",
+   "raw": "常州人"
+  },
+  "STSbwmwu5GfzBW4jki-n-48": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市",
+   "raw": "越之馀姚人"
+  },
+  "STSbwmwu5GfzBW4jki-n-49": {
+   "prov": "浙江",
+   "city": "嘉兴",
+   "note": "嘉善县",
+   "raw": "浙之嘉善人"
+  },
+  "STSbwmwu5GfzBW4jki-n-50": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "",
+   "raw": "无锡人"
+  },
+  "STSbwmwu5GfzBW4jki-n-51": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "STSbwmwu5GfzBW4jki-n-54": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今越城/柯桥）",
+   "raw": "越之山阴人"
+  },
+  "STSbwmwu5GfzBW4jki-n-58": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "婺源县（原属徽州）",
+   "raw": "徽之婺源人"
+  },
+  "STSbwmwu5GfzBW4jki-n-59": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "长安（今西安）",
+   "raw": "陜之长安人"
+  },
+  "STSbwmwu5GfzBW4jki-n-61": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "广信府上饶",
+   "raw": "广信上饶人"
+  },
+  "STSbwmwu5GfzBW4jki-n-65": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "STSbwmwu5GfzBW4jki-n-68": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "余干县",
+   "raw": "饶之馀干人"
+  },
+  "STSbwmwu5GfzBW4jki-n-69": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "崇仁县",
+   "raw": "抚州之崇仁人"
+  },
+  "STSbwmwu5GfzBW4jki-n-71": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "象湖（广昌）",
+   "raw": "常山之象湖人"
+  },
+  "STSbwmwu5GfzBW4jki-n-72": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "广信府上饶",
+   "raw": "广信上饶人"
+  },
+  "STSbwmwu5GfzBW4jki-n-76": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "祁门县",
+   "raw": "祁门人"
+  },
+  "STSbwmwu5GfzBW4jki-n-77": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "金溪县",
+   "raw": "金溪人"
+  },
+  "STSbwmwu5GfzBW4jki-n-78": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "昆山市",
+   "raw": "昆山人"
+  },
+  "STSbwmwu5GfzBW4jki-n-80": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "鄱阳县",
+   "raw": "鄱阳人"
+  },
+  "STSbwmwu5GfzBW4jki-n-81": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县",
+   "raw": "永丰人"
+  },
+  "STSbwmwu5GfzBW4jki-n-86": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "永丰（今广丰区）",
+   "raw": "信之永丰人"
+  },
+  "STSbwmwu5GfzBW4jki-n-90": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "南海人"
+  },
+  "STSbwmwu5GfzBW4jki-n-91": {
+   "prov": "浙江",
+   "city": "舟山",
+   "note": "定海区",
+   "raw": "世为定海人"
+  },
+  "STSbwmwu5GfzBW4jki-n-96": {
+   "prov": "重庆",
+   "city": "合川",
+   "note": "合州（今合川区）",
+   "raw": "四川合州人"
+  },
+  "STSbwmwu5GfzBW4jki-n-97": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": "",
+   "raw": "福之莆田人"
+  },
+  "STSbwmwu5GfzBW4jki-n-98": {
+   "prov": "广东",
+   "city": "东莞",
+   "note": "",
+   "raw": "东莞人"
+  },
+  "STSbwmwu5GfzBW4jki-n-101": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "南海人"
+  },
+  "STSbwmwu5GfzBW4jki-n-102": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "STSbwmwu5GfzBW4jki-n-103": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "南海人"
+  },
+  "STSbwmwu5GfzBW4jki-n-104": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "番禺区",
+   "raw": "番禺人"
+  },
+  "STSbwmwu5GfzBW4jki-n-105": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "番阳=鄱阳",
+   "raw": "豫之番阳人"
+  },
+  "STSbwmwu5GfzBW4jki-n-106": {
+   "prov": "山西",
+   "city": "运城",
+   "note": "河津市",
+   "raw": "山西河津人"
+  },
+  "STSbwmwu5GfzBW4jki-n-108": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "STSbwmwu5GfzBW4jki-n-109": {
+   "prov": "甘肃",
+   "city": "兰州",
+   "note": "",
+   "raw": "兰州人"
+  },
+  "STSbwmwu5GfzBW4jki-n-110": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "咸宁县（今属西安）",
+   "raw": "陜之咸宁人"
+  },
+  "STSbwmwu5GfzBW4jki-n-111": {
+   "prov": "陕西",
+   "city": "宝鸡",
+   "note": "凤翔区",
+   "raw": "陜之凤翔人"
+  },
+  "STSbwmwu5GfzBW4jki-n-112": {
+   "prov": "甘肃",
+   "city": "张掖",
+   "note": "山丹县",
+   "raw": "山丹卫人"
+  },
+  "STSbwmwu5GfzBW4jki-n-113": {
+   "prov": "河南",
+   "city": "南阳",
+   "note": "",
+   "raw": "河南南阳人"
+  },
+  "STSbwmwu5GfzBW4jki-n-114": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "",
+   "raw": "陜之渭南人"
+  },
+  "STSbwmwu5GfzBW4jki-n-116": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "咸宁县（今属西安）",
+   "raw": "陜之咸宁人"
+  },
+  "STSbwmwu5GfzBW4jki-n-118": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "高陵区",
+   "raw": "陜之高陵人"
+  },
+  "STSbwmwu5GfzBW4jki-n-120": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "泾阳县",
+   "raw": "泾阳人"
+  },
+  "STSbwmwu5GfzBW4jki-n-123": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "咸宁县（今属西安）",
+   "raw": "咸宁人"
+  },
+  "STSbwmwu5GfzBW4jki-n-125": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "泾阳县",
+   "raw": "泾阳人"
+  },
+  "STSbwmwu5GfzBW4jki-n-126": {
+   "prov": "福建",
+   "city": "南平",
+   "note": "建安（今建瓯）",
+   "raw": "闽之建安人"
+  },
+  "STSbwmwu5GfzBW4jki-n-130": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "三原县",
+   "raw": "陜之三原人"
+  },
+  "STSbwmwu5GfzBW4jki-n-132": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "STSbwmwu5GfzBW4jki-n-133": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "三原县",
+   "raw": "陜之三原人"
+  },
+  "STSbwmwu5GfzBW4jki-n-134": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "朝邑镇（今属大荔）",
+   "raw": "陜之朝邑人"
+  },
+  "STSbwmwu5GfzBW4jki-n-136": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "富平县",
+   "raw": "陜之富平人"
+  },
+  "STSbwmwu5GfzBW4jki-n-138": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "蓝田县",
+   "raw": "陜之蓝田人"
+  },
+  "wang_yangming": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市",
+   "raw": "浙江余姚人"
+  },
+  "bk03余祐": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "鄱阳县",
+   "raw": "鄱阳人"
+  },
+  "bk05李承箕": {
+   "prov": "湖北",
+   "city": "咸宁",
+   "note": "嘉鱼县",
+   "raw": "楚之嘉鱼人"
+  },
+  "bk06谢祐": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区",
+   "raw": "南海人"
+  },
+  "bk06何廷矩": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "番禺区",
+   "raw": "番禺人"
+  },
+  "bk08吕潜": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "泾阳县",
+   "raw": "陕之泾阳人"
+  },
+  "bk08杨应诏": {
+   "prov": "福建",
+   "city": "南平",
+   "note": "建安（今建瓯）",
+   "raw": "闽之建安人"
+  },
+  "bk10许璋": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "上虞区",
+   "raw": "越之上虞人"
+  },
+  "bk11蔡宗兖": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "白洋（山阴）",
+   "raw": "山阴之白洋人"
+  },
+  "bk11朱节": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "白洋（山阴）",
+   "raw": "亦白洋人"
+  },
+  "bk15王宗沐": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "临海市",
+   "raw": "台之临海人"
+  },
+  "bk23罗大纮": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县",
+   "raw": "吉之安福人"
+  },
+  "bk25薛应旂": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "bk40蔡汝楠": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "德清县",
+   "raw": "西浙之德清人"
+  },
+  "bk43方孝孺": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "宁海县",
+   "raw": "台之宁海人"
+  },
+  "bk43赵谦": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市",
+   "raw": "余姚人"
+  },
+  "bk44曹端": {
+   "prov": "河南",
+   "city": "三门峡",
+   "note": "渑池县",
+   "raw": "河南之渑池人"
+  },
+  "bk45黄润玉": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区",
+   "raw": "浙之鄞县人"
+  },
+  "bk45罗伦": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "bk45章懋": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "兰溪市",
+   "raw": "金华兰溪人"
+  },
+  "bk45庄昶": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "江浦（今浦口区）",
+   "raw": "江浦人"
+  },
+  "bk45张元祯": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "",
+   "raw": "南昌人"
+  },
+  "bk45陈选": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "临海市",
+   "raw": "台之临海人"
+  },
+  "bk46陈真晟": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "bk46张吉": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "余干县",
+   "raw": "江西余干人"
+  },
+  "bk46周瑛": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": "",
+   "raw": "福之莆田人"
+  },
+  "bk46蔡清": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "晋江市",
+   "raw": "福之晋江人"
+  },
+  "bk46潘府": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "上虞区",
+   "raw": "浙之上虞人"
+  },
+  "bk46罗侨": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县",
+   "raw": "豫之吉水人"
+  },
+  "bk47罗钦顺": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县",
+   "raw": "吉之泰和人"
+  },
+  "bk48汪俊": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "弋阳县",
+   "raw": "弋阳人"
+  },
+  "bk48崔铣": {
+   "prov": "河南",
+   "city": "安阳",
+   "note": "",
+   "raw": "河南安阳人"
+  },
+  "bk49何瑭": {
+   "prov": "河南",
+   "city": "焦作",
+   "note": "武陟县",
+   "raw": "怀庆武陟人"
+  },
+  "bk50王廷相": {
+   "prov": "河南",
+   "city": "开封",
+   "note": "仪封（今兰考）",
+   "raw": "河南仪封人"
+  },
+  "bk51黄佐": {
+   "prov": "广东",
+   "city": "中山",
+   "note": "香山（今中山）",
+   "raw": "广之香山人"
+  },
+  "bk52张邦奇": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区",
+   "raw": "浙之鄞人"
+  },
+  "bk52张岳": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "惠安县",
+   "raw": "福之惠安人"
+  },
+  "bk52徐问": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "常之武进人"
+  },
+  "bk52李经纶": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "南丰县",
+   "raw": "建昌南丰人"
+  },
+  "bk53李中": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县",
+   "raw": "吉水人"
+  },
+  "bk53薛蕙": {
+   "prov": "安徽",
+   "city": "亳州",
+   "note": "",
+   "raw": "亳州人"
+  },
+  "bk53舒芬": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "进贤县",
+   "raw": "江西进贤人"
+  },
+  "bk54卢甯忠": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "岭南（泛指）",
+   "raw": "岭南人"
+  },
+  "bk54吕坤": {
+   "prov": "河南",
+   "city": "商丘",
+   "note": "宁陵县",
+   "raw": "河南宁陵人"
+  },
+  "bk54曹于汴": {
+   "prov": "山西",
+   "city": "运城",
+   "note": "安邑（今盐湖区）",
+   "raw": "平阳安邑人"
+  },
+  "bk54吕维祺": {
+   "prov": "河南",
+   "city": "洛阳",
+   "note": "新安县",
+   "raw": "河南新安人"
+  },
+  "bk55郝敬": {
+   "prov": "湖北",
+   "city": "荆门",
+   "note": "京山市",
+   "raw": "楚之京山人"
+  },
+  "bk55吴执御": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "",
+   "raw": "台州人"
+  },
+  "bk56黄道周": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "镇海卫（今石狮）",
+   "raw": "福之镇海卫人"
+  },
+  "bk57金铉": {
+   "prov": "不详",
+   "city": "",
+   "note": "",
+   "raw": ""
+  },
+  "bk57金声": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "休宁县",
+   "raw": "徽之休宁人"
+  },
+  "bk57朱天麟": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "昆山市",
+   "raw": "吴之昆山人"
+  },
+  "bk57孙奇逢": {
+   "prov": "河北",
+   "city": "保定",
+   "note": "容城县",
+   "raw": "北直容城人"
+  },
+  "bk60史孟鱗": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "宜兴市",
+   "raw": "常州宜兴人"
+  },
+  "bk60刘永澄": {
+   "prov": "江苏",
+   "city": "扬州",
+   "note": "宝应县",
+   "raw": "扬州宝应人"
+  },
+  "bk61吴鍾峦": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区",
+   "raw": "武进人"
+  },
+  "bk63应典": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市",
+   "raw": "永康人"
+  },
+  "bk63周莹": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市",
+   "raw": "永康人"
+  },
+  "bk63卢可久": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市",
+   "raw": "永康人"
+  },
+  "bk63杜惟熙": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "东阳市",
+   "raw": "东阳人"
+  },
+  "bk63颜鲸": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "慈溪市",
+   "raw": "宁之慈溪人"
+  }
+ },
+ "birth_map": {
+  "吉之安福人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县"
+  },
+  "南海人": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区"
+  },
+  "泾县人": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": "泾县"
+  },
+  "武进人": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区"
+  },
+  "越之山阴人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今越城/柯桥）"
+  },
+  "江西雩县人": {
+   "prov": "江西",
+   "city": "赣州",
+   "note": "于都县（雩→于）"
+  },
+  "南昌新建人": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "新建区"
+  },
+  "宣城人": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": ""
+  },
+  "歙人": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "歙县"
+  },
+  "山东茌平人": {
+   "prov": "山东",
+   "city": "聊城",
+   "note": "茌平区"
+  },
+  "陜之渭南人": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": ""
+  },
+  "蜀之内江人": {
+   "prov": "四川",
+   "city": "内江",
+   "note": ""
+  },
+  "泰州人": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": ""
+  },
+  "徽之婺源人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "婺源县（原属徽州）"
+  },
+  "鄱阳人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "鄱阳县"
+  },
+  "常之武进人": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区"
+  },
+  "无锡人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": ""
+  },
+  "广信上饶人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "广信府上饶"
+  },
+  "陜之咸宁人": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "咸宁县（今属西安）"
+  },
+  "泾阳人": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "泾阳县"
+  },
+  "陜之三原人": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "三原县"
+  },
+  "江西泰和人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县"
+  },
+  "江西安福人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县"
+  },
+  "江西永丰人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县"
+  },
+  "吉水人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县"
+  },
+  "安福县人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县"
+  },
+  "三五同邑人": {
+   "prov": "？",
+   "city": "？",
+   "note": "同邑，未详"
+  },
+  "安成人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福（古称安成）"
+  },
+  "安福人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "安福县"
+  },
+  "泰和人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县"
+  },
+  "临川人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "临川区"
+  },
+  "庐陵人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "庐陵（今吉安）"
+  },
+  "南昌之东溪人": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "东溪"
+  },
+  "吉之泰和人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "泰和县"
+  },
+  "豫之吉水人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "吉水县"
+  },
+  "吉之永豊人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县"
+  },
+  "南昌人": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": ""
+  },
+  "盱眙人也": {
+   "prov": "江苏",
+   "city": "淮安",
+   "note": "盱眙县"
+  },
+  "金华兰溪人": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "兰溪市"
+  },
+  "宣州人": {
+   "prov": "安徽",
+   "city": "宣城",
+   "note": ""
+  },
+  "江北之全椒人": {
+   "prov": "安徽",
+   "city": "滁州",
+   "note": "全椒县"
+  },
+  "青阳人": {
+   "prov": "安徽",
+   "city": "池州",
+   "note": "青阳县"
+  },
+  "休宁人": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "休宁县"
+  },
+  "南京人": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": ""
+  },
+  "留守卫人": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "留守卫（南京）"
+  },
+  "丹阳人": {
+   "prov": "江苏",
+   "city": "镇江",
+   "note": "丹阳市"
+  },
+  "苏州人": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": ""
+  },
+  "常之宜兴人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "宜兴市"
+  },
+  "直隶靖江人": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "靖江市"
+  },
+  "宣州太平人": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "太平（今黄山区）"
+  },
+  "江阴人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "江阴市"
+  },
+  "华亭人": {
+   "prov": "上海",
+   "city": "上海",
+   "note": "华亭（今松江区）"
+  },
+  "楚之常德人": {
+   "prov": "湖南",
+   "city": "常德",
+   "note": ""
+  },
+  "楚之武陵人": {
+   "prov": "湖南",
+   "city": "常德",
+   "note": "武陵（今常德）"
+  },
+  "山东堂邑人": {
+   "prov": "山东",
+   "city": "聊城",
+   "note": "堂邑镇（今属东昌府区）"
+  },
+  "河南洛阳人": {
+   "prov": "河南",
+   "city": "洛阳",
+   "note": ""
+  },
+  "河南新安人": {
+   "prov": "河南",
+   "city": "洛阳",
+   "note": "新安县"
+  },
+  "河南虞城人": {
+   "prov": "河南",
+   "city": "商丘",
+   "note": "虞城县"
+  },
+  "饶平人": {
+   "prov": "广东",
+   "city": "潮州",
+   "note": "饶平县"
+  },
+  "揭阳人": {
+   "prov": "广东",
+   "city": "揭阳",
+   "note": ""
+  },
+  "莆人": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": ""
+  },
+  "广东揭阳人": {
+   "prov": "广东",
+   "city": "揭阳",
+   "note": ""
+  },
+  "罗浮人也": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "罗浮山（博罗）"
+  },
+  "馀姚之马堰人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚马堰"
+  },
+  "越之会稽人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "会稽（今绍兴）"
+  },
+  "台之黄岩人": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "黄岩区"
+  },
+  "海盐人": {
+   "prov": "浙江",
+   "city": "嘉兴",
+   "note": "海盐县"
+  },
+  "湖之归安人": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "归安（今吴兴区）"
+  },
+  "湖之长兴人": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "长兴县"
+  },
+  "宁波鄞县人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区"
+  },
+  "婺之永康人": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市"
+  },
+  "台之临海人": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": "临海市"
+  },
+  "馀姚人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市"
+  },
+  "丰城人": {
+   "prov": "江西",
+   "city": "宜春",
+   "note": "丰城市"
+  },
+  "吉州永丰人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县"
+  },
+  "吉安人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": ""
+  },
+  "黄陂人": {
+   "prov": "湖北",
+   "city": "武汉",
+   "note": "黄陂区"
+  },
+  "福之兴化人": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": "兴化府（今莆田）"
+  },
+  "苏之太仓人": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "太仓市"
+  },
+  "泰州之安丰场人": {
+   "prov": "江苏",
+   "city": "盐城",
+   "note": "安丰场（今东台安丰镇）"
+  },
+  "泰州草偃场人": {
+   "prov": "江苏",
+   "city": "盐城",
+   "note": "草堰场（今大丰草堰）"
+  },
+  "兴化人": {
+   "prov": "江苏",
+   "city": "泰州",
+   "note": "兴化市"
+  },
+  "贵溪人": {
+   "prov": "江西",
+   "city": "鹰潭",
+   "note": "贵溪市"
+  },
+  "广东归善人": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "归善（今惠阳区）"
+  },
+  "楚之黄安人": {
+   "prov": "湖北",
+   "city": "黄冈",
+   "note": "黄安（今红安县）"
+  },
+  "南京旗手卫人": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "旗手卫（南京）"
+  },
+  "桐城人": {
+   "prov": "安徽",
+   "city": "安庆",
+   "note": "桐城市"
+  },
+  "四川内江人": {
+   "prov": "四川",
+   "city": "内江",
+   "note": ""
+  },
+  "嵊县人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "嵊州市"
+  },
+  "会稽人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "会稽（今绍兴）"
+  },
+  "江西德安人": {
+   "prov": "江西",
+   "city": "九江",
+   "note": "德安县"
+  },
+  "广信永丰人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "永丰（今广丰区）"
+  },
+  "浙之归安人": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "归安（今吴兴区）"
+  },
+  "广之澄海人": {
+   "prov": "广东",
+   "city": "汕头",
+   "note": "澄海区"
+  },
+  "浙之德清人": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "德清县"
+  },
+  "山东之武城人": {
+   "prov": "山东",
+   "city": "德州",
+   "note": "武城县"
+  },
+  "常之无锡人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": ""
+  },
+  "常州武进人": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区"
+  },
+  "常州之无锡人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": ""
+  },
+  "扬州宝应人": {
+   "prov": "江苏",
+   "city": "扬州",
+   "note": "宝应县"
+  },
+  "常州宜兴人": {
+   "prov": "江苏",
+   "city": "无锡",
+   "note": "宜兴市"
+  },
+  "北直河间人": {
+   "prov": "河北",
+   "city": "沧州",
+   "note": "河间市"
+  },
+  "常州人": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": ""
+  },
+  "越之馀姚人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市"
+  },
+  "浙之嘉善人": {
+   "prov": "浙江",
+   "city": "嘉兴",
+   "note": "嘉善县"
+  },
+  "武进人也": {
+   "prov": "江苏",
+   "city": "常州",
+   "note": "武进区"
+  },
+  "陜之长安人": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "长安（今西安）"
+  },
+  "饶之馀干人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "余干县"
+  },
+  "抚州之崇仁人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "崇仁县"
+  },
+  "常山之象湖人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "象湖（广昌）"
+  },
+  "祁门人": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "祁门县"
+  },
+  "金溪人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "金溪县"
+  },
+  "昆山人": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "昆山市"
+  },
+  "永丰人": {
+   "prov": "江西",
+   "city": "吉安",
+   "note": "永丰县"
+  },
+  "信之永丰人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "永丰（今广丰区）"
+  },
+  "世为定海人": {
+   "prov": "浙江",
+   "city": "舟山",
+   "note": "定海区"
+  },
+  "四川合州人": {
+   "prov": "重庆",
+   "city": "合川",
+   "note": "合州（今合川区）"
+  },
+  "福之莆田人": {
+   "prov": "福建",
+   "city": "莆田",
+   "note": ""
+  },
+  "东莞人": {
+   "prov": "广东",
+   "city": "东莞",
+   "note": ""
+  },
+  "番禺人": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "番禺区"
+  },
+  "豫之番阳人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "番阳=鄱阳"
+  },
+  "山西河津人": {
+   "prov": "山西",
+   "city": "运城",
+   "note": "河津市"
+  },
+  "兰州人": {
+   "prov": "甘肃",
+   "city": "兰州",
+   "note": ""
+  },
+  "陜之凤翔人": {
+   "prov": "陕西",
+   "city": "宝鸡",
+   "note": "凤翔区"
+  },
+  "山丹卫人": {
+   "prov": "甘肃",
+   "city": "张掖",
+   "note": "山丹县"
+  },
+  "河南南阳人": {
+   "prov": "河南",
+   "city": "南阳",
+   "note": ""
+  },
+  "陜之高陵人": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "高陵区"
+  },
+  "咸宁人": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "咸宁县（今属西安）"
+  },
+  "闽之建安人": {
+   "prov": "福建",
+   "city": "南平",
+   "note": "建安（今建瓯）"
+  },
+  "陜之朝邑人": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "朝邑镇（今属大荔）"
+  },
+  "陜之富平人": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": "富平县"
+  },
+  "陜之蓝田人": {
+   "prov": "陕西",
+   "city": "西安",
+   "note": "蓝田县"
+  },
+  "浙江余姚人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市"
+  },
+  "余姚人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市"
+  },
+  "浙之余姚人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "余姚市"
+  },
+  "浙之上虞人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "上虞区"
+  },
+  "浙之鄞人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区"
+  },
+  "浙之鄞县人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "鄞州区"
+  },
+  "浙之山阴人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "山阴（今绍兴）"
+  },
+  "永康人": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "永康市"
+  },
+  "江浦人": {
+   "prov": "江苏",
+   "city": "南京",
+   "note": "江浦（今浦口区）"
+  },
+  "江西南城人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "南城县"
+  },
+  "江西余干人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "余干县"
+  },
+  "江西进贤人": {
+   "prov": "江西",
+   "city": "南昌",
+   "note": "进贤县"
+  },
+  "河南宁陵人": {
+   "prov": "河南",
+   "city": "商丘",
+   "note": "宁陵县"
+  },
+  "河南安阳人": {
+   "prov": "河南",
+   "city": "安阳",
+   "note": ""
+  },
+  "台之宁海人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "宁海县"
+  },
+  "亦白洋人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "白洋（山阴）"
+  },
+  "广东增城人": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "增城区"
+  },
+  "建昌南丰人": {
+   "prov": "江西",
+   "city": "抚州",
+   "note": "南丰县"
+  },
+  "楚之嘉鱼人": {
+   "prov": "湖北",
+   "city": "咸宁",
+   "note": "嘉鱼县"
+  },
+  "新会之白沙里人": {
+   "prov": "广东",
+   "city": "江门",
+   "note": "新会·白沙里"
+  },
+  "河南之渑池人": {
+   "prov": "河南",
+   "city": "三门峡",
+   "note": "渑池县"
+  },
+  "河南仪封人": {
+   "prov": "河南",
+   "city": "开封",
+   "note": "仪封（今兰考）"
+  },
+  "东阳人": {
+   "prov": "浙江",
+   "city": "金华",
+   "note": "东阳市"
+  },
+  "亳州人": {
+   "prov": "安徽",
+   "city": "亳州",
+   "note": ""
+  },
+  "北直容城人": {
+   "prov": "河北",
+   "city": "保定",
+   "note": "容城县"
+  },
+  "平阳安邑人": {
+   "prov": "山西",
+   "city": "运城",
+   "note": "安邑（今盐湖区）"
+  },
+  "广之香山人": {
+   "prov": "广东",
+   "city": "中山",
+   "note": "香山（今中山）"
+  },
+  "岭南人": {
+   "prov": "广东",
+   "city": "广州",
+   "note": "岭南（泛指）"
+  },
+  "徽之休宁人": {
+   "prov": "安徽",
+   "city": "黄山",
+   "note": "休宁县"
+  },
+  "弋阳人": {
+   "prov": "江西",
+   "city": "上饶",
+   "note": "弋阳县"
+  },
+  "山阴之白洋人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "白洋（山阴）"
+  },
+  "宁之慈溪人": {
+   "prov": "浙江",
+   "city": "宁波",
+   "note": "慈溪市"
+  },
+  "广之南海人": {
+   "prov": "广东",
+   "city": "佛山",
+   "note": "南海区"
+  },
+  "吴之昆山人": {
+   "prov": "江苏",
+   "city": "苏州",
+   "note": "昆山市"
+  },
+  "台州人": {
+   "prov": "浙江",
+   "city": "台州",
+   "note": ""
+  },
+  "松江华亭人": {
+   "prov": "上海",
+   "city": "上海",
+   "note": "华亭（今松江区）"
+  },
+  "楚之京山人": {
+   "prov": "湖北",
+   "city": "荆门",
+   "note": "京山市"
+  },
+  "福之惠安人": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "惠安县"
+  },
+  "福之晋江人": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "晋江市"
+  },
+  "福之镇海卫人": {
+   "prov": "福建",
+   "city": "泉州",
+   "note": "镇海卫（今石狮）"
+  },
+  "西浙之德清人": {
+   "prov": "浙江",
+   "city": "湖州",
+   "note": "德清县"
+  },
+  "陕之泾阳人": {
+   "prov": "陕西",
+   "city": "咸阳",
+   "note": "泾阳县"
+  },
+  "陕之渭南人": {
+   "prov": "陕西",
+   "city": "渭南",
+   "note": ""
+  },
+  "罗浮山人": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "罗浮山（博罗）"
+  },
+  "盱眙人": {
+   "prov": "江苏",
+   "city": "淮安",
+   "note": "盱眙县"
+  },
+  "越之上虞人": {
+   "prov": "浙江",
+   "city": "绍兴",
+   "note": "上虞区"
+  },
+  "罗浮人": {
+   "prov": "广东",
+   "city": "惠州",
+   "note": "罗浮山（博罗）"
+  }
+ }
+}

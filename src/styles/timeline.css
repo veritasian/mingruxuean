@@ -1,0 +1,24 @@
+/* 明儒学案 · 样式层 timeline.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- timeline ---- */
+.tline-shell{border:1px solid var(--line);border-radius:2px;background:linear-gradient(180deg,var(--card),var(--paper2));}
+.tline-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:9px 12px;border-bottom:1px solid var(--line);}
+.tline-wrap{overflow-x:auto;padding:8px;}
+#tline{display:block;min-width:1680px;}
+.tbar{cursor:pointer;}
+.tbar text{pointer-events:none;font-size:11px;fill:var(--ink);}
+.tbar.dim{opacity:.25;}
+.trow text{font-size:12.5px;fill:var(--ink-soft);letter-spacing:1px;pointer-events:none;}
+.pbar{cursor:pointer;}
+.pbar rect{transition:opacity .15s;}
+.pbar.dim{opacity:.12;}
+.tline-cap{font-size:12.5px;color:var(--ink-soft);padding:9px 14px;border-top:1px dashed var(--line);line-height:1.9;}
+#empList{margin:14px 0 4px;}
+.empgroup{border:1px solid var(--line);border-radius:2px;background:var(--card);padding:10px 14px;margin-bottom:10px;}
+.empgroup h4{margin:0 0 8px;font-size:14px;letter-spacing:2px;color:var(--accent);font-weight:600;}
+.empgroup .chips{display:flex;flex-wrap:wrap;gap:6px;}
+.pchip{display:inline-block;border:1px solid var(--line);border-radius:14px;padding:2px 10px;
+  font-size:12.5px;cursor:pointer;background:var(--card);}
+.pchip:hover{outline:2px solid var(--accent);}
+.pchip .lif{color:var(--ink-soft);font-size:11px;margin-left:4px;}

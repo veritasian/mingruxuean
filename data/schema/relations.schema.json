@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "relations.json —— 关系库（可溯源）",
+  "description": "每条边都记录它是从哪来的。三路来源可信度不同，不能混成一团。",
+  "type": "object",
+  "required": ["meta", "relations"],
+  "properties": {
+    "meta": {"type": "object"},
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type", "sources", "provenance", "confidence"],
+        "properties": {
+          "from": {"type": "string", "description": "弟子"},
+          "to":   {"type": "string", "description": "老师"},
+          "type": {"enum": ["师承", "私淑", "附见"],
+                   "description": "私淑 = 慕其学而未及亲炙，与师承有实质区别"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "cited": {"type": "boolean", "description": "是否有原文出处"},
+          "needs_citation": {"type": "boolean", "description": "仅有谱系图连线，待补原文"},
+          "sources": {"type": "array",
+                      "items": {"enum": ["drawio", "legacy-mining", "mined"]}},
+          "provenance": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source":  {"type": "string"},
+                "method":  {"type": "string"},
+                "volume":  {"type": ["integer", "null"]},
+                "section": {"type": "string", "description": "原书章节标题"},
+                "pattern": {"type": "string", "description": "命中的规则"},
+                "quote":   {"type": "string", "description": "原文引文"},
+                "alias_hit": {"type": "string", "description": "命中的别名"},
+                "note":    {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

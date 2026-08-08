@@ -1,0 +1,59 @@
+/* 明儒学案 · 样式层 orphan.css
+   孤点现象页。四类孤点各给一种色调，视觉上先把「编纂设计」
+   和「数据缺口」分开，读者才不会把它们混作一回事。 */
+
+.orphan-lead{border-left:3px solid var(--accent);padding:2px 0 2px 15px;margin:4px 0 24px;}
+.orphan-lead .lead-1{margin:0 0 8px;font-size:18px;letter-spacing:2px;line-height:1.9;font-weight:600;}
+.orphan-lead .lead-2{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:2.05;letter-spacing:.6px;}
+
+.orphan-summary{margin:0 0 30px;}
+.orphan-bar{display:flex;height:34px;border-radius:2px;overflow:hidden;border:1px solid var(--line);}
+.oseg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:12.5px;
+  letter-spacing:1px;transition:.25s;min-width:26px;}
+.oseg b{font-weight:600;}
+.orphan-legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:11px;}
+.olg{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);letter-spacing:1px;}
+.olg i{width:11px;height:11px;border-radius:2px;display:inline-block;flex:none;}
+.olg em{font-style:normal;color:var(--ink);font-weight:600;}
+.olg small{opacity:.65;}
+
+.tone-book{background:#7B5EA7;}
+.tone-net{background:#2E6F73;}
+.tone-fold{background:#B07C2B;}
+.tone-void{background:#8A8175;}
+.tone-gap{background:#A23B2E;}
+
+.orphan-kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:34px;}
+.okard{border:1px solid var(--line);border-radius:2px;background:var(--card);padding:16px 18px 18px;
+  border-top:3px solid var(--line);}
+.okard.tone-book{background:var(--card);border-top-color:#7B5EA7;}
+.okard.tone-net{background:var(--card);border-top-color:#2E6F73;}
+.okard.tone-fold{background:var(--card);border-top-color:#B07C2B;}
+.okard.tone-void{background:var(--card);border-top-color:#8A8175;}
+.okard.tone-gap{background:var(--card);border-top-color:#A23B2E;}
+.okard h4{margin:0 0 9px;font-size:16px;letter-spacing:3px;font-weight:600;display:flex;align-items:baseline;gap:10px;}
+.okard h4 .on{margin-left:auto;font-size:12px;color:var(--ink-soft);letter-spacing:1px;font-weight:400;}
+.okard-desc{margin:0 0 12px;font-size:13px;line-height:2;color:var(--ink-soft);letter-spacing:.5px;}
+.okard-chips{display:flex;flex-wrap:wrap;gap:6px;}
+.orphan-chip{border:1px dashed var(--line);border-radius:14px;padding:3px 11px;font-size:12.5px;
+  cursor:pointer;transition:.18s;background:var(--paper2);letter-spacing:1px;}
+.orphan-chip:hover{border-style:solid;border-color:var(--accent);color:var(--accent);}
+.okard-note{margin:13px 0 0;padding-top:11px;border-top:1px dashed var(--line);
+  font-size:12.5px;line-height:1.95;color:var(--ink-soft);}
+
+.oschool{display:flex;flex-direction:column;gap:5px;}
+.osrow{display:flex;align-items:center;gap:11px;padding:4px 2px;}
+.osname{width:118px;flex:none;font-size:13px;letter-spacing:1px;text-align:right;}
+.ostrack{flex:1;height:13px;background:var(--paper2);border:1px solid var(--line);border-radius:2px;overflow:hidden;}
+.osfill{display:block;height:100%;opacity:.72;}
+.osnum{width:104px;flex:none;font-size:12px;color:var(--ink-soft);letter-spacing:.5px;}
+
+/* 谱系图 / 图谱里的孤点：虚线描边，不用颜色喊，安静地标出来就够 */
+.node.orphan circle{fill-opacity:.35;stroke:var(--ink-soft);stroke-width:1;stroke-dasharray:2 2;}
+.te.orphan-mark{color:var(--ink-soft);opacity:.7;font-size:11px;}
+.tag-orphan{border-color:#8A8175 !important;color:#8A8175 !important;}
+
+@media(max-width:780px){
+  .osname{width:88px;font-size:12px;}
+  .osnum{width:88px;}
+}

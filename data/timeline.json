@@ -1,0 +1,2110 @@
+{
+ "$schema": "./schema/timeline.schema.json",
+ "meta": {
+  "built_at": "2026-08-08",
+  "count": 237,
+  "unmapped": 3,
+  "by_method": {
+   "史载": 104,
+   "不详": 58,
+   "书载·进士": 44,
+   "推算（依师承代次）": 41
+  },
+  "note": "method 标明年份来源：史载最可信，推算仅供排布参考"
+ },
+ "emperors": [
+  {
+   "n": 1,
+   "era": "洪武",
+   "name": "朱元璋",
+   "start": 1368,
+   "end": 1398
+  },
+  {
+   "n": 2,
+   "era": "建文",
+   "name": "朱允炆",
+   "start": 1398,
+   "end": 1402
+  },
+  {
+   "n": 3,
+   "era": "永乐",
+   "name": "朱棣",
+   "start": 1402,
+   "end": 1424
+  },
+  {
+   "n": 4,
+   "era": "洪熙",
+   "name": "朱高炽",
+   "start": 1424,
+   "end": 1425
+  },
+  {
+   "n": 5,
+   "era": "宣德",
+   "name": "朱瞻基",
+   "start": 1425,
+   "end": 1435
+  },
+  {
+   "n": 6,
+   "era": "正统",
+   "name": "朱祁镇",
+   "start": 1435,
+   "end": 1449
+  },
+  {
+   "n": 7,
+   "era": "景泰",
+   "name": "朱祁钰",
+   "start": 1449,
+   "end": 1457
+  },
+  {
+   "n": 8,
+   "era": "天顺",
+   "name": "朱祁镇",
+   "start": 1457,
+   "end": 1464,
+   "note": "复位"
+  },
+  {
+   "n": 9,
+   "era": "成化",
+   "name": "朱见深",
+   "start": 1464,
+   "end": 1487
+  },
+  {
+   "n": 10,
+   "era": "弘治",
+   "name": "朱祐樘",
+   "start": 1487,
+   "end": 1505
+  },
+  {
+   "n": 11,
+   "era": "正德",
+   "name": "朱厚照",
+   "start": 1505,
+   "end": 1521
+  },
+  {
+   "n": 12,
+   "era": "嘉靖",
+   "name": "朱厚熜",
+   "start": 1521,
+   "end": 1566
+  },
+  {
+   "n": 13,
+   "era": "隆庆",
+   "name": "朱载坖",
+   "start": 1566,
+   "end": 1572
+  },
+  {
+   "n": 14,
+   "era": "万历",
+   "name": "朱翊钧",
+   "start": 1572,
+   "end": 1620
+  },
+  {
+   "n": 15,
+   "era": "泰昌",
+   "name": "朱常洛",
+   "start": 1620,
+   "end": 1620
+  },
+  {
+   "n": 16,
+   "era": "天启",
+   "name": "朱由校",
+   "start": 1620,
+   "end": 1627
+  },
+  {
+   "n": 17,
+   "era": "崇祯",
+   "name": "朱由检",
+   "start": 1627,
+   "end": 1644
+  }
+ ],
+ "period": {
+  "欧阳德": {
+   "birth": 1496,
+   "death": 1554,
+   "method": "史载",
+   "active": [
+    1514,
+    1554
+   ]
+  },
+  "邹守益": {
+   "birth": 1491,
+   "death": 1562,
+   "method": "史载",
+   "active": [
+    1509,
+    1562
+   ]
+  },
+  "聂豹": {
+   "birth": 1487,
+   "death": 1563,
+   "method": "史载",
+   "active": [
+    1505,
+    1563
+   ]
+  },
+  "罗洪先": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "史载",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "刘文敏": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "刘阳": {
+   "birth": 1526,
+   "death": 1584,
+   "method": "书载·进士",
+   "active": [
+    1544,
+    1584
+   ]
+  },
+  "刘邦采": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "刘秉监": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "王钦": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "刘晓": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "黄弘纲": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "刘魁": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "何廷仁": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "陈九川": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "魏良弼": {
+   "birth": 1529,
+   "death": 1587,
+   "method": "书载·进士",
+   "active": [
+    1547,
+    1587
+   ]
+  },
+  "魏良器": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "魏良政": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "王时槐": {
+   "birth": 1522,
+   "death": 1605,
+   "method": "史载",
+   "active": [
+    1540,
+    1605
+   ]
+  },
+  "邓以赞": {
+   "birth": 1542,
+   "death": 1599,
+   "method": "史载",
+   "active": [
+    1560,
+    1599
+   ]
+  },
+  "陈嘉谟": {
+   "birth": 1521,
+   "death": 1603,
+   "method": "史载",
+   "active": [
+    1539,
+    1603
+   ]
+  },
+  "万廷言": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "刘元卿": {
+   "birth": 1544,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1562,
+    1609
+   ]
+  },
+  "胡直": {
+   "birth": 1517,
+   "death": 1585,
+   "method": "史载",
+   "active": [
+    1535,
+    1585
+   ]
+  },
+  "邹元标": {
+   "birth": 1551,
+   "death": 1624,
+   "method": "史载",
+   "active": [
+    1569,
+    1624
+   ]
+  },
+  "罗大纮": {
+   "birth": 1563,
+   "death": 1606,
+   "method": "史载",
+   "active": [
+    1581,
+    1606
+   ]
+  },
+  "邓元锡": {
+   "birth": 1529,
+   "death": 1593,
+   "method": "史载",
+   "active": [
+    1547,
+    1593
+   ]
+  },
+  "宋仪望": {
+   "birth": 1514,
+   "death": 1578,
+   "method": "史载",
+   "active": [
+    1532,
+    1578
+   ]
+  },
+  "章潢": {
+   "birth": 1527,
+   "death": 1608,
+   "method": "史载",
+   "active": [
+    1545,
+    1608
+   ]
+  },
+  "冯应京": {
+   "birth": 1555,
+   "death": 1606,
+   "method": "史载",
+   "active": [
+    1573,
+    1606
+   ]
+  },
+  "徐用检": {
+   "birth": 1520,
+   "death": 1578,
+   "method": "书载·进士",
+   "active": [
+    1538,
+    1578
+   ]
+  },
+  "钱德洪": {
+   "birth": 1496,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1514,
+    1574
+   ]
+  },
+  "贡安国": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "戚贤": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "查铎": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "沈宠": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "萧彦": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "戚衮": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "萧良干": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "张棨": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "章时鸾": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "程大宾": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "王畿": {
+   "birth": 1498,
+   "death": 1583,
+   "method": "史载",
+   "active": [
+    1516,
+    1583
+   ]
+  },
+  "程默": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "郑烛": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "罗汝芳": {
+   "birth": 1515,
+   "death": 1588,
+   "method": "史载",
+   "active": [
+    1533,
+    1588
+   ]
+  },
+  "姚汝循": {
+   "birth": 1540,
+   "death": 1600,
+   "method": "推算（依师承代次）",
+   "active": [
+    1558,
+    1600
+   ]
+  },
+  "殷迈": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "姜宝": {
+   "birth": 1532,
+   "death": 1592,
+   "method": "推算（依师承代次）",
+   "active": [
+    1550,
+    1592
+   ]
+  },
+  "唐顺之": {
+   "birth": 1507,
+   "death": 1560,
+   "method": "史载",
+   "active": [
+    1525,
+    1560
+   ]
+  },
+  "黄省曾": {
+   "birth": 1490,
+   "death": 1540,
+   "method": "史载",
+   "active": [
+    1508,
+    1540
+   ]
+  },
+  "周冲": {
+   "birth": 1491,
+   "death": 1551,
+   "method": "推算（依师承代次）",
+   "active": [
+    1509,
+    1551
+   ]
+  },
+  "湛若水": {
+   "birth": 1466,
+   "death": 1560,
+   "method": "史载",
+   "active": [
+    1484,
+    1560
+   ]
+  },
+  "朱得之": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "周怡": {
+   "birth": 1532,
+   "death": 1590,
+   "method": "书载·进士",
+   "active": [
+    1550,
+    1590
+   ]
+  },
+  "薛应旗": {
+   "birth": 1493,
+   "death": 1551,
+   "method": "书载·进士",
+   "active": [
+    1511,
+    1551
+   ]
+  },
+  "薛甲": {
+   "birth": 1547,
+   "death": 1605,
+   "method": "书载·进士",
+   "active": [
+    1565,
+    1605
+   ]
+  },
+  "唐鹤征": {
+   "birth": 1538,
+   "death": 1619,
+   "method": "史载",
+   "active": [
+    1556,
+    1619
+   ]
+  },
+  "徐阶": {
+   "birth": 1503,
+   "death": 1583,
+   "method": "史载",
+   "active": [
+    1521,
+    1583
+   ]
+  },
+  "杨豫孙": {
+   "birth": 1517,
+   "death": 1575,
+   "method": "书载·进士",
+   "active": [
+    1535,
+    1575
+   ]
+  },
+  "蒋信": {
+   "birth": 1483,
+   "death": 1559,
+   "method": "史载",
+   "active": [
+    1501,
+    1559
+   ]
+  },
+  "冀元亨": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "穆孔晖": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "张后觉": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "孟秋": {
+   "birth": 1565,
+   "death": 1623,
+   "method": "书载·进士",
+   "active": [
+    1583,
+    1623
+   ]
+  },
+  "尤时熙": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "孟化鲤": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "杨东明": {
+   "birth": 1550,
+   "death": 1608,
+   "method": "书载·进士",
+   "active": [
+    1568,
+    1608
+   ]
+  },
+  "南大吉": {
+   "birth": 1505,
+   "death": 1563,
+   "method": "书载·进士",
+   "active": [
+    1523,
+    1563
+   ]
+  },
+  "霍韬": {
+   "birth": 1487,
+   "death": 1540,
+   "method": "史载",
+   "active": [
+    1505,
+    1540
+   ]
+  },
+  "杨骥": {
+   "birth": 1491,
+   "death": 1551,
+   "method": "推算（依师承代次）",
+   "active": [
+    1509,
+    1551
+   ]
+  },
+  "薛尚贤": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "梁焯": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "郑一初": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "王明衡": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "薛侃": {
+   "birth": 1486,
+   "death": 1545,
+   "method": "史载",
+   "active": [
+    1504,
+    1545
+   ]
+  },
+  "周坦": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "徐爱": {
+   "birth": 1487,
+   "death": 1517,
+   "method": "史载",
+   "active": [
+    1505,
+    1517
+   ]
+  },
+  "季本": {
+   "birth": 1485,
+   "death": 1563,
+   "method": "史载",
+   "active": [
+    1503,
+    1563
+   ]
+  },
+  "黄绾": {
+   "birth": 1477,
+   "death": 1551,
+   "method": "史载",
+   "active": [
+    1495,
+    1551
+   ]
+  },
+  "董谷": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "董沄": {
+   "birth": 1499,
+   "death": 1557,
+   "method": "书载·进士",
+   "active": [
+    1517,
+    1557
+   ]
+  },
+  "陆澄": {
+   "birth": 1511,
+   "death": 1569,
+   "method": "书载·进士",
+   "active": [
+    1529,
+    1569
+   ]
+  },
+  "顾应祥": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "黄宗明": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "程文德": {
+   "birth": 1535,
+   "death": 1593,
+   "method": "书载·进士",
+   "active": [
+    1553,
+    1593
+   ]
+  },
+  "张元冲": {
+   "birth": 1532,
+   "death": 1590,
+   "method": "书载·进士",
+   "active": [
+    1550,
+    1590
+   ]
+  },
+  "万表": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "王宗沐": {
+   "birth": 1538,
+   "death": 1596,
+   "method": "书载·进士",
+   "active": [
+    1556,
+    1596
+   ]
+  },
+  "胡瀚": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "张元忭": {
+   "birth": 1538,
+   "death": 1588,
+   "method": "史载",
+   "active": [
+    1556,
+    1588
+   ]
+  },
+  "李材": {
+   "birth": 1529,
+   "death": 1607,
+   "method": "史载",
+   "active": [
+    1547,
+    1607
+   ]
+  },
+  "梁汝元": {
+   "birth": 1508,
+   "death": 1568,
+   "method": "推算（依师承代次）",
+   "active": [
+    1526,
+    1568
+   ]
+  },
+  "颜钧": {
+   "birth": 1504,
+   "death": 1596,
+   "method": "史载",
+   "active": [
+    1522,
+    1596
+   ]
+  },
+  "邓豁渠": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "方与时": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "徐樾": {
+   "birth": 1505,
+   "death": 1552,
+   "method": "史载",
+   "active": [
+    1523,
+    1552
+   ]
+  },
+  "程学颜": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "钱同文": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "管志道": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "王艮": {
+   "birth": 1483,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1501,
+    1541
+   ]
+  },
+  "王襞": {
+   "birth": 1511,
+   "death": 1587,
+   "method": "史载",
+   "active": [
+    1529,
+    1587
+   ]
+  },
+  "朱恕": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "韩乐吾": {
+   "birth": 1536,
+   "death": 1596,
+   "method": "推算（依师承代次）",
+   "active": [
+    1554,
+    1596
+   ]
+  },
+  "夏廷美": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "王栋": {
+   "birth": 1503,
+   "death": 1581,
+   "method": "史载",
+   "active": [
+    1521,
+    1581
+   ]
+  },
+  "林春": {
+   "birth": 1498,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1516,
+    1541
+   ]
+  },
+  "赵贞吉": {
+   "birth": 1508,
+   "death": 1576,
+   "method": "史载",
+   "active": [
+    1526,
+    1576
+   ]
+  },
+  "杨起元": {
+   "birth": 1547,
+   "death": 1599,
+   "method": "史载",
+   "active": [
+    1565,
+    1599
+   ]
+  },
+  "耿定向": {
+   "birth": 1524,
+   "death": 1597,
+   "method": "史载",
+   "active": [
+    1542,
+    1597
+   ]
+  },
+  "耿定理": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "焦竑": {
+   "birth": 1540,
+   "death": 1620,
+   "method": "史载",
+   "active": [
+    1558,
+    1620
+   ]
+  },
+  "潘士藻": {
+   "birth": 1537,
+   "death": 1600,
+   "method": "史载",
+   "active": [
+    1555,
+    1600
+   ]
+  },
+  "方学渐": {
+   "birth": 1540,
+   "death": 1615,
+   "method": "史载",
+   "active": [
+    1558,
+    1615
+   ]
+  },
+  "何祥": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "祝世禄": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "周汝登": {
+   "birth": 1547,
+   "death": 1629,
+   "method": "史载",
+   "active": [
+    1565,
+    1629
+   ]
+  },
+  "陶望龄": {
+   "birth": 1562,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1580,
+    1609
+   ]
+  },
+  "刘塙": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "何迁": {
+   "birth": 1501,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1519,
+    1574
+   ]
+  },
+  "吕怀": {
+   "birth": 1492,
+   "death": 1573,
+   "method": "史载",
+   "active": [
+    1510,
+    1573
+   ]
+  },
+  "唐枢": {
+   "birth": 1497,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1515,
+    1574
+   ]
+  },
+  "唐伯元": {
+   "birth": 1541,
+   "death": 1598,
+   "method": "史载",
+   "active": [
+    1559,
+    1598
+   ]
+  },
+  "许孚远": {
+   "birth": 1535,
+   "death": 1604,
+   "method": "史载",
+   "active": [
+    1553,
+    1604
+   ]
+  },
+  "王道": {
+   "birth": 1487,
+   "death": 1547,
+   "method": "史载",
+   "active": [
+    1505,
+    1547
+   ]
+  },
+  "顾宪成": {
+   "birth": 1550,
+   "death": 1612,
+   "method": "史载",
+   "active": [
+    1568,
+    1612
+   ]
+  },
+  "孙慎行": {
+   "birth": 1565,
+   "death": 1636,
+   "method": "史载",
+   "active": [
+    1583,
+    1636
+   ]
+  },
+  "钱一本": {
+   "birth": 1539,
+   "death": 1610,
+   "method": "史载",
+   "active": [
+    1557,
+    1610
+   ]
+  },
+  "高攀龙": {
+   "birth": 1562,
+   "death": 1626,
+   "method": "史载",
+   "active": [
+    1580,
+    1626
+   ]
+  },
+  "顾允成": {
+   "birth": 1554,
+   "death": 1607,
+   "method": "史载",
+   "active": [
+    1572,
+    1607
+   ]
+  },
+  "薛敷教": {
+   "birth": 1595,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1613,
+    1644
+   ]
+  },
+  "刘永澄": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "史孟鳞": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "叶茂才": {
+   "birth": 1595,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1613,
+    1644
+   ]
+  },
+  "刘元珍": {
+   "birth": 1553,
+   "death": 1611,
+   "method": "书载·进士",
+   "active": [
+    1571,
+    1611
+   ]
+  },
+  "耿橘": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "许世卿": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "黄尊素": {
+   "birth": 1584,
+   "death": 1626,
+   "method": "史载",
+   "active": [
+    1602,
+    1626
+   ]
+  },
+  "陈龙正": {
+   "birth": 1585,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1603,
+    1644
+   ]
+  },
+  "华允诚": {
+   "birth": 1588,
+   "death": 1648,
+   "method": "史载",
+   "active": [
+    1606,
+    1644
+   ]
+  },
+  "吴钟峦": {
+   "birth": 1604,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1622,
+    1644
+   ]
+  },
+  "刘宗周": {
+   "birth": 1578,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1596,
+    1644
+   ]
+  },
+  "洪垣": {
+   "birth": 1507,
+   "death": 1593,
+   "method": "史载",
+   "active": [
+    1525,
+    1593
+   ]
+  },
+  "冯从吾": {
+   "birth": 1557,
+   "death": 1627,
+   "method": "史载",
+   "active": [
+    1575,
+    1627
+   ]
+  },
+  "杨时乔": {
+   "birth": 1531,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1549,
+    1609
+   ]
+  },
+  "陈献章": {
+   "birth": 1428,
+   "death": 1500,
+   "method": "史载",
+   "active": [
+    1446,
+    1500
+   ]
+  },
+  "胡居仁": {
+   "birth": 1434,
+   "death": 1484,
+   "method": "史载",
+   "active": [
+    1452,
+    1484
+   ]
+  },
+  "吴与弼": {
+   "birth": 1391,
+   "death": 1469,
+   "method": "史载",
+   "active": [
+    1409,
+    1469
+   ]
+  },
+  "郑伉": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "娄谅": {
+   "birth": 1422,
+   "death": 1491,
+   "method": "史载",
+   "active": [
+    1440,
+    1491
+   ]
+  },
+  "谢复": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "胡九韶": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "魏校": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "余佑": {
+   "birth": 1481,
+   "death": 1539,
+   "method": "书载·进士",
+   "active": [
+    1499,
+    1539
+   ]
+  },
+  "夏尚朴": {
+   "birth": 1505,
+   "death": 1563,
+   "method": "书载·进士",
+   "active": [
+    1523,
+    1563
+   ]
+  },
+  "潘润": {
+   "birth": 1447,
+   "death": 1507,
+   "method": "推算（依师承代次）",
+   "active": [
+    1465,
+    1507
+   ]
+  },
+  "张诩": {
+   "birth": 1455,
+   "death": 1514,
+   "method": "史载",
+   "active": [
+    1473,
+    1514
+   ]
+  },
+  "贺钦": {
+   "birth": 1448,
+   "death": 1506,
+   "method": "书载·进士",
+   "active": [
+    1466,
+    1506
+   ]
+  },
+  "邹智": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "陈茂烈": {
+   "birth": 1502,
+   "death": 1560,
+   "method": "书载·进士",
+   "active": [
+    1520,
+    1560
+   ]
+  },
+  "林光": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "陈庸": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "李孔修": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "谢佑": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "何廷矩": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "史桂芳": {
+   "birth": 1523,
+   "death": 1581,
+   "method": "书载·进士",
+   "active": [
+    1541,
+    1581
+   ]
+  },
+  "薛瑄": {
+   "birth": 1389,
+   "death": 1464,
+   "method": "史载",
+   "active": [
+    1407,
+    1464
+   ]
+  },
+  "阎禹锡": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "段坚": {
+   "birth": 1424,
+   "death": 1482,
+   "method": "书载·进士",
+   "active": [
+    1442,
+    1482
+   ]
+  },
+  "张鼎": {
+   "birth": 1448,
+   "death": 1506,
+   "method": "书载·进士",
+   "active": [
+    1466,
+    1506
+   ]
+  },
+  "张杰": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "周蕙": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "王鸿儒": {
+   "birth": 1457,
+   "death": 1515,
+   "method": "书载·进士",
+   "active": [
+    1475,
+    1515
+   ]
+  },
+  "薛敬之": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "李锦": {
+   "birth": 1439,
+   "death": 1499,
+   "method": "推算（依师承代次）",
+   "active": [
+    1457,
+    1499
+   ]
+  },
+  "吕柟": {
+   "birth": 1479,
+   "death": 1542,
+   "method": "史载",
+   "active": [
+    1497,
+    1542
+   ]
+  },
+  "张节": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "李挺": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "郭蒙泉": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "杨天游": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "王恕": {
+   "birth": 1416,
+   "death": 1508,
+   "method": "史载",
+   "active": [
+    1434,
+    1508
+   ]
+  },
+  "王承裕": {
+   "birth": 1463,
+   "death": 1521,
+   "method": "书载·进士",
+   "active": [
+    1481,
+    1521
+   ]
+  },
+  "马理": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "韩邦奇": {
+   "birth": 1526,
+   "death": 1584,
+   "method": "书载·进士",
+   "active": [
+    1544,
+    1584
+   ]
+  },
+  "杨爵": {
+   "birth": 1535,
+   "death": 1593,
+   "method": "书载·进士",
+   "active": [
+    1553,
+    1593
+   ]
+  },
+  "王之士": {
+   "birth": 1441,
+   "death": 1501,
+   "method": "推算（依师承代次）",
+   "active": [
+    1459,
+    1501
+   ]
+  },
+  "王阳明": {
+   "birth": 1472,
+   "death": 1529,
+   "method": "史载",
+   "active": [
+    1490,
+    1529
+   ]
+  },
+  "李承箕": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "吕潜": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "杨应诏": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "许璋": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "蔡宗兖": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "朱节": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "蔡汝楠": {
+   "birth": 1514,
+   "death": 1565,
+   "method": "史载",
+   "active": [
+    1532,
+    1565
+   ]
+  },
+  "方孝孺": {
+   "birth": 1357,
+   "death": 1402,
+   "method": "史载",
+   "active": [
+    1375,
+    1402
+   ]
+  },
+  "赵谦": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "曹端": {
+   "birth": 1376,
+   "death": 1434,
+   "method": "史载",
+   "active": [
+    1394,
+    1434
+   ]
+  },
+  "黄润玉": {
+   "birth": 1389,
+   "death": 1477,
+   "method": "史载",
+   "active": [
+    1407,
+    1477
+   ]
+  },
+  "罗伦": {
+   "birth": 1431,
+   "death": 1478,
+   "method": "史载",
+   "active": [
+    1449,
+    1478
+   ]
+  },
+  "章懋": {
+   "birth": 1436,
+   "death": 1521,
+   "method": "史载",
+   "active": [
+    1454,
+    1521
+   ]
+  },
+  "庄昶": {
+   "birth": 1437,
+   "death": 1499,
+   "method": "史载",
+   "active": [
+    1455,
+    1499
+   ]
+  },
+  "张元祯": {
+   "birth": 1430,
+   "death": 1488,
+   "method": "书载·进士",
+   "active": [
+    1448,
+    1488
+   ]
+  },
+  "陈选": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "陈真晟": {
+   "birth": 1411,
+   "death": 1473,
+   "method": "史载",
+   "active": [
+    1429,
+    1473
+   ]
+  },
+  "张吉": {
+   "birth": 1439,
+   "death": 1497,
+   "method": "书载·进士",
+   "active": [
+    1457,
+    1497
+   ]
+  },
+  "周瑛": {
+   "birth": 1475,
+   "death": 1533,
+   "method": "书载·进士",
+   "active": [
+    1493,
+    1533
+   ]
+  },
+  "蔡清": {
+   "birth": 1453,
+   "death": 1508,
+   "method": "史载",
+   "active": [
+    1471,
+    1508
+   ]
+  },
+  "潘府": {
+   "birth": 1499,
+   "death": 1557,
+   "method": "书载·进士",
+   "active": [
+    1517,
+    1557
+   ]
+  },
+  "罗侨": {
+   "birth": 1481,
+   "death": 1539,
+   "method": "书载·进士",
+   "active": [
+    1499,
+    1539
+   ]
+  },
+  "罗钦顺": {
+   "birth": 1465,
+   "death": 1547,
+   "method": "史载",
+   "active": [
+    1483,
+    1547
+   ]
+  },
+  "汪俊": {
+   "birth": 1468,
+   "death": 1538,
+   "method": "史载",
+   "active": [
+    1486,
+    1538
+   ]
+  },
+  "崔铣": {
+   "birth": 1478,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1496,
+    1541
+   ]
+  },
+  "何瑭": {
+   "birth": 1474,
+   "death": 1543,
+   "method": "史载",
+   "active": [
+    1492,
+    1543
+   ]
+  },
+  "王廷相": {
+   "birth": 1474,
+   "death": 1544,
+   "method": "史载",
+   "active": [
+    1492,
+    1544
+   ]
+  },
+  "黄佐": {
+   "birth": 1490,
+   "death": 1566,
+   "method": "史载",
+   "active": [
+    1508,
+    1566
+   ]
+  },
+  "张邦奇": {
+   "birth": 1484,
+   "death": 1544,
+   "method": "史载",
+   "active": [
+    1502,
+    1544
+   ]
+  },
+  "张岳": {
+   "birth": 1492,
+   "death": 1552,
+   "method": "史载",
+   "active": [
+    1510,
+    1552
+   ]
+  },
+  "徐问": {
+   "birth": 1460,
+   "death": 1518,
+   "method": "书载·进士",
+   "active": [
+    1478,
+    1518
+   ]
+  },
+  "李经纶": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "李中": {
+   "birth": 1478,
+   "death": 1542,
+   "method": "史载",
+   "active": [
+    1496,
+    1542
+   ]
+  },
+  "薛蕙": {
+   "birth": 1489,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1507,
+    1541
+   ]
+  },
+  "舒芬": {
+   "birth": 1484,
+   "death": 1527,
+   "method": "史载",
+   "active": [
+    1502,
+    1527
+   ]
+  },
+  "卢宁忠": {
+   "birth": 1515,
+   "death": 1575,
+   "method": "推算（依师承代次）",
+   "active": [
+    1533,
+    1575
+   ]
+  },
+  "吕坤": {
+   "birth": 1536,
+   "death": 1618,
+   "method": "史载",
+   "active": [
+    1554,
+    1618
+   ]
+  },
+  "曹于汴": {
+   "birth": 1558,
+   "death": 1634,
+   "method": "史载",
+   "active": [
+    1576,
+    1634
+   ]
+  },
+  "吕维祺": {
+   "birth": 1587,
+   "death": 1641,
+   "method": "史载",
+   "active": [
+    1605,
+    1641
+   ]
+  },
+  "郝敬": {
+   "birth": 1558,
+   "death": 1639,
+   "method": "史载",
+   "active": [
+    1576,
+    1639
+   ]
+  },
+  "吴执御": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "黄道周": {
+   "birth": 1585,
+   "death": 1646,
+   "method": "史载",
+   "active": [
+    1603,
+    1644
+   ]
+  },
+  "金铉": {
+   "birth": 1610,
+   "death": 1644,
+   "method": "史载",
+   "active": [
+    1628,
+    1644
+   ]
+  },
+  "金声": {
+   "birth": 1598,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1616,
+    1644
+   ]
+  },
+  "朱天麟": {
+   "birth": 1602,
+   "death": 1652,
+   "method": "史载",
+   "active": [
+    1620,
+    1644
+   ]
+  },
+  "孙奇逢": {
+   "birth": 1584,
+   "death": 1675,
+   "method": "史载",
+   "active": [
+    1602,
+    1644
+   ]
+  },
+  "应典": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "周莹": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "卢可久": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "杜惟熙": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "颜鲸": {
+   "birth": 1502,
+   "death": 1560,
+   "method": "书载·进士",
+   "active": [
+    1520,
+    1560
+   ]
+  }
+ }
+}

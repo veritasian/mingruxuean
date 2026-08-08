@@ -1,0 +1,23 @@
+/* 明儒学案 · 样式层 tokens.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+
+/* ============ theme tokens ============ */
+:root{
+  --paper:#F4F1E9; --paper2:#ECE6D8; --ink:#2A2823; --ink-soft:#6E685C;
+  --accent:#A23B2E; --line:#DBD4C4; --card:#FBF8F0;
+  --shadow:rgba(60,50,35,.12); --edge:#B9AE97; --edge-hl:#A23B2E; --moss:#7E8A6A;
+  --grain:.03;
+}
+:root[data-theme="ink"]{
+  --paper:#EDEAE3; --paper2:#E2DED4; --ink:#23221F; --ink-soft:#5C5950;
+  --accent:#3E5566; --line:#CEC9BC; --card:#F6F4EE;
+  --shadow:rgba(40,40,40,.10); --edge:#A8AB9E; --edge-hl:#3E5566; --moss:#6E7E6A;
+  --grain:.022;
+}
+:root[data-theme="white"]{
+  --paper:#FAFAF8; --paper2:#F1F0EC; --ink:#262626; --ink-soft:#757268;
+  --accent:#B23A2C; --line:#E5E4DE; --card:#FFFFFF;
+  --shadow:rgba(0,0,0,.06); --edge:#D0CFC9; --edge-hl:#B23A2C; --moss:#8A9A82;
+  --grain:0;
+}

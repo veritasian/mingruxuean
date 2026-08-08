@@ -1,0 +1,40 @@
+/* 明儒学案 · 样式层 book.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- book ---- */
+.book-shell{display:flex;gap:14px;align-items:flex-start;min-height:640px;}
+.toc-pane{width:270px;flex:none;border:1px solid var(--line);border-radius:2px;background:var(--card);
+  max-height:82vh;overflow:auto;position:sticky;top:16px;padding:8px 0;}
+.toc-pane .toc-cap{padding:8px 14px 6px;font-size:13px;color:var(--ink-soft);letter-spacing:2px;
+  border-bottom:1px dashed var(--line);position:sticky;top:0;background:var(--card);z-index:2;}
+.toc-item{display:flex;gap:8px;padding:7px 14px;cursor:pointer;border-bottom:1px dashed var(--line);}
+.toc-item:hover{background:var(--paper2);}
+.toc-item.on{background:var(--paper2);outline:1px solid var(--accent);}
+.toc-item .tv{flex:none;font-size:12px;color:var(--ink-soft);width:34px;}
+/* 卷前二篇（原序、师说）不是卷，短标换色以示区别 */
+.toc-item .tv-front{color:var(--accent);font-weight:600;}
+.toc-item .tn2{font-size:13.5px;font-weight:600;}
+.toc-item .tp{font-size:11.5px;color:var(--ink-soft);margin-top:1px;line-height:1.5;}
+.reader{flex:1;min-width:0;border:1px solid var(--line);border-radius:2px;background:var(--card);}
+.reader-head{padding:14px 18px;border-bottom:1px solid var(--line);}
+.reader-head h3{margin:0 0 8px;font-size:21px;letter-spacing:3px;}
+.reader-note{font-size:12.5px;color:var(--ink-soft);margin:-2px 0 8px;line-height:1.7;}
+.reader-head .people{display:flex;flex-wrap:wrap;gap:6px;}
+.reader-body{padding:18px 24px 40px;line-height:2.05;font-size:15px;text-align:justify;}
+.reader-body h4{letter-spacing:2px;margin:26px 0 10px;font-size:17px;color:var(--accent);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+.reader-body p{margin:0 0 12px;text-indent:2em;}
+.reader-body .par{margin:0 0 12px;text-indent:2em;}
+.reader-body .hit{background:rgba(162,59,46,.15);outline:1px solid var(--accent);}
+.reader-status{color:var(--ink-soft);font-size:13px;padding:30px;text-align:center;}
+.searchbar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;}
+.searchbar input{flex:1;min-width:220px;border:1px solid var(--line);background:var(--card);color:var(--ink);
+  padding:7px 12px;border-radius:2px;font-family:inherit;font-size:14px;}
+.searchbar .btn{white-space:nowrap;}
+#sres{display:none;border:1px solid var(--line);border-radius:2px;background:var(--card);margin-bottom:14px;max-height:380px;overflow:auto;}
+.sres-item{padding:10px 14px;border-bottom:1px dashed var(--line);cursor:pointer;}
+.sres-item:hover{background:var(--paper2);}
+.sres-item .shead{display:flex;gap:8px;align-items:baseline;}
+.sres-item .sv{font-size:12px;color:var(--ink-soft);}
+.sres-item .st{font-weight:700;font-size:14px;}
+.sres-item .sc{font-size:12px;color:var(--accent);margin-left:auto;}
+.sres-item .sp{font-size:12.5px;color:var(--ink-soft);margin-top:4px;line-height:1.8;}

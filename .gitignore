@@ -1,0 +1,30 @@
+# 打包产物：可由 python3 scripts/build/bundle.py 重新生成
+# 若要把成品随仓库分发，注释掉这两行
+dist/
+index.html
+
+# 中间产物：可由 python3 scripts/pipeline.py 重新生成
+data/intermediate/
+
+# 测试临时文件
+tests/.cache/
+tests/__pycache__/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node（本项目不用 npm，仅防误装）
+node_modules/
+package-lock.json
+
+# 编辑器与系统
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# 会话记忆（本地私有，不上仓库）
+.workbuddy/

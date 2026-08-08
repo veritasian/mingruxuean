@@ -1,0 +1,161 @@
+/* 明儒学案 · 样式层 yangming.css
+   复刻原手稿页视觉（镜像双带 / 3×3 矩阵 / 渐入 / 卡片倾斜），
+   颜色换成站内浅色系。依赖 tokens.css。单文件 ≤300 行。 */
+:root{
+  --ym-y:#C9A24B; --ym-y-d:#B5762A; --ym-g:#3F7A4E; --ym-g-d:#5E8F6B;
+  --ym-r:#A23B2E; --ym-c:#2E6F73; --ym-b:#2F5D8C; --ym-o:#9A6B2F; --ym-dk:#2A1F08;
+}
+
+/* ---------- Hero：眉标 + 四句教渐次升起 ---------- */
+.ym-hero{min-height:52vh;display:grid;place-items:center;position:relative;padding:56px 24px 72px;text-align:center;}
+.ym-hero-inner{max-width:880px;}
+.ym-hero-eyebrow{display:inline-block;font-size:12px;letter-spacing:.5em;color:var(--ym-y-d);margin-bottom:26px;padding-bottom:12px;border-bottom:1px solid rgba(181,118,42,.3);}
+.ym-hero-title{font-size:clamp(26px,4.2vw,50px);font-weight:700;line-height:1.55;margin:0 0 32px;letter-spacing:.1em;}
+.ym-hero-title span{display:block;background:linear-gradient(180deg,var(--ink) 0%,#9a958a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;transform:translateY(14px);animation:ym-rise .9s cubic-bezier(.2,.7,.2,1) forwards;}
+.ym-hero-title span:nth-child(1){animation-delay:.1s;}
+.ym-hero-title span:nth-child(2){animation-delay:.3s;}
+.ym-hero-title span:nth-child(3){animation-delay:.5s;}
+.ym-hero-title span:nth-child(4){animation-delay:.7s;}
+@keyframes ym-rise{to{opacity:1;transform:translateY(0);}}
+.ym-hero-sub{color:var(--ink-soft);font-size:14px;letter-spacing:.4em;margin:0 0 54px;}
+.ym-hero-scroll{width:1px;height:60px;background:linear-gradient(180deg,var(--ym-y-d),transparent);position:relative;margin:0 auto;overflow:hidden;}
+.ym-hero-scroll::after{content:"";position:absolute;top:0;left:0;right:0;height:30%;background:var(--ym-y-d);animation:ym-drop 2.2s ease-in-out infinite;}
+@keyframes ym-drop{0%{transform:translateY(-100%);}100%{transform:translateY(400%);}}
+
+/* ---------- 外壳：章节目录置顶 + 正文居中 ---------- */
+.ym-shell{max-width:1200px;margin:0 auto;}
+.ym-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;position:sticky;top:10px;z-index:40;
+  margin-bottom:28px;background:var(--card);border:1px solid var(--line);border-radius:99px;
+  padding:8px 10px;box-shadow:0 4px 16px var(--shadow);}
+.ym-link{display:inline-block;padding:6px 14px;font-size:13px;letter-spacing:1px;color:var(--ink-soft);
+  cursor:pointer;border:1px solid transparent;border-radius:99px;text-decoration:none;transition:.18s;}
+.ym-link:hover{color:var(--ink);background:var(--paper2);border-color:var(--line);}
+.ym-link.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;}
+.ym-main{width:100%;max-width:880px;margin:0 auto;min-width:0;}
+
+/* ---------- 章节通用 ---------- */
+.ym-chapter{padding:64px 10px 56px;position:relative;scroll-margin-top:74px;}
+.ym-ch-head{text-align:center;margin-bottom:48px;}
+.ym-ch-num{display:inline-block;font-size:12px;letter-spacing:.6em;color:var(--ym-y-d);
+  border:1px solid rgba(181,118,42,.4);padding:6px 14px;border-radius:99px;margin-bottom:18px;}
+.ym-ch-title{margin:0 0 12px;font-size:clamp(24px,3vw,36px);letter-spacing:.16em;}
+.ym-ch-sub{margin:0;color:var(--ink-soft);font-size:14.5px;letter-spacing:.1em;}
+
+/* ---------- 壹 · 思维模型：镜像布局 + 双色带 ---------- */
+.ym-mirror-layout{display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:stretch;position:relative;}
+.ym-mirror-side-l{display:grid;grid-template-rows:auto 1fr auto;align-items:center;justify-items:center;gap:8px;padding-top:30px;}
+.ym-lblock{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.ym-lcircle{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;font-size:13px;font-weight:700;letter-spacing:.1em;}
+.ym-lcircle-awake{background:rgba(201,162,75,.18);border:1.5px solid var(--ym-y);color:var(--ym-y-d);}
+.ym-lcircle-delude{background:rgba(63,122,78,.16);border:1.5px solid var(--ym-g);color:var(--ym-g);}
+.ym-ltitle{margin:0;font-size:17px;font-weight:700;letter-spacing:.4em;text-align:center;line-height:1.4;
+  writing-mode:vertical-rl;text-orientation:upright;}
+.ym-ltitle-awake{color:var(--ym-y-d);}
+.ym-ltitle-delude{color:var(--ym-g);}
+.ym-larrow{width:40px;height:100%;min-height:140px;color:var(--ink-soft);}
+.ym-mirror-diagram{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:6px;}
+.ym-band{border-radius:22px;padding:18px;position:relative;overflow:visible;}
+.ym-band-yellow{background:linear-gradient(180deg,var(--ym-y) 0%,var(--ym-y-d) 100%);
+  box-shadow:0 8px 30px rgba(181,118,42,.18),inset 0 0 0 2px rgba(255,255,255,.18);}
+.ym-band-green{background:linear-gradient(180deg,var(--ym-g-d) 0%,var(--ym-g) 100%);
+  box-shadow:0 8px 30px rgba(63,122,78,.18),inset 0 0 0 2px rgba(255,255,255,.18);}
+.ym-band-inner{display:grid;grid-template-columns:1fr 60px 1fr;gap:8px;align-items:center;}
+.ym-subbox{border:1.5px solid rgba(255,255,255,.45);border-radius:4px;padding:14px 18px;
+  background:rgba(0,0,0,.05);min-height:160px;display:flex;flex-direction:column;gap:8px;}
+.ym-subbox-head{font-size:20px;font-weight:700;letter-spacing:.22em;color:var(--ym-dk);
+  text-align:center;padding-bottom:8px;border-bottom:1.5px solid rgba(42,31,8,.45);}
+.ym-subbox-rows{display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--ym-dk);letter-spacing:.14em;text-align:center;}
+.ym-row{padding:4px 0;}
+.ym-row-emph{font-weight:700;background:rgba(255,255,255,.25);border-radius:2px;}
+.ym-subbox-note{margin-top:10px;padding:6px 10px;border-radius:2px;background:rgba(255,255,255,.25);text-align:center;line-height:1.4;}
+.ym-sn-main{color:var(--ym-dk);font-weight:700;font-size:14px;letter-spacing:.12em;}
+.ym-sn-sub{color:var(--ym-dk);opacity:.78;font-size:12px;margin-left:4px;}
+.ym-row-know{display:block;text-align:center;font-weight:700;background:rgba(255,255,255,.25);border-radius:2px;}
+.ym-curve{width:60px;height:60px;color:var(--ym-dk);}
+.ym-mid-conn{display:flex;align-items:center;gap:12px;padding:6px 14px;position:relative;}
+.ym-reddot{display:inline-grid;place-items:center;width:36px;height:36px;background:var(--ym-r);
+  color:#fff;border-radius:50%;font-size:12px;font-weight:700;letter-spacing:.1em;box-shadow:0 0 0 4px rgba(162,59,46,.18);}
+.ym-mid-label{font-size:15px;color:var(--ink);letter-spacing:.3em;}
+.ym-long-curve{position:absolute;left:-18px;top:0;width:110px;height:100%;color:var(--ym-r);pointer-events:none;}
+.ym-long-curve path,.ym-long-curve polyline{stroke-width:2.6;}
+.ym-bot-conn{display:flex;align-items:center;gap:12px;padding:6px 14px;align-self:flex-start;margin-top:6px;}
+
+/* ---------- 贰 · 根器论：3×3 矩阵 ---------- */
+.ym-matrix{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;
+  display:flex;flex-direction:column;gap:14px;}
+.ym-mhead,.ym-mrow{display:grid;grid-template-columns:140px repeat(3,1fr);gap:14px;align-items:stretch;}
+.ym-mcorner{display:grid;place-items:center;color:var(--ink-soft);font-size:12px;letter-spacing:.4em;
+  border:1px dashed var(--edge);border-radius:6px;padding:12px 0;}
+.ym-mcol{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;
+  background:var(--paper2);border-radius:6px;border:1px solid var(--line);}
+.ym-mcol strong{font-size:22px;font-weight:700;letter-spacing:.3em;}
+.ym-mcol em{font-style:normal;font-size:11px;color:var(--ink-soft);letter-spacing:.18em;}
+.ym-dot{width:10px;height:10px;border-radius:50%;}
+.ym-dot-ru{background:var(--ym-g);}
+.ym-dot-fo{background:var(--ym-y-d);}
+.ym-dot-dao{background:var(--ym-b);}
+.ym-mrowhead{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  background:var(--paper2);border:1px solid var(--line);border-radius:6px;padding:14px 8px;}
+.ym-figure{width:44px;height:44px;}
+.ym-figure-run{color:var(--ym-r);}
+.ym-figure-walk{color:var(--ym-o);}
+.ym-figure-crawl{color:var(--ym-g);}
+.ym-mlvl{font-size:11px;color:var(--ink-soft);letter-spacing:.3em;}
+.ym-mcell{border-radius:6px;padding:20px 16px;border:1px solid var(--line);position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;}
+.ym-mcell:hover{transform:translateY(-3px);box-shadow:0 6px 24px var(--shadow);}
+.ym-mcell::after{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(0deg,transparent 0 23px,rgba(0,0,0,.03) 23px 24px);pointer-events:none;}
+.ym-mcell strong{display:block;font-size:18px;font-weight:700;letter-spacing:.18em;margin-bottom:6px;}
+.ym-mcell p{margin:0;font-size:13.5px;color:var(--ink-soft);letter-spacing:.1em;}
+.ym-mcell-green{background:linear-gradient(160deg,rgba(63,122,78,.14),rgba(63,122,78,.03));border-color:rgba(63,122,78,.35);}
+.ym-mcell-green strong{color:var(--ym-g);}
+.ym-mcell-yellow{background:linear-gradient(160deg,rgba(201,162,75,.16),rgba(201,162,75,.03));border-color:rgba(201,162,75,.35);}
+.ym-mcell-yellow strong{color:var(--ym-y-d);}
+.ym-mcell-blue{background:linear-gradient(160deg,rgba(47,93,140,.14),rgba(47,93,140,.03));border-color:rgba(47,93,140,.35);}
+.ym-mcell-blue strong{color:var(--ym-b);}
+
+/* ---------- 尾注 + 渐入 ---------- */
+.ym-outro{text-align:center;padding:60px 12px 40px;scroll-margin-top:74px;}
+.ym-outro-line{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:.4em;
+  background:linear-gradient(90deg,var(--ym-y-d),var(--ym-c),var(--ym-g));
+  -webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 16px;}
+.ym-outro-sub{margin:0;color:var(--ink-soft);font-size:14px;letter-spacing:.3em;}
+.ym-reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);}
+.ym-reveal.is-in{opacity:1;transform:translateY(0);}
+
+/* ---------- 响应式：章节目录横滑 + 镜像/矩阵适配 ---------- */
+@media(max-width:860px){
+  .ym-shell{max-width:none;margin:0;}
+  .ym-nav{position:static;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;
+    border-radius:6px;padding:6px;margin-bottom:20px;scrollbar-width:none;box-shadow:none;}
+  .ym-nav::-webkit-scrollbar{display:none;}
+  .ym-link{flex:0 0 auto;padding:5px 11px;font-size:12.5px;}
+  .ym-main{width:100%;max-width:none;margin:0;}
+  .ym-mirror-layout{grid-template-columns:80px 1fr;gap:16px;}
+  .ym-lcircle{width:52px;height:52px;font-size:11px;}
+  .ym-ltitle{font-size:14px;letter-spacing:.2em;}
+  .ym-subbox-head{font-size:16px;}
+  .ym-subbox-rows{font-size:13px;}
+  .ym-mhead,.ym-mrow{grid-template-columns:90px repeat(3,1fr);}
+  .ym-matrix{padding:18px;}
+  .ym-mcol strong{font-size:17px;}
+  .ym-mcell{padding:12px 9px;}
+  .ym-mcell strong{font-size:14px;}
+}
+@media(max-width:560px){
+  .ym-hero-title{letter-spacing:.05em;}
+  .ym-mirror-layout{grid-template-columns:1fr;}
+  .ym-mirror-side-l{display:none;}
+  .ym-long-curve{display:none;}
+  .ym-mhead,.ym-mrow{grid-template-columns:64px repeat(3,1fr);gap:8px;}
+  .ym-mcol{flex-direction:column;gap:2px;padding:8px 4px;}
+  .ym-mcol em{display:none;}
+  .ym-mlvl{font-size:9px;}
+  .ym-figure{width:30px;height:30px;}
+  .ym-band-inner{grid-template-columns:1fr 40px 1fr;gap:4px;}
+  .ym-curve{width:40px;height:40px;}
+  .ym-subbox{padding:10px 12px;min-height:130px;}
+  .ym-subbox-head{font-size:14px;letter-spacing:.15em;}
+  .ym-subbox-rows{font-size:12px;}
+}

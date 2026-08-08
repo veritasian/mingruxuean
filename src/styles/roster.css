@@ -1,0 +1,30 @@
+/* 明儒学案 · 样式层 roster.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- roster / tree ---- */
+details.school{border:1px solid var(--line);border-radius:2px;background:var(--card);
+  margin-bottom:14px;overflow:hidden;}
+details.school>summary{cursor:pointer;padding:13px 18px;font-size:17px;letter-spacing:3px;
+  font-weight:600;display:flex;align-items:center;gap:10px;list-style:none;}
+details.school>summary::-webkit-details-marker{display:none;}
+details.school>summary .dot{width:13px;height:13px;border-radius:50%;}
+details.school>summary .cnt{margin-left:auto;font-size:13px;color:var(--ink-soft);font-weight:400;}
+.tree-cap{font-size:12.5px;color:var(--ink-soft);letter-spacing:2px;padding:12px 18px 0;}
+.tree{list-style:none;padding-left:16px;margin:8px 0 6px;font-size:14px;}
+.tree ul{list-style:none;padding-left:24px;border-left:1px solid var(--line);margin-left:6px;}
+.tree li{position:relative;padding:4px 0 4px 18px;}
+.tree li::before{content:"";position:absolute;left:0;top:16px;width:15px;height:1px;background:var(--line);}
+.tree .tn{font-weight:600;letter-spacing:1px;cursor:pointer;}
+.tree .tn:hover{color:var(--accent);}
+.tree .te{font-size:12px;color:var(--ink-soft);}
+.tree .ext{color:var(--accent);}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:11px;padding:14px 18px 18px;}
+.pcard{border:1px solid var(--line);border-radius:2px;background:var(--card);padding:12px 14px;cursor:pointer;
+  transition:.15s;position:relative;}
+.pcard:hover{box-shadow:0 2px 10px var(--shadow);transform:translateY(-1px);}
+.pcard .pn{font-size:18px;letter-spacing:1px;font-weight:600;}
+.pcard .pz{font-size:12px;color:var(--ink-soft);margin-top:4px;line-height:1.7;}
+.pcard .pz .life{color:var(--accent);font-weight:600;}
+.pcard .pr{font-size:12px;color:var(--accent);margin-top:6px;}
+.pcard .fb{position:absolute;top:9px;right:10px;font-size:11px;color:var(--accent);
+  border:1px solid var(--accent);border-radius:10px;padding:1px 7px;letter-spacing:1px;}

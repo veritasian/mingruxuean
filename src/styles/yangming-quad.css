@@ -1,0 +1,63 @@
+/* 明儒学案 · 样式层 yangming-quad.css
+   通用四象限（叁~拾肆）—— 复刻原手稿页结构，颜色换站内浅色系。
+   依赖 tokens.css。单文件 ≤300 行。 */
+
+/* ---------- 叁~拾肆 · 通用四象限 ---------- */
+.ym-quad-wrap{display:grid;place-items:center;padding:20px 0;}
+.ym-quad-frame{position:relative;padding:110px 130px 90px;}
+.ym-quad-cap{position:absolute;display:flex;align-items:center;gap:10px;z-index:2;}
+.ym-quad-cap-top{left:50%;top:0;transform:translateX(-50%);flex-direction:column;}
+.ym-quad-cap-right{right:0;top:50%;transform:translateY(-50%);flex-direction:row-reverse;}
+.ym-quad-circle{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  font-size:20px;font-weight:700;letter-spacing:.05em;border:2px solid var(--ym-r);color:var(--ym-r);
+  background:var(--paper);box-shadow:0 0 0 4px rgba(162,59,46,.12);}
+.ym-quad-hint{font-size:13px;color:var(--ym-g);letter-spacing:.3em;font-weight:700;}
+.ym-quad-tail{background:var(--ym-r);display:block;}
+.ym-quad-tail-v{width:2px;height:54px;}
+.ym-quad-tail-h{width:74px;height:2px;}
+.ym-quad-board{position:relative;width:520px;height:440px;background:var(--paper2);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.ym-quad-axis{position:absolute;background:var(--ink-soft);}
+.ym-quad-axis-y{width:2px;height:100%;left:50%;top:0;transform:translateX(-50%);}
+.ym-quad-axis-x{height:2px;width:100%;top:50%;left:0;transform:translateY(-50%);}
+.ym-qq{position:absolute;width:50%;height:50%;display:grid;place-items:center;
+  transition:background .35s cubic-bezier(.2,.7,.2,1);}
+.ym-qq-tl{top:0;left:0;}
+.ym-qq-tr{top:0;right:0;}
+.ym-qq-bl{bottom:0;left:0;}
+.ym-qq-br{bottom:0;right:0;}
+.ym-qq:hover{background:rgba(0,0,0,.03);}
+.ym-qs{padding:18px 22px;border-radius:4px;min-width:150px;max-width:86%;text-align:center;
+  box-shadow:0 2px 8px var(--shadow);transform:rotate(var(--peel,-1deg));
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);}
+.ym-qq:hover .ym-qs{transform:rotate(0deg) scale(1.04);}
+.ym-qs strong{display:block;font-size:18px;font-weight:700;letter-spacing:.18em;margin-bottom:6px;line-height:1.4;}
+.ym-qs p{margin:0;font-size:14px;letter-spacing:.12em;line-height:1.7;opacity:.9;}
+.ym-qs small{display:block;margin-top:6px;font-size:12px;letter-spacing:.1em;opacity:.75;}
+.ym-quad-foot{text-align:center;margin:22px 0 0;color:var(--ink-soft);font-size:13px;letter-spacing:.25em;}
+
+/* 便签配色（轴与四象共用 .ym-s-*） */
+.ym-s-red{background:var(--ym-r);color:#fff;}
+.ym-s-yellow{background:var(--ym-y-d);color:#fff8ec;}
+.ym-s-green{background:var(--ym-g);color:#fff;}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:960px){
+  .ym-quad-frame{padding:90px 80px 50px;}
+  .ym-quad-board{width:320px;height:280px;}
+  .ym-quad-circle{width:48px;height:48px;font-size:15px;}
+  .ym-quad-tail-v{height:40px;}
+  .ym-quad-tail-h{width:60px;}
+  .ym-qs{min-width:90px;padding:10px 12px;}
+  .ym-qs strong{font-size:13px;}
+  .ym-qs p{font-size:11px;}
+  .ym-quad-hint{font-size:11px;letter-spacing:.2em;}
+}
+@media(max-width:560px){
+  .ym-quad-frame{padding:80px 12px 40px;}
+  .ym-quad-board{width:280px;height:260px;}
+  .ym-quad-circle{width:40px;height:40px;font-size:14px;}
+  .ym-quad-tail-v{height:36px;}
+  .ym-quad-tail-h{width:36px;}
+  .ym-quad-hint{font-size:10px;}
+}

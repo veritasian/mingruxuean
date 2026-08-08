@@ -1,0 +1,46 @@
+/* 明儒学案 · 样式层 card.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- popover card ---- */
+.pc{position:fixed;z-index:80;width:322px;max-width:calc(100vw - 24px);
+  background:var(--card);border:1px solid var(--line);border-radius:2px;
+  box-shadow:0 10px 34px var(--shadow),0 1px 4px var(--shadow);
+  padding:15px 17px 12px;opacity:0;transform:translateY(6px);pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;}
+.pc.show{opacity:1;transform:none;pointer-events:auto;}
+.pc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
+.pc-x{position:absolute;top:7px;right:9px;cursor:pointer;color:var(--ink-soft);font-size:14px;
+  line-height:1;background:none;border:none;padding:2px;}
+.pc-x:hover{color:var(--accent);}
+.pc h3{margin:2px 0 4px;font-size:22px;letter-spacing:3px;font-weight:700;}
+.pc .pc-meta{font-size:12.5px;color:var(--ink-soft);line-height:1.8;}
+.pc .pc-life{margin:7px 0;font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px;}
+.pc .pc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px;}
+.pc .tag{display:inline-block;padding:1px 8px;border:1px solid var(--line);border-radius:10px;
+  font-size:12px;color:var(--ink-soft);}
+.pc .pc-rel{font-size:13px;line-height:2;border-top:1px dashed var(--line);padding-top:8px;margin-top:2px;}
+.pc .pc-rel b{color:var(--accent);font-weight:600;}
+.pc .pc-rel a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);cursor:pointer;}
+.pc .pc-foot{margin-top:10px;text-align:right;display:flex;gap:6px;justify-content:flex-end;}
+.pc .pc-foot .btn{padding:4px 11px;font-size:12px;}
+
+/* ---- 出处（溯源）---- */
+/* 每条师承下面挂着它的卷次与原文摘句。图上画的每一根线
+   都要能说出它是从哪一句读出来的，说不出的标「待补出处」。 */
+.pc .pv{margin-top:9px;border-top:1px dashed var(--line);padding-top:7px;}
+.pc .pv>summary{cursor:pointer;font-size:12px;color:var(--ink-soft);letter-spacing:1px;
+  list-style:none;outline:none;}
+.pc .pv>summary::-webkit-details-marker{display:none;}
+.pc .pv>summary::before{content:"▸ ";}
+.pc .pv[open]>summary::before{content:"▾ ";}
+.pc .pv>summary:hover{color:var(--accent);}
+.pv-row{margin-top:7px;padding:6px 8px;background:var(--paper2);border-radius:2px;
+  font-size:12px;line-height:1.85;}
+.pv-d{color:var(--accent);margin-right:5px;}
+.pv-src{color:var(--ink-soft);margin-left:6px;font-size:11.5px;}
+.pv-cf{float:right;color:var(--ink-soft);font-size:11px;opacity:.8;}
+.pv-nc{margin-left:6px;padding:0 5px;border:1px solid var(--line);border-radius:8px;
+  font-size:10.5px;color:var(--ink-soft);}
+.pv-row q{display:block;margin-top:3px;color:var(--ink-soft);font-size:11.5px;
+  line-height:1.9;quotes:"「" "」";}
+.pv-more{margin-top:6px;font-size:11.5px;color:var(--ink-soft);text-align:center;}

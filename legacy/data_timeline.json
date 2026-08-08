@@ -1,0 +1,2199 @@
+{
+ "emperors": [
+  {
+   "n": 1,
+   "era": "洪武",
+   "name": "朱元璋",
+   "start": 1368,
+   "end": 1398
+  },
+  {
+   "n": 2,
+   "era": "建文",
+   "name": "朱允炆",
+   "start": 1398,
+   "end": 1402
+  },
+  {
+   "n": 3,
+   "era": "永乐",
+   "name": "朱棣",
+   "start": 1402,
+   "end": 1424
+  },
+  {
+   "n": 4,
+   "era": "洪熙",
+   "name": "朱高炽",
+   "start": 1424,
+   "end": 1425
+  },
+  {
+   "n": 5,
+   "era": "宣德",
+   "name": "朱瞻基",
+   "start": 1425,
+   "end": 1435
+  },
+  {
+   "n": 6,
+   "era": "正统",
+   "name": "朱祁镇",
+   "start": 1435,
+   "end": 1449
+  },
+  {
+   "n": 7,
+   "era": "景泰",
+   "name": "朱祁钰",
+   "start": 1449,
+   "end": 1457
+  },
+  {
+   "n": 8,
+   "era": "天顺",
+   "name": "朱祁镇",
+   "start": 1457,
+   "end": 1464,
+   "note": "复位"
+  },
+  {
+   "n": 9,
+   "era": "成化",
+   "name": "朱见深",
+   "start": 1464,
+   "end": 1487
+  },
+  {
+   "n": 10,
+   "era": "弘治",
+   "name": "朱祐樘",
+   "start": 1487,
+   "end": 1505
+  },
+  {
+   "n": 11,
+   "era": "正德",
+   "name": "朱厚照",
+   "start": 1505,
+   "end": 1521
+  },
+  {
+   "n": 12,
+   "era": "嘉靖",
+   "name": "朱厚熜",
+   "start": 1521,
+   "end": 1566
+  },
+  {
+   "n": 13,
+   "era": "隆庆",
+   "name": "朱载坖",
+   "start": 1566,
+   "end": 1572
+  },
+  {
+   "n": 14,
+   "era": "万历",
+   "name": "朱翊钧",
+   "start": 1572,
+   "end": 1620
+  },
+  {
+   "n": 15,
+   "era": "泰昌",
+   "name": "朱常洛",
+   "start": 1620,
+   "end": 1620
+  },
+  {
+   "n": 16,
+   "era": "天启",
+   "name": "朱由校",
+   "start": 1620,
+   "end": 1627
+  },
+  {
+   "n": 17,
+   "era": "崇祯",
+   "name": "朱由检",
+   "start": 1627,
+   "end": 1644
+  }
+ ],
+ "period": {
+  "16": {
+   "birth": 1496,
+   "death": 1554,
+   "method": "史载",
+   "active": [
+    1514,
+    1554
+   ]
+  },
+  "17": {
+   "birth": 1491,
+   "death": 1562,
+   "method": "史载",
+   "active": [
+    1509,
+    1562
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-124": {
+   "birth": 1487,
+   "death": 1563,
+   "method": "史载",
+   "active": [
+    1505,
+    1563
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-128": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "史载",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-129": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-130": {
+   "birth": 1526,
+   "death": 1584,
+   "method": "书载·进士",
+   "active": [
+    1544,
+    1584
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-131": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-132": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-133": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-134": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-135": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-136": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-137": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-138": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-139": {
+   "birth": 1529,
+   "death": 1587,
+   "method": "书载·进士",
+   "active": [
+    1547,
+    1587
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-140": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-141": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-142": {
+   "birth": 1522,
+   "death": 1605,
+   "method": "史载",
+   "active": [
+    1540,
+    1605
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-143": {
+   "birth": 1542,
+   "death": 1599,
+   "method": "史载",
+   "active": [
+    1560,
+    1599
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-144": {
+   "birth": 1521,
+   "death": 1603,
+   "method": "史载",
+   "active": [
+    1539,
+    1603
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-145": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-146": {
+   "birth": 1544,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1562,
+    1609
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-147": {
+   "birth": 1517,
+   "death": 1585,
+   "method": "史载",
+   "active": [
+    1535,
+    1585
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-148": {
+   "birth": 1551,
+   "death": 1624,
+   "method": "史载",
+   "active": [
+    1569,
+    1624
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-149": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-150": {
+   "birth": 1529,
+   "death": 1593,
+   "method": "史载",
+   "active": [
+    1547,
+    1593
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-151": {
+   "birth": 1514,
+   "death": 1578,
+   "method": "史载",
+   "active": [
+    1532,
+    1578
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-152": {
+   "birth": 1527,
+   "death": 1608,
+   "method": "史载",
+   "active": [
+    1545,
+    1608
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-153": {
+   "birth": 1555,
+   "death": 1606,
+   "method": "史载",
+   "active": [
+    1573,
+    1606
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-155": {
+   "birth": 1520,
+   "death": 1578,
+   "method": "书载·进士",
+   "active": [
+    1538,
+    1578
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-156": {
+   "birth": 1496,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1514,
+    1574
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-163": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-167": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-168": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-169": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-170": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-171": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-172": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-173": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-174": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-175": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-176": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-183": {
+   "birth": 1498,
+   "death": 1583,
+   "method": "史载",
+   "active": [
+    1516,
+    1583
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-201": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-202": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-204": {
+   "birth": 1515,
+   "death": 1588,
+   "method": "史载",
+   "active": [
+    1533,
+    1588
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-205": {
+   "birth": 1540,
+   "death": 1600,
+   "method": "推算（依师承代次）",
+   "active": [
+    1558,
+    1600
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-207": {
+   "birth": 1516,
+   "death": 1576,
+   "method": "推算（依师承代次）",
+   "active": [
+    1534,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-209": {
+   "birth": 1532,
+   "death": 1592,
+   "method": "推算（依师承代次）",
+   "active": [
+    1550,
+    1592
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-211": {
+   "birth": 1507,
+   "death": 1560,
+   "method": "史载",
+   "active": [
+    1525,
+    1560
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-213": {
+   "birth": 1490,
+   "death": 1540,
+   "method": "史载",
+   "active": [
+    1508,
+    1540
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-214": {
+   "birth": 1491,
+   "death": 1551,
+   "method": "推算（依师承代次）",
+   "active": [
+    1509,
+    1551
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-215": {
+   "birth": 1466,
+   "death": 1560,
+   "method": "史载",
+   "active": [
+    1484,
+    1560
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-218": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-219": {
+   "birth": 1532,
+   "death": 1590,
+   "method": "书载·进士",
+   "active": [
+    1550,
+    1590
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-222": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-224": {
+   "birth": 1547,
+   "death": 1605,
+   "method": "书载·进士",
+   "active": [
+    1565,
+    1605
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-225": {
+   "birth": 1507,
+   "death": 1560,
+   "method": "史载",
+   "active": [
+    1525,
+    1560
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-226": {
+   "birth": 1538,
+   "death": 1619,
+   "method": "史载",
+   "active": [
+    1556,
+    1619
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-228": {
+   "birth": 1503,
+   "death": 1583,
+   "method": "史载",
+   "active": [
+    1521,
+    1583
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-231": {
+   "birth": 1517,
+   "death": 1575,
+   "method": "书载·进士",
+   "active": [
+    1535,
+    1575
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-232": {
+   "birth": 1483,
+   "death": 1559,
+   "method": "史载",
+   "active": [
+    1501,
+    1559
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-234": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-238": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-239": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-240": {
+   "birth": 1565,
+   "death": 1623,
+   "method": "书载·进士",
+   "active": [
+    1583,
+    1623
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-241": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-244": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-246": {
+   "birth": 1550,
+   "death": 1608,
+   "method": "书载·进士",
+   "active": [
+    1568,
+    1608
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-247": {
+   "birth": 1505,
+   "death": 1563,
+   "method": "书载·进士",
+   "active": [
+    1523,
+    1563
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-250": {
+   "birth": 1487,
+   "death": 1540,
+   "method": "史载",
+   "active": [
+    1505,
+    1540
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-251": {
+   "birth": 1491,
+   "death": 1551,
+   "method": "推算（依师承代次）",
+   "active": [
+    1509,
+    1551
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-252": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-254": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-255": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-256": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-257": {
+   "birth": 1486,
+   "death": 1545,
+   "method": "史载",
+   "active": [
+    1504,
+    1545
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-258": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-265": {
+   "birth": 1487,
+   "death": 1517,
+   "method": "史载",
+   "active": [
+    1505,
+    1517
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-267": {
+   "birth": 1485,
+   "death": 1563,
+   "method": "史载",
+   "active": [
+    1503,
+    1563
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-268": {
+   "birth": 1477,
+   "death": 1551,
+   "method": "史载",
+   "active": [
+    1495,
+    1551
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-269": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-270": {
+   "birth": 1499,
+   "death": 1557,
+   "method": "书载·进士",
+   "active": [
+    1517,
+    1557
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-271": {
+   "birth": 1511,
+   "death": 1569,
+   "method": "书载·进士",
+   "active": [
+    1529,
+    1569
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-272": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-273": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-275": {
+   "birth": 1535,
+   "death": 1593,
+   "method": "书载·进士",
+   "active": [
+    1553,
+    1593
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-276": {
+   "birth": 1532,
+   "death": 1590,
+   "method": "书载·进士",
+   "active": [
+    1550,
+    1590
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-278": {
+   "birth": 1523,
+   "death": 1583,
+   "method": "推算（依师承代次）",
+   "active": [
+    1541,
+    1583
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-279": {
+   "birth": 1521,
+   "death": 1581,
+   "method": "推算（依师承代次）",
+   "active": [
+    1539,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-280": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-281": {
+   "birth": 1538,
+   "death": 1588,
+   "method": "史载",
+   "active": [
+    1556,
+    1588
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-294": {
+   "birth": 1529,
+   "death": 1607,
+   "method": "史载",
+   "active": [
+    1547,
+    1607
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-300": {
+   "birth": 1508,
+   "death": 1568,
+   "method": "推算（依师承代次）",
+   "active": [
+    1526,
+    1568
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-301": {
+   "birth": 1504,
+   "death": 1596,
+   "method": "史载",
+   "active": [
+    1522,
+    1596
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-302": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-303": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-305": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-306": {
+   "birth": 1505,
+   "death": 1552,
+   "method": "史载",
+   "active": [
+    1523,
+    1552
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-310": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-311": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-312": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-313": {
+   "birth": 1483,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1501,
+    1541
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-314": {
+   "birth": 1511,
+   "death": 1587,
+   "method": "史载",
+   "active": [
+    1529,
+    1587
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-315": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-321": {
+   "birth": 1536,
+   "death": 1596,
+   "method": "推算（依师承代次）",
+   "active": [
+    1554,
+    1596
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-322": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-328": {
+   "birth": 1505,
+   "death": 1552,
+   "method": "史载",
+   "active": [
+    1523,
+    1552
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-331": {
+   "birth": 1503,
+   "death": 1581,
+   "method": "史载",
+   "active": [
+    1521,
+    1581
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-333": {
+   "birth": 1498,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1516,
+    1541
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-335": {
+   "birth": 1508,
+   "death": 1576,
+   "method": "史载",
+   "active": [
+    1526,
+    1576
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-341": {
+   "birth": 1547,
+   "death": 1599,
+   "method": "史载",
+   "active": [
+    1565,
+    1599
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-345": {
+   "birth": 1524,
+   "death": 1597,
+   "method": "史载",
+   "active": [
+    1542,
+    1597
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-346": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-347": {
+   "birth": 1540,
+   "death": 1620,
+   "method": "史载",
+   "active": [
+    1558,
+    1620
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-350": {
+   "birth": 1537,
+   "death": 1600,
+   "method": "史载",
+   "active": [
+    1555,
+    1600
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-351": {
+   "birth": 1540,
+   "death": 1615,
+   "method": "史载",
+   "active": [
+    1558,
+    1615
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-352": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-353": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "aZOgffvFExYyYC5foWOi-354": {
+   "birth": 1547,
+   "death": 1629,
+   "method": "史载",
+   "active": [
+    1565,
+    1629
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-355": {
+   "birth": 1562,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1580,
+    1609
+   ]
+  },
+  "aZOgffvFExYyYC5foWOi-356": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-26": {
+   "birth": 1501,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1519,
+    1574
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-27": {
+   "birth": 1492,
+   "death": 1573,
+   "method": "史载",
+   "active": [
+    1510,
+    1573
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-28": {
+   "birth": 1497,
+   "death": 1574,
+   "method": "史载",
+   "active": [
+    1515,
+    1574
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-29": {
+   "birth": 1541,
+   "death": 1598,
+   "method": "史载",
+   "active": [
+    1559,
+    1598
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-30": {
+   "birth": 1535,
+   "death": 1604,
+   "method": "史载",
+   "active": [
+    1553,
+    1604
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-32": {
+   "birth": 1487,
+   "death": 1547,
+   "method": "史载",
+   "active": [
+    1505,
+    1547
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-35": {
+   "birth": 1550,
+   "death": 1612,
+   "method": "史载",
+   "active": [
+    1568,
+    1612
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-36": {
+   "birth": 1565,
+   "death": 1636,
+   "method": "史载",
+   "active": [
+    1583,
+    1636
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-37": {
+   "birth": 1539,
+   "death": 1610,
+   "method": "史载",
+   "active": [
+    1557,
+    1610
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-38": {
+   "birth": 1562,
+   "death": 1626,
+   "method": "史载",
+   "active": [
+    1580,
+    1626
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-39": {
+   "birth": 1554,
+   "death": 1607,
+   "method": "史载",
+   "active": [
+    1572,
+    1607
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-40": {
+   "birth": 1595,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1613,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-41": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-42": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-43": {
+   "birth": 1595,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1613,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-44": {
+   "birth": 1553,
+   "death": 1611,
+   "method": "书载·进士",
+   "active": [
+    1571,
+    1611
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-45": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-46": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-48": {
+   "birth": 1584,
+   "death": 1626,
+   "method": "史载",
+   "active": [
+    1602,
+    1626
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-49": {
+   "birth": 1585,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1603,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-50": {
+   "birth": 1588,
+   "death": 1648,
+   "method": "史载",
+   "active": [
+    1606,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-51": {
+   "birth": 1577,
+   "death": 1651,
+   "method": "史载",
+   "active": [
+    1595,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-54": {
+   "birth": 1578,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1596,
+    1644
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-58": {
+   "birth": 1507,
+   "death": 1593,
+   "method": "史载",
+   "active": [
+    1525,
+    1593
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-59": {
+   "birth": 1557,
+   "death": 1627,
+   "method": "史载",
+   "active": [
+    1575,
+    1627
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-61": {
+   "birth": 1531,
+   "death": 1609,
+   "method": "史载",
+   "active": [
+    1549,
+    1609
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-65": {
+   "birth": 1428,
+   "death": 1500,
+   "method": "史载",
+   "active": [
+    1446,
+    1500
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-68": {
+   "birth": 1434,
+   "death": 1484,
+   "method": "史载",
+   "active": [
+    1452,
+    1484
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-69": {
+   "birth": 1391,
+   "death": 1469,
+   "method": "史载",
+   "active": [
+    1409,
+    1469
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-71": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-72": {
+   "birth": 1422,
+   "death": 1491,
+   "method": "史载",
+   "active": [
+    1440,
+    1491
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-76": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-77": {
+   "birth": 1416,
+   "death": 1476,
+   "method": "推算（依师承代次）",
+   "active": [
+    1434,
+    1476
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-78": {
+   "birth": 1487,
+   "death": 1545,
+   "method": "书载·进士",
+   "active": [
+    1505,
+    1545
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-80": {
+   "birth": 1459,
+   "death": 1519,
+   "method": "推算（依师承代次）",
+   "active": [
+    1477,
+    1519
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-81": {
+   "birth": 1505,
+   "death": 1563,
+   "method": "书载·进士",
+   "active": [
+    1523,
+    1563
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-86": {
+   "birth": 1447,
+   "death": 1507,
+   "method": "推算（依师承代次）",
+   "active": [
+    1465,
+    1507
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-90": {
+   "birth": 1455,
+   "death": 1514,
+   "method": "史载",
+   "active": [
+    1473,
+    1514
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-91": {
+   "birth": 1448,
+   "death": 1506,
+   "method": "书载·进士",
+   "active": [
+    1466,
+    1506
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-96": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-97": {
+   "birth": 1502,
+   "death": 1560,
+   "method": "书载·进士",
+   "active": [
+    1520,
+    1560
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-98": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-101": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-102": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-103": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-104": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-105": {
+   "birth": 1523,
+   "death": 1581,
+   "method": "书载·进士",
+   "active": [
+    1541,
+    1581
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-106": {
+   "birth": 1389,
+   "death": 1464,
+   "method": "史载",
+   "active": [
+    1407,
+    1464
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-108": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-109": {
+   "birth": 1424,
+   "death": 1482,
+   "method": "书载·进士",
+   "active": [
+    1442,
+    1482
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-110": {
+   "birth": 1448,
+   "death": 1506,
+   "method": "书载·进士",
+   "active": [
+    1466,
+    1506
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-111": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "STSbwmwu5GfzBW4jki-n-112": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-113": {
+   "birth": 1457,
+   "death": 1515,
+   "method": "书载·进士",
+   "active": [
+    1475,
+    1515
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-114": {
+   "birth": 1414,
+   "death": 1474,
+   "method": "推算（依师承代次）",
+   "active": [
+    1432,
+    1474
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-116": {
+   "birth": 1439,
+   "death": 1499,
+   "method": "推算（依师承代次）",
+   "active": [
+    1457,
+    1499
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-118": {
+   "birth": 1479,
+   "death": 1542,
+   "method": "史载",
+   "active": [
+    1497,
+    1542
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-120": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-123": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-125": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-126": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-130": {
+   "birth": 1416,
+   "death": 1508,
+   "method": "史载",
+   "active": [
+    1434,
+    1508
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-132": {
+   "birth": 1463,
+   "death": 1521,
+   "method": "书载·进士",
+   "active": [
+    1481,
+    1521
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-133": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-134": {
+   "birth": 1526,
+   "death": 1584,
+   "method": "书载·进士",
+   "active": [
+    1544,
+    1584
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-136": {
+   "birth": 1535,
+   "death": 1593,
+   "method": "书载·进士",
+   "active": [
+    1553,
+    1593
+   ]
+  },
+  "STSbwmwu5GfzBW4jki-n-138": {
+   "birth": 1441,
+   "death": 1501,
+   "method": "推算（依师承代次）",
+   "active": [
+    1459,
+    1501
+   ]
+  },
+  "wang_yangming": {
+   "birth": 1472,
+   "death": 1529,
+   "method": "史载",
+   "active": [
+    1490,
+    1529
+   ]
+  },
+  "bk03余祐": {
+   "birth": 1481,
+   "death": 1539,
+   "method": "书载·进士",
+   "active": [
+    1499,
+    1539
+   ]
+  },
+  "bk05李承箕": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk06谢祐": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk06何廷矩": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk08吕潜": {
+   "birth": 1504,
+   "death": 1564,
+   "method": "推算（依师承代次）",
+   "active": [
+    1522,
+    1564
+   ]
+  },
+  "bk08杨应诏": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk10许璋": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk11蔡宗兖": {
+   "birth": 1497,
+   "death": 1557,
+   "method": "推算（依师承代次）",
+   "active": [
+    1515,
+    1557
+   ]
+  },
+  "bk11朱节": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk15王宗沐": {
+   "birth": 1538,
+   "death": 1596,
+   "method": "书载·进士",
+   "active": [
+    1556,
+    1596
+   ]
+  },
+  "bk23罗大纮": {
+   "birth": 1563,
+   "death": 1606,
+   "method": "史载",
+   "active": [
+    1581,
+    1606
+   ]
+  },
+  "bk25薛应旂": {
+   "birth": 1493,
+   "death": 1551,
+   "method": "书载·进士",
+   "active": [
+    1511,
+    1551
+   ]
+  },
+  "bk40蔡汝楠": {
+   "birth": 1514,
+   "death": 1565,
+   "method": "史载",
+   "active": [
+    1532,
+    1565
+   ]
+  },
+  "bk43方孝孺": {
+   "birth": 1357,
+   "death": 1402,
+   "method": "史载",
+   "active": [
+    1375,
+    1402
+   ]
+  },
+  "bk43赵谦": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk44曹端": {
+   "birth": 1376,
+   "death": 1434,
+   "method": "史载",
+   "active": [
+    1394,
+    1434
+   ]
+  },
+  "bk45黄润玉": {
+   "birth": 1389,
+   "death": 1477,
+   "method": "史载",
+   "active": [
+    1407,
+    1477
+   ]
+  },
+  "bk45罗伦": {
+   "birth": 1431,
+   "death": 1478,
+   "method": "史载",
+   "active": [
+    1449,
+    1478
+   ]
+  },
+  "bk45章懋": {
+   "birth": 1436,
+   "death": 1521,
+   "method": "史载",
+   "active": [
+    1454,
+    1521
+   ]
+  },
+  "bk45庄昶": {
+   "birth": 1437,
+   "death": 1499,
+   "method": "史载",
+   "active": [
+    1455,
+    1499
+   ]
+  },
+  "bk45张元祯": {
+   "birth": 1430,
+   "death": 1488,
+   "method": "书载·进士",
+   "active": [
+    1448,
+    1488
+   ]
+  },
+  "bk45陈选": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk46陈真晟": {
+   "birth": 1411,
+   "death": 1473,
+   "method": "史载",
+   "active": [
+    1429,
+    1473
+   ]
+  },
+  "bk46张吉": {
+   "birth": 1439,
+   "death": 1497,
+   "method": "书载·进士",
+   "active": [
+    1457,
+    1497
+   ]
+  },
+  "bk46周瑛": {
+   "birth": 1475,
+   "death": 1533,
+   "method": "书载·进士",
+   "active": [
+    1493,
+    1533
+   ]
+  },
+  "bk46蔡清": {
+   "birth": 1453,
+   "death": 1508,
+   "method": "史载",
+   "active": [
+    1471,
+    1508
+   ]
+  },
+  "bk46潘府": {
+   "birth": 1499,
+   "death": 1557,
+   "method": "书载·进士",
+   "active": [
+    1517,
+    1557
+   ]
+  },
+  "bk46罗侨": {
+   "birth": 1481,
+   "death": 1539,
+   "method": "书载·进士",
+   "active": [
+    1499,
+    1539
+   ]
+  },
+  "bk47罗钦顺": {
+   "birth": 1465,
+   "death": 1547,
+   "method": "史载",
+   "active": [
+    1483,
+    1547
+   ]
+  },
+  "bk48汪俊": {
+   "birth": 1468,
+   "death": 1538,
+   "method": "史载",
+   "active": [
+    1486,
+    1538
+   ]
+  },
+  "bk48崔铣": {
+   "birth": 1478,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1496,
+    1541
+   ]
+  },
+  "bk49何瑭": {
+   "birth": 1474,
+   "death": 1543,
+   "method": "史载",
+   "active": [
+    1492,
+    1543
+   ]
+  },
+  "bk50王廷相": {
+   "birth": 1474,
+   "death": 1544,
+   "method": "史载",
+   "active": [
+    1492,
+    1544
+   ]
+  },
+  "bk51黄佐": {
+   "birth": 1490,
+   "death": 1566,
+   "method": "史载",
+   "active": [
+    1508,
+    1566
+   ]
+  },
+  "bk52张邦奇": {
+   "birth": 1484,
+   "death": 1544,
+   "method": "史载",
+   "active": [
+    1502,
+    1544
+   ]
+  },
+  "bk52张岳": {
+   "birth": 1492,
+   "death": 1552,
+   "method": "史载",
+   "active": [
+    1510,
+    1552
+   ]
+  },
+  "bk52徐问": {
+   "birth": 1460,
+   "death": 1518,
+   "method": "书载·进士",
+   "active": [
+    1478,
+    1518
+   ]
+  },
+  "bk52李经纶": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk53李中": {
+   "birth": 1478,
+   "death": 1542,
+   "method": "史载",
+   "active": [
+    1496,
+    1542
+   ]
+  },
+  "bk53薛蕙": {
+   "birth": 1489,
+   "death": 1541,
+   "method": "史载",
+   "active": [
+    1507,
+    1541
+   ]
+  },
+  "bk53舒芬": {
+   "birth": 1484,
+   "death": 1527,
+   "method": "史载",
+   "active": [
+    1502,
+    1527
+   ]
+  },
+  "bk54卢甯忠": {
+   "birth": 1515,
+   "death": 1575,
+   "method": "推算（依师承代次）",
+   "active": [
+    1533,
+    1575
+   ]
+  },
+  "bk54吕坤": {
+   "birth": 1536,
+   "death": 1618,
+   "method": "史载",
+   "active": [
+    1554,
+    1618
+   ]
+  },
+  "bk54曹于汴": {
+   "birth": 1558,
+   "death": 1634,
+   "method": "史载",
+   "active": [
+    1576,
+    1634
+   ]
+  },
+  "bk54吕维祺": {
+   "birth": 1587,
+   "death": 1641,
+   "method": "史载",
+   "active": [
+    1605,
+    1641
+   ]
+  },
+  "bk55郝敬": {
+   "birth": 1558,
+   "death": 1639,
+   "method": "史载",
+   "active": [
+    1576,
+    1639
+   ]
+  },
+  "bk55吴执御": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk56黄道周": {
+   "birth": 1585,
+   "death": 1646,
+   "method": "史载",
+   "active": [
+    1603,
+    1644
+   ]
+  },
+  "bk57金铉": {
+   "birth": 1610,
+   "death": 1644,
+   "method": "史载",
+   "active": [
+    1628,
+    1644
+   ]
+  },
+  "bk57金声": {
+   "birth": 1598,
+   "death": 1645,
+   "method": "史载",
+   "active": [
+    1616,
+    1644
+   ]
+  },
+  "bk57朱天麟": {
+   "birth": 1602,
+   "death": 1652,
+   "method": "史载",
+   "active": [
+    1620,
+    1644
+   ]
+  },
+  "bk57孙奇逢": {
+   "birth": 1584,
+   "death": 1675,
+   "method": "史载",
+   "active": [
+    1602,
+    1644
+   ]
+  },
+  "bk60史孟鱗": {
+   "birth": 1589,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1607,
+    1644
+   ]
+  },
+  "bk60刘永澄": {
+   "birth": 1559,
+   "death": 1617,
+   "method": "书载·进士",
+   "active": [
+    1577,
+    1617
+   ]
+  },
+  "bk61吴鍾峦": {
+   "birth": 1604,
+   "death": 1644,
+   "method": "书载·进士",
+   "active": [
+    1622,
+    1644
+   ]
+  },
+  "bk63应典": {
+   "birth": 1484,
+   "death": 1542,
+   "method": "书载·进士",
+   "active": [
+    1502,
+    1542
+   ]
+  },
+  "bk63周莹": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk63卢可久": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk63杜惟熙": {
+   "birth": null,
+   "death": null,
+   "method": "不详",
+   "active": null
+  },
+  "bk63颜鲸": {
+   "birth": 1502,
+   "death": 1560,
+   "method": "书载·进士",
+   "active": [
+    1520,
+    1560
+   ]
+  }
+ }
+}

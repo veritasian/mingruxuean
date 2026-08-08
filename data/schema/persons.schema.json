@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "persons.json —— 人物库",
+  "description": "以姓名为主键。drawio 的 aZOgffvFExYyYC5foWOi-213 这类 id 每次导图都会变，不能做主键。",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "required": ["id", "name", "school", "seq", "has_biography"],
+    "properties": {
+      "id":   {"type": "string", "description": "= name，重名者加学案后缀区分"},
+      "name": {"type": "string"},
+      "zi":   {"type": "string", "description": "字"},
+      "hao":  {"type": "string", "description": "号；原文最常用的称呼，别名索引的主力"},
+      "hao_source": {
+        "enum": ["legacy", "book_section", "cleaned", "zi_field", "head_field", "head_text"],
+        "description": "号的来源。book_section = 从原书章节标题反解，最可信"
+      },
+      "title": {"type": "string", "description": "谥号"},
+      "role":  {"type": "string"},
+      "head":  {"type": "string", "description": "原书章节标题原文"},
+      "school":{"type": "string", "description": "学案归属，以原书章节为准"},
+      "seq":   {"type": "integer", "description": "原书出场顺序"},
+      "life":  {"type": "object", "properties": {
+        "birth": {"type": ["integer", "null"]},
+        "death": {"type": ["integer", "null"]},
+        "age":   {"type": ["string", "null"]},
+        "raw":   {"type": ["string", "null"]}
+      }},
+      "origin": {"type": "object", "properties": {
+        "raw": {"type": ["string", "null"]},
+        "province": {"type": ["string", "null"]},
+        "city": {"type": ["string", "null"]},
+        "county": {"type": ["string", "null"]}
+      }},
+      "legacy_ids": {"type": "array", "items": {"type": "string"},
+                     "description": "旧 drawio id，保留以便回溯"},
+      "anchor": {
+        "type": ["object", "null"],
+        "description": "原书出处。null 表示此人无本传，仅见于他人传中",
+        "properties": {
+          "volume": {"type": "integer"},
+          "volume_name": {"type": "string"},
+          "section": {"type": "string"},
+          "text_chars": {"type": "integer"}
+        }
+      },
+      "has_biography": {"type": "boolean"},
+      "founders": {"type": "array", "items": {"type": "string"}}
+    }
+  }
+}

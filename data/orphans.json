@@ -1,0 +1,595 @@
+{
+ "$schema": "./schema/orphans.schema.json",
+ "meta": {
+  "built_at": "2026-08-08",
+  "orphan_count": 52,
+  "person_count": 260,
+  "by_kind": {
+   "gap": 9,
+   "structural": 27,
+   "horizontal": 8,
+   "no_record": 6,
+   "appendix": 2
+  },
+  "headline": "孤点不等于数据缺失：52 个孤点中 43 个是编纂设计、编排位置或史料本身无征，真正待补的只有 9 个。"
+ },
+ "kinds": {
+  "structural": {
+   "label": "编纂设计使然",
+   "desc": "《诸儒学案》是黄宗羲专为「不能归入各家门户」者所立。方孝孺、罗钦顺、王廷相、吕坤、黄道周皆在此卷。此处无师承边，是原书的编纂意图，不是抽取的疏漏。"
+  },
+  "horizontal": {
+   "label": "横向结社，非师徒纵贯",
+   "desc": "东林以书院讲会相聚、以「同志」相呼，凝聚力是横的。用师承一种边去画东林，本来就画不全它的样子。"
+  },
+  "appendix": {
+   "label": "附于他人传后",
+   "desc": "原书未给他们立专条，而是附在别人的传后 —— 如「处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）」。附见是编排位置，不是师徒授受，故图上不连线。其人其学皆在，只是不占一条边。"
+  },
+  "no_record": {
+   "label": "原书未立本传",
+   "desc": "仅见于他人传中的附带记载，原书没有给出师承线索，史料本身无征。"
+  },
+  "gap": {
+   "label": "数据缺口，待补",
+   "desc": "原书立有本传，但本轮未能抽出师承。属于本项目的已知缺口。"
+  }
+ },
+ "by_school": {
+  "诸儒学案": {
+   "orphans": 27,
+   "total": 48,
+   "rate": 0.562
+  },
+  "东林学案": {
+   "orphans": 8,
+   "total": 16,
+   "rate": 0.5
+  },
+  "姚江学案": {
+   "orphans": 1,
+   "total": 2,
+   "rate": 0.5
+  },
+  "泰州学案": {
+   "orphans": 11,
+   "total": 30,
+   "rate": 0.367
+  },
+  "白沙学案": {
+   "orphans": 2,
+   "total": 12,
+   "rate": 0.167
+  },
+  "河东学案": {
+   "orphans": 2,
+   "total": 16,
+   "rate": 0.125
+  },
+  "甘泉学案": {
+   "orphans": 1,
+   "total": 12,
+   "rate": 0.083
+  },
+  "江右王门学案": {
+   "orphans": 0,
+   "total": 32,
+   "rate": 0.0
+  },
+  "浙中王门学案": {
+   "orphans": 0,
+   "total": 28,
+   "rate": 0.0
+  },
+  "南中王门学案": {
+   "orphans": 0,
+   "total": 18,
+   "rate": 0.0
+  },
+  "楚中王门学案": {
+   "orphans": 0,
+   "total": 9,
+   "rate": 0.0
+  },
+  "北方王门学案": {
+   "orphans": 0,
+   "total": 8,
+   "rate": 0.0
+  },
+  "粤闽王门学案": {
+   "orphans": 0,
+   "total": 7,
+   "rate": 0.0
+  },
+  "止修学案": {
+   "orphans": 0,
+   "total": 1,
+   "rate": 0.0
+  },
+  "蕺山学案": {
+   "orphans": 0,
+   "total": 1,
+   "rate": 0.0
+  },
+  "崇仁学案": {
+   "orphans": 0,
+   "total": 14,
+   "rate": 0.0
+  },
+  "三原学案": {
+   "orphans": 0,
+   "total": 6,
+   "rate": 0.0
+  }
+ },
+ "orphans": [
+  {
+   "id": "朱恕",
+   "name": "朱恕",
+   "school": "泰州学案",
+   "kind": "appendix",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": "王襞"
+  },
+  {
+   "id": "韩乐吾",
+   "name": "韩乐吾",
+   "school": "泰州学案",
+   "kind": "appendix",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": "王襞"
+  },
+  {
+   "id": "张杰",
+   "name": "张杰",
+   "school": "河东学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 7,
+   "appendix_of": null
+  },
+  {
+   "id": "杨应诏",
+   "name": "杨应诏",
+   "school": "河东学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 8,
+   "appendix_of": null
+  },
+  {
+   "id": "何祥",
+   "name": "何祥",
+   "school": "泰州学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 35,
+   "appendix_of": null
+  },
+  {
+   "id": "刘塙",
+   "name": "刘塙",
+   "school": "泰州学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 36,
+   "appendix_of": null
+  },
+  {
+   "id": "祝世禄",
+   "name": "祝世禄",
+   "school": "泰州学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 35,
+   "appendix_of": null
+  },
+  {
+   "id": "陶望龄",
+   "name": "陶望龄",
+   "school": "泰州学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 36,
+   "appendix_of": null
+  },
+  {
+   "id": "蔡汝楠",
+   "name": "蔡汝楠",
+   "school": "甘泉学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 40,
+   "appendix_of": null
+  },
+  {
+   "id": "何廷矩",
+   "name": "何廷矩",
+   "school": "白沙学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 6,
+   "appendix_of": null
+  },
+  {
+   "id": "史桂芳",
+   "name": "史桂芳",
+   "school": "白沙学案",
+   "kind": "gap",
+   "has_biography": true,
+   "volume": 6,
+   "appendix_of": null
+  },
+  {
+   "id": "刘元珍",
+   "name": "刘元珍",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 60,
+   "appendix_of": null
+  },
+  {
+   "id": "刘永澄",
+   "name": "刘永澄",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 60,
+   "appendix_of": null
+  },
+  {
+   "id": "叶茂才",
+   "name": "叶茂才",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 60,
+   "appendix_of": null
+  },
+  {
+   "id": "孙慎行",
+   "name": "孙慎行",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 59,
+   "appendix_of": null
+  },
+  {
+   "id": "薛敷教",
+   "name": "薛敷教",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 60,
+   "appendix_of": null
+  },
+  {
+   "id": "许世卿",
+   "name": "许世卿",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 60,
+   "appendix_of": null
+  },
+  {
+   "id": "钱一本",
+   "name": "钱一本",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 59,
+   "appendix_of": null
+  },
+  {
+   "id": "黄尊素",
+   "name": "黄尊素",
+   "school": "东林学案",
+   "kind": "horizontal",
+   "has_biography": true,
+   "volume": 61,
+   "appendix_of": null
+  },
+  {
+   "id": "许璋",
+   "name": "许璋",
+   "school": "姚江学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "夏廷美",
+   "name": "夏廷美",
+   "school": "泰州学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "程学颜",
+   "name": "程学颜",
+   "school": "泰州学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "管志道",
+   "name": "管志道",
+   "school": "泰州学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "邓豁渠",
+   "name": "邓豁渠",
+   "school": "泰州学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "钱同文",
+   "name": "钱同文",
+   "school": "泰州学案",
+   "kind": "no_record",
+   "has_biography": false,
+   "volume": null,
+   "appendix_of": null
+  },
+  {
+   "id": "何瑭",
+   "name": "何瑭",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 49,
+   "appendix_of": null
+  },
+  {
+   "id": "吕坤",
+   "name": "吕坤",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 54,
+   "appendix_of": null
+  },
+  {
+   "id": "吕维祺",
+   "name": "吕维祺",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 54,
+   "appendix_of": null
+  },
+  {
+   "id": "吴执御",
+   "name": "吴执御",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 55,
+   "appendix_of": null
+  },
+  {
+   "id": "周瑛",
+   "name": "周瑛",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 46,
+   "appendix_of": null
+  },
+  {
+   "id": "孙奇逢",
+   "name": "孙奇逢",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 57,
+   "appendix_of": null
+  },
+  {
+   "id": "崔铣",
+   "name": "崔铣",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 48,
+   "appendix_of": null
+  },
+  {
+   "id": "张岳",
+   "name": "张岳",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 52,
+   "appendix_of": null
+  },
+  {
+   "id": "张邦奇",
+   "name": "张邦奇",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 52,
+   "appendix_of": null
+  },
+  {
+   "id": "徐问",
+   "name": "徐问",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 52,
+   "appendix_of": null
+  },
+  {
+   "id": "方孝孺",
+   "name": "方孝孺",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 43,
+   "appendix_of": null
+  },
+  {
+   "id": "曹于汴",
+   "name": "曹于汴",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 54,
+   "appendix_of": null
+  },
+  {
+   "id": "朱天麟",
+   "name": "朱天麟",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 57,
+   "appendix_of": null
+  },
+  {
+   "id": "李经纶",
+   "name": "李经纶",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 52,
+   "appendix_of": null
+  },
+  {
+   "id": "汪俊",
+   "name": "汪俊",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 48,
+   "appendix_of": null
+  },
+  {
+   "id": "潘府",
+   "name": "潘府",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 46,
+   "appendix_of": null
+  },
+  {
+   "id": "王廷相",
+   "name": "王廷相",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 50,
+   "appendix_of": null
+  },
+  {
+   "id": "罗伦",
+   "name": "罗伦",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 45,
+   "appendix_of": null
+  },
+  {
+   "id": "罗钦顺",
+   "name": "罗钦顺",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 47,
+   "appendix_of": null
+  },
+  {
+   "id": "舒芬",
+   "name": "舒芬",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 53,
+   "appendix_of": null
+  },
+  {
+   "id": "薛蕙",
+   "name": "薛蕙",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 53,
+   "appendix_of": null
+  },
+  {
+   "id": "郝敬",
+   "name": "郝敬",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 55,
+   "appendix_of": null
+  },
+  {
+   "id": "金声",
+   "name": "金声",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 57,
+   "appendix_of": null
+  },
+  {
+   "id": "陈真晟",
+   "name": "陈真晟",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 46,
+   "appendix_of": null
+  },
+  {
+   "id": "陈选",
+   "name": "陈选",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 45,
+   "appendix_of": null
+  },
+  {
+   "id": "黄润玉",
+   "name": "黄润玉",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 45,
+   "appendix_of": null
+  },
+  {
+   "id": "黄道周",
+   "name": "黄道周",
+   "school": "诸儒学案",
+   "kind": "structural",
+   "has_biography": true,
+   "volume": 56,
+   "appendix_of": null
+  }
+ ]
+}

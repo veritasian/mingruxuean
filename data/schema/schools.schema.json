@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "schools.json —— 学案",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "order", "members"],
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": "string"},
+      "order": {"type": "integer", "description": "原书卷次顺序"},
+      "founders": {"type": "array", "items": {"type": "string"}},
+      "members": {"type": "array", "items": {"type": "string"},
+                  "description": "按原书出场顺序"},
+      "member_count": {"type": "integer"},
+      "with_biography": {"type": "integer"}
+    }
+  }
+}

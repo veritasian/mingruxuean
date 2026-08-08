@@ -1,0 +1,772 @@
+{
+ "$schema": "./schema/toc.schema.json",
+ "meta": {
+  "built_at": "2026-08-08",
+  "volume_count": 63,
+  "total_chars": 992738,
+  "front_count": 3
+ },
+ "volumes": [
+  {
+   "volume": 1,
+   "name": "崇仁学案一",
+   "name_original": "崇仁學案一",
+   "chars": 8722,
+   "persons": [
+    "吴与弼"
+   ]
+  },
+  {
+   "volume": 2,
+   "name": "崇仁学案二",
+   "name_original": "崇仁學案二",
+   "chars": 9897,
+   "persons": [
+    "胡居仁",
+    "娄谅",
+    "谢复",
+    "郑伉",
+    "胡九韶"
+   ]
+  },
+  {
+   "volume": 3,
+   "name": "崇仁学案三",
+   "name_original": "崇仁學案三",
+   "chars": 11819,
+   "persons": [
+    "魏校",
+    "余佑"
+   ]
+  },
+  {
+   "volume": 4,
+   "name": "崇仁学案四",
+   "name_original": "崇仁學案四",
+   "chars": 7618,
+   "persons": [
+    "夏尚朴",
+    "潘润"
+   ]
+  },
+  {
+   "volume": 5,
+   "name": "白沙学案上",
+   "name_original": "白沙學案上",
+   "chars": 10246,
+   "persons": [
+    "陈献章",
+    "李承箕"
+   ]
+  },
+  {
+   "volume": 6,
+   "name": "白沙学案下",
+   "name_original": "白沙學案下",
+   "chars": 8434,
+   "persons": [
+    "张诩",
+    "贺钦",
+    "邹智",
+    "陈茂烈",
+    "林光",
+    "陈庸",
+    "李孔修",
+    "谢佑",
+    "何廷矩",
+    "史桂芳"
+   ]
+  },
+  {
+   "volume": 7,
+   "name": "河东学案上",
+   "name_original": "河東學案上",
+   "chars": 14243,
+   "persons": [
+    "薛瑄",
+    "阎禹锡",
+    "张鼎",
+    "段坚",
+    "张杰",
+    "王鸿儒",
+    "周蕙",
+    "薛敬之",
+    "李锦"
+   ]
+  },
+  {
+   "volume": 8,
+   "name": "河东学案下",
+   "name_original": "河東學案下",
+   "chars": 13102,
+   "persons": [
+    "吕柟",
+    "吕潜",
+    "张节",
+    "李挺",
+    "郭蒙泉",
+    "杨应诏"
+   ]
+  },
+  {
+   "volume": 9,
+   "name": "三原学案",
+   "name_original": "三原學案",
+   "chars": 12936,
+   "persons": [
+    "王恕",
+    "王承裕",
+    "马理",
+    "韩邦奇",
+    "杨爵",
+    "王之士"
+   ]
+  },
+  {
+   "volume": 10,
+   "name": "姚江学案",
+   "name_original": "姚江學案",
+   "chars": 24735,
+   "persons": [
+    "王阳明"
+   ]
+  },
+  {
+   "volume": 11,
+   "name": "浙中王门学案一",
+   "name_original": "浙中王門學案一",
+   "chars": 11569,
+   "persons": [
+    "徐爱",
+    "蔡宗兖",
+    "朱节",
+    "钱德洪"
+   ]
+  },
+  {
+   "volume": 12,
+   "name": "浙中王门学案二",
+   "name_original": "浙中王門學案二",
+   "chars": 21703,
+   "persons": [
+    "王畿"
+   ]
+  },
+  {
+   "volume": 13,
+   "name": "浙中王门学案三",
+   "name_original": "浙中王門學案三",
+   "chars": 12734,
+   "persons": [
+    "季本",
+    "黄绾"
+   ]
+  },
+  {
+   "volume": 14,
+   "name": "浙中王门学案四",
+   "name_original": "浙中王門學案四",
+   "chars": 12644,
+   "persons": [
+    "董沄",
+    "陆澄",
+    "顾应祥",
+    "黄宗明",
+    "张元冲",
+    "程文德",
+    "徐用检"
+   ]
+  },
+  {
+   "volume": 15,
+   "name": "浙中王门学案五",
+   "name_original": "浙中王門學案五",
+   "chars": 13526,
+   "persons": [
+    "万表",
+    "王宗沐",
+    "张元忭",
+    "胡瀚"
+   ]
+  },
+  {
+   "volume": 16,
+   "name": "江右王门学案一",
+   "name_original": "江右王門學案一",
+   "chars": 16858,
+   "persons": [
+    "邹守益"
+   ]
+  },
+  {
+   "volume": 17,
+   "name": "江右王门学案二",
+   "name_original": "江右王門學案二",
+   "chars": 8570,
+   "persons": [
+    "欧阳德"
+   ]
+  },
+  {
+   "volume": 18,
+   "name": "江右王门学案三",
+   "name_original": "江右王門學案三",
+   "chars": 38250,
+   "persons": [
+    "聂豹",
+    "罗洪先"
+   ]
+  },
+  {
+   "volume": 19,
+   "name": "江右王门学案四",
+   "name_original": "江右王門學案四",
+   "chars": 22061,
+   "persons": [
+    "刘文敏",
+    "刘邦采",
+    "刘阳",
+    "刘晓",
+    "刘魁",
+    "黄弘纲",
+    "何廷仁",
+    "陈九川",
+    "魏良弼",
+    "魏良政",
+    "魏良器"
+   ]
+  },
+  {
+   "volume": 20,
+   "name": "江右王门学案五",
+   "name_original": "江右王門學案五",
+   "chars": 14594,
+   "persons": [
+    "王时槐"
+   ]
+  },
+  {
+   "volume": 21,
+   "name": "江右王门学案六",
+   "name_original": "江右王門學案六",
+   "chars": 13011,
+   "persons": [
+    "邓以赞",
+    "陈嘉谟",
+    "刘元卿",
+    "万廷言"
+   ]
+  },
+  {
+   "volume": 22,
+   "name": "江右王门学案七",
+   "name_original": "江右王門學案七",
+   "chars": 14558,
+   "persons": [
+    "胡直"
+   ]
+  },
+  {
+   "volume": 23,
+   "name": "江右王门学案八",
+   "name_original": "江右王門學案八",
+   "chars": 11283,
+   "persons": [
+    "邹元标",
+    "罗大纮"
+   ]
+  },
+  {
+   "volume": 24,
+   "name": "江右王门学案九",
+   "name_original": "江右王門學案九",
+   "chars": 18631,
+   "persons": [
+    "宋仪望",
+    "邓元锡",
+    "章潢",
+    "冯应京"
+   ]
+  },
+  {
+   "volume": 25,
+   "name": "南中王门学案一",
+   "name_original": "南中王門學案一",
+   "chars": 10479,
+   "persons": [
+    "黄省曾",
+    "周冲",
+    "朱得之",
+    "周怡",
+    "薛应旗",
+    "薛甲"
+   ]
+  },
+  {
+   "volume": 26,
+   "name": "南中王门学案二",
+   "name_original": "南中王門學案二",
+   "chars": 12658,
+   "persons": [
+    "唐顺之",
+    "唐鹤征"
+   ]
+  },
+  {
+   "volume": 27,
+   "name": "南中王门学案三",
+   "name_original": "南中王門學案三",
+   "chars": 3018,
+   "persons": [
+    "徐阶",
+    "杨豫孙"
+   ]
+  },
+  {
+   "volume": 28,
+   "name": "南中王门学案四",
+   "name_original": "南中王門學案四",
+   "chars": 5923,
+   "persons": [
+    "蒋信",
+    "冀元亨"
+   ]
+  },
+  {
+   "volume": 29,
+   "name": "北方王门学案",
+   "name_original": "北方王門學案",
+   "chars": 10968,
+   "persons": [
+    "穆孔晖",
+    "张后觉",
+    "孟秋",
+    "尤时熙",
+    "孟化鲤",
+    "杨东明",
+    "南大吉"
+   ]
+  },
+  {
+   "volume": 30,
+   "name": "粤闽王门学案",
+   "name_original": "粵閩王門學案",
+   "chars": 7629,
+   "persons": [
+    "薛侃",
+    "周坦"
+   ]
+  },
+  {
+   "volume": 31,
+   "name": "止修学案",
+   "name_original": "止修學案",
+   "chars": 22721,
+   "persons": [
+    "李材"
+   ]
+  },
+  {
+   "volume": 32,
+   "name": "泰州学案一",
+   "name_original": "泰州學案一",
+   "chars": 26869,
+   "persons": [
+    "王艮",
+    "王襞",
+    "徐樾",
+    "王栋",
+    "林春"
+   ]
+  },
+  {
+   "volume": 33,
+   "name": "泰州学案二",
+   "name_original": "泰州學案二",
+   "chars": 9803,
+   "persons": [
+    "赵贞吉"
+   ]
+  },
+  {
+   "volume": 34,
+   "name": "泰州学案三",
+   "name_original": "泰州學案三",
+   "chars": 36798,
+   "persons": [
+    "罗汝芳",
+    "杨起元"
+   ]
+  },
+  {
+   "volume": 35,
+   "name": "泰州学案四",
+   "name_original": "泰州學案四",
+   "chars": 23137,
+   "persons": [
+    "耿定向",
+    "耿定理",
+    "焦竑",
+    "潘士藻",
+    "方学渐",
+    "何祥",
+    "祝世禄"
+   ]
+  },
+  {
+   "volume": 36,
+   "name": "泰州学案五",
+   "name_original": "泰州學案五",
+   "chars": 13813,
+   "persons": [
+    "周汝登",
+    "陶望龄",
+    "刘塙"
+   ]
+  },
+  {
+   "volume": 37,
+   "name": "甘泉学案一",
+   "name_original": "甘泉學案一",
+   "chars": 22845,
+   "persons": [
+    "湛若水"
+   ]
+  },
+  {
+   "volume": 38,
+   "name": "甘泉学案二",
+   "name_original": "甘泉學案二",
+   "chars": 10645,
+   "persons": [
+    "吕怀",
+    "何迁"
+   ]
+  },
+  {
+   "volume": 39,
+   "name": "甘泉学案三",
+   "name_original": "甘泉學案三",
+   "chars": 12726,
+   "persons": [
+    "洪垣"
+   ]
+  },
+  {
+   "volume": 40,
+   "name": "甘泉学案四",
+   "name_original": "甘泉學案四",
+   "chars": 15062,
+   "persons": [
+    "唐枢",
+    "蔡汝楠"
+   ]
+  },
+  {
+   "volume": 41,
+   "name": "甘泉学案五",
+   "name_original": "甘泉學案五",
+   "chars": 19114,
+   "persons": [
+    "许孚远",
+    "冯从吾"
+   ]
+  },
+  {
+   "volume": 42,
+   "name": "甘泉学案六",
+   "name_original": "甘泉學案六",
+   "chars": 25922,
+   "persons": [
+    "唐伯元",
+    "杨时乔",
+    "王道"
+   ]
+  },
+  {
+   "volume": 43,
+   "name": "诸儒学案上一",
+   "name_original": "諸儒學案上一",
+   "chars": 9491,
+   "persons": [
+    "方孝孺",
+    "赵谦"
+   ]
+  },
+  {
+   "volume": 44,
+   "name": "诸儒学案上二",
+   "name_original": "諸儒學案上二",
+   "chars": 3921,
+   "persons": [
+    "曹端"
+   ]
+  },
+  {
+   "volume": 45,
+   "name": "诸儒学案上三",
+   "name_original": "諸儒學案上三",
+   "chars": 11090,
+   "persons": [
+    "黄润玉",
+    "罗伦",
+    "章懋",
+    "庄昶",
+    "张元祯",
+    "陈选"
+   ]
+  },
+  {
+   "volume": 46,
+   "name": "诸儒学案上四",
+   "name_original": "諸儒學案上四",
+   "chars": 10614,
+   "persons": [
+    "陈真晟",
+    "张吉",
+    "周瑛",
+    "蔡清",
+    "潘府",
+    "罗侨"
+   ]
+  },
+  {
+   "volume": 47,
+   "name": "诸儒学案中一",
+   "name_original": "諸儒學案中一",
+   "chars": 23606,
+   "persons": [
+    "罗钦顺"
+   ]
+  },
+  {
+   "volume": 48,
+   "name": "诸儒学案中二",
+   "name_original": "諸儒學案中二",
+   "chars": 12363,
+   "persons": [
+    "汪俊",
+    "崔铣"
+   ]
+  },
+  {
+   "volume": 49,
+   "name": "诸儒学案中三",
+   "name_original": "諸儒學案中三",
+   "chars": 7209,
+   "persons": [
+    "何瑭"
+   ]
+  },
+  {
+   "volume": 50,
+   "name": "诸儒学案中四",
+   "name_original": "諸儒學案中四",
+   "chars": 16421,
+   "persons": [
+    "王廷相"
+   ]
+  },
+  {
+   "volume": 51,
+   "name": "诸儒学案中五",
+   "name_original": "諸儒學案中五",
+   "chars": 16500,
+   "persons": [
+    "黄佐"
+   ]
+  },
+  {
+   "volume": 52,
+   "name": "诸儒学案中六",
+   "name_original": "諸儒學案中六",
+   "chars": 25332,
+   "persons": [
+    "张邦奇",
+    "张岳",
+    "徐问",
+    "李经纶"
+   ]
+  },
+  {
+   "volume": 53,
+   "name": "诸儒学案下一",
+   "name_original": "諸儒學案下一",
+   "chars": 16403,
+   "persons": [
+    "李中",
+    "霍韬",
+    "薛蕙",
+    "舒芬"
+   ]
+  },
+  {
+   "volume": 54,
+   "name": "诸儒学案下二",
+   "name_original": "諸儒學案下二",
+   "chars": 15154,
+   "persons": [
+    "卢宁忠",
+    "吕坤",
+    "曹于汴",
+    "吕维祺"
+   ]
+  },
+  {
+   "volume": 55,
+   "name": "诸儒学案下三",
+   "name_original": "諸儒學案下三",
+   "chars": 11088,
+   "persons": [
+    "郝敬",
+    "吴执御"
+   ]
+  },
+  {
+   "volume": 56,
+   "name": "诸儒学案下四",
+   "name_original": "諸儒學案下四",
+   "chars": 16523,
+   "persons": [
+    "黄道周"
+   ]
+  },
+  {
+   "volume": 57,
+   "name": "诸儒学案下五",
+   "name_original": "諸儒學案下五",
+   "chars": 11630,
+   "persons": [
+    "金铉",
+    "金声",
+    "朱天麟",
+    "孙奇逢"
+   ]
+  },
+  {
+   "volume": 58,
+   "name": "东林学案一",
+   "name_original": "東林學案一",
+   "chars": 36985,
+   "persons": [
+    "顾宪成",
+    "高攀龙"
+   ]
+  },
+  {
+   "volume": 59,
+   "name": "东林学案二",
+   "name_original": "東林學案二",
+   "chars": 20341,
+   "persons": [
+    "钱一本",
+    "孙慎行"
+   ]
+  },
+  {
+   "volume": 60,
+   "name": "东林学案三",
+   "name_original": "東林學案三",
+   "chars": 12877,
+   "persons": [
+    "顾允成",
+    "史孟鳞",
+    "刘永澄",
+    "薛敷教",
+    "叶茂才",
+    "许世卿",
+    "耿橘",
+    "刘元珍"
+   ]
+  },
+  {
+   "volume": 61,
+   "name": "东林学案四",
+   "name_original": "東林學案四",
+   "chars": 11115,
+   "persons": [
+    "黄尊素",
+    "吴钟峦",
+    "华允诚",
+    "陈龙正"
+   ]
+  },
+  {
+   "volume": 62,
+   "name": "蕺山学案",
+   "name_original": "蕺山學案",
+   "chars": 59575,
+   "persons": [
+    "刘宗周"
+   ]
+  },
+  {
+   "volume": 63,
+   "name": "附案",
+   "name_original": "附案",
+   "chars": 2626,
+   "persons": [
+    "应典",
+    "周莹",
+    "卢可久",
+    "杜惟熙",
+    "颜鲸"
+   ]
+  }
+ ],
+ "front": [
+  {
+   "id": "x1",
+   "label": "原序",
+   "name": "黄梨洲先生原序",
+   "name_original": "黃梨洲先生原序",
+   "chars": 1393,
+   "persons": [],
+   "note": "黄宗羲自序：一本万殊，学问不必强同"
+  },
+  {
+   "id": "x2",
+   "label": "发凡",
+   "name": "发凡",
+   "name_original": "發凡",
+   "chars": 1577,
+   "persons": [],
+   "note": "黄宗羲总论有明一代学术源流与《明儒学案》编纂体例"
+  },
+  {
+   "id": "x3",
+   "label": "师说",
+   "name": "师说",
+   "name_original": "師說",
+   "chars": 7051,
+   "persons": [
+    "方孝孺",
+    "曹端",
+    "薛瑄",
+    "吴与弼",
+    "陈真晟",
+    "周蕙",
+    "陈献章",
+    "陈选",
+    "罗伦",
+    "蔡清",
+    "王阳明",
+    "邹守益",
+    "王畿",
+    "罗钦顺",
+    "吕柟",
+    "孟化鲤",
+    "孟秋",
+    "张元忭",
+    "罗洪先",
+    "赵贞吉",
+    "王时槐",
+    "邓以赞",
+    "罗汝芳",
+    "李材",
+    "许孚远"
+   ],
+   "note": "刘宗周评骘明儒二十五家，黄宗羲冠于全书之首"
+  }
+ ]
+}

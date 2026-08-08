@@ -1,0 +1,42 @@
+/* 明儒学案 · 样式层 graph.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- 门派总览 legend（含与谱系总图的间距） ---- */
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 2px 38px;}
+.legend .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;
+  border:1px solid var(--line);border-radius:20px;background:var(--card);
+  font-size:13px;letter-spacing:1px;cursor:pointer;transition:.2s;}
+.legend .chip:hover{outline:2px solid var(--accent);}
+.legend .chip.active{outline:2px solid var(--accent);}
+.legend .dot{width:11px;height:11px;border-radius:50%;flex:none;}
+
+/* ---- graph ---- */
+.graph-shell{position:relative;border:1px solid var(--line);border-radius:2px;
+  background:linear-gradient(180deg,var(--card),var(--paper2));}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:9px 12px;
+  border-bottom:1px solid var(--line);}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:2px;
+  padding:5px 12px;font-size:13px;cursor:pointer;font-family:inherit;letter-spacing:.5px;}
+.btn:hover{opacity:.85;}
+select.btn{font-family:inherit;}
+.hint{font-size:12px;color:var(--ink-soft);margin-left:auto;letter-spacing:.5px;}
+#graph{width:100%;height:700px;display:block;cursor:grab;touch-action:none;}
+#graph.grabbing{cursor:grabbing;}
+.gcap{font-size:12.5px;color:var(--ink-soft);padding:10px 14px;letter-spacing:.5px;line-height:1.9;
+  border-top:1px dashed var(--line);}
+.node circle{cursor:pointer;transition:opacity .15s;}
+.node text{font-size:12px;fill:var(--ink);pointer-events:none;paint-order:stroke;
+  stroke:var(--paper2);stroke-width:3px;stroke-linejoin:round;
+  font-family:"Yu Mincho","Songti SC","Noto Serif CJK SC","Source Han Serif SC",serif;}
+.col-head{font-size:13px;letter-spacing:2px;font-weight:600;
+  font-family:"Yu Mincho","Songti SC","Noto Serif CJK SC","Source Han Serif SC",serif;
+  paint-order:stroke;stroke:var(--paper2);stroke-width:3;stroke-linejoin:round;}
+.edge{stroke:var(--edge);stroke-width:1;opacity:.5;fill:none;marker-end:url(#arrow);}
+.edge.hl{stroke:var(--edge-hl);opacity:.95;stroke-width:2.4;marker-end:url(#arrow-hl);}
+.tongmen{stroke:var(--moss);stroke-width:1.2;opacity:.6;fill:none;stroke-dasharray:5 4;}
+.node.dim{opacity:.16;}
+.node.hl circle{stroke:var(--ink);stroke-width:2.2;}
+.node.root circle{stroke-dasharray:2 2;}
+.node.founder circle{stroke:var(--accent);stroke-width:2.6;}
+.node.founder text{font-weight:700;fill:var(--accent);}
+.node .ftag{font-size:10px;font-weight:700;letter-spacing:1px;fill:var(--accent);}

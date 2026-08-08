@@ -1,0 +1,22 @@
+/* 明儒学案 · 样式层 kg.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- knowledge graph ---- */
+.kg-shell{border:1px solid var(--line);border-radius:2px;background:linear-gradient(180deg,var(--card),var(--paper2));
+  display:flex;flex-direction:column;overflow:hidden;
+  height:calc(100vh - 250px);min-height:440px;}
+.kg-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:9px 12px;border-bottom:1px solid var(--line);}
+.kg-zoom{display:inline-flex;gap:3px;border:1px solid var(--line);border-radius:2px;padding:2px;}
+.kg-zoom .btn{padding:3px 9px;border:none;background:transparent;}
+#kg{width:100%;flex:1 1 auto;min-height:0;height:auto;display:block;touch-action:none;}
+.kg-node{cursor:pointer;}
+.kg-node text{font-size:17px;fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--paper2);stroke-width:3px;stroke-linejoin:round;
+  font-family:"Yu Mincho","Songti SC","Noto Serif CJK SC","Source Han Serif SC",serif;}
+.kg-edge{stroke:var(--edge);stroke-width:1.2;opacity:.28;marker-end:url(#kg-arrow);}
+.kg-edge.on{stroke:var(--edge-hl);opacity:.9;stroke-width:1.6;}
+.kg-edge.tm{stroke:var(--moss);stroke-dasharray:5 4;marker:none;opacity:.55;}
+.kg-edge.tm.on{opacity:.95;stroke-width:1.6;}
+.kg-node.dim{opacity:.1;}
+.kg-node.dim text{opacity:.2;}
+.kg-node.kg-focus circle{stroke:var(--accent);stroke-width:2.8;}
+@media(max-width:780px){.kg-shell{height:calc(100vh - 200px);min-height:360px;}}

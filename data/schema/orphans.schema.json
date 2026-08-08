@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "orphans.json —— 孤点判读",
+  "description": "图上不连线的点，要分清是原书本来如此，还是我们没做完。",
+  "type": "object",
+  "properties": {
+    "meta": {"type": "object"},
+    "kinds": {"type": "object"},
+    "by_school": {"type": "object"},
+    "orphans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "school": {"type": "string"},
+          "kind": {
+            "enum": ["structural", "horizontal", "no_record", "gap"],
+            "description": "structural=编纂设计(诸儒学案) horizontal=横向结社(东林) no_record=原书未立传 gap=真缺口"
+          },
+          "has_biography": {"type": "boolean"},
+          "volume": {"type": ["integer", "null"]}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* 明儒学案 · 样式层 geo.css
+   本文件由模块化重构生成，单文件 ≤300 行。
+   依赖：tokens.css 中的 CSS 变量。 */
+/* ---- geography ---- */
+.geo-sum{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.gchip{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border:1px solid var(--line);
+  background:var(--card);border-radius:20px;cursor:pointer;font-size:13px;}
+.gchip.on{outline:2px solid var(--accent);}
+.geogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}
+.gprov{border:1px solid var(--line);border-radius:2px;background:var(--card);padding:12px 14px;}
+.gprov h4{margin:0 0 10px;font-size:15px;letter-spacing:2px;}
+.gprov h4 .cnt{color:var(--ink-soft);font-size:12px;font-weight:400;margin-left:6px;}
+.glist{display:flex;flex-direction:column;gap:7px;max-height:300px;overflow:auto;}
+.grow{display:flex;align-items:baseline;gap:8px;border-bottom:1px dashed var(--line);padding-bottom:5px;cursor:pointer;}
+.grow:hover .gn{color:var(--accent);}
+.grow .gn{font-size:14px;font-weight:600;}
+.grow .gx{font-size:11.5px;color:var(--ink-soft);}
+.grow .gx em{color:var(--accent);font-style:normal;}
+.map-tbl{width:100%;border-collapse:collapse;font-size:12.5px;}
+.map-tbl th,.map-tbl td{border:1px solid var(--line);padding:5px 9px;text-align:left;}
+.map-tbl th{background:var(--paper2);color:var(--ink-soft);font-weight:600;}
+
+/* ---- 籍贯柱状图 ---- */
+.geobars{display:flex;flex-direction:column;gap:7px;border:1px solid var(--line);
+  border-radius:2px;background:var(--card);padding:16px 18px;margin:0 0 20px;}
+.geobar{display:flex;align-items:center;gap:12px;cursor:pointer;}
+.geobar:hover .gb-name{color:var(--accent);}
+.geobar .gb-name{width:66px;flex:none;text-align:right;font-size:13px;font-weight:600;letter-spacing:1px;}
+.geobar .gb-track{flex:1;height:20px;border:1px solid var(--line);border-radius:2px;
+  background:var(--paper2);overflow:hidden;}
+.geobar .gb-fill{display:block;height:100%;width:0;background:var(--accent);opacity:.78;
+  transition:width .7s cubic-bezier(.2,.7,.3,1);}
+.geobar .gb-num{width:52px;flex:none;font-size:12.5px;color:var(--ink-soft);}
+/* 选中省：条形与 chip 同步，别让人点了横条却只有 chip 有反应 */
+.geobar.on .gb-name{color:var(--accent);}
+.geobar.on .gb-fill{opacity:1;}
+.geobar.on .gb-track{border-color:var(--accent);}

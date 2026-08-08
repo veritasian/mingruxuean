@@ -1,0 +1,6735 @@
+{
+ "$schema": "./schema/relations.schema.json",
+ "meta": {
+  "built_at": "2026-08-08",
+  "count": 247,
+  "by_type": {
+   "师承": 242,
+   "私淑": 3,
+   "附见": 2
+  },
+  "by_source": {
+   "legacy-mining": 42,
+   "mined": 97,
+   "drawio": 162,
+   "mingshi": 103
+  },
+  "cited": 174,
+  "needs_citation": 73,
+  "note": "confidence 为综合置信度；provenance 保留每一路来源的原始证据；孤点数以 orphans.json 为准，不在此处重复登记"
+ },
+ "relations": [
+  {
+   "from": "万廷言",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受業於",
+     "volume": 21,
+     "quote": "父虞愷，刑部侍郎。受業於陽明先生，登進士第。曆禮部郎官，"
+    },
+    {
+     "volume": 21,
+     "volume_name": "江右王门学案六",
+     "section": "督学万思默先生廷言",
+     "pattern": "受业于",
+     "quote": "廷言字以忠，号思默，南昌之东溪人。父虞恺，刑部侍郎。受业于阳明先生，登进士第。历礼部郎官，出为提学",
+     "alias_hit": "阳明先生",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-145",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "何廷仁",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守仁征桶岡，詣軍門謁，遂師事焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-137",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "何迁",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 38,
+     "volume_name": "甘泉学案二",
+     "section": "侍郎何吉阳先生迁",
+     "pattern": "从学于",
+     "quote": "部主事，历官至南刑部侍郎。万历甲戌卒，年七十四。先生从学于甘泉。京师灵济之会久虚，先生入，倡同",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "湛氏門人最著者，永豐呂懷、德安何遷、婺源洪垣、歸安唐樞",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "余佑",
+   "to": "胡居仁",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "年十九，師事居仁，居仁以女妻之",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-68",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-80",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "冀元亨",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 28,
+     "volume_name": "南中王门学案四",
+     "section": "孝廉冀暗斋先生元亨",
+     "pattern": "某门人",
+     "quote": "之非虚也。癸未南宫发策，以心学为讥，余姚有徐珊者，亦阳明之门人，不对而出。先生之对，与徐珊之不",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "與同郡冀元亨善，王守仁謫龍場，過其地，偕元亨事焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-234",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "冯从吾",
+   "to": "许孚远",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 41,
+     "quote": "恭定。  　　先生受學於許敬菴，故其為學，全要在本原處透"
+    },
+    {
+     "volume": 41,
+     "volume_name": "甘泉学案五",
+     "section": "恭定冯少墟先生从吾",
+     "pattern": "受学于",
+     "quote": "先生受学于许敬庵，故其为学，全要在本原处透彻，未",
+     "alias_hit": "许敬庵",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "從孚遠遊者，馮從吾、劉宗周、丁元薦，皆為名儒",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-30",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-59",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "冯应京",
+   "to": "邹元标",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 24,
+     "quote": "辰始出，卒於家。先生師事鄒南臬，其拘幽書草，皆從憂患之際"
+    },
+    {
+     "volume": 24,
+     "volume_name": "江右王门学案九",
+     "section": "佥事冯慕冈先生应京",
+     "pattern": "师事",
+     "quote": "同事司李何栋如、华玨讲学不辍。甲辰始出，卒于家。先生师事邹南臬，其拘幽书草，皆从忧患之际，言",
+     "alias_hit": "邹南",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-148",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-153",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘宗周",
+   "to": "许孚远",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "從孚遠遊者，馮從吾、劉宗周、丁元薦，皆為名儒",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-30",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-54",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘文敏",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "族子曉受業守仁，歸語邦采，遂與從兄文敏及弟侄九人謁守仁於裏第，師事焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-129",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘晓",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "族子曉受業守仁，歸語邦采",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-134",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘邦采",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "同知刘师泉先生邦采",
+     "pattern": "谒某",
+     "quote": "为志，曰：「学在求诸心，科举非吾事也。」偕两峰入越，谒阳明，称弟子。阳明契之曰：「君亮会得",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "族子曉受業守仁，歸語邦采，遂與從兄文敏及弟侄九人謁守仁於裏第，師事焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-131",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-305",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘魁",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 19,
+     "quote": "還家。  　　先生受學於陽明，卒業東廓。以直節著名，而陶"
+    },
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "员外刘晴川先生魁",
+     "pattern": "受学于",
+     "quote": "先生受学于阳明，卒业东廓。以直节著名，而陶融于",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-136",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "华允诚",
+   "to": "高攀龙",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 61,
+     "quote": "而死。  　　先生師事高忠憲，忠憲殉節，示先生以末後語雲"
+    },
+    {
+     "volume": 61,
+     "volume_name": "东林学案四",
+     "section": "郎中华凤超先生允诚",
+     "pattern": "师事",
+     "quote": "先生师事高忠宪，忠宪殉节，示先生以末后语云：「",
+     "alias_hit": "高忠宪",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-38",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-50",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "卢可久",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "盧可久，字一松。程粹，字養之。皆永康諸生。與同邑應典，皆師守仁",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk63卢可久",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "卢宁忠",
+   "to": "黄佐",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 54,
+     "quote": "不詳其所至官。先生受學於黃泰泉。泰泉議王、湛之學，而先生"
+    },
+    {
+     "volume": 54,
+     "volume_name": "诸儒学案下二",
+     "section": "卢冠岩先生宁忠",
+     "pattern": "受学于",
+     "quote": "献甫，号冠岩，岭南人也。曾守东平，不详其所至官。先生受学于黄泰泉。泰泉议王、湛之学，而先生以不得",
+     "alias_hit": "黄泰泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "bk51黄佐",
+     "legacy_to": "bk54卢甯忠",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "吕怀",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 38,
+     "volume_name": "甘泉学案二",
+     "section": "太仆吕巾石先生怀",
+     "pattern": "受学于",
+     "quote": "坊，以南京司业掌翰林院事，迁南太仆寺少卿，致仕。先生受学于甘泉，以为「天理良知本同宗旨，学者功",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "湛氏門人最著者，永豐呂懷、德安何遷、婺源洪垣、歸安唐樞",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-27",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "吕柟",
+   "to": "薛敬之",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 8,
+     "quote": "諡文簡。  　　先生師事薛思菴，所至講學。未第時，即與崔"
+    },
+    {
+     "volume": 8,
+     "volume_name": "河东学案下",
+     "section": "文简吕泾野先生柟",
+     "pattern": "师事",
+     "quote": "先生师事薛思庵，所至讲学。未第时，即与崔仲凫讲",
+     "alias_hit": "薛思庵",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "柟受業渭南薛敬之，接河東薛瑄之傳，學以窮理實踐為主",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-114",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-118",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "吕潜",
+   "to": "吕柟",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 8,
+     "quote": "號愧軒，陝之涇陽人。師事呂涇野，一言一動，鹹以為法。舉嘉"
+    },
+    {
+     "volume": 8,
+     "volume_name": "河东学案下",
+     "section": "司务吕愧轩先生潜",
+     "pattern": "师事",
+     "quote": "吕潜字时见，号愧轩，陕之泾阳人。师事吕泾野，一言一动，咸以为法。举嘉靖丙午",
+     "alias_hit": "吕泾野",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "柟弟子涇陽呂潛，字時見，舉於鄉",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-118",
+     "legacy_to": "bk08吕潜",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "吴钟峦",
+   "to": "顾宪成",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受業於",
+     "volume": 61,
+     "quote": "十五。  　　先生受業於涇陽，而于景逸、玄台、季思皆為深"
+    },
+    {
+     "volume": 61,
+     "volume_name": "东林学案四",
+     "section": "宗伯吴霞舟先生钟峦",
+     "pattern": "受业于",
+     "quote": "先生受业于泾阳，而于景逸、玄台、季思皆为深交，",
+     "alias_hit": "泾阳",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-35",
+     "legacy_to": "bk61吴鍾峦",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周冲",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "時宜興周沖，字道通，亦遊王、湛之門",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-214",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周怡",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 25,
+     "quote": "於家，年六十四。早歲師事東廓、龍溪，於《傳習錄》身體而力"
+    },
+    {
+     "volume": 25,
+     "volume_name": "南中王门学案一",
+     "section": "恭节周讷谿先生怡",
+     "pattern": "师事",
+     "quote": "业，复入为太常。隆庆三年十月，卒于家，年六十四。早岁师事东廓、龙溪，于《传习录》身体而力行之",
+     "alias_hit": "东廓",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-219",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周蕙",
+   "to": "段坚",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "州人段堅，薛瑄門人也，時方講學於裏。蕙往聽之",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-109",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-112",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "唐伯元",
+   "to": "吕怀",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 42,
+     "volume_name": "甘泉学案六",
+     "section": "文选唐曙台先生伯元",
+     "pattern": "学于",
+     "quote": "先生学于吕巾石，其言「性一天也，无不善；心则有",
+     "alias_hit": "吕巾石",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "伯元受業永豐呂懷，踐履篤實，而深疾王守仁新說",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-27",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-29",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "唐枢",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 40,
+     "quote": "生初舉於鄉，入南雍，師事甘泉。其後慕陽明之學而不及見也。"
+    },
+    {
+     "volume": 40,
+     "volume_name": "甘泉学案四",
+     "section": "主政唐一庵先生枢",
+     "pattern": "师事",
+     "quote": "福达，罢归。讲学著书垂四十年。先生初举于乡，入南雍，师事甘泉。其后慕阳明之学而不及见也。故于",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "湛氏門人最著者，永豐呂懷、德安何遷、婺源洪垣、歸安唐樞",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-28",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "夏尚朴",
+   "to": "娄谅",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 4,
+     "volume_name": "崇仁学案四",
+     "section": "太仆夏东岩先生尚朴",
+     "pattern": "从学于",
+     "quote": "夏尚朴字敦夫，别号东岩，永丰人。从学于娄一斋谅。登正德辛未进士第。历部属、守",
+     "alias_hit": "娄一斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "門人夏尚樸……早年師諒，傳主敬之學",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-72",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-81",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "娄谅",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "聞吳與弼在臨川，往從之。一日，與弼治地，召諒往視，雲學者須親細務",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-72",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "尤时熙",
+   "to": "刘魁",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 29,
+     "quote": "師，終不能有成，於是師事劉晴川。晴川言事下獄，先生時書所"
+    },
+    {
+     "volume": 29,
+     "volume_name": "北方王门学案",
+     "section": "主事尤西川先生时熙",
+     "pattern": "师事",
+     "quote": "习录》，始信圣人可学而至，然学无师，终不能有成，于是师事刘晴川。晴川言事下狱，先生时书所疑，从",
+     "alias_hit": "刘晴川",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "聞郎中劉魁得守仁之傳，遂師事之",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-136",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-241",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "应典",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "盧可久，字一松。程粹，字養之。皆永康諸生。與同邑應典，皆師守仁",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk63应典",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张元忭",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "以贊、元忭自未第時即從王畿遊，傳良知之學",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-281",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张后觉",
+   "to": "徐樾",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 29,
+     "volume_name": "北方王门学案",
+     "section": "教谕张弘山先生后觉",
+     "pattern": "受业于",
+     "quote": "张后觉字志仁，号弘山，山东茌平人。仕终华阴教谕。早岁受业于颜中溪、徐波石，深思力践，洞朗无碍。犹以取友未",
+     "alias_hit": "徐波石",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "貴溪徐樾以王守仁再傳弟子來為參政，後覺率同誌往師之",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张节",
+   "to": "吕柟",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 8,
+     "quote": "。初從湛甘泉遊，繼受學於涇野。涇野贈詩，稱其守道不回。嘗"
+    },
+    {
+     "volume": 8,
+     "volume_name": "河东学案下",
+     "section": "张石谷先生节",
+     "pattern": "受学于",
+     "quote": "张节字介夫，号石谷，泾阳人。初从湛甘泉游，继受学于泾野。泾野赠诗，称其守道不回。尝语学",
+     "alias_hit": "泾野",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "張節，字介夫。鹹寧李挺，字正五。皆有學行",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-118",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-120",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张诩",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "通政张东所先生诩",
+     "pattern": "某弟子",
+     "quote": "张诩字廷实，号东所，南海人，白沙弟子。登成化甲辰进士第。养病归，六年",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "張詡，字廷實，南海人，亦師事獻章",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-65",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-90",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "徐樾",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "布政徐波石先生樾",
+     "pattern": "卒业于",
+     "quote": "先生少与夏相才名相亚，得事阳明，继而卒业心斋之门。先生操存过苦，常与心斋步月",
+     "alias_hit": "心斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "艮傳林春、徐樾，樾傳顏鈞，鈞傳羅汝芳、梁汝元，汝芳傳楊起元、周汝登、蔡悉",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "徐爱",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "其最初受業者，則有餘姚徐愛，山陰蔡宗袞、朱節及應良、盧可久、應典、董涷之屬",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-265",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "徐用检",
+   "to": "钱德洪",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 14,
+     "quote": "八十四。  　　先生師事錢緒山，然其為學不以良知，而以志"
+    },
+    {
+     "volume": 14,
+     "volume_name": "浙中王门学案四",
+     "section": "太常徐鲁源先生用检",
+     "pattern": "师事",
+     "quote": "先生师事钱绪山，然其为学不以良知，而以志学。谓",
+     "alias_hit": "钱绪山",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-156",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-155",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "朱节",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "其最初受業者，則有餘姚徐愛，山陰蔡宗袞、朱節及應良、盧可久、應典、董涷之屬",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk11朱节",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李承箕",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 5,
+     "volume_name": "白沙学案上",
+     "section": "举人李大厓先生承箕",
+     "pattern": "而师之",
+     "quote": "楚之嘉鱼人。成化丙午举人。其文出入经史，跌宕纵横。闻白沙之学而慕之，弘治戊申，入南海而师焉。白沙与之登临吊古，赋诗染翰，投",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "往師獻章，獻章日與登涉山水，投壺賦詩",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李挺",
+   "to": "吕柟",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "从学",
+     "volume": 8,
+     "quote": "咸寧人。正、嘉間諸生，從涇野學，孤直不隨時俯仰。嘗自誦雲"
+    },
+    {
+     "volume": 8,
+     "volume_name": "河东学案下",
+     "section": "李正立先生挺",
+     "pattern": "从某学",
+     "quote": "李挺字正立，咸宁人。正、嘉间诸生，从泾野学，孤直不随时俯仰。尝自诵云：「生",
+     "alias_hit": "泾野",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "張節，字介夫。鹹寧李挺，字正五。皆有學行",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-118",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-123",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李锦",
+   "to": "周蕙",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 7,
+     "quote": "介菴，陝之咸寧人。受學於周小泉。天順壬午舉於鄉，入太學，"
+    },
+    {
+     "volume": 7,
+     "volume_name": "河东学案上",
+     "section": "郡丞李介庵先生锦",
+     "pattern": "受学于",
+     "quote": "李锦字在中，号介庵，陕之咸宁人。受学于周小泉。天顺壬午举于乡，入太学，司成邢",
+     "alias_hit": "周小泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "蕙門人著者，薛敬之、李錦、王爵、夏尚樸",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-112",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-116",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "杨起元",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "選庶吉士，適汝芳以參政入賀，遂學焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-204",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-341",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "林春",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "艮傳林春、徐樾，樾傳顏鈞，鈞傳羅汝芳、梁汝元，汝芳傳楊起元、周汝登、蔡悉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-313",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-333",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "欧阳德",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 17,
+     "volume_name": "江右王门学案二",
+     "section": "文庄欧阳南野先生德",
+     "pattern": "从学于",
+     "quote": "欧阳德字崇一，号南野，江西泰和人。甫冠举乡试，从学王文成于虔台，不赴春宫者二科，文成呼为",
+     "alias_hit": "王文成",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "之贛州，從王守仁學。不應會試者再",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "16",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "洪垣",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "執贄",
+     "volume": 39,
+     "quote": "一博約之說不似。其後執贄甘泉，甘泉曰：「是可傳吾釣颱風月"
+    },
+    {
+     "volume": 39,
+     "volume_name": "甘泉学案三",
+     "section": "郡守洪觉山先生垣",
+     "pattern": "执贽",
+     "quote": "文成归，而述所得，先生颇致疑与精一博约之说不似。其后执贽甘泉，甘泉曰：「是可传吾钓台风月者。",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "湛氏門人最著者，永豐呂懷、德安何遷、婺源洪垣、歸安唐樞",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-58",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "湛若水",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 37,
+     "volume_name": "甘泉学案一",
+     "section": "文简湛甘泉先生若水",
+     "pattern": "从学于",
+     "quote": "湛若水字元明，号甘泉，广东增城人。从学于白沙，不赴计偕，后以母命入南雍。祭酒",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "從陳獻章遊，不樂仕進……學士張元禎、楊廷和為考官，撫其卷曰：非白沙之徒不能為此",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-65",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-215",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "潘润",
+   "to": "娄谅",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 4,
+     "quote": "號玉齋，信之永豐人。師事婁一齋。一齋嚴毅英邁，慨然以師道"
+    },
+    {
+     "volume": 4,
+     "volume_name": "崇仁学案四",
+     "section": "广文潘玉斋先生润",
+     "pattern": "师事",
+     "quote": "潘润字德夫，号玉斋，信之永丰人。师事娄一斋。一斋严毅英迈，慨然以师道自任，",
+     "alias_hit": "娄一斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-72",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-86",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "焦竑",
+   "to": "耿定向",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 35,
+     "quote": "諡文端。  　　先生師事耿天臺、羅近溪，而又篤信卓吾之學"
+    },
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "文端焦澹园先生竑",
+     "pattern": "师事",
+     "quote": "先生师事耿天台、罗近溪，而又笃信卓吾之学，以为",
+     "alias_hit": "耿天台",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-345",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-347",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王宗沐",
+   "to": "欧阳德",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 15,
+     "quote": "，尋改刑部。先生師事歐陽南野，少從二氏而入，已知「所謂良"
+    },
+    {
+     "volume": 15,
+     "volume_name": "浙中王门学案五",
+     "section": "侍郎王敬所先生宗沐",
+     "pattern": "师事",
+     "quote": "后为官所阻而罢。万历三年，转工部侍郎，寻改刑部。先生师事欧阳南野，少从二氏而入，已知「所谓良知者",
+     "alias_hit": "欧阳南野",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "16",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-279",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "16",
+     "legacy_to": "bk15王宗沐",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王时槐",
+   "to": "刘文敏",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 20,
+     "quote": "  　　先生弱冠師事同邑劉兩峰，刻意為學，仕而求質於四方"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "時槐師同縣劉文敏，及仕，遍質四方學者",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-129",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-142",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王畿",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受業於",
+     "volume": 12,
+     "quote": "嘉靖癸未下第，歸而受業於文成。丙戌試期，遂不欲往。文成曰"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "後受業王守仁，聞其言，無底滯，守仁大喜",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-183",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王艮",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "艮乃謁守仁江西，與守仁辨久之，大服，拜為弟子",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-313",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王襞",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 32,
+     "quote": "其非越中兒也。」令其師事龍溪、緒山，先後留越中幾二十年。"
+    },
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "pattern": "师事",
+     "quote": "明问之，知为心斋子，曰：「吾固疑其非越中儿也。」令其师事龙溪、绪山，先后留越中几二十年。心斋",
+     "alias_hit": "龙溪",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-314",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王阳明",
+   "to": "娄谅",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 10,
+     "volume_name": "姚江学案",
+     "section": "文成王阳明先生守仁",
+     "pattern": "谒某",
+     "quote": "迈不羁，十五岁，纵观塞外，经月始返。十八岁，过广信，谒娄一斋，慨然以圣人可学而至。登弘治己未",
+     "alias_hit": "娄一斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "王守仁少時，亦嘗受業於諒",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "程文德",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "卒業於",
+     "volume": 14,
+     "quote": "生初學於楓山，其後卒業於陽明。以真心為學之要，雖所得淺深"
+    },
+    {
+     "volume": 14,
+     "volume_name": "浙中王门学案四",
+     "section": "侍郎程松溪先生文德",
+     "pattern": "卒业于",
+     "quote": "十三。万历间赠礼部尚书，谥文恭。先生初学于枫山，其后卒业于阳明。以真心为学之要，虽所得浅深不可",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "初受業章懋，後從王守仁遊",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-275",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "程文德",
+   "to": "章懋",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 14,
+     "volume_name": "浙中王门学案四",
+     "section": "侍郎程松溪先生文德",
+     "pattern": "学于",
+     "quote": "十一月卒，年六十三。万历间赠礼部尚书，谥文恭。先生初学于枫山，其后卒业于阳明。以真心为学之要",
+     "alias_hit": "枫山",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "初受業章懋，後從王守仁遊",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "穆孔晖",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "先是，守仁主山東試，堂邑穆孔暉第一……久乃篤信之，自名王氏學",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-238",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "罗汝芳",
+   "to": "颜钧",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "初，汝芳從永新顏鈞講學，後鈞系南京獄當死，汝芳供養獄中",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-301",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-204",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "胡九韶",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "少從",
+     "volume": 2,
+     "quote": "字鳳儀，金溪人，自少從學康齋。家甚貧，課兒力耕，僅給衣食"
+    },
+    {
+     "volume": 2,
+     "volume_name": "崇仁学案二",
+     "section": "胡凤仪先生九韶",
+     "pattern": "从学于",
+     "quote": "胡九韶字凤仪，金溪人，自少从学康斋。家甚贫，课儿力耕，仅给衣食。每",
+     "alias_hit": "康斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "胡九韶，字鳳儀，少從與弼學",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-77",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "胡居仁",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "聞吳與弼講學崇仁，往從之遊，絕意仕進",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-68",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "董沄",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "年六十八矣，遊會稽，肩瓢笠詩卷謁守仁，卒請為弟子",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-270",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "董谷",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "子谷，官知縣，亦受業守仁",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-269",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "蒋信",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 28,
+     "quote": "事焉。已應貢入京師，師事甘泉。及甘泉在南雍，及其門者甚眾"
+    },
+    {
+     "volume": 28,
+     "volume_name": "南中王门学案四",
+     "section": "佥宪蒋道林先生信",
+     "pattern": "师事",
+     "quote": "见先生之诗而称之，先生遂与暗斋师事焉。已应贡入京师，师事甘泉。及甘泉在南雍，及其门者甚众，则",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "嘉靖初，貢入京師，復師湛若水……學得之湛氏為多",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-232",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "蔡宗兖",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "从学",
+     "volume": 11,
+     "quote": "或先者也。癸酉，三先生從文成遊四明山，我齋自永樂寺返，白"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "其最初受業者，則有餘姚徐愛，山陰蔡宗袞、朱節及應良、盧可久、應典、董涷之屬",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk11蔡宗兖",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "薛敬之",
+   "to": "周蕙",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "从学",
+     "volume": 7,
+     "quote": "年七十四。  　　先生從周小泉學，常雞鳴而起，候門開，灑"
+    },
+    {
+     "volume": 7,
+     "volume_name": "河东学案上",
+     "section": "同知薛思庵先生敬之",
+     "pattern": "从某学",
+     "quote": "先生从周小泉学，常鸡鸣而起，候门开，洒扫设坐，",
+     "alias_hit": "周小泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "長從蕙遊，雞鳴候門啟，輒灑掃設座，跪而請教",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-112",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-114",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "许孚远",
+   "to": "唐枢",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 41,
+     "volume_name": "甘泉学案五",
+     "section": "侍郎许敬庵先生孚远",
+     "pattern": "学于",
+     "quote": "贤之为人，羞与乡党之士相争逐。年二十四，荐于乡，退而学于唐一庵之门。年二十八，释褐为进士，与四",
+     "alias_hit": "唐一庵",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "受學同郡唐樞",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-28",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-30",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "谢复",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 2,
+     "volume_name": "崇仁学案二",
+     "section": "谢西山先生复",
+     "pattern": "谒某",
+     "quote": "谢复字一阳，别号西山，祁门人也。谒康斋于小陂，师事之。阅三岁而后返，从",
+     "alias_hit": "康斋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "聞與弼倡道，棄科舉業從之遊",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-76",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "贺钦",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "给事贺医闾先生钦",
+     "pattern": "禀学",
+     "quote": "乐，是为乐忧」，复以言官旷职，召灾自劾。寻即告病归。白沙在太学，先生闻其为己端默之旨，笃信不疑，从而禀学，遂澹然于富贵。故天下议白沙率人",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "已而師事陳獻章。既歸，肖其像事之",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹守益",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守益舉正德六年會試第一，出王守仁門",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "17",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "郑伉",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "為諸生，試有司，不偶，即棄去，師與弼",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-71",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "钱德洪",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "親炙",
+     "volume": 11,
+     "quote": "之的傳也。先生與龍溪親炙陽明最久，習聞其過重之言。龍溪謂"
+    },
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "卒業於",
+     "volume": 11,
+     "quote": "溪疏通其大旨，而後卒業於文成，一時稱為教授師。嘉靖五年舉"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "王守仁自尚書歸裏，德洪偕數十人共學焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-156",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "阎禹锡",
+   "to": "薛瑄",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "聞河津薛瑄講濂洛之學，遂罷公車，往受業",
+     "note": "《明史》儒林传卷282"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-106",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-108",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈献章",
+   "to": "吴与弼",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 5,
+     "quote": "監讀書。已至崇仁，受學於康齋先生，歸即絕意科舉，築春陽臺"
+    },
+    {
+     "volume": 5,
+     "volume_name": "白沙学案上",
+     "section": "文恭陈白沙先生献章",
+     "pattern": "受学于",
+     "quote": "举广东乡试，明年会试中乙榜，入国子监读书。已至崇仁，受学于康斋先生，归即绝意科举，筑春阳台，静坐其",
+     "alias_hit": "康斋先生",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "從吳與弼講學。居半載歸，讀書窮日夜不輟",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-69",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-65",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈茂烈",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "御史陈时周先生茂烈",
+     "pattern": "受业于",
+     "quote": "也，作《省克录》以自考。登弘治丙辰进士第。奉使广东，受业白沙之门。白沙语以为学主静，退而与张",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "奉使廣東，受業陳獻章之門，獻章語以主靜之學",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "顾应祥",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受業於",
+     "volume": 14,
+     "quote": "》，皆其所著也。少受業於陽明。陽明歿，先生見《傳習續錄》"
+    },
+    {
+     "volume": 14,
+     "volume_name": "浙中王门学案四",
+     "section": "尚书顾箬溪先生应祥",
+     "pattern": "受业于",
+     "quote": "海镜》、《弧矢算术》、《授时历撮要》，皆其所著也。少受业于阳明。阳明殁，先生见《传习续录》，门",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-272",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "马理",
+   "to": "王承裕",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 9,
+     "volume_name": "三原学案",
+     "section": "光禄马谿田先生理",
+     "pattern": "师事",
+     "quote": "先生师事王康僖，又得泾野、后渠以为之友，墨守主",
+     "alias_hit": "王康僖",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-132",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-133",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "魏良器",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守仁撫江西，與兄良弼，弟良器、良貴，鹹學焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-140",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "魏良弼",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守仁撫江西，與兄良弼，弟良器、良貴，鹹學焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-139",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "魏良政",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守仁撫江西，與兄良弼，弟良器、良貴，鹹學焉",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-141",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "黄宗明",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 14,
+     "quote": "申十一月卒官。先生受學於陽明，陽明謂「誠甫自當一日千里，"
+    },
+    {
+     "volume": 14,
+     "volume_name": "浙中王门学案四",
+     "section": "侍郎黄致斋先生宗明",
+     "pattern": "受学于",
+     "quote": "福建参政。明年冬，召补礼部侍郎。丙申十一月卒官。先生受学于阳明，阳明谓「诚甫自当一日千里，任重",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-273",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "黄弘纲",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "mingshi",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "主事黄洛村先生弘纲",
+     "pattern": "从某归",
+     "quote": "黄弘纲字正之，号洛村，江西雩县人。举正德十一年乡试。从阳明于虔台。阳明教法，士子初至者，先令",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "守仁之門，從遊者恒數百，浙東、江西尤眾，善推演師說者稱弘綱、廷仁及錢德洪、王畿",
+     "note": "《明史》儒林传卷283"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-135",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.99,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周怡",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 25,
+     "quote": "年六十四。早歲師事東廓、龍溪，於《傳習錄》身體而力行之。"
+    },
+    {
+     "volume": 25,
+     "volume_name": "南中王门学案一",
+     "section": "恭节周讷谿先生怡",
+     "pattern": "师事·并列",
+     "quote": "业，复入为太常。隆庆三年十月，卒于家，年六十四。早岁师事东廓、龙溪，于《传习录》身体而力行之",
+     "alias_hit": "龙溪",
+     "note": "与前一位老师并列列举",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-219",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.986,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王襞",
+   "to": "钱德洪",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 32,
+     "quote": "中兒也。」令其師事龍溪、緒山，先後留越中幾二十年。心齋開"
+    },
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "pattern": "师事·并列",
+     "quote": "明问之，知为心斋子，曰：「吾固疑其非越中儿也。」令其师事龙溪、绪山，先后留越中几二十年。心斋",
+     "alias_hit": "绪山",
+     "note": "与前一位老师并列列举",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-156",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-314",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.986,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "史孟鳞",
+   "to": "顾宪成",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "mined"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 60,
+     "quote": "降五級，調外任。先生師事涇陽，因一時之弊，故好談工夫。夫"
+    },
+    {
+     "volume": 60,
+     "volume_name": "东林学案三",
+     "section": "太常史玉池先生孟鳞",
+     "pattern": "师事",
+     "quote": "奏。乙卯张差之变，请立皇太孙，诏降五级，调外任。先生师事泾阳，因一时之弊，故好谈工夫。夫求识",
+     "alias_hit": "泾阳",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.962,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "丁元荐",
+   "to": "许孚远",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "從孚遠遊者，馮從吾、劉宗周、丁元薦，皆為名儒",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘元卿",
+   "to": "刘阳",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "既歸，師同邑劉陽，王守仁弟子也",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周冲",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "時宜興周沖，字道通，亦遊王、湛之門",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周汝登",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "汝芳傳楊起元、周汝登、蔡悉",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "唐顺之",
+   "to": "魏校",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "唐順之、王應電、王敬臣，皆其弟子也",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "夏尚朴",
+   "to": "周蕙",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "蕙門人著者，薛敬之、李錦、王爵、夏尚樸",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "娄忱",
+   "to": "娄谅",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "子忱，字誠善，傳父學",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "孟化鲤",
+   "to": "尤时熙",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "化鯉之學得之洛陽尤時熙",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "孟秋",
+   "to": "张后觉",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "秋受業於邑人張後覺。時熙師曰劉魁，後覺則顏鑰、徐樾弟子也",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "应良",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "其最初受業者，則有餘姚徐愛，山陰蔡宗袞、朱節及應良、盧可久、應典、董涷之屬",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "易时中",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "杜惟熙",
+   "to": "卢可久",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "可久傳東陽杜惟熙，惟熙傳同邑陳時芳、陳正道",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "杨廉",
+   "to": "胡九韶",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "父崇，受業吳與弼門人胡九韶。廉承家學，早以文行稱",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "林同",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "梁汝元",
+   "to": "颜钧",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "艮傳林春、徐樾，樾傳顏鈞，鈞傳羅汝芳、梁汝元",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "欧阳瑜",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "族人瑜，字汝重，亦學於守仁",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王宣",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王应电",
+   "to": "魏校",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "唐順之、王應電、王敬臣，皆其弟子也",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王敬臣",
+   "to": "魏校",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "唐順之、王應電、王敬臣，皆其弟子也",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王爵",
+   "to": "周蕙",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "蕙門人著者，薛敬之、李錦、王爵、夏尚樸",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王问",
+   "to": "邵宝",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人，同邑王問，字子裕，以學行稱",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "程粹",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "盧可久，字一松。程粹，字養之。皆永康諸生。與同邑應典，皆師守仁",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "罗洪先",
+   "to": "李中",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "乃師事同邑李中，傳其學",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "蒋信",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "王守仁謫龍場，過其地，偕元亨事焉",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "蔡悉",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "汝芳傳楊起元、周汝登、蔡悉",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "蔡烈",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "赵维新",
+   "to": "张后觉",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "年二十，聞後覺講良知之學。遂師事之",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "赵逮",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邓以赞",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "以贊、元忭自未第時即從王畿遊，傳良知之學",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邓元锡",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "遊邑人羅汝芳門，又走吉安，學於諸先達",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邵宝",
+   "to": "庄昶",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "年十九，學於江浦莊昶",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹善",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "善服習父訓，踐履無怠，稱其家學",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹德涵",
+   "to": "耿定理",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "德涵從耿定理遊，定理不答。發憤湛思，自覺有得",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈时芳",
+   "to": "杜惟熙",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "可久傳東陽杜惟熙，惟熙傳同邑陳時芳、陳正道",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈正道",
+   "to": "杜惟熙",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "可久傳東陽杜惟熙，惟熙傳同邑陳時芳、陳正道",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈琛",
+   "to": "蔡清",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "其門人陳琛、王宣、易時中、林同、趙逮、蔡烈並有名，而陳琛最著",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "颜钧",
+   "to": "徐樾",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 283,
+     "quote": "艮傳林春、徐樾，樾傳顏鈞，鈞傳羅汝芳、梁汝元，汝芳傳楊起元、周汝登、蔡悉",
+     "note": "《明史》儒林传卷283"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "马理",
+   "to": "王恕",
+   "type": "师承",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "同里尚書王恕家居，講學著書。理從之遊，得其指授",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "魏校",
+   "to": "胡居仁",
+   "type": "私淑",
+   "sources": [
+    "mingshi"
+   ],
+   "provenance": [
+    {
+     "source": "mingshi",
+     "method": "manual-reading",
+     "volume": 282,
+     "quote": "校私淑胡居仁主敬之學，而貫通諸儒之說",
+     "note": "《明史》儒林传卷282"
+    }
+   ],
+   "confidence": 0.95,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "宋仪望",
+   "to": "聂豹",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 24,
+     "volume_name": "江右王门学案九",
+     "section": "中丞宋望之先生仪望",
+     "pattern": "从学于",
+     "quote": "先生从学于聂贞襄，闻良知之旨。时方议从祀阳明，而",
+     "alias_hit": "聂贞襄",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-124",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-151",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.942,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "薛侃",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 30,
+     "volume_name": "粤闽王门学案",
+     "section": "行人薛中离先生侃",
+     "pattern": "从学于",
+     "quote": "谦，号中离，广东揭阳人。举正德十二年进士。疏乞归养。从学王文成于赣，四年而后归。十六年授行人。",
+     "alias_hit": "王文成",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-257",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.942,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈龙正",
+   "to": "高攀龙",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 61,
+     "volume_name": "东林学案四",
+     "section": "中书陈几亭先生龙正",
+     "pattern": "师事",
+     "quote": "月，左迁南京国子监丞。国变后，杜门著书。未几卒。先生师事吴子往志远、高忠宪，留心当世之务，故以万物一体为宗",
+     "alias_hit": "高忠宪",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.931,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘阳",
+   "to": "刘晓",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "御史刘三五先生阳（附刘印山、王柳川）",
+     "pattern": "受业于",
+     "quote": "刘阳字一舒，号三五，安福县人。少受业于彭石屋、刘梅源。见阳明语录而好之，遂如虔问学。",
+     "alias_hit": "刘梅源",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.918,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "朱得之",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 25,
+     "volume_name": "南中王门学案一",
+     "section": "明经朱近斋先生得之",
+     "pattern": "从学于",
+     "quote": "本思，号近斋，直隶靖江人。贡为江西新城丞，邑人称之。从学于阳明，所著有《参玄三语》。其学颇近于",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-218",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.915,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "方学渐",
+   "to": "耿定理",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "明经方本庵先生学渐",
+     "pattern": "受学于",
+     "quote": "，而自堕于有善有恶心之体矣，是皆求实于虚之过也。先生受学于张甑山、耿楚倥，在泰州一派，别出一机轴矣。",
+     "alias_hit": "耿楚倥",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.909,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "焦竑",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "文端焦澹园先生竑",
+     "pattern": "师事·并列",
+     "quote": "先生师事耿天台、罗近溪，而又笃信卓吾之学，以为",
+     "alias_hit": "罗近溪",
+     "note": "与前一位老师并列列举",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.901,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "罗侨",
+   "to": "张元祯",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 46,
+     "volume_name": "诸儒学案上四",
+     "section": "参政罗东川先生侨",
+     "pattern": "从学于",
+     "quote": "罗侨字惟升，号东川，豫之吉水人。从学于张东白。登弘治己未进士第。授新会知县，",
+     "alias_hit": "张东白",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.889,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "赵谦",
+   "to": "耿定向",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 43,
+     "volume_name": "诸儒学案上一",
+     "section": "琼山赵考古先生谦",
+     "pattern": "受业于",
+     "quote": "降为农家。就外傅于崇山寺，达旦忘寐。年十七八，东游，受业天台郑四表之门。四表学于张以忠，以忠",
+     "alias_hit": "天台",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.883,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "胡直",
+   "to": "罗洪先",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 22,
+     "volume_name": "江右王门学案七",
+     "section": "宪使胡庐山先生直",
+     "pattern": "从学于",
+     "quote": "先已失仁体而堕于恶矣。」先生闻之，怃然汗背。年三十复从学罗文恭，文恭教以静坐。及其入蜀，文恭谓",
+     "alias_hit": "罗文恭",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.882,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "胡瀚",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 15,
+     "volume_name": "浙中王门学案五",
+     "section": "教谕胡今山先生瀚",
+     "pattern": "从游",
+     "quote": "余姚人。支湖铎从子也。自幼承家学，动必以礼。年十八，从阳明先生游，论及致良知之学，反复终日，则跃",
+     "alias_hit": "阳明先生",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-280",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.879,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "薛应旗",
+   "to": "欧阳德",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 25,
+     "volume_name": "南中王门学案一",
+     "section": "提学薛方山先生应旗",
+     "pattern": "之门",
+     "quote": "溪。其实龙溪言行不掩，先生盖借龙溪以正学术也。先生尝及南野之门，而一时诸儒，不许其名王氏学者，",
+     "alias_hit": "南野",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "16",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-222",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.877,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "季本",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 13,
+     "quote": "司輿（名文轅），其後師事陽明。先生之學，貴主宰而惡自然，"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-267",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "曹端",
+   "to": "魏校",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "師事",
+     "volume": 44,
+     "quote": "《五經》皆遍，師事宜陽馬子才、太原彭宗古，遠有端緒。永樂"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-78",
+     "legacy_to": "bk44曹端",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李中",
+   "to": "潘润",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 53,
+     "quote": "五。  　　先生受學於楊玉齋之門，玉齋名珠，其學自傳註以"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-86",
+     "legacy_to": "bk53李中",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王襞",
+   "to": "焦竑",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "从学",
+     "volume": 32,
+     "quote": "汝鄉焦弱侯可師也。」歸從弱侯游，得自然旨趣。弱侯曰：「要"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-347",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-314",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹守益",
+   "to": "耿定向",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "受學於",
+     "volume": 16,
+     "quote": "，年五十六。先生受學於耿天臺，鄉舉後卒業太學。天臺謂：「"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-345",
+     "legacy_to": "17",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹守益",
+   "to": "耿定理",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "問學於",
+     "volume": 16,
+     "quote": "辨其為何如人。」問學於耿楚倥，楚倥不答，先生憤然曰：「吾"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-346",
+     "legacy_to": "17",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "金铉",
+   "to": "刘宗周",
+   "type": "师承",
+   "sources": [
+    "legacy-mining",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "legacy-mining",
+     "method": "regex-mining-v1",
+     "pattern": "問學於",
+     "volume": 57,
+     "quote": "來不足異也。先生曾問學於蕺山先師，某過其家，門巷蕭然，殘"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-54",
+     "legacy_to": "bk57金铉",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.86,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "周坦",
+   "to": "薛侃",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 30,
+     "volume_name": "粤闽王门学案",
+     "section": "县令周谦斋先生坦",
+     "pattern": "从学于",
+     "quote": "周坦号谦斋，罗浮人也。仕为县令。自幼有志圣贤之学，从学于中离，出游湖、湘、维扬、新泉、天真、",
+     "alias_hit": "中离",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.855,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王道",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 42,
+     "volume_name": "甘泉学案六",
+     "section": "文定王顺渠先生道",
+     "pattern": "从学于",
+     "quote": "善恶者，此在门弟子之失，而以加之阳明，不受也。先生又从学甘泉，其学亦非师门之旨，今姑附于甘泉",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.855,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "顾允成",
+   "to": "薛应旗",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 60,
+     "volume_name": "东林学案三",
+     "section": "主事顾泾凡先生允成",
+     "pattern": "之门",
+     "quote": "顾允成字季时，别号泾凡，兄则泾阳先生也。与泾阳同游薛方山之门。万历癸未，举礼部。丙戌廷对，指",
+     "alias_hit": "薛方山",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.849,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张鼎",
+   "to": "薛瑄",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 7,
+     "volume_name": "河东学案上",
+     "section": "侍郎张自在先生鼎",
+     "pattern": "之门",
+     "quote": "右侍郎。乙卯卒于家，年六十五。先生少从父之任蒲州，得及薛文清之门。终身恪守师说，不敢少有逾越。文",
+     "alias_hit": "薛文清",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.843,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "胡直",
+   "to": "欧阳德",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 22,
+     "volume_name": "江右王门学案七",
+     "section": "宪使胡庐山先生直",
+     "pattern": "从某学",
+     "quote": "卒官，年六十九。先生少骀荡，好攻古文词。年二十六，始从欧阳文庄问学，即语以道艺之辨。先生疾恶甚严",
+     "alias_hit": "欧阳文庄",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.843,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "谢佑",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "谢天锡先生佑",
+     "pattern": "某弟子",
+     "quote": "谢佑字天锡，南海人。白沙弟子。筑室葵山之下，并日而食，袜不掩",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.836,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张节",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 8,
+     "volume_name": "河东学案下",
+     "section": "张石谷先生节",
+     "pattern": "从游",
+     "quote": "张节字介夫，号石谷，泾阳人。初从湛甘泉游，继受学于泾野。泾野赠诗，称其守",
+     "alias_hit": "湛甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.83,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邹智",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "吏目邹立斋先生智",
+     "pattern": "从某学",
+     "quote": "，刑部侍郎彭韶不判案，获免。谪广东石城吏目。至官，即从白沙问学，顺德令吴廷举于古楼树建亭居之",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.817,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "陈庸",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "州同陈秉常先生庸",
+     "pattern": "之门",
+     "quote": "陈庸字秉常，南海人。举成化甲午科。游白沙之门，白沙示以自得之学，谓：「我否子",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.817,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "韩乐吾",
+   "to": "王襞",
+   "type": "附见",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "pattern": "附",
+     "quote": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "method": "heading-appendix",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-314",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-321",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.81,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘魁",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "员外刘晴川先生魁",
+     "pattern": "卒业于",
+     "quote": "先生受学于阳明，卒业东廓。以直节著名，而陶融于学问。李脉",
+     "alias_hit": "东廓",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.807,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "杨时乔",
+   "to": "吕怀",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 42,
+     "volume_name": "甘泉学案六",
+     "section": "端洁杨止庵先生时乔",
+     "pattern": "学于",
+     "quote": "先生学于吕巾石，其大旨以天理为天下所公共，虚灵",
+     "alias_hit": "吕巾石",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-27",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-61",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.801,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "许孚远",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 41,
+     "volume_name": "甘泉学案五",
+     "section": "侍郎许敬庵先生孚远",
+     "pattern": "某门人",
+     "quote": "故耶？南都讲学，先生与杨复所、周海门为主盟。周、杨皆近溪之门人，持论不同。海门以无善无恶为宗，",
+     "alias_hit": "近溪",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.798,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "徐樾",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "布政徐波石先生樾",
+     "pattern": "事某",
+     "quote": "先生少与夏相才名相亚，得事阳明，继而卒业心斋之门。先生操存过苦",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.779,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘阳",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "御史刘三五先生阳（附刘印山、王柳川）",
+     "pattern": "禀学",
+     "quote": "字一舒，号三五，安福县人。少受业于彭石屋、刘梅源。见阳明语录而好之，遂如虔问学。泊舟野水，风雪清苦，不以为恶。",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-130",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.76,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李孔修",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "布衣李抱真先生孔修",
+     "pattern": "门下",
+     "quote": "，号抱真子。居广州之高第街，混迹阛阓，张东所识之，吊入白沙门下。先生尝输粮于县，县令异其容止，",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.76,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邓以赞",
+   "to": "王阳明",
+   "type": "私淑",
+   "sources": [
+    "mined",
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "volume": 21,
+     "volume_name": "江右王门学案六",
+     "section": "文洁邓定宇先生以赞",
+     "pattern": "某门人",
+     "quote": "之中，多不得力，先生堕其义，不可谓非药石也。先生私淑阳明之门人，龙溪、阳和其最也。",
+     "alias_hit": "阳明",
+     "note": "私淑，非亲炙",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-143",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.76,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "耿定理",
+   "to": "方与时",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "处士耿楚倥先生定理",
+     "pattern": "事某",
+     "quote": "。自是或静坐一室，终岁不出；或求友访道，累月忘归。其始事方湛一，最后于邓豁渠得一切平实之旨，能",
+     "alias_hit": "方湛一",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.758,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "朱恕",
+   "to": "王襞",
+   "type": "附见",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "pattern": "附",
+     "quote": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+     "method": "heading-appendix",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.75,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "罗大纮",
+   "to": "徐用检",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 23,
+     "volume_name": "江右王门学案八",
+     "section": "给谏罗匡湖先生大纮",
+     "pattern": "学于",
+     "quote": "时先生以礼科给事中守科，愤甚，上疏纠之，遂谪归。先生学于徐鲁源，林下与南臬讲学。南臬谓先生敏而",
+     "alias_hit": "徐鲁源",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.741,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邓元锡",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 24,
+     "volume_name": "江右王门学案九",
+     "section": "征君邓潜谷先生元锡",
+     "pattern": "学于",
+     "quote": "业。大母不许。举嘉靖乙卯乡试。志在养母，不赴计偕。就学于邹东廓、刘三五，得其旨要。居家著述，成",
+     "alias_hit": "邹东廓",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.741,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "应典",
+   "to": "章懋",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 63,
+     "volume_name": "附案",
+     "section": "尚宝司丞应天彝先生典",
+     "pattern": "谒某",
+     "quote": "永康人。正德甲戌进士。由职方司主事，仕至尚宝司丞。初谒章懋于兰江，奋然有担负斯道之志。后介",
+     "alias_hit": "章懋",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.74,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "李材",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 31,
+     "volume_name": "止修学案",
+     "section": "中丞李见罗先生材",
+     "pattern": "学于",
+     "quote": "先生初学于邹文庄，学致良知之学。已稍变其说，谓「",
+     "alias_hit": "邹文庄",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.735,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "潘士藻",
+   "to": "王宗沐",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "尚宝潘雪松先生士藻",
+     "pattern": "谒某",
+     "quote": "醒，缊酿日深，庶有进步。」出京别天台，天台曰：「至淮谒王敬所。入安丰访王东厓，此老颇奇，即戏",
+     "alias_hit": "王敬所",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.731,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "耿橘",
+   "to": "周汝登",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 60,
+     "volume_name": "东林学案三",
+     "section": "耿庭怀先生橘",
+     "pattern": "谒某",
+     "quote": "自主之。先生之学颇近近溪，与东林微有不同。其送方鸣秋谒周海门诗云：「孔宗曾派亦难穷，未悟如何",
+     "alias_hit": "周海门",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.731,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "刘秉监",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 19,
+     "volume_name": "江右王门学案四",
+     "section": "御史刘三五先生阳（附刘印山、王柳川）",
+     "pattern": "学于",
+     "quote": "摇。」其守正不挠如此。事兄甚谨，俸入不私于室。先生初学于甘泉，而尤笃志于阳明，讲学之会，匹马",
+     "alias_hit": "甘泉",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.712,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "潘士藻",
+   "to": "耿定向",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 35,
+     "volume_name": "泰州学案四",
+     "section": "尚宝潘雪松先生士藻",
+     "pattern": "学于",
+     "quote": "晋南京吏部主事，改尚宝司丞，升少卿。卒年六十四。先生学于天台、卓吾。初至京师，入讲学之会，如",
+     "alias_hit": "天台",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.712,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "王道",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 42,
+     "volume_name": "甘泉学案六",
+     "section": "文定王顺渠先生道",
+     "pattern": "学于",
+     "quote": "求其不可知、不容说者以为性，无乃复锢于成说乎？先生初学于阳明，阳明以心学语之，故先生从事心体",
+     "alias_hit": "阳明",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.712,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "邓元锡",
+   "to": "刘阳",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 24,
+     "volume_name": "江右王门学案九",
+     "section": "征君邓潜谷先生元锡",
+     "pattern": "学于·并列",
+     "quote": "业。大母不许。举嘉靖乙卯乡试。志在养母，不赴计偕。就学于邹东廓、刘三五，得其旨要。居家著述，成",
+     "alias_hit": "刘三五",
+     "note": "与前一位老师并列列举",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.711,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "万表",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-278",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "刘元卿",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-146",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "刘秉监",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-132",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "南大吉",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-247",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "周坦",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-258",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "周莹",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk63周莹",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "唐顺之",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-211",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-225",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "唐鹤征",
+   "to": "唐顺之",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-211",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-226",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "姚汝循",
+   "to": "罗汝芳",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-204",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-205",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "姜宝",
+   "to": "唐顺之",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-211",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-209",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "孟化鲤",
+   "to": "刘魁",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-136",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-244",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "孟秋",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-240",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "张元冲",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-276",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "张后觉",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-239",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "张棨",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-174",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "张棨",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-174",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "徐阶",
+   "to": "聂豹",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-124",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-228",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "戚衮",
+   "to": "欧阳德",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "16",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-172",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "戚衮",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-172",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "戚贤",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-168",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杜惟熙",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk63杜惟熙",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杨东明",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-246",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杨天游",
+   "to": "吕柟",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-118",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-126",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杨爵",
+   "to": "韩邦奇",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-134",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-136",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杨豫孙",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-231",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "杨骥",
+   "to": "湛若水",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-215",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-251",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "查铎",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-169",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "查铎",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-169",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "梁汝元",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-313",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-300",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "梁焯",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-254",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "段坚",
+   "to": "薛瑄",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-106",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-109",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "殷迈",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-207",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "沈宠",
+   "to": "贡安国",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-167",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-170",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王之士",
+   "to": "王承裕",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-132",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-138",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王承裕",
+   "to": "王恕",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-130",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-132",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王明衡",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-256",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王栋",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-313",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-331",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王钦",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-133",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "王鸿儒",
+   "to": "薛瑄",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-106",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-113",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "程大宾",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-176",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "程默",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-201",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "章时鸾",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-175",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "章潢",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-152",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "罗大纮",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-149",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    },
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk23罗大纮",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "罗洪先",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-128",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "聂豹",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-124",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "胡直",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-147",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "萧彦",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-171",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "萧良干",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-173",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "萧良干",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-173",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "薛尚贤",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-252",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "薛应旗",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk25薛应旂",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "薛敬之",
+   "to": "薛瑄",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-106",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-114",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "薛甲",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-224",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "贡安国",
+   "to": "欧阳德",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "16",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-167",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "贡安国",
+   "to": "王畿",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-183",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-167",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "赵贞吉",
+   "to": "徐樾",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-306",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-335",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "赵贞吉",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-313",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-335",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "邓元锡",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-150",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "邹元标",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-148",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "郑一初",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-255",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "郑烛",
+   "to": "邹守益",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "17",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-202",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "郭蒙泉",
+   "to": "吕柟",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-118",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-125",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "陆澄",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-271",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "陈九川",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-138",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "陈嘉谟",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-144",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "霍韬",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-250",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "韩邦奇",
+   "to": "王恕",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "STSbwmwu5GfzBW4jki-n-130",
+     "legacy_to": "STSbwmwu5GfzBW4jki-n-134",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "颜钧",
+   "to": "刘邦采",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-305",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-301",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "颜钧",
+   "to": "王艮",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "aZOgffvFExYyYC5foWOi-313",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-301",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "颜鲸",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "bk63颜鲸",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "黄省曾",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-213",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "黄绾",
+   "to": "王阳明",
+   "type": "师承",
+   "sources": [
+    "drawio"
+   ],
+   "provenance": [
+    {
+     "source": "drawio",
+     "method": "hand-drawn-graph",
+     "legacy_from": "wang_yangming",
+     "legacy_to": "aZOgffvFExYyYC5foWOi-268",
+     "note": "谱系总图连线（原图师→徒，已翻转为徒→师），暂无原文出处"
+    }
+   ],
+   "confidence": 0.7,
+   "cited": false,
+   "needs_citation": true
+  },
+  {
+   "from": "章潢",
+   "to": "万廷言",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 24,
+     "volume_name": "江右王门学案九",
+     "section": "征君章本清先生潢",
+     "pattern": "禀学",
+     "quote": "新之旨。」十三岁，见乡人负债缧絏者恻然，为之代偿。与万思默同业举，已而同问学。有问先生近日谈经不似前日之烦者",
+     "alias_hit": "万思默",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.672,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "张吉",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 46,
+     "volume_name": "诸儒学案上四",
+     "section": "布政张古城先生吉",
+     "pattern": "禀学",
+     "quote": "者曰：「不读《五经》，遇事便觉窒碍。」先生在岭外，访白沙问学，白沙以诗示之：「沧溟几万里，山",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.646,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "林光",
+   "to": "陈献章",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 6,
+     "volume_name": "白沙学案下",
+     "section": "长史林缉熙先生光",
+     "pattern": "禀学",
+     "quote": "林光字缉熙，东莞人。成化乙酉举人。己丑会试入京，见白沙于神乐观，语大契，从归江门，筑室深山，往来问学者二十年。白沙称「其所见甚是超脱",
+     "alias_hit": "白沙",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.646,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "林春",
+   "to": "唐顺之",
+   "type": "师承",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 32,
+     "volume_name": "泰州学案一",
+     "section": "文选林东城先生春",
+     "pattern": "禀学",
+     "quote": "嫌疑，与知学者挟衾被栉具，往宿寺观中，终夜刺刺不休。荆川曰：「君问学几二十年，其胶解冻释，未知其何如",
+     "alias_hit": "荆川",
+     "note": "",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.646,
+   "cited": true,
+   "needs_citation": false
+  },
+  {
+   "from": "唐枢",
+   "to": "王阳明",
+   "type": "私淑",
+   "sources": [
+    "mined"
+   ],
+   "provenance": [
+    {
+     "volume": 40,
+     "volume_name": "甘泉学案四",
+     "section": "主政唐一庵先生枢",
+     "pattern": "闻某之学",
+     "quote": "学著书垂四十年。先生初举于乡，入南雍，师事甘泉。其后慕阳明之学而不及见也。故于甘泉之随处体认天",
+     "alias_hit": "阳明",
+     "note": "慕其学而未及见",
+     "method": "regex-mining",
+     "extracted_at": "2026-08-08",
+     "source": "mined"
+    }
+   ],
+   "confidence": 0.532,
+   "cited": true,
+   "needs_citation": false
+  }
+ ]
+}

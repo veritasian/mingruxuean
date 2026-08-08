@@ -1,0 +1,8412 @@
+{
+ "欧阳德": {
+  "id": "欧阳德",
+  "name": "欧阳德",
+  "zi": "崇一",
+  "hao": "南野",
+  "title": "文庄",
+  "role": "",
+  "head": "文庄欧阳南野先生德",
+  "school": "江右王门学案",
+  "seq": 64,
+  "life": {
+   "raw": "1496–1554",
+   "birth": 1496,
+   "death": 1554,
+   "age": "年五十九"
+  },
+  "origin": {
+   "raw": "江西泰和人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "泰和县"
+  },
+  "legacy_ids": [
+   "16"
+  ],
+  "anchor": {
+   "volume": 17,
+   "volume_name": "江右王门学案二",
+   "section": "文庄欧阳南野先生德",
+   "text_chars": 8318
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "邹守益": {
+  "id": "邹守益",
+  "name": "邹守益",
+  "zi": "谦之",
+  "hao": "东廓",
+  "title": "文庄",
+  "role": "",
+  "head": "文庄邹东廓先生守益",
+  "school": "江右王门学案",
+  "seq": 63,
+  "life": {
+   "raw": "1491–1562",
+   "birth": 1491,
+   "death": 1562,
+   "age": "年七十二"
+  },
+  "origin": {
+   "raw": "江西安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "17"
+  ],
+  "anchor": {
+   "volume": 16,
+   "volume_name": "江右王门学案一",
+   "section": "文庄邹东廓先生守益（附子善，孙德涵、德溥、德泳）",
+   "text_chars": 16473
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "聂豹": {
+  "id": "聂豹",
+  "name": "聂豹",
+  "zi": "文蔚",
+  "hao": "双江",
+  "title": "贞襄",
+  "role": "",
+  "head": "贞襄聂双江先生豹",
+  "school": "江右王门学案",
+  "seq": 65,
+  "life": {
+   "raw": "1487–1563",
+   "birth": 1487,
+   "death": 1563,
+   "age": "年七十七"
+  },
+  "origin": {
+   "raw": "江西永丰人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "永丰县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-124"
+  ],
+  "anchor": {
+   "volume": 18,
+   "volume_name": "江右王门学案三",
+   "section": "贞襄聂双江先生豹",
+   "text_chars": 9794
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "罗洪先": {
+  "id": "罗洪先",
+  "name": "罗洪先",
+  "zi": "达夫",
+  "hao": "念庵",
+  "title": "文恭",
+  "role": "",
+  "head": "文恭罗念庵先生洪先",
+  "school": "江右王门学案",
+  "seq": 66,
+  "life": {
+   "raw": "1504–1564",
+   "birth": 1504,
+   "death": 1564,
+   "age": "年六十一"
+  },
+  "origin": {
+   "raw": "吉水人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "吉水县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-128"
+  ],
+  "anchor": {
+   "volume": 18,
+   "volume_name": "江右王门学案三",
+   "section": "文恭罗念庵先生洪先",
+   "text_chars": 28192
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘文敏": {
+  "id": "刘文敏",
+  "name": "刘文敏",
+  "zi": "宜充",
+  "hao": "两峰",
+  "title": "",
+  "role": "处士",
+  "head": "处士刘两峰先生文敏",
+  "school": "江右王门学案",
+  "seq": 67,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十有三"
+  },
+  "origin": {
+   "raw": "吉之安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-129"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "处士刘两峰先生文敏",
+   "text_chars": 4033
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘阳": {
+  "id": "刘阳",
+  "name": "刘阳",
+  "zi": "一舒",
+  "hao": "三五",
+  "title": "",
+  "role": "御史",
+  "head": "御史刘三五先生阳",
+  "school": "江右王门学案",
+  "seq": 69,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "安福县人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-130"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "御史刘三五先生阳（附刘印山、王柳川）",
+   "text_chars": 2603
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘邦采": {
+  "id": "刘邦采",
+  "name": "刘邦采",
+  "zi": "君亮",
+  "hao": "师泉",
+  "title": "",
+  "role": "",
+  "head": "同知刘师泉先生邦采",
+  "school": "江右王门学案",
+  "seq": 68,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十六"
+  },
+  "origin": {
+   "raw": "吉之安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-131",
+   "aZOgffvFExYyYC5foWOi-305"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "同知刘师泉先生邦采",
+   "text_chars": 3093
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "刘秉监": {
+  "id": "刘秉监",
+  "name": "刘秉监",
+  "zi": "遵教",
+  "hao": "印山",
+  "title": "",
+  "role": "",
+  "head": "刘印山先生秉监",
+  "school": "江右王门学案",
+  "seq": 205,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年未五十"
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-132"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "王钦": {
+  "id": "王钦",
+  "name": "王钦",
+  "zi": "子懋",
+  "hao": "柳川",
+  "title": "",
+  "role": "",
+  "head": "王柳川先生钦",
+  "school": "江右王门学案",
+  "seq": 221,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "安成人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福（古称安成）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-133"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "刘晓": {
+  "id": "刘晓",
+  "name": "刘晓",
+  "zi": "伯光",
+  "hao": "梅源",
+  "title": "",
+  "role": "县令",
+  "head": "县令刘梅源先生晓",
+  "school": "江右王门学案",
+  "seq": 70,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-134"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "县令刘梅源先生晓",
+   "text_chars": 177
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄弘纲": {
+  "id": "黄弘纲",
+  "name": "黄弘纲",
+  "zi": "正之",
+  "hao": "洛村",
+  "title": "",
+  "role": "主事",
+  "head": "主事黄洛村先生弘纲",
+  "school": "江右王门学案",
+  "seq": 72,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十"
+  },
+  "origin": {
+   "raw": "江西雩县人",
+   "province": "江西",
+   "city": "赣州",
+   "county": "于都县（雩→于）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-135"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "主事黄洛村先生弘纲",
+   "text_chars": 2132
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘魁": {
+  "id": "刘魁",
+  "name": "刘魁",
+  "zi": "焕吾",
+  "hao": "晴川",
+  "title": "",
+  "role": "员外",
+  "head": "员外刘晴川先生魁",
+  "school": "江右王门学案",
+  "seq": 71,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十二"
+  },
+  "origin": {
+   "raw": "泰和人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "泰和县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-136"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "员外刘晴川先生魁",
+   "text_chars": 502
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "何廷仁": {
+  "id": "何廷仁",
+  "name": "何廷仁",
+  "zi": "性之",
+  "hao": "善山",
+  "title": "",
+  "role": "主事",
+  "head": "主事何善山先生廷仁",
+  "school": "江右王门学案",
+  "seq": 73,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年六十六"
+  },
+  "origin": {
+   "raw": "江西雩县人",
+   "province": "江西",
+   "city": "赣州",
+   "county": "于都县（雩→于）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-137"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "主事何善山先生廷仁",
+   "text_chars": 2838
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈九川": {
+  "id": "陈九川",
+  "name": "陈九川",
+  "zi": "惟浚",
+  "hao": "明水",
+  "title": "",
+  "role": "郎中",
+  "head": "郎中陈明水先生九川",
+  "school": "江右王门学案",
+  "seq": 74,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "临川人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "临川区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-138"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "郎中陈明水先生九川",
+   "text_chars": 4066
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "魏良弼": {
+  "id": "魏良弼",
+  "name": "魏良弼",
+  "zi": "师说",
+  "hao": "水洲",
+  "title": "",
+  "role": "大常",
+  "head": "大常魏水洲先生良弼",
+  "school": "江右王门学案",
+  "seq": 75,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南昌新建人",
+   "province": "江西",
+   "city": "南昌",
+   "county": "新建区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-139"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "大常魏水洲先生良弼",
+   "text_chars": 595
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "魏良器": {
+  "id": "魏良器",
+  "name": "魏良器",
+  "zi": "师颜",
+  "hao": "药湖",
+  "title": "",
+  "role": "处士",
+  "head": "处士魏药湖先生良器",
+  "school": "江右王门学案",
+  "seq": 77,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "卒年四十二"
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-140"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "处士魏药湖先生良器",
+   "text_chars": 1526
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "魏良政": {
+  "id": "魏良政",
+  "name": "魏良政",
+  "zi": "师伊",
+  "hao": "师伊",
+  "title": "",
+  "role": "解元",
+  "head": "解元魏师伊先生良政",
+  "school": "江右王门学案",
+  "seq": 76,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-141"
+  ],
+  "anchor": {
+   "volume": 19,
+   "volume_name": "江右王门学案四",
+   "section": "解元魏师伊先生良政",
+   "text_chars": 107
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王时槐": {
+  "id": "王时槐",
+  "name": "王时槐",
+  "zi": "子植",
+  "hao": "塘南",
+  "title": "",
+  "role": "太常",
+  "head": "太常王塘南先生时槐",
+  "school": "江右王门学案",
+  "seq": 78,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十四"
+  },
+  "origin": {
+   "raw": "吉之安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-142"
+  ],
+  "anchor": {
+   "volume": 20,
+   "volume_name": "江右王门学案五",
+   "section": "太常王塘南先生时槐",
+   "text_chars": 14341
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "邓以赞": {
+  "id": "邓以赞",
+  "name": "邓以赞",
+  "zi": "汝德",
+  "hao": "定宇",
+  "title": "文洁",
+  "role": "",
+  "head": "文洁邓定宇先生以赞",
+  "school": "江右王门学案",
+  "seq": 79,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南昌新建人",
+   "province": "江西",
+   "city": "南昌",
+   "county": "新建区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-143"
+  ],
+  "anchor": {
+   "volume": 21,
+   "volume_name": "江右王门学案六",
+   "section": "文洁邓定宇先生以赞",
+   "text_chars": 2204
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈嘉谟": {
+  "id": "陈嘉谟",
+  "name": "陈嘉谟",
+  "zi": "世显",
+  "hao": "蒙山",
+  "title": "",
+  "role": "参政",
+  "head": "参政陈蒙山先生嘉谟",
+  "school": "江右王门学案",
+  "seq": 80,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十三"
+  },
+  "origin": {
+   "raw": "庐陵人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "庐陵（今吉安）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-144"
+  ],
+  "anchor": {
+   "volume": 21,
+   "volume_name": "江右王门学案六",
+   "section": "参政陈蒙山先生嘉谟",
+   "text_chars": 1869
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "万廷言": {
+  "id": "万廷言",
+  "name": "万廷言",
+  "zi": "以忠",
+  "hao": "思默",
+  "title": "",
+  "role": "",
+  "head": "督学万思默先生廷言",
+  "school": "江右王门学案",
+  "seq": 82,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南昌之东溪人",
+   "province": "江西",
+   "city": "南昌",
+   "county": "东溪"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-145"
+  ],
+  "anchor": {
+   "volume": 21,
+   "volume_name": "江右王门学案六",
+   "section": "督学万思默先生廷言",
+   "text_chars": 6615
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "刘元卿": {
+  "id": "刘元卿",
+  "name": "刘元卿",
+  "zi": "调父",
+  "hao": "泸潇",
+  "title": "",
+  "role": "徵君",
+  "head": "征君刘泸潇先生元卿",
+  "school": "江右王门学案",
+  "seq": 81,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉之安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-146"
+  ],
+  "anchor": {
+   "volume": 21,
+   "volume_name": "江右王门学案六",
+   "section": "征君刘泸潇先生元卿",
+   "text_chars": 2030
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "胡直": {
+  "id": "胡直",
+  "name": "胡直",
+  "zi": "正甫",
+  "hao": "庐山",
+  "title": "",
+  "role": "宪使",
+  "head": "宪使胡庐山先生直",
+  "school": "江右王门学案",
+  "seq": 83,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉之泰和人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "泰和县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-147"
+  ],
+  "anchor": {
+   "volume": 22,
+   "volume_name": "江右王门学案七",
+   "section": "宪使胡庐山先生直",
+   "text_chars": 14304
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "邹元标": {
+  "id": "邹元标",
+  "name": "邹元标",
+  "zi": "尔瞻",
+  "hao": "南",
+  "title": "忠介",
+  "role": "",
+  "head": "忠介邹南先生元标",
+  "school": "江右王门学案",
+  "seq": 84,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "豫之吉水人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "吉水县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-148",
+   "aZOgffvFExYyYC5foWOi-163"
+  ],
+  "anchor": {
+   "volume": 23,
+   "volume_name": "江右王门学案八",
+   "section": "忠介邹南臬先生元标",
+   "text_chars": 8886
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "罗大纮": {
+  "id": "罗大纮",
+  "name": "罗大纮",
+  "zi": "公廓",
+  "hao": "匡湖",
+  "title": "",
+  "role": "给练",
+  "head": "给练罗匡湖先生大纮",
+  "school": "江右王门学案",
+  "seq": 85,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉之安福人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "安福县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-149",
+   "bk23罗大纮"
+  ],
+  "anchor": {
+   "volume": 23,
+   "volume_name": "江右王门学案八",
+   "section": "给谏罗匡湖先生大纮",
+   "text_chars": 2129
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "邓元锡": {
+  "id": "邓元锡",
+  "name": "邓元锡",
+  "zi": "汝极",
+  "hao": "潜谷",
+  "title": "",
+  "role": "徵君",
+  "head": "征君邓潜谷先生元锡",
+  "school": "江右王门学案",
+  "seq": 87,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年六十六"
+  },
+  "origin": {
+   "raw": "江西南城人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "南城县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-150"
+  ],
+  "anchor": {
+   "volume": 24,
+   "volume_name": "江右王门学案九",
+   "section": "征君邓潜谷先生元锡",
+   "text_chars": 4965
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "宋仪望": {
+  "id": "宋仪望",
+  "name": "宋仪望",
+  "zi": "望之",
+  "hao": "望之",
+  "title": "",
+  "role": "中丞",
+  "head": "中丞宋望之先生仪望",
+  "school": "江右王门学案",
+  "seq": 86,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年六十五"
+  },
+  "origin": {
+   "raw": "吉之永豊人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "永丰县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-151"
+  ],
+  "anchor": {
+   "volume": 24,
+   "volume_name": "江右王门学案九",
+   "section": "中丞宋望之先生仪望",
+   "text_chars": 8336
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "章潢": {
+  "id": "章潢",
+  "name": "章潢",
+  "zi": "本清",
+  "hao": "本清",
+  "title": "",
+  "role": "徵君",
+  "head": "征君章本清先生潢",
+  "school": "江右王门学案",
+  "seq": 88,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十二"
+  },
+  "origin": {
+   "raw": "南昌人",
+   "province": "江西",
+   "city": "南昌",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-152"
+  ],
+  "anchor": {
+   "volume": 24,
+   "volume_name": "江右王门学案九",
+   "section": "征君章本清先生潢",
+   "text_chars": 4373
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "冯应京": {
+  "id": "冯应京",
+  "name": "冯应京",
+  "zi": "大可",
+  "hao": "慕冈",
+  "title": "",
+  "role": "佥事",
+  "head": "佥事冯慕冈先生应京",
+  "school": "江右王门学案",
+  "seq": 89,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "盱眙人",
+   "province": "江苏",
+   "city": "淮安",
+   "county": "盱眙县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-153"
+  ],
+  "anchor": {
+   "volume": 24,
+   "volume_name": "江右王门学案九",
+   "section": "佥事冯慕冈先生应京",
+   "text_chars": 664
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "徐用检": {
+  "id": "徐用检",
+  "name": "徐用检",
+  "zi": "克贤",
+  "hao": "鲁源",
+  "title": "",
+  "role": "太常",
+  "head": "太常徐鲁源先生用检",
+  "school": "浙中王门学案",
+  "seq": 58,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "金华兰溪人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "兰溪市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-155"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "太常徐鲁源先生用检",
+   "text_chars": 4482
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "钱德洪": {
+  "id": "钱德洪",
+  "name": "钱德洪",
+  "zi": "",
+  "hao": "绪山",
+  "title": "",
+  "role": "",
+  "head": "钱德洪",
+  "school": "浙中王门学案",
+  "seq": 48,
+  "life": {
+   "raw": "1496–1574",
+   "birth": 1496,
+   "death": 1574,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之余姚人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-156"
+  ],
+  "anchor": {
+   "volume": 11,
+   "volume_name": "浙中王门学案一",
+   "section": "员外钱绪山先生德洪",
+   "text_chars": 8193
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "贡安国": {
+  "id": "贡安国",
+  "name": "贡安国",
+  "zi": "元略",
+  "hao": "受轩",
+  "title": "",
+  "role": "",
+  "head": "贡安国字元略，号受轩",
+  "school": "南中王门学案",
+  "seq": 231,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宣州人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-167"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "戚贤": {
+  "id": "戚贤",
+  "name": "戚贤",
+  "zi": "秀夫",
+  "hao": "南玄",
+  "title": "",
+  "role": "",
+  "head": "戚贤字秀夫，号南玄",
+  "school": "南中王门学案",
+  "seq": 211,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江北之全椒人",
+   "province": "安徽",
+   "city": "滁州",
+   "county": "全椒县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-168"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "查铎": {
+  "id": "查铎",
+  "name": "查铎",
+  "zi": "子警",
+  "hao": "毅斋",
+  "title": "",
+  "role": "",
+  "head": "查铎字子警，号毅斋",
+  "school": "南中王门学案",
+  "seq": 215,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泾县人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": "泾县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-169"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "沈宠": {
+  "id": "沈宠",
+  "name": "沈宠",
+  "zi": "思畏",
+  "hao": "古林",
+  "title": "",
+  "role": "",
+  "head": "沈宠字思畏，号古林",
+  "school": "楚中王门学案",
+  "seq": 219,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宣城人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-170"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "萧彦": {
+  "id": "萧彦",
+  "name": "萧彦",
+  "zi": "",
+  "hao": "念渠",
+  "title": "",
+  "role": "",
+  "head": "萧彦号念渠",
+  "school": "楚中王门学案",
+  "seq": 227,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泾县人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": "泾县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-171"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "head_text"
+ },
+ "戚衮": {
+  "id": "戚衮",
+  "name": "戚衮",
+  "zi": "补之",
+  "hao": "竹坡",
+  "title": "",
+  "role": "",
+  "head": "戚衮字补之，号竹坡",
+  "school": "楚中王门学案",
+  "seq": 210,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宣城人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-172"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "萧良干": {
+  "id": "萧良干",
+  "name": "萧良干",
+  "zi": "以宁",
+  "hao": "拙斋",
+  "title": "",
+  "role": "",
+  "head": "萧良干字以宁",
+  "school": "楚中王门学案",
+  "seq": 228,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-173"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "张棨": {
+  "id": "张棨",
+  "name": "张棨",
+  "zi": "士仪",
+  "hao": "本静",
+  "title": "",
+  "role": "",
+  "head": "张棨字士仪，号本静",
+  "school": "楚中王门学案",
+  "seq": 209,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泾县人",
+   "province": "安徽",
+   "city": "宣城",
+   "county": "泾县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-174"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "章时鸾": {
+  "id": "章时鸾",
+  "name": "章时鸾",
+  "zi": "",
+  "hao": "孟泉",
+  "title": "",
+  "role": "",
+  "head": "章时鸾号孟泉，",
+  "school": "楚中王门学案",
+  "seq": 225,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "青阳人",
+   "province": "安徽",
+   "city": "池州",
+   "county": "青阳县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-175"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "head_text"
+ },
+ "程大宾": {
+  "id": "程大宾",
+  "name": "程大宾",
+  "zi": "汝见",
+  "hao": "心泉",
+  "title": "",
+  "role": "",
+  "head": "程大宾字汝见",
+  "school": "楚中王门学案",
+  "seq": 222,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "歙人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "歙县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-176"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "王畿": {
+  "id": "王畿",
+  "name": "王畿",
+  "zi": "",
+  "hao": "龙溪",
+  "title": "",
+  "role": "",
+  "head": "龙溪",
+  "school": "浙中王门学案",
+  "seq": 49,
+  "life": {
+   "raw": "1498–1583",
+   "birth": 1498,
+   "death": 1583,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之山阴人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "山阴（今绍兴）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-183"
+  ],
+  "anchor": {
+   "volume": 12,
+   "volume_name": "浙中王门学案二",
+   "section": "郎中王龙溪先生畿",
+   "text_chars": 21451
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "程默": {
+  "id": "程默",
+  "name": "程默",
+  "zi": "子木",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "程默字子木",
+  "school": "南中王门学案",
+  "seq": 224,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "休宁人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "休宁县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-201"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "郑烛": {
+  "id": "郑烛",
+  "name": "郑烛",
+  "zi": "景明",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "郑烛字景明，",
+  "school": "楚中王门学案",
+  "seq": 234,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "歙人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "歙县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-202"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "罗汝芳": {
+  "id": "罗汝芳",
+  "name": "罗汝芳",
+  "zi": "",
+  "hao": "近溪",
+  "title": "",
+  "role": "",
+  "head": "罗汝芳",
+  "school": "泰州学案",
+  "seq": 118,
+  "life": {
+   "raw": "1515–1588",
+   "birth": 1515,
+   "death": 1588,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江西南城人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "南城县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-204"
+  ],
+  "anchor": {
+   "volume": 34,
+   "volume_name": "泰州学案三",
+   "section": "参政罗近溪先生汝芳",
+   "text_chars": 31587
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "姚汝循": {
+  "id": "姚汝循",
+  "name": "姚汝循",
+  "zi": "叙卿",
+  "hao": "凤麓",
+  "title": "",
+  "role": "",
+  "head": "姚汝循字叙卿，号凤麓",
+  "school": "泰州学案",
+  "seq": 207,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南京人",
+   "province": "江苏",
+   "city": "南京",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-205"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "殷迈": {
+  "id": "殷迈",
+  "name": "殷迈",
+  "zi": "时训",
+  "hao": "秋溟",
+  "title": "",
+  "role": "",
+  "head": "殷迈字时训，号秋溟",
+  "school": "南中王门学案",
+  "seq": 218,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "留守卫人",
+   "province": "江苏",
+   "city": "南京",
+   "county": "留守卫（南京）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-207"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "姜宝": {
+  "id": "姜宝",
+  "name": "姜宝",
+  "zi": "廷善",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "姜宝字廷善，",
+  "school": "南中王门学案",
+  "seq": 208,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "丹阳人",
+   "province": "江苏",
+   "city": "镇江",
+   "county": "丹阳市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-209"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "唐顺之": {
+  "id": "唐顺之",
+  "name": "唐顺之",
+  "zi": "应德",
+  "hao": "荆川",
+  "title": "",
+  "role": "",
+  "head": "唐荆川",
+  "school": "南中王门学案",
+  "seq": 96,
+  "life": {
+   "raw": "1507–1560",
+   "birth": 1507,
+   "death": 1560,
+   "age": "年五十四"
+  },
+  "origin": {
+   "raw": "武进人",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-211",
+   "aZOgffvFExYyYC5foWOi-225"
+  ],
+  "anchor": {
+   "volume": 26,
+   "volume_name": "南中王门学案二",
+   "section": "襄文唐荆川先生顺之",
+   "text_chars": 3830
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "黄省曾": {
+  "id": "黄省曾",
+  "name": "黄省曾",
+  "zi": "勉之",
+  "hao": "五岳",
+  "title": "",
+  "role": "孝廉",
+  "head": "孝廉黄五岳先生省曾",
+  "school": "南中王门学案",
+  "seq": 90,
+  "life": {
+   "raw": "1490–1540",
+   "birth": 1490,
+   "death": 1540,
+   "age": ""
+  },
+  "origin": {
+   "raw": "苏州人",
+   "province": "江苏",
+   "city": "苏州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-213"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "孝廉黄五岳先生省曾",
+   "text_chars": 1364
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周冲": {
+  "id": "周冲",
+  "name": "周冲",
+  "zi": "道通",
+  "hao": "静庵",
+  "title": "",
+  "role": "长史",
+  "head": "长史周静庵先生冲",
+  "school": "南中王门学案",
+  "seq": 91,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年四十七"
+  },
+  "origin": {
+   "raw": "常之宜兴人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": "宜兴市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-214"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "长史周静庵先生冲",
+   "text_chars": 870
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "湛若水": {
+  "id": "湛若水",
+  "name": "湛若水",
+  "zi": "",
+  "hao": "甘泉",
+  "title": "",
+  "role": "",
+  "head": "甘泉",
+  "school": "甘泉学案",
+  "seq": 130,
+  "life": {
+   "raw": "1466–1560",
+   "birth": 1466,
+   "death": 1560,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广东增城人",
+   "province": "广东",
+   "city": "广州",
+   "county": "增城区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-215"
+  ],
+  "anchor": {
+   "volume": 37,
+   "volume_name": "甘泉学案一",
+   "section": "文简湛甘泉先生若水",
+   "text_chars": 22487
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "朱得之": {
+  "id": "朱得之",
+  "name": "朱得之",
+  "zi": "本思",
+  "hao": "近斋",
+  "title": "",
+  "role": "明经",
+  "head": "明经朱近斋先生得之",
+  "school": "南中王门学案",
+  "seq": 92,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "直隶靖江人",
+   "province": "江苏",
+   "city": "泰州",
+   "county": "靖江市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-218"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "明经朱近斋先生得之",
+   "text_chars": 3214
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周怡": {
+  "id": "周怡",
+  "name": "周怡",
+  "zi": "顺之",
+  "hao": "讷溪",
+  "title": "恭节",
+  "role": "",
+  "head": "恭节周讷溪先生怡",
+  "school": "南中王门学案",
+  "seq": 93,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宣州太平人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "太平（今黄山区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-219"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "恭节周讷谿先生怡",
+   "text_chars": 770
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛应旗": {
+  "id": "薛应旗",
+  "name": "薛应旗",
+  "zi": "",
+  "hao": "方山",
+  "title": "",
+  "role": "提学",
+  "head": "提学薛方山先生应旗",
+  "school": "南中王门学案",
+  "seq": 94,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-222",
+   "bk25薛应旂"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "提学薛方山先生应旗",
+   "text_chars": 802
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛甲": {
+  "id": "薛甲",
+  "name": "薛甲",
+  "zi": "应登",
+  "hao": "畏斋",
+  "title": "",
+  "role": "副使",
+  "head": "副使薛畏斋先生甲",
+  "school": "南中王门学案",
+  "seq": 95,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江阴人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": "江阴市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-224"
+  ],
+  "anchor": {
+   "volume": 25,
+   "volume_name": "南中王门学案一",
+   "section": "副使薛畏斋先生甲",
+   "text_chars": 1222
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "唐鹤征": {
+  "id": "唐鹤征",
+  "name": "唐鹤征",
+  "zi": "元卿",
+  "hao": "凝庵",
+  "title": "",
+  "role": "太常",
+  "head": "太常唐凝庵先生鹤征",
+  "school": "南中王门学案",
+  "seq": 97,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十二"
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-226"
+  ],
+  "anchor": {
+   "volume": 26,
+   "volume_name": "南中王门学案二",
+   "section": "太常唐凝庵先生鹤征",
+   "text_chars": 8560
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "徐阶": {
+  "id": "徐阶",
+  "name": "徐阶",
+  "zi": "子升",
+  "hao": "存斋",
+  "title": "文贞",
+  "role": "",
+  "head": "文贞徐存斋先生阶",
+  "school": "南中王门学案",
+  "seq": 98,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "松江华亭人",
+   "province": "上海",
+   "city": "上海",
+   "county": "华亭（今松江区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-228"
+  ],
+  "anchor": {
+   "volume": 27,
+   "volume_name": "南中王门学案三",
+   "section": "文贞徐存斋先生阶",
+   "text_chars": 2228
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨豫孙": {
+  "id": "杨豫孙",
+  "name": "杨豫孙",
+  "zi": "幼殷",
+  "hao": "幼殷",
+  "title": "",
+  "role": "中丞",
+  "head": "中丞杨幼殷先生豫孙",
+  "school": "南中王门学案",
+  "seq": 99,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "华亭人",
+   "province": "上海",
+   "city": "上海",
+   "county": "华亭（今松江区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-231"
+  ],
+  "anchor": {
+   "volume": 27,
+   "volume_name": "南中王门学案三",
+   "section": "中丞杨幼殷先生豫孙",
+   "text_chars": 523
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "蒋信": {
+  "id": "蒋信",
+  "name": "蒋信",
+  "zi": "卿实",
+  "hao": "道林",
+  "title": "",
+  "role": "佥宪",
+  "head": "佥宪蒋道林先生信",
+  "school": "南中王门学案",
+  "seq": 100,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年77"
+  },
+  "origin": {
+   "raw": "楚之常德人",
+   "province": "湖南",
+   "city": "常德",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-232"
+  ],
+  "anchor": {
+   "volume": 28,
+   "volume_name": "南中王门学案四",
+   "section": "佥宪蒋道林先生信",
+   "text_chars": 4747
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "冀元亨": {
+  "id": "冀元亨",
+  "name": "冀元亨",
+  "zi": "惟干",
+  "hao": "暗斋",
+  "title": "",
+  "role": "孝廉",
+  "head": "孝廉冀暗斋先生元亨",
+  "school": "南中王门学案",
+  "seq": 101,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "楚之武陵人",
+   "province": "湖南",
+   "city": "常德",
+   "county": "武陵（今常德）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-234"
+  ],
+  "anchor": {
+   "volume": 28,
+   "volume_name": "南中王门学案四",
+   "section": "孝廉冀暗斋先生元亨",
+   "text_chars": 761
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "穆孔晖": {
+  "id": "穆孔晖",
+  "name": "穆孔晖",
+  "zi": "伯潜",
+  "hao": "玄庵",
+  "title": "文简",
+  "role": "",
+  "head": "文简穆玄庵先生孔晖",
+  "school": "北方王门学案",
+  "seq": 102,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山东堂邑人",
+   "province": "山东",
+   "city": "聊城",
+   "county": "堂邑镇（今属东昌府区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-238"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "文简穆玄庵先生孔晖",
+   "text_chars": 359
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张后觉": {
+  "id": "张后觉",
+  "name": "张后觉",
+  "zi": "志仁",
+  "hao": "弘山",
+  "title": "",
+  "role": "教谕",
+  "head": "教谕张弘山先生后觉",
+  "school": "北方王门学案",
+  "seq": 103,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十六"
+  },
+  "origin": {
+   "raw": "山东茌平人",
+   "province": "山东",
+   "city": "聊城",
+   "county": "茌平区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-239"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "教谕张弘山先生后觉",
+   "text_chars": 271
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "孟秋": {
+  "id": "孟秋",
+  "name": "孟秋",
+  "zi": "子成",
+  "hao": "我疆",
+  "title": "",
+  "role": "",
+  "head": "尚宝孟我疆先生秋",
+  "school": "北方王门学案",
+  "seq": 104,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山东茌平人",
+   "province": "山东",
+   "city": "聊城",
+   "county": "茌平区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-240"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "尚宝孟我疆先生秋",
+   "text_chars": 1241
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "尤时熙": {
+  "id": "尤时熙",
+  "name": "尤时熙",
+  "zi": "季美",
+  "hao": "西川",
+  "title": "",
+  "role": "主事",
+  "head": "主事尤西川先生时熙",
+  "school": "北方王门学案",
+  "seq": 105,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十八"
+  },
+  "origin": {
+   "raw": "河南洛阳人",
+   "province": "河南",
+   "city": "洛阳",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-241"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "主事尤西川先生时熙",
+   "text_chars": 4813
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "孟化鲤": {
+  "id": "孟化鲤",
+  "name": "孟化鲤",
+  "zi": "叔龙",
+  "hao": "云浦",
+  "title": "",
+  "role": "文选",
+  "head": "文选孟云浦先生化鲤",
+  "school": "北方王门学案",
+  "seq": 106,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南新安人",
+   "province": "河南",
+   "city": "洛阳",
+   "county": "新安县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-244"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "文选孟云浦先生化鲤",
+   "text_chars": 566
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨东明": {
+  "id": "杨东明",
+  "name": "杨东明",
+  "zi": "",
+  "hao": "晋庵",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎杨晋庵先生东明",
+  "school": "北方王门学案",
+  "seq": 107,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南虞城人",
+   "province": "河南",
+   "city": "商丘",
+   "county": "虞城县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-246"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "侍郎杨晋庵先生东明",
+   "text_chars": 2364
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "南大吉": {
+  "id": "南大吉",
+  "name": "南大吉",
+  "zi": "元善",
+  "hao": "瑞泉",
+  "title": "",
+  "role": "郡守",
+  "head": "郡守南瑞泉先生大吉",
+  "school": "北方王门学案",
+  "seq": 108,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之渭南人",
+   "province": "陕西",
+   "city": "渭南",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-247"
+  ],
+  "anchor": {
+   "volume": 29,
+   "volume_name": "北方王门学案",
+   "section": "郡守南瑞泉先生大吉",
+   "text_chars": 923
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "霍韬": {
+  "id": "霍韬",
+  "name": "霍韬",
+  "zi": "叔贤",
+  "hao": "渭厓",
+  "title": "",
+  "role": "",
+  "head": "西樵名献夫，",
+  "school": "诸儒学案",
+  "seq": 167,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广之南海人",
+   "province": "广东",
+   "city": "佛山",
+   "county": "南海区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-250"
+  ],
+  "anchor": {
+   "volume": 53,
+   "volume_name": "诸儒学案下一",
+   "section": "文敏霍渭厓先生韬",
+   "text_chars": 1985
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "杨骥": {
+  "id": "杨骥",
+  "name": "杨骥",
+  "zi": "仕德",
+  "hao": "毅斋",
+  "title": "",
+  "role": "",
+  "head": "杨骥字仕德",
+  "school": "粤闽王门学案",
+  "seq": 214,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "饶平人",
+   "province": "广东",
+   "city": "潮州",
+   "county": "饶平县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-251"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "薛尚贤": {
+  "id": "薛尚贤",
+  "name": "薛尚贤",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "薛尚贤",
+  "school": "粤闽王门学案",
+  "seq": 230,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-252"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "梁焯": {
+  "id": "梁焯",
+  "name": "梁焯",
+  "zi": "日孚",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "梁焯字日孚，",
+  "school": "粤闽王门学案",
+  "seq": 217,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南海人",
+   "province": "广东",
+   "city": "佛山",
+   "county": "南海区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-254"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "郑一初": {
+  "id": "郑一初",
+  "name": "郑一初",
+  "zi": "朝朔",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "郑一初字朝朔，",
+  "school": "粤闽王门学案",
+  "seq": 233,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "揭阳人",
+   "province": "广东",
+   "city": "揭阳",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-255"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "王明衡": {
+  "id": "王明衡",
+  "name": "王明衡",
+  "zi": "子莘",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "明衡字子莘",
+  "school": "粤闽王门学案",
+  "seq": 220,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "莆人",
+   "province": "福建",
+   "city": "莆田",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-256"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "薛侃": {
+  "id": "薛侃",
+  "name": "薛侃",
+  "zi": "尚谦",
+  "hao": "中离",
+  "title": "",
+  "role": "行人",
+  "head": "行人薛中离先生侃",
+  "school": "粤闽王门学案",
+  "seq": 109,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广东揭阳人",
+   "province": "广东",
+   "city": "揭阳",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-257"
+  ],
+  "anchor": {
+   "volume": 30,
+   "volume_name": "粤闽王门学案",
+   "section": "行人薛中离先生侃",
+   "text_chars": 6130
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周坦": {
+  "id": "周坦",
+  "name": "周坦",
+  "zi": "",
+  "hao": "谦斋",
+  "title": "",
+  "role": "县令",
+  "head": "县令周谦斋先生坦",
+  "school": "粤闽王门学案",
+  "seq": 110,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "罗浮人",
+   "province": "广东",
+   "city": "惠州",
+   "county": "罗浮山（博罗）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-258"
+  ],
+  "anchor": {
+   "volume": 30,
+   "volume_name": "粤闽王门学案",
+   "section": "县令周谦斋先生坦",
+   "text_chars": 431
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "徐爱": {
+  "id": "徐爱",
+  "name": "徐爱",
+  "zi": "曰仁",
+  "hao": "横山",
+  "title": "",
+  "role": "郎中",
+  "head": "郎中徐横山先生爱",
+  "school": "浙中王门学案",
+  "seq": 45,
+  "life": {
+   "raw": "1487–1517",
+   "birth": 1487,
+   "death": 1517,
+   "age": "年三十一"
+  },
+  "origin": {
+   "raw": "馀姚之马堰人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚马堰"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-265"
+  ],
+  "anchor": {
+   "volume": 11,
+   "volume_name": "浙中王门学案一",
+   "section": "郎中徐横山先生爱",
+   "text_chars": 1904
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "季本": {
+  "id": "季本",
+  "name": "季本",
+  "zi": "明德",
+  "hao": "彭山",
+  "title": "",
+  "role": "",
+  "head": "知府季彭山先生本",
+  "school": "浙中王门学案",
+  "seq": 50,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十九"
+  },
+  "origin": {
+   "raw": "越之会稽人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "会稽（今绍兴）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-267"
+  ],
+  "anchor": {
+   "volume": 13,
+   "volume_name": "浙中王门学案三",
+   "section": "知府季彭山先生本",
+   "text_chars": 5941
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "黄绾": {
+  "id": "黄绾",
+  "name": "黄绾",
+  "zi": "叔贤",
+  "hao": "久庵",
+  "title": "",
+  "role": "尚书",
+  "head": "尚书黄久庵先生绾",
+  "school": "浙中王门学案",
+  "seq": 51,
+  "life": {
+   "raw": "1477–1551",
+   "birth": 1477,
+   "death": 1551,
+   "age": "享年七十有五"
+  },
+  "origin": {
+   "raw": "台之黄岩人",
+   "province": "浙江",
+   "city": "台州",
+   "county": "黄岩区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-268"
+  ],
+  "anchor": {
+   "volume": 13,
+   "volume_name": "浙中王门学案三",
+   "section": "尚书黄久庵先生绾",
+   "text_chars": 6529
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "董谷": {
+  "id": "董谷",
+  "name": "董谷",
+  "zi": "石甫",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "董谷",
+  "school": "浙中王门学案",
+  "seq": 229,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-269"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "董沄": {
+  "id": "董沄",
+  "name": "董沄",
+  "zi": "复宗",
+  "hao": "萝石",
+  "title": "",
+  "role": "布衣",
+  "head": "布衣董萝石先生沄",
+  "school": "浙中王门学案",
+  "seq": 52,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "海盐人",
+   "province": "浙江",
+   "city": "嘉兴",
+   "county": "海盐县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-270"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "布衣董萝石先生沄（附子谷）",
+   "text_chars": 3202
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陆澄": {
+  "id": "陆澄",
+  "name": "陆澄",
+  "zi": "原静",
+  "hao": "原静",
+  "title": "",
+  "role": "主事",
+  "head": "主事陆原静先生澄",
+  "school": "浙中王门学案",
+  "seq": 53,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "湖之归安人",
+   "province": "浙江",
+   "city": "湖州",
+   "county": "归安（今吴兴区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-271"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "主事陆原静先生澄",
+   "text_chars": 569
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "顾应祥": {
+  "id": "顾应祥",
+  "name": "顾应祥",
+  "zi": "惟贤",
+  "hao": "箬溪",
+  "title": "",
+  "role": "尚书",
+  "head": "尚书顾箬溪先生应祥",
+  "school": "浙中王门学案",
+  "seq": 54,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "湖之长兴人",
+   "province": "浙江",
+   "city": "湖州",
+   "county": "长兴县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-272"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "尚书顾箬溪先生应祥",
+   "text_chars": 796
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄宗明": {
+  "id": "黄宗明",
+  "name": "黄宗明",
+  "zi": "诚甫",
+  "hao": "致斋",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎黄致斋先生宗明",
+  "school": "浙中王门学案",
+  "seq": 55,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宁波鄞县人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "鄞州区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-273"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "侍郎黄致斋先生宗明",
+   "text_chars": 1944
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "程文德": {
+  "id": "程文德",
+  "name": "程文德",
+  "zi": "舜敷",
+  "hao": "松溪",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎程松溪先生文德",
+  "school": "浙中王门学案",
+  "seq": 57,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "婺之永康人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "永康市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-275"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "侍郎程松溪先生文德",
+   "text_chars": 914
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张元冲": {
+  "id": "张元冲",
+  "name": "张元冲",
+  "zi": "叔谦",
+  "hao": "浮峰",
+  "title": "",
+  "role": "中丞",
+  "head": "中丞张浮峰先生元冲",
+  "school": "浙中王门学案",
+  "seq": 56,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "越之山阴人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "山阴（今越城/柯桥）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-276"
+  ],
+  "anchor": {
+   "volume": 14,
+   "volume_name": "浙中王门学案四",
+   "section": "中丞张浮峰先生元冲",
+   "text_chars": 404
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "万表": {
+  "id": "万表",
+  "name": "万表",
+  "zi": "民望",
+  "hao": "鹿园",
+  "title": "",
+  "role": "都督",
+  "head": "都督万鹿园先生表",
+  "school": "浙中王门学案",
+  "seq": 59,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年五十九"
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-278"
+  ],
+  "anchor": {
+   "volume": 15,
+   "volume_name": "浙中王门学案五",
+   "section": "都督万鹿园先生表",
+   "text_chars": 2331
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王宗沐": {
+  "id": "王宗沐",
+  "name": "王宗沐",
+  "zi": "新甫",
+  "hao": "敬所",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎王敬所先生宗沭",
+  "school": "浙中王门学案",
+  "seq": 60,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "台之临海人",
+   "province": "浙江",
+   "city": "台州",
+   "county": "临海市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-279",
+   "bk15王宗沐"
+  ],
+  "anchor": {
+   "volume": 15,
+   "volume_name": "浙中王门学案五",
+   "section": "侍郎王敬所先生宗沐",
+   "text_chars": 5876
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "胡瀚": {
+  "id": "胡瀚",
+  "name": "胡瀚",
+  "zi": "川甫",
+  "hao": "今山",
+  "title": "",
+  "role": "教谕",
+  "head": "教谕胡今山先生瀚",
+  "school": "浙中王门学案",
+  "seq": 62,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "馀姚人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-280"
+  ],
+  "anchor": {
+   "volume": 15,
+   "volume_name": "浙中王门学案五",
+   "section": "教谕胡今山先生瀚",
+   "text_chars": 1215
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张元忭": {
+  "id": "张元忭",
+  "name": "张元忭",
+  "zi": "子荩",
+  "hao": "阳和",
+  "title": "",
+  "role": "侍读",
+  "head": "侍读张阳和先生元忭",
+  "school": "浙中王门学案",
+  "seq": 61,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年五十一"
+  },
+  "origin": {
+   "raw": "越之山阴人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "山阴（今越城/柯桥）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-281"
+  ],
+  "anchor": {
+   "volume": 15,
+   "volume_name": "浙中王门学案五",
+   "section": "侍读张阳和先生元忭",
+   "text_chars": 3815
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李材": {
+  "id": "李材",
+  "name": "李材",
+  "zi": "孟诚",
+  "hao": "见罗",
+  "title": "",
+  "role": "中丞",
+  "head": "中丞李见罗先生材",
+  "school": "止修学案",
+  "seq": 111,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "丰城人",
+   "province": "江西",
+   "city": "宜春",
+   "county": "丰城市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-294"
+  ],
+  "anchor": {
+   "volume": 31,
+   "volume_name": "止修学案",
+   "section": "中丞李见罗先生材",
+   "text_chars": 22477
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "梁汝元": {
+  "id": "梁汝元",
+  "name": "梁汝元",
+  "zi": "夫山",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "梁汝元字夫山",
+  "school": "泰州学案",
+  "seq": 216,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉州永丰人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "永丰县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-300"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "颜钧": {
+  "id": "颜钧",
+  "name": "颜钧",
+  "zi": "山农",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "颜钧",
+  "school": "泰州学案",
+  "seq": 237,
+  "life": {
+   "raw": "1504–1596",
+   "birth": 1504,
+   "death": 1596,
+   "age": "年八十馀"
+  },
+  "origin": {
+   "raw": "吉安人",
+   "province": "江西",
+   "city": "吉安",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-301"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "邓豁渠": {
+  "id": "邓豁渠",
+  "name": "邓豁渠",
+  "zi": "",
+  "hao": "太湖",
+  "title": "",
+  "role": "",
+  "head": "邓豁渠初名鹤",
+  "school": "泰州学案",
+  "seq": 232,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "蜀之内江人",
+   "province": "四川",
+   "city": "内江",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-302"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "方与时": {
+  "id": "方与时",
+  "name": "方与时",
+  "zi": "湛一",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "方与时",
+  "school": "泰州学案",
+  "seq": 212,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "黄陂人",
+   "province": "湖北",
+   "city": "武汉",
+   "county": "黄陂区"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-303"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "徐樾": {
+  "id": "徐樾",
+  "name": "徐樾",
+  "zi": "子直",
+  "hao": "波石",
+  "title": "",
+  "role": "",
+  "head": "徐波石",
+  "school": "泰州学案",
+  "seq": 114,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "贵溪人",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-306",
+   "aZOgffvFExYyYC5foWOi-328"
+  ],
+  "anchor": {
+   "volume": 32,
+   "volume_name": "泰州学案一",
+   "section": "布政徐波石先生樾",
+   "text_chars": 4936
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "程学颜": {
+  "id": "程学颜",
+  "name": "程学颜",
+  "zi": "二蒲",
+  "hao": "后台",
+  "title": "",
+  "role": "",
+  "head": "程学颜",
+  "school": "泰州学案",
+  "seq": 223,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-310"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "钱同文": {
+  "id": "钱同文",
+  "name": "钱同文",
+  "zi": "怀苏",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "钱同文",
+  "school": "泰州学案",
+  "seq": 235,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之兴化人",
+   "province": "福建",
+   "city": "莆田",
+   "county": "兴化府（今莆田）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-311"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "管志道": {
+  "id": "管志道",
+  "name": "管志道",
+  "zi": "登之",
+  "hao": "东溟",
+  "title": "",
+  "role": "",
+  "head": "管志道",
+  "school": "泰州学案",
+  "seq": 226,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十三"
+  },
+  "origin": {
+   "raw": "苏之太仓人",
+   "province": "江苏",
+   "city": "苏州",
+   "county": "太仓市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-312"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "zi_field"
+ },
+ "王艮": {
+  "id": "王艮",
+  "name": "王艮",
+  "zi": "汝止",
+  "hao": "心斋",
+  "title": "",
+  "role": "处士",
+  "head": "处士王心斋先生艮",
+  "school": "泰州学案",
+  "seq": 112,
+  "life": {
+   "raw": "1483–1541",
+   "birth": 1483,
+   "death": 1541,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-313"
+  ],
+  "anchor": {
+   "volume": 32,
+   "volume_name": "泰州学案一",
+   "section": "处士王心斋先生艮",
+   "text_chars": 5924
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王襞": {
+  "id": "王襞",
+  "name": "王襞",
+  "zi": "宗顺",
+  "hao": "东崖",
+  "title": "",
+  "role": "处士",
+  "head": "处士王东崖先生襞",
+  "school": "泰州学案",
+  "seq": 113,
+  "life": {
+   "raw": "1511–1587",
+   "birth": 1511,
+   "death": 1587,
+   "age": "年七十七"
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-314"
+  ],
+  "anchor": {
+   "volume": 32,
+   "volume_name": "泰州学案一",
+   "section": "处士王东崖先生襞（附樵夫朱恕　陶匠韩乐吾　田夫夏叟）",
+   "text_chars": 3448
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "朱恕": {
+  "id": "朱恕",
+  "name": "朱恕",
+  "zi": "光信",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "樵夫朱恕",
+  "school": "泰州学案",
+  "seq": 213,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泰州草偃场人",
+   "province": "江苏",
+   "city": "盐城",
+   "county": "草堰场（今大丰草堰）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-315"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "韩乐吾": {
+  "id": "韩乐吾",
+  "name": "韩乐吾",
+  "zi": "以中",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "陶匠韩乐吾",
+  "school": "泰州学案",
+  "seq": 236,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "兴化人",
+   "province": "江苏",
+   "city": "泰州",
+   "county": "兴化市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-321"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "夏廷美": {
+  "id": "夏廷美",
+  "name": "夏廷美",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "田夫夏叟",
+  "school": "泰州学案",
+  "seq": 206,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-322"
+  ],
+  "anchor": null,
+  "has_biography": false
+ },
+ "王栋": {
+  "id": "王栋",
+  "name": "王栋",
+  "zi": "隆吉",
+  "hao": "一庵",
+  "title": "",
+  "role": "教谕",
+  "head": "教谕王一庵先生栋",
+  "school": "泰州学案",
+  "seq": 115,
+  "life": {
+   "raw": "1503–1581",
+   "birth": 1503,
+   "death": 1581,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泰州人",
+   "province": "江苏",
+   "city": "泰州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-331"
+  ],
+  "anchor": {
+   "volume": 32,
+   "volume_name": "泰州学案一",
+   "section": "教谕王一庵先生栋",
+   "text_chars": 7966
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "林春": {
+  "id": "林春",
+  "name": "林春",
+  "zi": "子仁",
+  "hao": "东城",
+  "title": "",
+  "role": "文选",
+  "head": "文选林东城先生春",
+  "school": "泰州学案",
+  "seq": 116,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泰州人",
+   "province": "江苏",
+   "city": "泰州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-333"
+  ],
+  "anchor": {
+   "volume": 32,
+   "volume_name": "泰州学案一",
+   "section": "文选林东城先生春",
+   "text_chars": 626
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "赵贞吉": {
+  "id": "赵贞吉",
+  "name": "赵贞吉",
+  "zi": "孟静",
+  "hao": "大洲",
+  "title": "文肃",
+  "role": "",
+  "head": "文肃赵大洲先生贞吉",
+  "school": "泰州学案",
+  "seq": 117,
+  "life": {
+   "raw": "1508–1576",
+   "birth": 1508,
+   "death": 1576,
+   "age": "年六十九"
+  },
+  "origin": {
+   "raw": "蜀之内江人",
+   "province": "四川",
+   "city": "内江",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-335"
+  ],
+  "anchor": {
+   "volume": 33,
+   "volume_name": "泰州学案二",
+   "section": "文肃赵大洲先生贞吉",
+   "text_chars": 9558
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨起元": {
+  "id": "杨起元",
+  "name": "杨起元",
+  "zi": "贞复",
+  "hao": "复所",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎杨复所先生起元",
+  "school": "泰州学案",
+  "seq": 119,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广东归善人",
+   "province": "广东",
+   "city": "惠州",
+   "county": "归善（今惠阳区）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-341"
+  ],
+  "anchor": {
+   "volume": 34,
+   "volume_name": "泰州学案三",
+   "section": "侍郎杨复所先生起元",
+   "text_chars": 4953
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "耿定向": {
+  "id": "耿定向",
+  "name": "耿定向",
+  "zi": "在伦",
+  "hao": "天台",
+  "title": "恭简",
+  "role": "",
+  "head": "恭简耿天台先生定向",
+  "school": "泰州学案",
+  "seq": 120,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十三"
+  },
+  "origin": {
+   "raw": "楚之黄安人",
+   "province": "湖北",
+   "city": "黄冈",
+   "county": "黄安（今红安县）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-345"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "恭简耿天台先生定向",
+   "text_chars": 6526
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "耿定理": {
+  "id": "耿定理",
+  "name": "耿定理",
+  "zi": "子庸",
+  "hao": "楚倥",
+  "title": "",
+  "role": "处士",
+  "head": "处士耿楚倥先生定理",
+  "school": "泰州学案",
+  "seq": 121,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-346"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "处士耿楚倥先生定理",
+   "text_chars": 1967
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "焦竑": {
+  "id": "焦竑",
+  "name": "焦竑",
+  "zi": "弱侯",
+  "hao": "澹园",
+  "title": "文端",
+  "role": "",
+  "head": "文端焦澹园先生竑",
+  "school": "泰州学案",
+  "seq": 122,
+  "life": {
+   "raw": "1540–1620",
+   "birth": 1540,
+   "death": 1620,
+   "age": "年八十一"
+  },
+  "origin": {
+   "raw": "南京旗手卫人",
+   "province": "江苏",
+   "city": "南京",
+   "county": "旗手卫（南京）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-347"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "文端焦澹园先生竑",
+   "text_chars": 3750
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "潘士藻": {
+  "id": "潘士藻",
+  "name": "潘士藻",
+  "zi": "去华",
+  "hao": "雪松",
+  "title": "",
+  "role": "",
+  "head": "尚宝潘雪松先生士藻",
+  "school": "泰州学案",
+  "seq": 123,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "徽之婺源人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "婺源县（原属徽州）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-350"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "尚宝潘雪松先生士藻",
+   "text_chars": 1655
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "方学渐": {
+  "id": "方学渐",
+  "name": "方学渐",
+  "zi": "达卿",
+  "hao": "本庵",
+  "title": "",
+  "role": "明经",
+  "head": "明经方本庵先生学渐",
+  "school": "泰州学案",
+  "seq": 124,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "桐城人",
+   "province": "安徽",
+   "city": "安庆",
+   "county": "桐城市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-351"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "明经方本庵先生学渐",
+   "text_chars": 3810
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "何祥": {
+  "id": "何祥",
+  "name": "何祥",
+  "zi": "",
+  "hao": "克斋",
+  "title": "",
+  "role": "郎中",
+  "head": "郎中何克斋先生祥",
+  "school": "泰州学案",
+  "seq": 125,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "四川内江人",
+   "province": "四川",
+   "city": "内江",
+   "county": ""
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-352"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "郎中何克斋先生祥",
+   "text_chars": 2478
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "祝世禄": {
+  "id": "祝世禄",
+  "name": "祝世禄",
+  "zi": "延之",
+  "hao": "无功",
+  "title": "",
+  "role": "给事",
+  "head": "给事祝无功先生世禄",
+  "school": "泰州学案",
+  "seq": 126,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "鄱阳人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "鄱阳县"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-353"
+  ],
+  "anchor": {
+   "volume": 35,
+   "volume_name": "泰州学案四",
+   "section": "给事祝无功先生世禄",
+   "text_chars": 2630
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周汝登": {
+  "id": "周汝登",
+  "name": "周汝登",
+  "zi": "继元",
+  "hao": "海门",
+  "title": "",
+  "role": "",
+  "head": "尚宝周海门先生汝登",
+  "school": "泰州学案",
+  "seq": 127,
+  "life": {
+   "raw": "1547–1629",
+   "birth": 1547,
+   "death": 1629,
+   "age": ""
+  },
+  "origin": {
+   "raw": "嵊县人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "嵊州市"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-354"
+  ],
+  "anchor": {
+   "volume": 36,
+   "volume_name": "泰州学案五",
+   "section": "尚宝周海门先生汝登",
+   "text_chars": 9711
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "陶望龄": {
+  "id": "陶望龄",
+  "name": "陶望龄",
+  "zi": "周望会稽人",
+  "hao": "石篑",
+  "title": "文简",
+  "role": "",
+  "head": "文简陶石篑先生望龄",
+  "school": "泰州学案",
+  "seq": 128,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "会稽人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "会稽（今绍兴）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-355"
+  ],
+  "anchor": {
+   "volume": 36,
+   "volume_name": "泰州学案五",
+   "section": "文简陶石篑先生望龄",
+   "text_chars": 1982
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘塙": {
+  "id": "刘塙",
+  "name": "刘塙",
+  "zi": "静主",
+  "hao": "冲倩",
+  "title": "",
+  "role": "",
+  "head": "太学刘冲倩先生塙",
+  "school": "泰州学案",
+  "seq": 129,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "会稽人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "会稽（今绍兴）"
+  },
+  "legacy_ids": [
+   "aZOgffvFExYyYC5foWOi-356"
+  ],
+  "anchor": {
+   "volume": 36,
+   "volume_name": "泰州学案五",
+   "section": "太学刘冲倩先生塙",
+   "text_chars": 1850
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "何迁": {
+  "id": "何迁",
+  "name": "何迁",
+  "zi": "益之",
+  "hao": "吉阳",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎何吉阳先生迁",
+  "school": "甘泉学案",
+  "seq": 132,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十四"
+  },
+  "origin": {
+   "raw": "江西德安人",
+   "province": "江西",
+   "city": "九江",
+   "county": "德安县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-26"
+  ],
+  "anchor": {
+   "volume": 38,
+   "volume_name": "甘泉学案二",
+   "section": "侍郎何吉阳先生迁",
+   "text_chars": 3805
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吕怀": {
+  "id": "吕怀",
+  "name": "吕怀",
+  "zi": "汝德",
+  "hao": "巾石",
+  "title": "",
+  "role": "太仆",
+  "head": "太仆吕巾石先生怀",
+  "school": "甘泉学案",
+  "seq": 131,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广信永丰人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "永丰（今广丰区）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-27"
+  ],
+  "anchor": {
+   "volume": 38,
+   "volume_name": "甘泉学案二",
+   "section": "太仆吕巾石先生怀",
+   "text_chars": 6584
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "唐枢": {
+  "id": "唐枢",
+  "name": "唐枢",
+  "zi": "惟中",
+  "hao": "一庵",
+  "title": "",
+  "role": "",
+  "head": "主政唐一庵先生枢",
+  "school": "甘泉学案",
+  "seq": 134,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之归安人",
+   "province": "浙江",
+   "city": "湖州",
+   "county": "归安（今吴兴区）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-28"
+  ],
+  "anchor": {
+   "volume": 40,
+   "volume_name": "甘泉学案四",
+   "section": "主政唐一庵先生枢",
+   "text_chars": 11910
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "唐伯元": {
+  "id": "唐伯元",
+  "name": "唐伯元",
+  "zi": "仁卿",
+  "hao": "曙台",
+  "title": "",
+  "role": "文选",
+  "head": "文选唐曙台先生伯元",
+  "school": "甘泉学案",
+  "seq": 138,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年五十八"
+  },
+  "origin": {
+   "raw": "广之澄海人",
+   "province": "广东",
+   "city": "汕头",
+   "county": "澄海区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-29"
+  ],
+  "anchor": {
+   "volume": 42,
+   "volume_name": "甘泉学案六",
+   "section": "文选唐曙台先生伯元",
+   "text_chars": 13859
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "许孚远": {
+  "id": "许孚远",
+  "name": "许孚远",
+  "zi": "孟仲",
+  "hao": "敬庵",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎许敬庵先生孚远",
+  "school": "甘泉学案",
+  "seq": 136,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之德清人",
+   "province": "浙江",
+   "city": "湖州",
+   "county": "德清县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-30"
+  ],
+  "anchor": {
+   "volume": 41,
+   "volume_name": "甘泉学案五",
+   "section": "侍郎许敬庵先生孚远",
+   "text_chars": 5536
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王道": {
+  "id": "王道",
+  "name": "王道",
+  "zi": "纯甫",
+  "hao": "顺渠",
+  "title": "文定",
+  "role": "",
+  "head": "文定王顺渠先生道",
+  "school": "甘泉学案",
+  "seq": 140,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山东之武城人",
+   "province": "山东",
+   "city": "德州",
+   "county": "武城县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-32"
+  ],
+  "anchor": {
+   "volume": 42,
+   "volume_name": "甘泉学案六",
+   "section": "文定王顺渠先生道",
+   "text_chars": 3441
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "顾宪成": {
+  "id": "顾宪成",
+  "name": "顾宪成",
+  "zi": "叔时",
+  "hao": "泾阳",
+  "title": "端文",
+  "role": "",
+  "head": "端文顾泾阳先生宪成",
+  "school": "东林学案",
+  "seq": 183,
+  "life": {
+   "raw": "1550–1612",
+   "birth": 1550,
+   "death": 1612,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常之无锡人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-35"
+  ],
+  "anchor": {
+   "volume": 58,
+   "volume_name": "东林学案一",
+   "section": "端文顾泾阳先生宪成",
+   "text_chars": 13873
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "孙慎行": {
+  "id": "孙慎行",
+  "name": "孙慎行",
+  "zi": "闻斯",
+  "hao": "淇澳",
+  "title": "文介",
+  "role": "",
+  "head": "文介孙淇澳先生慎行",
+  "school": "东林学案",
+  "seq": 186,
+  "life": {
+   "raw": "1565–1636",
+   "birth": 1565,
+   "death": 1636,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常之武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-36"
+  ],
+  "anchor": {
+   "volume": 59,
+   "volume_name": "东林学案二",
+   "section": "文介孙淇澳先生慎行",
+   "text_chars": 13897
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "钱一本": {
+  "id": "钱一本",
+  "name": "钱一本",
+  "zi": "国端",
+  "hao": "启新",
+  "title": "",
+  "role": "御史",
+  "head": "御史钱启新先生一本",
+  "school": "东林学案",
+  "seq": 185,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常州武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-37"
+  ],
+  "anchor": {
+   "volume": 59,
+   "volume_name": "东林学案二",
+   "section": "御史钱启新先生一本",
+   "text_chars": 6187
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "高攀龙": {
+  "id": "高攀龙",
+  "name": "高攀龙",
+  "zi": "存之",
+  "hao": "景逸",
+  "title": "忠宪",
+  "role": "",
+  "head": "忠宪高景逸先生攀龙",
+  "school": "东林学案",
+  "seq": 184,
+  "life": {
+   "raw": "1562–1626",
+   "birth": 1562,
+   "death": 1626,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常州之无锡人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-38"
+  ],
+  "anchor": {
+   "volume": 58,
+   "volume_name": "东林学案一",
+   "section": "忠宪高景逸先生攀龙",
+   "text_chars": 22318
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "顾允成": {
+  "id": "顾允成",
+  "name": "顾允成",
+  "zi": "季时",
+  "hao": "泾凡",
+  "title": "",
+  "role": "主事",
+  "head": "主事顾泾凡先生允成",
+  "school": "东林学案",
+  "seq": 187,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-39"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "主事顾泾凡先生允成",
+   "text_chars": 2969
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛敷教": {
+  "id": "薛敷教",
+  "name": "薛敷教",
+  "zi": "以身",
+  "hao": "玄台",
+  "title": "",
+  "role": "学正",
+  "head": "学正薛玄台先生敷教",
+  "school": "东林学案",
+  "seq": 190,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常之武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-40"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "学正薛玄台先生敷教",
+   "text_chars": 865
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘永澄": {
+  "id": "刘永澄",
+  "name": "刘永澄",
+  "zi": "静之",
+  "hao": "静之",
+  "title": "",
+  "role": "",
+  "head": "职方刘静之先生永澄",
+  "school": "东林学案",
+  "seq": 189,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "扬州宝应人",
+   "province": "江苏",
+   "city": "扬州",
+   "county": "宝应县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-41",
+   "bk60刘永澄"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "职方刘静之先生永澄",
+   "text_chars": 1558
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "史孟鳞": {
+  "id": "史孟鳞",
+  "name": "史孟鳞",
+  "zi": "际明",
+  "hao": "玉池",
+  "title": "",
+  "role": "太常",
+  "head": "太常史玉池先生孟鳞",
+  "school": "东林学案",
+  "seq": 188,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常州宜兴人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": "宜兴市"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-42",
+   "bk60史孟鱗"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "太常史玉池先生孟鳞",
+   "text_chars": 2552
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "叶茂才": {
+  "id": "叶茂才",
+  "name": "叶茂才",
+  "zi": "参之",
+  "hao": "园适",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎叶园适先生茂才",
+  "school": "东林学案",
+  "seq": 191,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "无锡人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-43"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "侍郎叶园适先生茂才",
+   "text_chars": 377
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "刘元珍": {
+  "id": "刘元珍",
+  "name": "刘元珍",
+  "zi": "伯先",
+  "hao": "本孺",
+  "title": "",
+  "role": "光禄",
+  "head": "光禄刘本孺先生元珍",
+  "school": "东林学案",
+  "seq": 194,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-44"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "光禄刘本孺先生元珍",
+   "text_chars": 705
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "耿橘": {
+  "id": "耿橘",
+  "name": "耿橘",
+  "zi": "庭怀",
+  "hao": "庭怀",
+  "title": "",
+  "role": "",
+  "head": "耿庭怀先生橘",
+  "school": "东林学案",
+  "seq": 193,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "北直河间人",
+   "province": "河北",
+   "city": "沧州",
+   "county": "河间市"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-45"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "耿庭怀先生橘",
+   "text_chars": 3195
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "许世卿": {
+  "id": "许世卿",
+  "name": "许世卿",
+  "zi": "伯勋",
+  "hao": "静余",
+  "title": "",
+  "role": "孝廉",
+  "head": "孝廉许静余先生世卿",
+  "school": "东林学案",
+  "seq": 192,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常州人",
+   "province": "江苏",
+   "city": "常州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-46"
+  ],
+  "anchor": {
+   "volume": 60,
+   "volume_name": "东林学案三",
+   "section": "孝廉许静余先生世卿",
+   "text_chars": 324
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄尊素": {
+  "id": "黄尊素",
+  "name": "黄尊素",
+  "zi": "真长",
+  "hao": "白安",
+  "title": "忠端",
+  "role": "",
+  "head": "忠端黄白安先生尊素",
+  "school": "东林学案",
+  "seq": 195,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "越之馀姚人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚市"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-48"
+  ],
+  "anchor": {
+   "volume": 61,
+   "volume_name": "东林学案四",
+   "section": "忠端黄白安先生尊素",
+   "text_chars": 2972
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈龙正": {
+  "id": "陈龙正",
+  "name": "陈龙正",
+  "zi": "惕龙",
+  "hao": "几亭",
+  "title": "",
+  "role": "中书",
+  "head": "中书陈几亭先生龙正",
+  "school": "东林学案",
+  "seq": 198,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之嘉善人",
+   "province": "浙江",
+   "city": "嘉兴",
+   "county": "嘉善县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-49"
+  ],
+  "anchor": {
+   "volume": 61,
+   "volume_name": "东林学案四",
+   "section": "中书陈几亭先生龙正",
+   "text_chars": 4532
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "华允诚": {
+  "id": "华允诚",
+  "name": "华允诚",
+  "zi": "汝立",
+  "hao": "凤超",
+  "title": "",
+  "role": "郎中",
+  "head": "郎中华凤超先生允诚",
+  "school": "东林学案",
+  "seq": 197,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "无锡人",
+   "province": "江苏",
+   "city": "无锡",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-50"
+  ],
+  "anchor": {
+   "volume": 61,
+   "volume_name": "东林学案四",
+   "section": "郎中华凤超先生允诚",
+   "text_chars": 515
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吴钟峦": {
+  "id": "吴钟峦",
+  "name": "吴钟峦",
+  "zi": "峦稚",
+  "hao": "霞舟",
+  "title": "",
+  "role": "",
+  "head": "宗伯吴霞舟先生锺峦",
+  "school": "东林学案",
+  "seq": 196,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年七十五"
+  },
+  "origin": {
+   "raw": "武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-51",
+   "bk61吴鍾峦"
+  ],
+  "anchor": {
+   "volume": 61,
+   "volume_name": "东林学案四",
+   "section": "宗伯吴霞舟先生钟峦",
+   "text_chars": 2815
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "刘宗周": {
+  "id": "刘宗周",
+  "name": "刘宗周",
+  "zi": "起东",
+  "hao": "念台",
+  "title": "忠端",
+  "role": "",
+  "head": "忠端刘念台先生宗周",
+  "school": "蕺山学案",
+  "seq": 199,
+  "life": {
+   "raw": "1578–1645",
+   "birth": 1578,
+   "death": 1645,
+   "age": ""
+  },
+  "origin": {
+   "raw": "越之山阴人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "山阴（今越城/柯桥）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-54"
+  ],
+  "anchor": {
+   "volume": 62,
+   "volume_name": "蕺山学案",
+   "section": "忠端刘念台先生宗周",
+   "text_chars": 58609
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "洪垣": {
+  "id": "洪垣",
+  "name": "洪垣",
+  "zi": "峻之",
+  "hao": "觉山",
+  "title": "",
+  "role": "郡守",
+  "head": "郡守洪觉山先生垣",
+  "school": "甘泉学案",
+  "seq": 133,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年近九十"
+  },
+  "origin": {
+   "raw": "徽之婺源人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "婺源县（原属徽州）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-58"
+  ],
+  "anchor": {
+   "volume": 39,
+   "volume_name": "甘泉学案三",
+   "section": "郡守洪觉山先生垣",
+   "text_chars": 12483
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "冯从吾": {
+  "id": "冯从吾",
+  "name": "冯从吾",
+  "zi": "仲好",
+  "hao": "少墟",
+  "title": "",
+  "role": "",
+  "head": "冯从吾字仲好",
+  "school": "甘泉学案",
+  "seq": 137,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之长安人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "长安（今西安）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-59"
+  ],
+  "anchor": {
+   "volume": 41,
+   "volume_name": "甘泉学案五",
+   "section": "恭定冯少墟先生从吾",
+   "text_chars": 13321
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨时乔": {
+  "id": "杨时乔",
+  "name": "杨时乔",
+  "zi": "宜迁",
+  "hao": "止庵",
+  "title": "",
+  "role": "",
+  "head": "𫍱洁杨止庵先生时乔",
+  "school": "甘泉学案",
+  "seq": 139,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广信上饶人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "广信府上饶"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-61"
+  ],
+  "anchor": {
+   "volume": 42,
+   "volume_name": "甘泉学案六",
+   "section": "端洁杨止庵先生时乔",
+   "text_chars": 8350
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "陈献章": {
+  "id": "陈献章",
+  "name": "陈献章",
+  "zi": "",
+  "hao": "白沙",
+  "title": "",
+  "role": "",
+  "head": "白沙",
+  "school": "白沙学案",
+  "seq": 11,
+  "life": {
+   "raw": "1428–1500",
+   "birth": 1428,
+   "death": 1500,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-65"
+  ],
+  "anchor": {
+   "volume": 5,
+   "volume_name": "白沙学案上",
+   "section": "文恭陈白沙先生献章",
+   "text_chars": 8712
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "胡居仁": {
+  "id": "胡居仁",
+  "name": "胡居仁",
+  "zi": "叔心",
+  "hao": "敬斋",
+  "title": "文敬",
+  "role": "",
+  "head": "文敬胡敬斋先生居仁",
+  "school": "崇仁学案",
+  "seq": 2,
+  "life": {
+   "raw": "1434–1484",
+   "birth": 1434,
+   "death": 1484,
+   "age": "年五十一"
+  },
+  "origin": {
+   "raw": "饶之馀干人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "余干县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-68"
+  ],
+  "anchor": {
+   "volume": 2,
+   "volume_name": "崇仁学案二",
+   "section": "文敬胡敬斋先生居仁",
+   "text_chars": 7629
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吴与弼": {
+  "id": "吴与弼",
+  "name": "吴与弼",
+  "zi": "子傅",
+  "hao": "康斋",
+  "title": "",
+  "role": "",
+  "head": "聘君吴康斋先生与弼",
+  "school": "崇仁学案",
+  "seq": 1,
+  "life": {
+   "raw": "1391–1469",
+   "birth": 1391,
+   "death": 1469,
+   "age": ""
+  },
+  "origin": {
+   "raw": "抚州之崇仁人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "崇仁县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-69"
+  ],
+  "anchor": {
+   "volume": 1,
+   "volume_name": "崇仁学案一",
+   "section": "聘君吴康斋先生与弼",
+   "text_chars": 8281
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "郑伉": {
+  "id": "郑伉",
+  "name": "郑伉",
+  "zi": "孔明",
+  "hao": "孔明",
+  "title": "",
+  "role": "",
+  "head": "郑孔明先生伉",
+  "school": "崇仁学案",
+  "seq": 5,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常山之象湖人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "象湖（广昌）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-71"
+  ],
+  "anchor": {
+   "volume": 2,
+   "volume_name": "崇仁学案二",
+   "section": "郑孔明先生伉",
+   "text_chars": 163
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "娄谅": {
+  "id": "娄谅",
+  "name": "娄谅",
+  "zi": "克贞",
+  "hao": "一斋",
+  "title": "",
+  "role": "教谕",
+  "head": "教谕娄一斋先生谅",
+  "school": "崇仁学案",
+  "seq": 3,
+  "life": {
+   "raw": "1422–1491",
+   "birth": 1422,
+   "death": 1491,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广信上饶人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "广信府上饶"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-72"
+  ],
+  "anchor": {
+   "volume": 2,
+   "volume_name": "崇仁学案二",
+   "section": "教谕娄一斋先生谅",
+   "text_chars": 1134
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "谢复": {
+  "id": "谢复",
+  "name": "谢复",
+  "zi": "一阳",
+  "hao": "西山",
+  "title": "",
+  "role": "",
+  "head": "谢西山先生复",
+  "school": "崇仁学案",
+  "seq": 4,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "祁门人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "祁门县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-76"
+  ],
+  "anchor": {
+   "volume": 2,
+   "volume_name": "崇仁学案二",
+   "section": "谢西山先生复",
+   "text_chars": 141
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "胡九韶": {
+  "id": "胡九韶",
+  "name": "胡九韶",
+  "zi": "凤仪",
+  "hao": "凤仪",
+  "title": "",
+  "role": "",
+  "head": "胡凤仪先生九韶",
+  "school": "崇仁学案",
+  "seq": 6,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "金溪人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "金溪县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-77"
+  ],
+  "anchor": {
+   "volume": 2,
+   "volume_name": "崇仁学案二",
+   "section": "胡凤仪先生九韶",
+   "text_chars": 543
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "魏校": {
+  "id": "魏校",
+  "name": "魏校",
+  "zi": "子才",
+  "hao": "庄渠",
+  "title": "",
+  "role": "",
+  "head": "魏校字子才",
+  "school": "崇仁学案",
+  "seq": 7,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "昆山人",
+   "province": "江苏",
+   "city": "苏州",
+   "county": "昆山市"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-78"
+  ],
+  "anchor": {
+   "volume": 3,
+   "volume_name": "崇仁学案三",
+   "section": "恭简魏庄渠先生校",
+   "text_chars": 10461
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "余佑": {
+  "id": "余佑",
+  "name": "余佑",
+  "zi": "子积",
+  "hao": "讱斋",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎余讱斋先生佑",
+  "school": "崇仁学案",
+  "seq": 8,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "鄱阳人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "鄱阳县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-80",
+   "bk03余祐"
+  ],
+  "anchor": {
+   "volume": 3,
+   "volume_name": "崇仁学案三",
+   "section": "侍郎余讱斋先生佑",
+   "text_chars": 1106
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "夏尚朴": {
+  "id": "夏尚朴",
+  "name": "夏尚朴",
+  "zi": "敦夫",
+  "hao": "东岩",
+  "title": "",
+  "role": "太仆",
+  "head": "太仆夏东岩先生尚朴",
+  "school": "崇仁学案",
+  "seq": 9,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "永丰人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "永丰县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-81"
+  ],
+  "anchor": {
+   "volume": 4,
+   "volume_name": "崇仁学案四",
+   "section": "太仆夏东岩先生尚朴",
+   "text_chars": 6831
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "潘润": {
+  "id": "潘润",
+  "name": "潘润",
+  "zi": "德夫",
+  "hao": "玉斋",
+  "title": "",
+  "role": "广文",
+  "head": "广文潘玉斋先生润",
+  "school": "崇仁学案",
+  "seq": 10,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "信之永丰人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "永丰（今广丰区）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-86"
+  ],
+  "anchor": {
+   "volume": 4,
+   "volume_name": "崇仁学案四",
+   "section": "广文潘玉斋先生润",
+   "text_chars": 534
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张诩": {
+  "id": "张诩",
+  "name": "张诩",
+  "zi": "廷实",
+  "hao": "东所",
+  "title": "",
+  "role": "通政",
+  "head": "通政张东所先生诩",
+  "school": "白沙学案",
+  "seq": 13,
+  "life": {
+   "raw": "1455–1514",
+   "birth": 1455,
+   "death": 1514,
+   "age": "卒年六十"
+  },
+  "origin": {
+   "raw": "南海人",
+   "province": "广东",
+   "city": "佛山",
+   "county": "南海区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-90"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "通政张东所先生诩",
+   "text_chars": 2456
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "贺钦": {
+  "id": "贺钦",
+  "name": "贺钦",
+  "zi": "克恭",
+  "hao": "医闾",
+  "title": "",
+  "role": "给事",
+  "head": "给事贺医闾先生钦",
+  "school": "白沙学案",
+  "seq": 14,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "世为定海人",
+   "province": "浙江",
+   "city": "舟山",
+   "county": "定海区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-91"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "给事贺医闾先生钦",
+   "text_chars": 1642
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "邹智": {
+  "id": "邹智",
+  "name": "邹智",
+  "zi": "汝愚",
+  "hao": "立斋",
+  "title": "",
+  "role": "吏目",
+  "head": "吏目邹立斋先生智",
+  "school": "白沙学案",
+  "seq": 15,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "四川合州人",
+   "province": "重庆",
+   "city": "合川",
+   "county": "合州（今合川区）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-96"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "吏目邹立斋先生智",
+   "text_chars": 905
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈茂烈": {
+  "id": "陈茂烈",
+  "name": "陈茂烈",
+  "zi": "时周",
+  "hao": "时周",
+  "title": "",
+  "role": "御史",
+  "head": "御史陈时周先生茂烈",
+  "school": "白沙学案",
+  "seq": 16,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之莆田人",
+   "province": "福建",
+   "city": "莆田",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-97"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "御史陈时周先生茂烈",
+   "text_chars": 548
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "林光": {
+  "id": "林光",
+  "name": "林光",
+  "zi": "缉熙",
+  "hao": "缉熙",
+  "title": "",
+  "role": "长史",
+  "head": "长史林缉熙先生光",
+  "school": "白沙学案",
+  "seq": 17,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十一"
+  },
+  "origin": {
+   "raw": "东莞人",
+   "province": "广东",
+   "city": "东莞",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-98"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "长史林缉熙先生光",
+   "text_chars": 690
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈庸": {
+  "id": "陈庸",
+  "name": "陈庸",
+  "zi": "秉常",
+  "hao": "秉常",
+  "title": "",
+  "role": "州同",
+  "head": "州同陈秉常先生庸",
+  "school": "白沙学案",
+  "seq": 18,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南海人",
+   "province": "广东",
+   "city": "佛山",
+   "county": "南海区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-101"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "州同陈秉常先生庸",
+   "text_chars": 179
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李孔修": {
+  "id": "李孔修",
+  "name": "李孔修",
+  "zi": "子长",
+  "hao": "抱真",
+  "title": "",
+  "role": "布衣",
+  "head": "布衣李抱真先生孔修",
+  "school": "白沙学案",
+  "seq": 19,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-102"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "布衣李抱真先生孔修",
+   "text_chars": 418
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "谢佑": {
+  "id": "谢佑",
+  "name": "谢佑",
+  "zi": "天锡",
+  "hao": "天锡",
+  "title": "",
+  "role": "",
+  "head": "谢天锡先生佑",
+  "school": "白沙学案",
+  "seq": 20,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南海人",
+   "province": "广东",
+   "city": "佛山",
+   "county": "南海区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-103",
+   "bk06谢祐"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "谢天锡先生佑",
+   "text_chars": 111
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "何廷矩": {
+  "id": "何廷矩",
+  "name": "何廷矩",
+  "zi": "时振",
+  "hao": "时振",
+  "title": "",
+  "role": "",
+  "head": "文学何时振先生廷矩",
+  "school": "白沙学案",
+  "seq": 21,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "番禺人",
+   "province": "广东",
+   "city": "广州",
+   "county": "番禺区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-104",
+   "bk06何廷矩"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "文学何时振先生廷矩",
+   "text_chars": 159
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "史桂芳": {
+  "id": "史桂芳",
+  "name": "史桂芳",
+  "zi": "景实",
+  "hao": "惺堂",
+  "title": "",
+  "role": "运使",
+  "head": "运使史惺堂先生桂芳",
+  "school": "白沙学案",
+  "seq": 22,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "豫之番阳人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "番阳=鄱阳"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-105"
+  ],
+  "anchor": {
+   "volume": 6,
+   "volume_name": "白沙学案下",
+   "section": "运使史惺堂先生桂芳",
+   "text_chars": 978
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛瑄": {
+  "id": "薛瑄",
+  "name": "薛瑄",
+  "zi": "德温",
+  "hao": "敬轩",
+  "title": "文清",
+  "role": "",
+  "head": "文清薛敬轩先生瑄",
+  "school": "河东学案",
+  "seq": 23,
+  "life": {
+   "raw": "1389–1464",
+   "birth": 1389,
+   "death": 1464,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山西河津人",
+   "province": "山西",
+   "city": "运城",
+   "county": "河津市"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-106"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "文清薛敬轩先生瑄",
+   "text_chars": 7432
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "阎禹锡": {
+  "id": "阎禹锡",
+  "name": "阎禹锡",
+  "zi": "子与，洛阳人",
+  "hao": "子儿",
+  "title": "",
+  "role": "御史",
+  "head": "御史阎子儿先生禹锡",
+  "school": "河东学案",
+  "seq": 24,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-108"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "御史阎子与先生禹锡",
+   "text_chars": 252
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "段坚": {
+  "id": "段坚",
+  "name": "段坚",
+  "zi": "可久",
+  "hao": "容思",
+  "title": "",
+  "role": "郡守",
+  "head": "郡守段容思先生坚",
+  "school": "河东学案",
+  "seq": 26,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "兰州人",
+   "province": "甘肃",
+   "city": "兰州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-109"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "郡守段容思先生坚",
+   "text_chars": 417
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张鼎": {
+  "id": "张鼎",
+  "name": "张鼎",
+  "zi": "大器",
+  "hao": "自在",
+  "title": "",
+  "role": "侍郎",
+  "head": "侍郎张自在先生鼎",
+  "school": "河东学案",
+  "seq": 25,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之咸宁人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "咸宁县（今属西安）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-110"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "侍郎张自在先生鼎",
+   "text_chars": 159
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张杰": {
+  "id": "张杰",
+  "name": "张杰",
+  "zi": "立夫",
+  "hao": "默斋",
+  "title": "",
+  "role": "广文",
+  "head": "广文张默斋先生杰",
+  "school": "河东学案",
+  "seq": 27,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之凤翔人",
+   "province": "陕西",
+   "city": "宝鸡",
+   "county": "凤翔区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-111"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "广文张默斋先生杰",
+   "text_chars": 279
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周蕙": {
+  "id": "周蕙",
+  "name": "周蕙",
+  "zi": "廷芳",
+  "hao": "小泉",
+  "title": "",
+  "role": "布衣",
+  "head": "布衣周小泉先生蕙",
+  "school": "河东学案",
+  "seq": 29,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山丹卫人",
+   "province": "甘肃",
+   "city": "张掖",
+   "county": "山丹县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-112"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "布衣周小泉先生蕙",
+   "text_chars": 490
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王鸿儒": {
+  "id": "王鸿儒",
+  "name": "王鸿儒",
+  "zi": "懋学",
+  "hao": "凝斋",
+  "title": "文庄",
+  "role": "",
+  "head": "文庄王凝斋先生鸿儒",
+  "school": "河东学案",
+  "seq": 28,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南南阳人",
+   "province": "河南",
+   "city": "南阳",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-113"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "文庄王凝斋先生鸿儒",
+   "text_chars": 2235
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛敬之": {
+  "id": "薛敬之",
+  "name": "薛敬之",
+  "zi": "显思",
+  "hao": "思庵",
+  "title": "",
+  "role": "",
+  "head": "同知薛思庵先生敬之",
+  "school": "河东学案",
+  "seq": 30,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之渭南人",
+   "province": "陕西",
+   "city": "渭南",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-114"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "同知薛思庵先生敬之",
+   "text_chars": 2007
+  },
+  "has_biography": true,
+  "hao_source": "book_section"
+ },
+ "李锦": {
+  "id": "李锦",
+  "name": "李锦",
+  "zi": "在中",
+  "hao": "介庵",
+  "title": "",
+  "role": "郡丞",
+  "head": "郡丞李介庵先生锦",
+  "school": "河东学案",
+  "seq": 31,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之咸宁人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "咸宁县（今属西安）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-116"
+  ],
+  "anchor": {
+   "volume": 7,
+   "volume_name": "河东学案上",
+   "section": "郡丞李介庵先生锦",
+   "text_chars": 519
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吕柟": {
+  "id": "吕柟",
+  "name": "吕柟",
+  "zi": "仲木",
+  "hao": "泾野",
+  "title": "文简",
+  "role": "",
+  "head": "文简吕泾野先生楠",
+  "school": "河东学案",
+  "seq": 32,
+  "life": {
+   "raw": "1479–1542",
+   "birth": 1479,
+   "death": 1542,
+   "age": "年六十四"
+  },
+  "origin": {
+   "raw": "陜之高陵人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "高陵区"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-118"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "文简吕泾野先生柟",
+   "text_chars": 10291
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张节": {
+  "id": "张节",
+  "name": "张节",
+  "zi": "介夫",
+  "hao": "石谷",
+  "title": "",
+  "role": "",
+  "head": "张石谷先生节",
+  "school": "河东学案",
+  "seq": 34,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年八十卒"
+  },
+  "origin": {
+   "raw": "泾阳人",
+   "province": "陕西",
+   "city": "咸阳",
+   "county": "泾阳县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-120"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "张石谷先生节",
+   "text_chars": 126
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李挺": {
+  "id": "李挺",
+  "name": "李挺",
+  "zi": "",
+  "hao": "正立",
+  "title": "",
+  "role": "",
+  "head": "李正立先生挺",
+  "school": "河东学案",
+  "seq": 35,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "咸宁人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "咸宁县（今属西安）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-123"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "李正立先生挺",
+   "text_chars": 72
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "郭蒙泉": {
+  "id": "郭蒙泉",
+  "name": "郭蒙泉",
+  "zi": "惟藩",
+  "hao": "蒙泉",
+  "title": "",
+  "role": "郡守",
+  "head": "郡守郭蒙泉",
+  "school": "河东学案",
+  "seq": 36,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "泾阳人",
+   "province": "陕西",
+   "city": "咸阳",
+   "county": "泾阳县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-125"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "郡守郭蒙泉",
+   "text_chars": 194
+  },
+  "has_biography": true,
+  "hao_source": "zi_field"
+ },
+ "杨天游": {
+  "id": "杨天游",
+  "name": "杨天游",
+  "zi": "",
+  "hao": "天游",
+  "title": "",
+  "role": "",
+  "head": "举人杨天游先生应诏",
+  "school": "楚中王门学案",
+  "seq": 38,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "闽之建安人",
+   "province": "福建",
+   "city": "南平",
+   "county": "建安（今建瓯）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-126"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "cleaned"
+ },
+ "王恕": {
+  "id": "王恕",
+  "name": "王恕",
+  "zi": "宗贯",
+  "hao": "石渠",
+  "title": "端毅",
+  "role": "",
+  "head": "端毅王石渠先生恕",
+  "school": "三原学案",
+  "seq": 38,
+  "life": {
+   "raw": "1416–1508",
+   "birth": 1416,
+   "death": 1508,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之三原人",
+   "province": "陕西",
+   "city": "咸阳",
+   "county": "三原县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-130"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "端毅王石渠先生恕",
+   "text_chars": 3758
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王承裕": {
+  "id": "王承裕",
+  "name": "王承裕",
+  "zi": "天宇",
+  "hao": "平川",
+  "title": "康僖",
+  "role": "",
+  "head": "康僖王平川先生承裕",
+  "school": "三原学案",
+  "seq": 39,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-132"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "康僖王平川先生承裕",
+   "text_chars": 286
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "马理": {
+  "id": "马理",
+  "name": "马理",
+  "zi": "伯循",
+  "hao": "溪田",
+  "title": "",
+  "role": "光禄",
+  "head": "光禄马溪田先生理",
+  "school": "三原学案",
+  "seq": 40,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之三原人",
+   "province": "陕西",
+   "city": "咸阳",
+   "county": "三原县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-133"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "光禄马谿田先生理",
+   "text_chars": 684
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "韩邦奇": {
+  "id": "韩邦奇",
+  "name": "韩邦奇",
+  "zi": "汝节",
+  "hao": "苑洛",
+  "title": "恭简",
+  "role": "",
+  "head": "恭简韩苑洛先生邦奇",
+  "school": "三原学案",
+  "seq": 41,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之朝邑人",
+   "province": "陕西",
+   "city": "渭南",
+   "county": "朝邑镇（今属大荔）"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-134"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "恭简韩苑洛先生邦奇",
+   "text_chars": 958
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨爵": {
+  "id": "杨爵",
+  "name": "杨爵",
+  "zi": "伯修",
+  "hao": "斛山",
+  "title": "忠介",
+  "role": "",
+  "head": "忠介杨斛山先生爵",
+  "school": "三原学案",
+  "seq": 42,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陜之富平人",
+   "province": "陕西",
+   "city": "渭南",
+   "county": "富平县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-136"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "忠介杨斛山先生爵",
+   "text_chars": 6296
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王之士": {
+  "id": "王之士",
+  "name": "王之士",
+  "zi": "欲立",
+  "hao": "秦关",
+  "title": "",
+  "role": "徵君",
+  "head": "征君王秦关先生之士",
+  "school": "三原学案",
+  "seq": 43,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": "年六十三"
+  },
+  "origin": {
+   "raw": "陜之蓝田人",
+   "province": "陕西",
+   "city": "西安",
+   "county": "蓝田县"
+  },
+  "legacy_ids": [
+   "STSbwmwu5GfzBW4jki-n-138"
+  ],
+  "anchor": {
+   "volume": 9,
+   "volume_name": "三原学案",
+   "section": "征君王秦关先生之士",
+   "text_chars": 607
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王阳明": {
+  "id": "王阳明",
+  "name": "王阳明",
+  "zi": "伯安",
+  "hao": "阳明",
+  "title": "文成",
+  "role": "",
+  "head": "阳明王先生守仁",
+  "school": "姚江学案",
+  "seq": 44,
+  "life": {
+   "raw": "1472–1529",
+   "birth": 1472,
+   "death": 1529,
+   "age": "年五十七"
+  },
+  "origin": {
+   "raw": "浙江余姚人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚市"
+  },
+  "legacy_ids": [
+   "wang_yangming"
+  ],
+  "anchor": {
+   "volume": 10,
+   "volume_name": "姚江学案",
+   "section": "文成王阳明先生守仁",
+   "text_chars": 23694
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李承箕": {
+  "id": "李承箕",
+  "name": "李承箕",
+  "zi": "世卿",
+  "hao": "大厓",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "白沙学案",
+  "seq": 12,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "楚之嘉鱼人",
+   "province": "湖北",
+   "city": "咸宁",
+   "county": "嘉鱼县"
+  },
+  "legacy_ids": [
+   "bk05李承箕"
+  ],
+  "anchor": {
+   "volume": 5,
+   "volume_name": "白沙学案上",
+   "section": "举人李大厓先生承箕",
+   "text_chars": 907
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吕潜": {
+  "id": "吕潜",
+  "name": "吕潜",
+  "zi": "时见",
+  "hao": "愧轩",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "河东学案",
+  "seq": 33,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "陕之泾阳人",
+   "province": "陕西",
+   "city": "咸阳",
+   "county": "泾阳县"
+  },
+  "legacy_ids": [
+   "bk08吕潜"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "司务吕愧轩先生潜",
+   "text_chars": 198
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杨应诏": {
+  "id": "杨应诏",
+  "name": "杨应诏",
+  "zi": "",
+  "hao": "天游",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "河东学案",
+  "seq": 37,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "闽之建安人",
+   "province": "福建",
+   "city": "南平",
+   "county": "建安（今建瓯）"
+  },
+  "legacy_ids": [
+   "bk08杨应诏"
+  ],
+  "anchor": {
+   "volume": 8,
+   "volume_name": "河东学案下",
+   "section": "举人杨天游先生应诏",
+   "text_chars": 1931
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "许璋": {
+  "id": "许璋",
+  "name": "许璋",
+  "zi": "半圭",
+  "hao": "半圭",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "姚江学案",
+  "seq": 46,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "越之上虞人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "上虞区"
+  },
+  "legacy_ids": [
+   "bk10许璋"
+  ],
+  "anchor": null,
+  "has_biography": false,
+  "hao_source": "legacy"
+ },
+ "蔡宗兖": {
+  "id": "蔡宗兖",
+  "name": "蔡宗兖",
+  "zi": "希渊",
+  "hao": "我斋",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 46,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "山阴之白洋人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "白洋（山阴）"
+  },
+  "legacy_ids": [
+   "bk11蔡宗兖"
+  ],
+  "anchor": {
+   "volume": 11,
+   "volume_name": "浙中王门学案一",
+   "section": "督学蔡我斋先生宗兖",
+   "text_chars": 408
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "朱节": {
+  "id": "朱节",
+  "name": "朱节",
+  "zi": "守中",
+  "hao": "白浦",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 47,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "亦白洋人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "白洋（山阴）"
+  },
+  "legacy_ids": [
+   "bk11朱节"
+  ],
+  "anchor": {
+   "volume": 11,
+   "volume_name": "浙中王门学案一",
+   "section": "御史朱白浦先生节",
+   "text_chars": 122
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "蔡汝楠": {
+  "id": "蔡汝楠",
+  "name": "蔡汝楠",
+  "zi": "子木",
+  "hao": "白石",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "甘泉学案",
+  "seq": 135,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "西浙之德清人",
+   "province": "浙江",
+   "city": "湖州",
+   "county": "德清县"
+  },
+  "legacy_ids": [
+   "bk40蔡汝楠"
+  ],
+  "anchor": {
+   "volume": 40,
+   "volume_name": "甘泉学案四",
+   "section": "侍郎蔡白石先生汝楠",
+   "text_chars": 2896
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "方孝孺": {
+  "id": "方孝孺",
+  "name": "方孝孺",
+  "zi": "希直",
+  "hao": "正学",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 141,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "台之宁海人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "宁海县"
+  },
+  "legacy_ids": [
+   "bk43方孝孺"
+  ],
+  "anchor": {
+   "volume": 43,
+   "volume_name": "诸儒学案上一",
+   "section": "文正方正学先生孝孺",
+   "text_chars": 3975
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "赵谦": {
+  "id": "赵谦",
+  "name": "赵谦",
+  "zi": "㧑谦",
+  "hao": "考古",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 142,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "余姚人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "余姚市"
+  },
+  "legacy_ids": [
+   "bk43赵谦"
+  ],
+  "anchor": {
+   "volume": 43,
+   "volume_name": "诸儒学案上一",
+   "section": "琼山赵考古先生谦",
+   "text_chars": 5095
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "曹端": {
+  "id": "曹端",
+  "name": "曹端",
+  "zi": "正夫",
+  "hao": "月川",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 143,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南之渑池人",
+   "province": "河南",
+   "city": "三门峡",
+   "county": "渑池县"
+  },
+  "legacy_ids": [
+   "bk44曹端"
+  ],
+  "anchor": {
+   "volume": 44,
+   "volume_name": "诸儒学案上二",
+   "section": "学正曹月川先生端",
+   "text_chars": 3672
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄润玉": {
+  "id": "黄润玉",
+  "name": "黄润玉",
+  "zi": "孟清",
+  "hao": "南山",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 144,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之鄞县人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "鄞州区"
+  },
+  "legacy_ids": [
+   "bk45黄润玉"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "督学黄南山先生润玉",
+   "text_chars": 2505
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "罗伦": {
+  "id": "罗伦",
+  "name": "罗伦",
+  "zi": "彝正",
+  "hao": "一峰",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 145,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk45罗伦"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "文毅罗一峰先生伦",
+   "text_chars": 1273
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "章懋": {
+  "id": "章懋",
+  "name": "章懋",
+  "zi": "德懋",
+  "hao": "枫山",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 146,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "金华兰溪人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "兰溪市"
+  },
+  "legacy_ids": [
+   "bk45章懋"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "文懿章枫山先生懋",
+   "text_chars": 2286
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "庄昶": {
+  "id": "庄昶",
+  "name": "庄昶",
+  "zi": "孔旸",
+  "hao": "定山",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 147,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江浦人",
+   "province": "江苏",
+   "city": "南京",
+   "county": "江浦（今浦口区）"
+  },
+  "legacy_ids": [
+   "bk45庄昶"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "郎中庄定山先生昶",
+   "text_chars": 2142
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张元祯": {
+  "id": "张元祯",
+  "name": "张元祯",
+  "zi": "廷祥",
+  "hao": "东白",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 148,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "南昌人",
+   "province": "江西",
+   "city": "南昌",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk45张元祯"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "侍郎张东白先生元祯",
+   "text_chars": 1193
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈选": {
+  "id": "陈选",
+  "name": "陈选",
+  "zi": "士贤",
+  "hao": "克庵",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 149,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "台之临海人",
+   "province": "浙江",
+   "city": "台州",
+   "county": "临海市"
+  },
+  "legacy_ids": [
+   "bk45陈选"
+  ],
+  "anchor": {
+   "volume": 45,
+   "volume_name": "诸儒学案上三",
+   "section": "布政陈克庵先生选",
+   "text_chars": 1380
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈真晟": {
+  "id": "陈真晟",
+  "name": "陈真晟",
+  "zi": "剩夫",
+  "hao": "剩夫",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 150,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk46陈真晟"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "布衣陈剩夫先生真晟",
+   "text_chars": 3541
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张吉": {
+  "id": "张吉",
+  "name": "张吉",
+  "zi": "克修",
+  "hao": "古城",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 151,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江西余干人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "余干县"
+  },
+  "legacy_ids": [
+   "bk46张吉"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "布政张古城先生吉",
+   "text_chars": 359
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周瑛": {
+  "id": "周瑛",
+  "name": "周瑛",
+  "zi": "梁石",
+  "hao": "翠渠",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 152,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之莆田人",
+   "province": "福建",
+   "city": "莆田",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk46周瑛"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "方伯周翠渠先生瑛",
+   "text_chars": 504
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "蔡清": {
+  "id": "蔡清",
+  "name": "蔡清",
+  "zi": "介夫",
+  "hao": "虚斋",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 153,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之晋江人",
+   "province": "福建",
+   "city": "泉州",
+   "county": "晋江市"
+  },
+  "legacy_ids": [
+   "bk46蔡清"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "司成蔡虚斋先生清",
+   "text_chars": 3622
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "潘府": {
+  "id": "潘府",
+  "name": "潘府",
+  "zi": "",
+  "hao": "南山",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 154,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之上虞人",
+   "province": "浙江",
+   "city": "绍兴",
+   "county": "上虞区"
+  },
+  "legacy_ids": [
+   "bk46潘府"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "太常潘南山先生府",
+   "text_chars": 1040
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "罗侨": {
+  "id": "罗侨",
+  "name": "罗侨",
+  "zi": "惟升",
+  "hao": "东川",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 155,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "豫之吉水人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "吉水县"
+  },
+  "legacy_ids": [
+   "bk46罗侨"
+  ],
+  "anchor": {
+   "volume": 46,
+   "volume_name": "诸儒学案上四",
+   "section": "参政罗东川先生侨",
+   "text_chars": 1238
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "罗钦顺": {
+  "id": "罗钦顺",
+  "name": "罗钦顺",
+  "zi": "允升",
+  "hao": "整庵",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 156,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉之泰和人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "泰和县"
+  },
+  "legacy_ids": [
+   "bk47罗钦顺"
+  ],
+  "anchor": {
+   "volume": 47,
+   "volume_name": "诸儒学案中一",
+   "section": "文庄罗整庵先生钦顺",
+   "text_chars": 23356
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "汪俊": {
+  "id": "汪俊",
+  "name": "汪俊",
+  "zi": "升之",
+  "hao": "石潭",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 157,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "弋阳人",
+   "province": "江西",
+   "city": "上饶",
+   "county": "弋阳县"
+  },
+  "legacy_ids": [
+   "bk48汪俊"
+  ],
+  "anchor": {
+   "volume": 48,
+   "volume_name": "诸儒学案中二",
+   "section": "文庄汪石潭先生俊",
+   "text_chars": 8222
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "崔铣": {
+  "id": "崔铣",
+  "name": "崔铣",
+  "zi": "子钟",
+  "hao": "后渠",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 158,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南安阳人",
+   "province": "河南",
+   "city": "安阳",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk48崔铣"
+  ],
+  "anchor": {
+   "volume": 48,
+   "volume_name": "诸儒学案中二",
+   "section": "文敏崔后渠先生铣",
+   "text_chars": 3880
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "何瑭": {
+  "id": "何瑭",
+  "name": "何瑭",
+  "zi": "粹夫",
+  "hao": "柏斋",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 159,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "怀庆武陟人",
+   "province": "河南",
+   "city": "焦作",
+   "county": "武陟县"
+  },
+  "legacy_ids": [
+   "bk49何瑭"
+  ],
+  "anchor": {
+   "volume": 49,
+   "volume_name": "诸儒学案中三",
+   "section": "文定何柏斋先生瑭",
+   "text_chars": 6961
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "王廷相": {
+  "id": "王廷相",
+  "name": "王廷相",
+  "zi": "子衡",
+  "hao": "浚川",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 160,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南仪封人",
+   "province": "河南",
+   "city": "开封",
+   "county": "仪封（今兰考）"
+  },
+  "legacy_ids": [
+   "bk50王廷相"
+  ],
+  "anchor": {
+   "volume": 50,
+   "volume_name": "诸儒学案中四",
+   "section": "肃敏王浚川先生廷相",
+   "text_chars": 16172
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄佐": {
+  "id": "黄佐",
+  "name": "黄佐",
+  "zi": "才伯",
+  "hao": "泰泉",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 161,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "广之香山人",
+   "province": "广东",
+   "city": "中山",
+   "county": "香山（今中山）"
+  },
+  "legacy_ids": [
+   "bk51黄佐"
+  ],
+  "anchor": {
+   "volume": 51,
+   "volume_name": "诸儒学案中五",
+   "section": "文裕黄泰泉先生佐",
+   "text_chars": 16252
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张邦奇": {
+  "id": "张邦奇",
+  "name": "张邦奇",
+  "zi": "常甫",
+  "hao": "甬川",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 162,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "浙之鄞人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "鄞州区"
+  },
+  "legacy_ids": [
+   "bk52张邦奇"
+  ],
+  "anchor": {
+   "volume": 52,
+   "volume_name": "诸儒学案中六",
+   "section": "文定张甬川先生邦奇",
+   "text_chars": 2426
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "张岳": {
+  "id": "张岳",
+  "name": "张岳",
+  "zi": "维乔",
+  "hao": "净峰",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 163,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之惠安人",
+   "province": "福建",
+   "city": "泉州",
+   "county": "惠安县"
+  },
+  "legacy_ids": [
+   "bk52张岳"
+  ],
+  "anchor": {
+   "volume": 52,
+   "volume_name": "诸儒学案中六",
+   "section": "襄惠张净峰先生岳",
+   "text_chars": 9506
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "徐问": {
+  "id": "徐问",
+  "name": "徐问",
+  "zi": "用中",
+  "hao": "养斋",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 164,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "常之武进人",
+   "province": "江苏",
+   "city": "常州",
+   "county": "武进区"
+  },
+  "legacy_ids": [
+   "bk52徐问"
+  ],
+  "anchor": {
+   "volume": 52,
+   "volume_name": "诸儒学案中六",
+   "section": "庄裕徐养斋先生问",
+   "text_chars": 8708
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李经纶": {
+  "id": "李经纶",
+  "name": "李经纶",
+  "zi": "大经",
+  "hao": "大经",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 165,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "建昌南丰人",
+   "province": "江西",
+   "city": "抚州",
+   "county": "南丰县"
+  },
+  "legacy_ids": [
+   "bk52李经纶"
+  ],
+  "anchor": {
+   "volume": 52,
+   "volume_name": "诸儒学案中六",
+   "section": "诸生李大经先生经纶",
+   "text_chars": 4405
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "李中": {
+  "id": "李中",
+  "name": "李中",
+  "zi": "子庸",
+  "hao": "谷平",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 166,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吉水人",
+   "province": "江西",
+   "city": "吉安",
+   "county": "吉水县"
+  },
+  "legacy_ids": [
+   "bk53李中"
+  ],
+  "anchor": {
+   "volume": 53,
+   "volume_name": "诸儒学案下一",
+   "section": "中丞李谷平先生中",
+   "text_chars": 6932
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "薛蕙": {
+  "id": "薛蕙",
+  "name": "薛蕙",
+  "zi": "君采",
+  "hao": "西原",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 168,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "亳州人",
+   "province": "安徽",
+   "city": "亳州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk53薛蕙"
+  ],
+  "anchor": {
+   "volume": 53,
+   "volume_name": "诸儒学案下一",
+   "section": "考功薛西原先生蕙",
+   "text_chars": 2243
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "舒芬": {
+  "id": "舒芬",
+  "name": "舒芬",
+  "zi": "国裳",
+  "hao": "梓溪",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 169,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "江西进贤人",
+   "province": "江西",
+   "city": "南昌",
+   "county": "进贤县"
+  },
+  "legacy_ids": [
+   "bk53舒芬"
+  ],
+  "anchor": {
+   "volume": 53,
+   "volume_name": "诸儒学案下一",
+   "section": "文节舒梓溪先生芬",
+   "text_chars": 2716
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "卢宁忠": {
+  "id": "卢宁忠",
+  "name": "卢宁忠",
+  "zi": "献甫",
+  "hao": "冠岩",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 171,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "岭南人",
+   "province": "广东",
+   "city": "广州",
+   "county": "岭南（泛指）"
+  },
+  "legacy_ids": [
+   "bk54卢甯忠"
+  ],
+  "anchor": {
+   "volume": 54,
+   "volume_name": "诸儒学案下二",
+   "section": "卢冠岩先生宁忠",
+   "text_chars": 4174
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吕坤": {
+  "id": "吕坤",
+  "name": "吕坤",
+  "zi": "叔简",
+  "hao": "心吾",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 172,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南宁陵人",
+   "province": "河南",
+   "city": "商丘",
+   "county": "宁陵县"
+  },
+  "legacy_ids": [
+   "bk54吕坤"
+  ],
+  "anchor": {
+   "volume": 54,
+   "volume_name": "诸儒学案下二",
+   "section": "侍郎吕心吾先生坤",
+   "text_chars": 5061
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "曹于汴": {
+  "id": "曹于汴",
+  "name": "曹于汴",
+  "zi": "自梁",
+  "hao": "贞予",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 174,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "平阳安邑人",
+   "province": "山西",
+   "city": "运城",
+   "county": "安邑（今盐湖区）"
+  },
+  "legacy_ids": [
+   "bk54曹于汴"
+  ],
+  "anchor": {
+   "volume": 54,
+   "volume_name": "诸儒学案下二",
+   "section": "总宪曹贞予先生于汴",
+   "text_chars": 2538
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吕维祺": {
+  "id": "吕维祺",
+  "name": "吕维祺",
+  "zi": "介孺",
+  "hao": "豫石",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 175,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "河南新安人",
+   "province": "河南",
+   "city": "洛阳",
+   "county": "新安县"
+  },
+  "legacy_ids": [
+   "bk54吕维祺"
+  ],
+  "anchor": {
+   "volume": 54,
+   "volume_name": "诸儒学案下二",
+   "section": "忠节吕豫石先生维祺",
+   "text_chars": 1871
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "郝敬": {
+  "id": "郝敬",
+  "name": "郝敬",
+  "zi": "仲舆",
+  "hao": "楚望",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 176,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "楚之京山人",
+   "province": "湖北",
+   "city": "荆门",
+   "county": "京山市"
+  },
+  "legacy_ids": [
+   "bk55郝敬"
+  ],
+  "anchor": {
+   "volume": 55,
+   "volume_name": "诸儒学案下三",
+   "section": "给事中郝楚望先生敬",
+   "text_chars": 9373
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "吴执御": {
+  "id": "吴执御",
+  "name": "吴执御",
+  "zi": "朗公",
+  "hao": "朗公",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 177,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "台州人",
+   "province": "浙江",
+   "city": "台州",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk55吴执御"
+  ],
+  "anchor": {
+   "volume": 55,
+   "volume_name": "诸儒学案下三",
+   "section": "谏议吴朗公先生执御",
+   "text_chars": 1452
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "黄道周": {
+  "id": "黄道周",
+  "name": "黄道周",
+  "zi": "幼玄",
+  "hao": "石斋",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 178,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "福之镇海卫人",
+   "province": "福建",
+   "city": "泉州",
+   "county": "镇海卫（今石狮）"
+  },
+  "legacy_ids": [
+   "bk56黄道周"
+  ],
+  "anchor": {
+   "volume": 56,
+   "volume_name": "诸儒学案下四",
+   "section": "忠烈黄石斋先生道周",
+   "text_chars": 16273
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "金铉": {
+  "id": "金铉",
+  "name": "金铉",
+  "zi": "伯玉",
+  "hao": "伯玉",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 179,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "",
+   "province": "不详",
+   "city": "",
+   "county": ""
+  },
+  "legacy_ids": [
+   "bk57金铉"
+  ],
+  "anchor": {
+   "volume": 57,
+   "volume_name": "诸儒学案下五",
+   "section": "忠节金伯玉先生铉",
+   "text_chars": 902
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "金声": {
+  "id": "金声",
+  "name": "金声",
+  "zi": "正希",
+  "hao": "正希",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 180,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "徽之休宁人",
+   "province": "安徽",
+   "city": "黄山",
+   "county": "休宁县"
+  },
+  "legacy_ids": [
+   "bk57金声"
+  ],
+  "anchor": {
+   "volume": 57,
+   "volume_name": "诸儒学案下五",
+   "section": "中丞金正希先生声",
+   "text_chars": 7012
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "朱天麟": {
+  "id": "朱天麟",
+  "name": "朱天麟",
+  "zi": "震青",
+  "hao": "震青",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 181,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "吴之昆山人",
+   "province": "江苏",
+   "city": "苏州",
+   "county": "昆山市"
+  },
+  "legacy_ids": [
+   "bk57朱天麟"
+  ],
+  "anchor": {
+   "volume": 57,
+   "volume_name": "诸儒学案下五",
+   "section": "辅臣朱震青先生天麟",
+   "text_chars": 1449
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "孙奇逢": {
+  "id": "孙奇逢",
+  "name": "孙奇逢",
+  "zi": "启泰",
+  "hao": "钟元",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "诸儒学案",
+  "seq": 182,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "北直容城人",
+   "province": "河北",
+   "city": "保定",
+   "county": "容城县"
+  },
+  "legacy_ids": [
+   "bk57孙奇逢"
+  ],
+  "anchor": {
+   "volume": 57,
+   "volume_name": "诸儒学案下五",
+   "section": "征君孙钟元先生奇逢",
+   "text_chars": 1982
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "应典": {
+  "id": "应典",
+  "name": "应典",
+  "zi": "天彝",
+  "hao": "天彝",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 200,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "永康人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "永康市"
+  },
+  "legacy_ids": [
+   "bk63应典"
+  ],
+  "anchor": {
+   "volume": 63,
+   "volume_name": "附案",
+   "section": "尚宝司丞应天彝先生典",
+   "text_chars": 510
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "周莹": {
+  "id": "周莹",
+  "name": "周莹",
+  "zi": "德纯",
+  "hao": "德纯",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 201,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "永康人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "永康市"
+  },
+  "legacy_ids": [
+   "bk63周莹"
+  ],
+  "anchor": {
+   "volume": 63,
+   "volume_name": "附案",
+   "section": "周德纯先生莹",
+   "text_chars": 592
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "卢可久": {
+  "id": "卢可久",
+  "name": "卢可久",
+  "zi": "德卿",
+  "hao": "德卿",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 202,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "永康人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "永康市"
+  },
+  "legacy_ids": [
+   "bk63卢可久"
+  ],
+  "anchor": {
+   "volume": 63,
+   "volume_name": "附案",
+   "section": "卢德卿先生可久",
+   "text_chars": 348
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "杜惟熙": {
+  "id": "杜惟熙",
+  "name": "杜惟熙",
+  "zi": "子光",
+  "hao": "子光",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 203,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "东阳人",
+   "province": "浙江",
+   "city": "金华",
+   "county": "东阳市"
+  },
+  "legacy_ids": [
+   "bk63杜惟熙"
+  ],
+  "anchor": {
+   "volume": 63,
+   "volume_name": "附案",
+   "section": "杜子光先生惟熙",
+   "text_chars": 373
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "颜鲸": {
+  "id": "颜鲸",
+  "name": "颜鲸",
+  "zi": "应雷",
+  "hao": "冲宇",
+  "title": "",
+  "role": "",
+  "head": "",
+  "school": "浙中王门学案",
+  "seq": 204,
+  "life": {
+   "raw": "",
+   "birth": null,
+   "death": null,
+   "age": ""
+  },
+  "origin": {
+   "raw": "宁之慈溪人",
+   "province": "浙江",
+   "city": "宁波",
+   "county": "慈溪市"
+  },
+  "legacy_ids": [
+   "bk63颜鲸"
+  ],
+  "anchor": {
+   "volume": 63,
+   "volume_name": "附案",
+   "section": "副使颜冲宇先生鲸",
+   "text_chars": 549
+  },
+  "has_biography": true,
+  "hao_source": "legacy"
+ },
+ "陈琛": {
+  "id": "陈琛",
+  "name": "陈琛",
+  "zi": "思献",
+  "hao": "紫峰",
+  "title": "",
+  "role": "",
+  "head": "陈琛",
+  "school": "诸儒学案",
+  "seq": 183,
+  "origin": {
+   "raw": "晋江人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "杜门独学，尽得蔡清《易》学之传"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "王宣": {
+  "id": "王宣",
+  "name": "王宣",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "王宣",
+  "school": "诸儒学案",
+  "seq": 184,
+  "origin": {
+   "raw": "晋江人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "谓学者混朱陆为一便非真知"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "易时中": {
+  "id": "易时中",
+  "name": "易时中",
+  "zi": "嘉会",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "易时中",
+  "school": "诸儒学案",
+  "seq": 185,
+  "origin": {
+   "raw": "晋江人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "以德化民，有惠政"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "赵逮": {
+  "id": "赵逮",
+  "name": "赵逮",
+  "zi": "子重",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "赵逮",
+  "school": "诸儒学案",
+  "seq": 186,
+  "origin": {
+   "raw": "东平人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "受《易》于蔡清，好濂洛之学"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "蔡烈": {
+  "id": "蔡烈",
+  "name": "蔡烈",
+  "zi": "文继",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "蔡烈",
+  "school": "诸儒学案",
+  "seq": 187,
+  "origin": {
+   "raw": "龙溪人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "不言躬行，主于事上求仁"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "林同": {
+  "id": "林同",
+  "name": "林同",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "林同",
+  "school": "诸儒学案",
+  "seq": 188,
+  "origin": {
+   "raw": "晋江人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "蔡清门人，与陈琛等并有名"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "邵宝": {
+  "id": "邵宝",
+  "name": "邵宝",
+  "zi": "国贤",
+  "hao": "二泉",
+  "title": "",
+  "role": "",
+  "head": "邵宝",
+  "school": "诸儒学案",
+  "seq": 189,
+  "origin": {
+   "raw": "无锡人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "学以洛闽为的，致知力行为本；愿为真士大夫，不愿为假道学"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "王问": {
+  "id": "王问",
+  "name": "王问",
+  "zi": "子裕",
+  "hao": "文静",
+  "title": "",
+  "role": "",
+  "head": "王问",
+  "school": "诸儒学案",
+  "seq": 190,
+  "origin": {
+   "raw": "无锡人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "清修雅尚，以学行称"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂诸儒学案（师承线归属）"
+ },
+ "杨廉": {
+  "id": "杨廉",
+  "name": "杨廉",
+  "zi": "方震",
+  "hao": "月湖",
+  "title": "",
+  "role": "",
+  "head": "杨廉",
+  "school": "崇仁学案",
+  "seq": 11,
+  "origin": {
+   "raw": "丰城人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "承家学，居敬穷理，文必根六经"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂崇仁学案（师承线归属）"
+ },
+ "王应电": {
+  "id": "王应电",
+  "name": "王应电",
+  "zi": "昭明",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "王应电",
+  "school": "崇仁学案",
+  "seq": 12,
+  "origin": {
+   "raw": "昆山人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "受业魏校，笃好《周礼》，著《周礼传诂》"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂崇仁学案（师承线归属）"
+ },
+ "王敬臣": {
+  "id": "王敬臣",
+  "name": "王敬臣",
+  "zi": "以道",
+  "hao": "少湖",
+  "title": "",
+  "role": "",
+  "head": "王敬臣",
+  "school": "崇仁学案",
+  "seq": 13,
+  "origin": {
+   "raw": "长洲人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "受业魏校，以慎独为先，尤以标立门户为戒"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂崇仁学案（师承线归属）"
+ },
+ "娄忱": {
+  "id": "娄忱",
+  "name": "娄忱",
+  "zi": "诚善",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "娄忱",
+  "school": "崇仁学案",
+  "seq": 14,
+  "origin": {
+   "raw": "上饶人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "传父娄谅之学"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂崇仁学案（师承线归属）"
+ },
+ "应良": {
+  "id": "应良",
+  "name": "应良",
+  "zi": "原忠",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "应良",
+  "school": "浙中王门学案",
+  "seq": 230,
+  "origin": {
+   "raw": "仙居人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "守仁在吏部时从学；亲老归养，讲学山中"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂浙中王门学案（师承线归属）"
+ },
+ "程粹": {
+  "id": "程粹",
+  "name": "程粹",
+  "zi": "养之",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "程粹",
+  "school": "浙中王门学案",
+  "seq": 231,
+  "origin": {
+   "raw": "永康人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "与卢可久、应典同师王守仁"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂浙中王门学案（师承线归属）"
+ },
+ "陈时芳": {
+  "id": "陈时芳",
+  "name": "陈时芳",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "陈时芳",
+  "school": "浙中王门学案",
+  "seq": 232,
+  "origin": {
+   "raw": "东阳人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "杜惟熙门人，博览多闻，归于实践"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂浙中王门学案（师承线归属）"
+ },
+ "陈正道": {
+  "id": "陈正道",
+  "name": "陈正道",
+  "zi": "",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "陈正道",
+  "school": "浙中王门学案",
+  "seq": 233,
+  "origin": {
+   "raw": "东阳人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "杜惟熙门人，年八十余犹徒步赴讲会"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂浙中王门学案（师承线归属）"
+ },
+ "欧阳瑜": {
+  "id": "欧阳瑜",
+  "name": "欧阳瑜",
+  "zi": "汝重",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "欧阳瑜",
+  "school": "江右王门学案",
+  "seq": 222,
+  "origin": {
+   "raw": "泰和人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "欧阳德族人，亦学于王守仁"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂江右王门学案（师承线归属）"
+ },
+ "邹善": {
+  "id": "邹善",
+  "name": "邹善",
+  "zi": "",
+  "hao": "颖泉",
+  "title": "",
+  "role": "",
+  "head": "邹善",
+  "school": "江右王门学案",
+  "seq": 223,
+  "origin": {
+   "raw": "安福人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "邹守益子，服习父训，践履无怠"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂江右王门学案（师承线归属）"
+ },
+ "邹德涵": {
+  "id": "邹德涵",
+  "name": "邹德涵",
+  "zi": "汝海",
+  "hao": "聚所",
+  "title": "",
+  "role": "",
+  "head": "邹德涵",
+  "school": "江右王门学案",
+  "seq": 224,
+  "origin": {
+   "raw": "安福人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "从耿定理游，专以悟为宗"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂江右王门学案（师承线归属）"
+ },
+ "蔡悉": {
+  "id": "蔡悉",
+  "name": "蔡悉",
+  "zi": "士备",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "蔡悉",
+  "school": "泰州学案",
+  "seq": 238,
+  "origin": {
+   "raw": "合肥人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "罗汝芳门人，清操亮节"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂泰州学案（师承线归属）"
+ },
+ "赵维新": {
+  "id": "赵维新",
+  "name": "赵维新",
+  "zi": "",
+  "hao": "素衷",
+  "title": "",
+  "role": "",
+  "head": "赵维新",
+  "school": "北方王门学案",
+  "seq": 109,
+  "origin": {
+   "raw": "茌平人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "师张后觉，次问答为《弘山教言》"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂北方王门学案（师承线归属）"
+ },
+ "丁元荐": {
+  "id": "丁元荐",
+  "name": "丁元荐",
+  "zi": "长孺",
+  "hao": "慎所",
+  "title": "",
+  "role": "",
+  "head": "丁元荐",
+  "school": "甘泉学案",
+  "seq": 141,
+  "origin": {
+   "raw": "长兴人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 283,
+   "style": "从许孚远游，为名儒"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷283 补充人物，挂甘泉学案（师承线归属）"
+ },
+ "王爵": {
+  "id": "王爵",
+  "name": "王爵",
+  "zi": "锡之",
+  "hao": "",
+  "title": "",
+  "role": "",
+  "head": "王爵",
+  "school": "河东学案",
+  "seq": 38,
+  "origin": {
+   "raw": "泰州人",
+   "province": "",
+   "city": "",
+   "county": ""
+  },
+  "mingshi": {
+   "volume": 282,
+   "style": "教门人务以诚敬为本"
+  },
+  "has_biography": false,
+  "note": "《明史》儒林传卷282 补充人物，挂河东学案（师承线归属）"
+ }
+}

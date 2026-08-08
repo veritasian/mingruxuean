@@ -1,0 +1,2680 @@
+{
+ "people": {
+  "吴与弼": {
+   "name": "吴与弼",
+   "school": "崇仁学案",
+   "vol": 1,
+   "birth_raw": "撫州之崇仁人",
+   "zi_raw": "子傅",
+   "hao_raw": "康齋"
+  },
+  "胡居仁": {
+   "name": "胡居仁",
+   "school": "崇仁学案",
+   "vol": 2,
+   "birth_raw": "饒之餘幹人",
+   "zi_raw": "叔心",
+   "hao_raw": "敬齋"
+  },
+  "娄谅": {
+   "name": "娄谅",
+   "school": "崇仁学案",
+   "vol": 2,
+   "birth_raw": "廣信上饒",
+   "zi_raw": "克貞",
+   "hao_raw": "一齋"
+  },
+  "谢复": {
+   "name": "谢复",
+   "school": "崇仁学案",
+   "vol": 2,
+   "birth_raw": "祁門人",
+   "zi_raw": "一陽",
+   "hao_raw": "西山"
+  },
+  "郑伉": {
+   "name": "郑伉",
+   "school": "崇仁学案",
+   "vol": 2,
+   "birth_raw": "常山之象湖",
+   "zi_raw": "孔明",
+   "hao_raw": "孔明"
+  },
+  "胡九韶": {
+   "name": "胡九韶",
+   "school": "崇仁学案",
+   "vol": 2,
+   "birth_raw": "",
+   "zi_raw": "鳳儀",
+   "hao_raw": "鳳仪"
+  },
+  "魏校": {
+   "name": "魏校",
+   "school": "崇仁学案",
+   "vol": 3,
+   "birth_raw": "崑山",
+   "zi_raw": "子才",
+   "hao_raw": "庄渠"
+  },
+  "夏尚朴": {
+   "name": "夏尚朴",
+   "school": "崇仁学案",
+   "vol": 4,
+   "birth_raw": "永豐",
+   "zi_raw": "敦夫",
+   "hao_raw": "东巖"
+  },
+  "潘润": {
+   "name": "潘润",
+   "school": "河东学案",
+   "vol": 4,
+   "birth_raw": "信之永豐",
+   "zi_raw": "德夫",
+   "hao_raw": "玉齋"
+  },
+  "陈献章": {
+   "name": "陈献章",
+   "school": "白沙学案",
+   "vol": 5,
+   "birth_raw": "新會之白沙裏",
+   "zi_raw": "公甫",
+   "hao_raw": "白沙"
+  },
+  "张诩": {
+   "name": "张诩",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "",
+   "zi_raw": "廷實",
+   "hao_raw": "东所"
+  },
+  "贺钦": {
+   "name": "贺钦",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "",
+   "zi_raw": "克恭",
+   "hao_raw": "醫閭"
+  },
+  "邹智": {
+   "name": "邹智",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "四川合州",
+   "zi_raw": "汝愚",
+   "hao_raw": "立齋"
+  },
+  "陈茂烈": {
+   "name": "陈茂烈",
+   "school": "河东学案",
+   "vol": 6,
+   "birth_raw": "福之莆田",
+   "zi_raw": "時周",
+   "hao_raw": "时周"
+  },
+  "林光": {
+   "name": "林光",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "東莞",
+   "zi_raw": "緝熙",
+   "hao_raw": "緝熙"
+  },
+  "陈庸": {
+   "name": "陈庸",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "南海",
+   "zi_raw": "秉常",
+   "hao_raw": "秉常"
+  },
+  "李孔修": {
+   "name": "李孔修",
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "",
+   "zi_raw": "子長",
+   "hao_raw": "抱真"
+  },
+  "史桂芳": {
+   "name": "史桂芳",
+   "school": "河东学案",
+   "vol": 6,
+   "birth_raw": "豫之番陽",
+   "zi_raw": "景實",
+   "hao_raw": "惺堂"
+  },
+  "薛瑄": {
+   "name": "薛瑄",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "山西河津",
+   "zi_raw": "德溫",
+   "hao_raw": "敬軒"
+  },
+  "阎禹锡": {
+   "name": "阎禹锡",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "洛陽似此兩人",
+   "zi_raw": "子與",
+   "hao_raw": "子与"
+  },
+  "张鼎": {
+   "name": "张鼎",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "陝之咸寧",
+   "zi_raw": "大器",
+   "hao_raw": "自在"
+  },
+  "段坚": {
+   "name": "段坚",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "蘭州人",
+   "zi_raw": "可久",
+   "hao_raw": "容思"
+  },
+  "张杰": {
+   "name": "张杰",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "陝之鳳翔",
+   "zi_raw": "立夫",
+   "hao_raw": "默齋"
+  },
+  "王鸿儒": {
+   "name": "王鸿儒",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "河南南陽",
+   "zi_raw": "懋學",
+   "hao_raw": "凝齋"
+  },
+  "周蕙": {
+   "name": "周蕙",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "文清之門人",
+   "zi_raw": "廷芳",
+   "hao_raw": "小泉"
+  },
+  "薛敬之": {
+   "name": "薛敬之",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "陝之渭南",
+   "zi_raw": "顯思",
+   "hao_raw": "思菴"
+  },
+  "李锦": {
+   "name": "李锦",
+   "school": "河东学案",
+   "vol": 7,
+   "birth_raw": "陝之咸寧",
+   "zi_raw": "在中",
+   "hao_raw": "介菴"
+  },
+  "吕柟": {
+   "name": "吕柟",
+   "school": "河东学案",
+   "vol": 8,
+   "birth_raw": "陝之高陵",
+   "zi_raw": "仲木",
+   "hao_raw": "涇野"
+  },
+  "张节": {
+   "name": "张节",
+   "school": "三原学案",
+   "vol": 8,
+   "birth_raw": "涇陽",
+   "zi_raw": "介夫",
+   "hao_raw": "石谷"
+  },
+  "李挺": {
+   "name": "李挺",
+   "school": "三原学案",
+   "vol": 8,
+   "birth_raw": "咸寧",
+   "zi_raw": "正立",
+   "hao_raw": "正立"
+  },
+  "郭蒙泉": {
+   "name": "郭蒙泉",
+   "school": "三原学案",
+   "vol": 8,
+   "birth_raw": "涇陽",
+   "zi_raw": "惟藩",
+   "hao_raw": "正立"
+  },
+  "王恕": {
+   "name": "王恕",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "陝之三原",
+   "zi_raw": "宗貫",
+   "hao_raw": "石渠"
+  },
+  "王承裕": {
+   "name": "王承裕",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "",
+   "zi_raw": "天宇",
+   "hao_raw": "平川"
+  },
+  "马理": {
+   "name": "马理",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "陝之三原",
+   "zi_raw": "伯循",
+   "hao_raw": "谿田"
+  },
+  "韩邦奇": {
+   "name": "韩邦奇",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "陝之朝邑",
+   "zi_raw": "汝節",
+   "hao_raw": "苑洛"
+  },
+  "杨爵": {
+   "name": "杨爵",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "陝之富平",
+   "zi_raw": "伯修",
+   "hao_raw": "斛山"
+  },
+  "王之士": {
+   "name": "王之士",
+   "school": "三原学案",
+   "vol": 9,
+   "birth_raw": "陝之藍田",
+   "zi_raw": "欲立",
+   "hao_raw": "秦關"
+  },
+  "王阳明": {
+   "name": "王阳明",
+   "school": "姚江学案",
+   "vol": 10,
+   "birth_raw": "余姚人",
+   "zi_raw": "伯安",
+   "hao_raw": "阳明"
+  },
+  "徐爱": {
+   "name": "徐爱",
+   "school": "浙中王门学案",
+   "vol": 11,
+   "birth_raw": "余姚之馬堰",
+   "zi_raw": "曰仁",
+   "hao_raw": "橫山"
+  },
+  "钱德洪": {
+   "name": "钱德洪",
+   "school": "浙中王门学案",
+   "vol": 11,
+   "birth_raw": "浙之余姚",
+   "zi_raw": "洪甫",
+   "hao_raw": "緒山"
+  },
+  "王畿": {
+   "name": "王畿",
+   "school": "浙中王门学案",
+   "vol": 12,
+   "birth_raw": "浙之山陰",
+   "zi_raw": "汝中",
+   "hao_raw": "龙溪"
+  },
+  "季本": {
+   "name": "季本",
+   "school": "浙中王门学案",
+   "vol": 13,
+   "birth_raw": "越之會稽",
+   "zi_raw": "明德",
+   "hao_raw": "彭山"
+  },
+  "黄绾": {
+   "name": "黄绾",
+   "school": "浙中王门学案",
+   "vol": 13,
+   "birth_raw": "台之黃岩",
+   "zi_raw": "叔賢",
+   "hao_raw": "久菴"
+  },
+  "董澐": {
+   "name": "董澐",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "海鹽",
+   "zi_raw": "複宗",
+   "hao_raw": "蘿石"
+  },
+  "陆澄": {
+   "name": "陆澄",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "湖之歸安",
+   "zi_raw": "原靜",
+   "hao_raw": "原靜"
+  },
+  "顾应祥": {
+   "name": "顾应祥",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "湖之長興",
+   "zi_raw": "惟賢",
+   "hao_raw": "箬溪"
+  },
+  "黄宗明": {
+   "name": "黄宗明",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "寧波鄞縣",
+   "zi_raw": "誠甫",
+   "hao_raw": "致齋"
+  },
+  "张元冲": {
+   "name": "张元冲",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "越之山陰",
+   "zi_raw": "叔謙",
+   "hao_raw": "浮峰"
+  },
+  "程文德": {
+   "name": "程文德",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "婺之永康",
+   "zi_raw": "舜敷",
+   "hao_raw": "松溪"
+  },
+  "徐用检": {
+   "name": "徐用检",
+   "school": "浙中王门学案",
+   "vol": 14,
+   "birth_raw": "金華蘭溪",
+   "zi_raw": "克賢",
+   "hao_raw": "鲁源"
+  },
+  "万表": {
+   "name": "万表",
+   "school": "浙中王门学案",
+   "vol": 15,
+   "birth_raw": "",
+   "zi_raw": "民望",
+   "hao_raw": "鹿園"
+  },
+  "张元忭": {
+   "name": "张元忭",
+   "school": "浙中王门学案",
+   "vol": 15,
+   "birth_raw": "越之山陰",
+   "zi_raw": "子藎",
+   "hao_raw": "阳和"
+  },
+  "胡瀚": {
+   "name": "胡瀚",
+   "school": "浙中王门学案",
+   "vol": 15,
+   "birth_raw": "余姚",
+   "zi_raw": "川甫",
+   "hao_raw": "今山"
+  },
+  "邹守益": {
+   "name": "邹守益",
+   "school": "江右王门学案",
+   "vol": 16,
+   "birth_raw": "江西安福",
+   "zi_raw": "謙之",
+   "hao_raw": "东廓"
+  },
+  "欧阳德": {
+   "name": "欧阳德",
+   "school": "江右王门学案",
+   "vol": 17,
+   "birth_raw": "江西泰和",
+   "zi_raw": "崇一",
+   "hao_raw": "南野"
+  },
+  "聂豹": {
+   "name": "聂豹",
+   "school": "江右王门学案",
+   "vol": 18,
+   "birth_raw": "永豐人",
+   "zi_raw": "文蔚",
+   "hao_raw": "雙江"
+  },
+  "罗洪先": {
+   "name": "罗洪先",
+   "school": "江右王门学案",
+   "vol": 18,
+   "birth_raw": "識者知非埃壒人",
+   "zi_raw": "達夫",
+   "hao_raw": "念菴"
+  },
+  "刘文敏": {
+   "name": "刘文敏",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "吉之安福",
+   "zi_raw": "宜充",
+   "hao_raw": "兩峰"
+  },
+  "刘邦采": {
+   "name": "刘邦采",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "吉之安福",
+   "zi_raw": "君亮",
+   "hao_raw": "師泉"
+  },
+  "刘阳": {
+   "name": "刘阳",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "此生清福人",
+   "zi_raw": "一舒",
+   "hao_raw": "三五"
+  },
+  "刘晓": {
+   "name": "刘晓",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "安福",
+   "zi_raw": "伯光",
+   "hao_raw": "梅源"
+  },
+  "刘魁": {
+   "name": "刘魁",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "泰和",
+   "zi_raw": "煥吾",
+   "hao_raw": "晴川"
+  },
+  "黄弘纲": {
+   "name": "黄弘纲",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "江西雩縣",
+   "zi_raw": "正之",
+   "hao_raw": "洛村"
+  },
+  "何廷仁": {
+   "name": "何廷仁",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "江西雩縣",
+   "zi_raw": "性之",
+   "hao_raw": "善山"
+  },
+  "陈九川": {
+   "name": "陈九川",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "臨川人",
+   "zi_raw": "惟浚",
+   "hao_raw": "明水"
+  },
+  "魏良弼": {
+   "name": "魏良弼",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "南昌新建",
+   "zi_raw": "師說",
+   "hao_raw": "水洲"
+  },
+  "魏良政": {
+   "name": "魏良政",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "",
+   "zi_raw": "師伊",
+   "hao_raw": "師伊"
+  },
+  "魏良器": {
+   "name": "魏良器",
+   "school": "江右王门学案",
+   "vol": 19,
+   "birth_raw": "",
+   "zi_raw": "師顏",
+   "hao_raw": "藥湖"
+  },
+  "王时槐": {
+   "name": "王时槐",
+   "school": "江右王门学案",
+   "vol": 20,
+   "birth_raw": "吉之安福",
+   "zi_raw": "子植",
+   "hao_raw": "塘南"
+  },
+  "邓以赞": {
+   "name": "邓以赞",
+   "school": "江右王门学案",
+   "vol": 21,
+   "birth_raw": "聖人",
+   "zi_raw": "汝德",
+   "hao_raw": "定宇"
+  },
+  "陈嘉谟": {
+   "name": "陈嘉谟",
+   "school": "江右王门学案",
+   "vol": 21,
+   "birth_raw": "",
+   "zi_raw": "世顯",
+   "hao_raw": "蒙山"
+  },
+  "刘元卿": {
+   "name": "刘元卿",
+   "school": "江右王门学案",
+   "vol": 21,
+   "birth_raw": "吉之安福",
+   "zi_raw": "調父",
+   "hao_raw": "瀘瀟"
+  },
+  "万廷言": {
+   "name": "万廷言",
+   "school": "江右王门学案",
+   "vol": 21,
+   "birth_raw": "南昌之東溪",
+   "zi_raw": "以忠",
+   "hao_raw": "思默"
+  },
+  "胡直": {
+   "name": "胡直",
+   "school": "江右王门学案",
+   "vol": 22,
+   "birth_raw": "吉之泰和",
+   "zi_raw": "正甫",
+   "hao_raw": "廬山"
+  },
+  "邹元标": {
+   "name": "邹元标",
+   "school": "江右王门学案",
+   "vol": 23,
+   "birth_raw": "出疏以授寺",
+   "zi_raw": "爾瞻",
+   "hao_raw": "南臬"
+  },
+  "宋仪望": {
+   "name": "宋仪望",
+   "school": "江右王门学案",
+   "vol": 24,
+   "birth_raw": "吉之永豊",
+   "zi_raw": "望之",
+   "hao_raw": "望之"
+  },
+  "邓元锡": {
+   "name": "邓元锡",
+   "school": "江右王门学案",
+   "vol": 24,
+   "birth_raw": "江西南城",
+   "zi_raw": "汝極",
+   "hao_raw": "潜谷"
+  },
+  "章潢": {
+   "name": "章潢",
+   "school": "江右王门学案",
+   "vol": 24,
+   "birth_raw": "南昌",
+   "zi_raw": "本清",
+   "hao_raw": "本清"
+  },
+  "冯应京": {
+   "name": "冯应京",
+   "school": "江右王门学案",
+   "vol": 24,
+   "birth_raw": "盱眙人",
+   "zi_raw": "大可",
+   "hao_raw": "慕岡"
+  },
+  "黄省曾": {
+   "name": "黄省曾",
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "蘇州人",
+   "zi_raw": "勉之",
+   "hao_raw": "五岳"
+  },
+  "周冲": {
+   "name": "周冲",
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "常之宜興",
+   "zi_raw": "道通",
+   "hao_raw": "靜菴"
+  },
+  "朱得之": {
+   "name": "朱得之",
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "直隸靖江",
+   "zi_raw": "本思",
+   "hao_raw": "近齋"
+  },
+  "周怡": {
+   "name": "周怡",
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "宣州太平",
+   "zi_raw": "順之",
+   "hao_raw": "訥谿"
+  },
+  "薛甲": {
+   "name": "薛甲",
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "江陰人",
+   "zi_raw": "應登",
+   "hao_raw": "畏齋"
+  },
+  "唐顺之": {
+   "name": "唐顺之",
+   "school": "南中王门学案",
+   "vol": 26,
+   "birth_raw": "武進人",
+   "zi_raw": "應德",
+   "hao_raw": "荊川"
+  },
+  "唐鹤徵": {
+   "name": "唐鹤徵",
+   "school": "南中王门学案",
+   "vol": 26,
+   "birth_raw": "",
+   "zi_raw": "元卿",
+   "hao_raw": "凝菴"
+  },
+  "徐阶": {
+   "name": "徐阶",
+   "school": "南中王门学案",
+   "vol": 27,
+   "birth_raw": "松江華亭",
+   "zi_raw": "子升",
+   "hao_raw": "存齋"
+  },
+  "杨豫孙": {
+   "name": "杨豫孙",
+   "school": "南中王门学案",
+   "vol": 27,
+   "birth_raw": "華亭",
+   "zi_raw": "幼殷",
+   "hao_raw": "幼殷"
+  },
+  "蒋信": {
+   "name": "蒋信",
+   "school": "楚中王门学案",
+   "vol": 28,
+   "birth_raw": "楚之常德",
+   "zi_raw": "卿實",
+   "hao_raw": "道林"
+  },
+  "冀元亨": {
+   "name": "冀元亨",
+   "school": "楚中王门学案",
+   "vol": 28,
+   "birth_raw": "楚之武陵",
+   "zi_raw": "惟乾",
+   "hao_raw": "闇齋"
+  },
+  "穆孔晖": {
+   "name": "穆孔晖",
+   "school": "北方王门学案",
+   "vol": 29,
+   "birth_raw": "山東堂邑",
+   "zi_raw": "伯潛",
+   "hao_raw": "玄菴"
+  },
+  "张后觉": {
+   "name": "张后觉",
+   "school": "北方王门学案",
+   "vol": 29,
+   "birth_raw": "山東茌平",
+   "zi_raw": "志仁",
+   "hao_raw": "弘山"
+  },
+  "孟秋": {
+   "name": "孟秋",
+   "school": "楚中王门学案",
+   "vol": 29,
+   "birth_raw": "仁卿何如人",
+   "zi_raw": "子成",
+   "hao_raw": "我疆"
+  },
+  "尤时熙": {
+   "name": "尤时熙",
+   "school": "北方王门学案",
+   "vol": 29,
+   "birth_raw": "河南洛陽",
+   "zi_raw": "季美",
+   "hao_raw": "西川"
+  },
+  "孟化鲤": {
+   "name": "孟化鲤",
+   "school": "北方王门学案",
+   "vol": 29,
+   "birth_raw": "河南新安",
+   "zi_raw": "叔龍",
+   "hao_raw": "雲浦"
+  },
+  "杨东明": {
+   "name": "杨东明",
+   "school": "楚中王门学案",
+   "vol": 29,
+   "birth_raw": "河南虞城",
+   "zi_raw": "",
+   "hao_raw": "晉菴"
+  },
+  "南大吉": {
+   "name": "南大吉",
+   "school": "楚中王门学案",
+   "vol": 29,
+   "birth_raw": "陝之渭南",
+   "zi_raw": "元善",
+   "hao_raw": "瑞泉"
+  },
+  "薛侃": {
+   "name": "薛侃",
+   "school": "粤闽王门学案",
+   "vol": 30,
+   "birth_raw": "廣東揭陽",
+   "zi_raw": "尚謙",
+   "hao_raw": "中離"
+  },
+  "周坦": {
+   "name": "周坦",
+   "school": "粤闽王门学案",
+   "vol": 30,
+   "birth_raw": "羅浮人",
+   "zi_raw": "",
+   "hao_raw": "谦齋"
+  },
+  "李材": {
+   "name": "李材",
+   "school": "止修学案",
+   "vol": 31,
+   "birth_raw": "豐城",
+   "zi_raw": "孟誠",
+   "hao_raw": "見罗"
+  },
+  "王艮": {
+   "name": "王艮",
+   "school": "泰州学案",
+   "vol": 32,
+   "birth_raw": "泰州之安豐場",
+   "zi_raw": "汝止",
+   "hao_raw": "心齋"
+  },
+  "王襞": {
+   "name": "王襞",
+   "school": "泰州学案",
+   "vol": 32,
+   "birth_raw": "",
+   "zi_raw": "宗順",
+   "hao_raw": "东崖"
+  },
+  "徐樾": {
+   "name": "徐樾",
+   "school": "泰州学案",
+   "vol": 32,
+   "birth_raw": "貴溪",
+   "zi_raw": "子直",
+   "hao_raw": "波石"
+  },
+  "王栋": {
+   "name": "王栋",
+   "school": "泰州学案",
+   "vol": 32,
+   "birth_raw": "泰州",
+   "zi_raw": "隆吉",
+   "hao_raw": "一菴"
+  },
+  "林春": {
+   "name": "林春",
+   "school": "泰州学案",
+   "vol": 32,
+   "birth_raw": "揚之泰州",
+   "zi_raw": "子仁",
+   "hao_raw": "东城"
+  },
+  "赵贞吉": {
+   "name": "赵贞吉",
+   "school": "泰州学案",
+   "vol": 33,
+   "birth_raw": "蜀之內江",
+   "zi_raw": "孟靜",
+   "hao_raw": "大洲"
+  },
+  "罗汝芳": {
+   "name": "罗汝芳",
+   "school": "泰州学案",
+   "vol": 34,
+   "birth_raw": "江西南城",
+   "zi_raw": "惟德",
+   "hao_raw": "近溪"
+  },
+  "杨起元": {
+   "name": "杨起元",
+   "school": "泰州学案",
+   "vol": 34,
+   "birth_raw": "廣東歸善",
+   "zi_raw": "貞複",
+   "hao_raw": "复所"
+  },
+  "耿定向": {
+   "name": "耿定向",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "楚之黃安",
+   "zi_raw": "在倫",
+   "hao_raw": "天臺"
+  },
+  "耿定理": {
+   "name": "耿定理",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "",
+   "zi_raw": "子庸",
+   "hao_raw": "楚倥"
+  },
+  "焦竑": {
+   "name": "焦竑",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "南京旗手衛",
+   "zi_raw": "弱侯",
+   "hao_raw": "澹園"
+  },
+  "潘士藻": {
+   "name": "潘士藻",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "徽之婺源",
+   "zi_raw": "去華",
+   "hao_raw": "雪松"
+  },
+  "方学渐": {
+   "name": "方学渐",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "桐城人",
+   "zi_raw": "達卿",
+   "hao_raw": "本菴"
+  },
+  "何祥": {
+   "name": "何祥",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "四川內江",
+   "zi_raw": "",
+   "hao_raw": "克齋"
+  },
+  "祝世禄": {
+   "name": "祝世禄",
+   "school": "泰州学案",
+   "vol": 35,
+   "birth_raw": "鄱陽",
+   "zi_raw": "延之",
+   "hao_raw": "無功"
+  },
+  "周汝登": {
+   "name": "周汝登",
+   "school": "泰州学案",
+   "vol": 36,
+   "birth_raw": "嵊縣",
+   "zi_raw": "繼元",
+   "hao_raw": "海門"
+  },
+  "陶望龄": {
+   "name": "陶望龄",
+   "school": "泰州学案",
+   "vol": 36,
+   "birth_raw": "會稽人",
+   "zi_raw": "周望",
+   "hao_raw": "石簣"
+  },
+  "刘塙": {
+   "name": "刘塙",
+   "school": "泰州学案",
+   "vol": 36,
+   "birth_raw": "會稽",
+   "zi_raw": "靜主",
+   "hao_raw": "冲倩"
+  },
+  "湛若水": {
+   "name": "湛若水",
+   "school": "甘泉学案",
+   "vol": 37,
+   "birth_raw": "廣東增城",
+   "zi_raw": "元明",
+   "hao_raw": "甘泉"
+  },
+  "吕怀": {
+   "name": "吕怀",
+   "school": "甘泉学案",
+   "vol": 38,
+   "birth_raw": "廣信永豐",
+   "zi_raw": "汝德",
+   "hao_raw": "巾石"
+  },
+  "何迁": {
+   "name": "何迁",
+   "school": "甘泉学案",
+   "vol": 38,
+   "birth_raw": "江西德安",
+   "zi_raw": "益之",
+   "hao_raw": "吉阳"
+  },
+  "洪垣": {
+   "name": "洪垣",
+   "school": "甘泉学案",
+   "vol": 39,
+   "birth_raw": "徽之婺源",
+   "zi_raw": "峻之",
+   "hao_raw": "觉山"
+  },
+  "唐枢": {
+   "name": "唐枢",
+   "school": "甘泉学案",
+   "vol": 40,
+   "birth_raw": "浙之歸安",
+   "zi_raw": "惟中",
+   "hao_raw": "一菴"
+  },
+  "许孚远": {
+   "name": "许孚远",
+   "school": "甘泉学案",
+   "vol": 41,
+   "birth_raw": "浙之德清",
+   "zi_raw": "孟仲",
+   "hao_raw": "敬菴"
+  },
+  "冯从吾": {
+   "name": "冯从吾",
+   "school": "甘泉学案",
+   "vol": 41,
+   "birth_raw": "陝之長安",
+   "zi_raw": "仲好",
+   "hao_raw": "少墟"
+  },
+  "唐伯元": {
+   "name": "唐伯元",
+   "school": "甘泉学案",
+   "vol": 42,
+   "birth_raw": "廣之澄海",
+   "zi_raw": "仁卿",
+   "hao_raw": "曙台"
+  },
+  "杨时乔": {
+   "name": "杨时乔",
+   "school": "甘泉学案",
+   "vol": 42,
+   "birth_raw": "廣信上饒",
+   "zi_raw": "宜遷",
+   "hao_raw": "止菴"
+  },
+  "王道": {
+   "name": "王道",
+   "school": "河东学案",
+   "vol": 42,
+   "birth_raw": "山東之武城",
+   "zi_raw": "純甫",
+   "hao_raw": "顺渠"
+  },
+  "霍韬": {
+   "name": "霍韬",
+   "school": "粤闽王门学案",
+   "vol": 53,
+   "birth_raw": "廣之南海",
+   "zi_raw": "渭先",
+   "hao_raw": "渭厓"
+  },
+  "顾宪成": {
+   "name": "顾宪成",
+   "school": "东林学案",
+   "vol": 58,
+   "birth_raw": "常之無錫",
+   "zi_raw": "叔時",
+   "hao_raw": "涇阳"
+  },
+  "高攀龙": {
+   "name": "高攀龙",
+   "school": "东林学案",
+   "vol": 58,
+   "birth_raw": "常州之無錫",
+   "zi_raw": "存之",
+   "hao_raw": "景逸"
+  },
+  "钱一本": {
+   "name": "钱一本",
+   "school": "东林学案",
+   "vol": 59,
+   "birth_raw": "常州武進",
+   "zi_raw": "國端",
+   "hao_raw": "启新"
+  },
+  "孙慎行": {
+   "name": "孙慎行",
+   "school": "东林学案",
+   "vol": 59,
+   "birth_raw": "常之武進",
+   "zi_raw": "聞斯",
+   "hao_raw": "淇澳"
+  },
+  "顾允成": {
+   "name": "顾允成",
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "盡黜政府之私",
+   "zi_raw": "季時",
+   "hao_raw": "涇凡"
+  },
+  "薛敷教": {
+   "name": "薛敷教",
+   "school": "蕺山学案",
+   "vol": 60,
+   "birth_raw": "常之武進",
+   "zi_raw": "以身",
+   "hao_raw": "玄台"
+  },
+  "叶茂才": {
+   "name": "叶茂才",
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "無錫人",
+   "zi_raw": "參之",
+   "hao_raw": "園適"
+  },
+  "许世卿": {
+   "name": "许世卿",
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "端人",
+   "zi_raw": "伯勳",
+   "hao_raw": "靜余"
+  },
+  "耿橘": {
+   "name": "耿橘",
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "北直河間",
+   "zi_raw": "庭懷",
+   "hao_raw": "庭怀"
+  },
+  "刘元珍": {
+   "name": "刘元珍",
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "武進",
+   "zi_raw": "伯先",
+   "hao_raw": "本孺"
+  },
+  "黄尊素": {
+   "name": "黄尊素",
+   "school": "蕺山学案",
+   "vol": 61,
+   "birth_raw": "越之余姚",
+   "zi_raw": "真長",
+   "hao_raw": "白安"
+  },
+  "华允诚": {
+   "name": "华允诚",
+   "school": "蕺山学案",
+   "vol": 61,
+   "birth_raw": "無錫",
+   "zi_raw": "汝立",
+   "hao_raw": "鳳超"
+  },
+  "陈龙正": {
+   "name": "陈龙正",
+   "school": "蕺山学案",
+   "vol": 61,
+   "birth_raw": "浙之嘉善",
+   "zi_raw": "惕龍",
+   "hao_raw": "幾亭"
+  },
+  "刘宗周": {
+   "name": "刘宗周",
+   "school": "蕺山学案",
+   "vol": 62,
+   "birth_raw": "越之山陰",
+   "zi_raw": "起東",
+   "hao_raw": "念台"
+  }
+ },
+ "new_names": {
+  "余祐": {
+   "school": "崇仁学案",
+   "vol": 3,
+   "birth_raw": "鄱陽",
+   "zi_raw": "子積",
+   "hao_raw": "訒齋"
+  },
+  "李承箕": {
+   "school": "白沙学案",
+   "vol": 5,
+   "birth_raw": "楚之嘉魚",
+   "zi_raw": "世卿",
+   "hao_raw": "大厓"
+  },
+  "谢祐": {
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "南海",
+   "zi_raw": "天錫",
+   "hao_raw": "天锡"
+  },
+  "何廷矩": {
+   "school": "白沙学案",
+   "vol": 6,
+   "birth_raw": "番禺",
+   "zi_raw": "時振",
+   "hao_raw": "时振"
+  },
+  "吕潜": {
+   "school": "河东学案",
+   "vol": 8,
+   "birth_raw": "陝之涇陽",
+   "zi_raw": "時見",
+   "hao_raw": "愧軒"
+  },
+  "杨应诏": {
+   "school": "河东学案",
+   "vol": 8,
+   "birth_raw": "閩之建安",
+   "zi_raw": "",
+   "hao_raw": "天游"
+  },
+  "许璋": {
+   "school": "姚江学案",
+   "vol": 10,
+   "birth_raw": "越之上虞",
+   "zi_raw": "半圭",
+   "hao_raw": "半圭"
+  },
+  "蔡宗兖": {
+   "school": "浙中王门学案",
+   "vol": 11,
+   "birth_raw": "山陰之白洋",
+   "zi_raw": "希淵",
+   "hao_raw": "我齋"
+  },
+  "朱节": {
+   "school": "浙中王门学案",
+   "vol": 11,
+   "birth_raw": "亦白洋",
+   "zi_raw": "守中",
+   "hao_raw": "白浦"
+  },
+  "王宗沐": {
+   "school": "浙中王门学案",
+   "vol": 15,
+   "birth_raw": "台之臨海",
+   "zi_raw": "新甫",
+   "hao_raw": "敬所"
+  },
+  "罗大纮": {
+   "school": "江右王门学案",
+   "vol": 23,
+   "birth_raw": "吉之安福",
+   "zi_raw": "公廓",
+   "hao_raw": "匡湖"
+  },
+  "薛应旂": {
+   "school": "南中王门学案",
+   "vol": 25,
+   "birth_raw": "武進",
+   "zi_raw": "",
+   "hao_raw": "方山"
+  },
+  "蔡汝楠": {
+   "school": "甘泉学案",
+   "vol": 40,
+   "birth_raw": "西浙之德清",
+   "zi_raw": "子木",
+   "hao_raw": "白石"
+  },
+  "方孝孺": {
+   "school": "诸儒学案",
+   "vol": 43,
+   "birth_raw": "台之寧海",
+   "zi_raw": "希直",
+   "hao_raw": "正学"
+  },
+  "赵谦": {
+   "school": "诸儒学案",
+   "vol": 43,
+   "birth_raw": "余姚人",
+   "zi_raw": "撝謙",
+   "hao_raw": "考古"
+  },
+  "曹端": {
+   "school": "诸儒学案",
+   "vol": 44,
+   "birth_raw": "河南之澠池",
+   "zi_raw": "正夫",
+   "hao_raw": "月川"
+  },
+  "黄润玉": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "浙之鄞縣",
+   "zi_raw": "孟清",
+   "hao_raw": "南山"
+  },
+  "罗伦": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "",
+   "zi_raw": "彝正",
+   "hao_raw": "一峰"
+  },
+  "章懋": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "金華蘭谿",
+   "zi_raw": "德懋",
+   "hao_raw": "楓山"
+  },
+  "庄昶": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "江浦人",
+   "zi_raw": "孔暘",
+   "hao_raw": "定山"
+  },
+  "张元祯": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "南昌",
+   "zi_raw": "廷祥",
+   "hao_raw": "东白"
+  },
+  "陈选": {
+   "school": "诸儒学案",
+   "vol": 45,
+   "birth_raw": "台之臨海",
+   "zi_raw": "士賢",
+   "hao_raw": "克菴"
+  },
+  "陈真晟": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "",
+   "zi_raw": "剩夫",
+   "hao_raw": "剩夫"
+  },
+  "张吉": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "江西餘幹",
+   "zi_raw": "克修",
+   "hao_raw": "古城"
+  },
+  "周瑛": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "福之莆田",
+   "zi_raw": "梁石",
+   "hao_raw": "翠渠"
+  },
+  "蔡清": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "福之晉江",
+   "zi_raw": "介夫",
+   "hao_raw": "虛齋"
+  },
+  "潘府": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "浙之上虞",
+   "zi_raw": "",
+   "hao_raw": "南山"
+  },
+  "罗侨": {
+   "school": "诸儒学案",
+   "vol": 46,
+   "birth_raw": "豫之吉水",
+   "zi_raw": "惟升",
+   "hao_raw": "东川"
+  },
+  "罗钦顺": {
+   "school": "诸儒学案",
+   "vol": 47,
+   "birth_raw": "吉之泰和",
+   "zi_raw": "允升",
+   "hao_raw": "整菴"
+  },
+  "汪俊": {
+   "school": "诸儒学案",
+   "vol": 48,
+   "birth_raw": "弋陽人",
+   "zi_raw": "升之",
+   "hao_raw": "石潭"
+  },
+  "崔铣": {
+   "school": "诸儒学案",
+   "vol": 48,
+   "birth_raw": "河南安陽",
+   "zi_raw": "子鍾",
+   "hao_raw": "后渠"
+  },
+  "何瑭": {
+   "school": "诸儒学案",
+   "vol": 49,
+   "birth_raw": "懷慶武陟",
+   "zi_raw": "粹夫",
+   "hao_raw": "柏齋"
+  },
+  "王廷相": {
+   "school": "诸儒学案",
+   "vol": 50,
+   "birth_raw": "河南儀封",
+   "zi_raw": "子衡",
+   "hao_raw": "浚川"
+  },
+  "黄佐": {
+   "school": "诸儒学案",
+   "vol": 51,
+   "birth_raw": "廣之香山",
+   "zi_raw": "才伯",
+   "hao_raw": "泰泉"
+  },
+  "张邦奇": {
+   "school": "诸儒学案",
+   "vol": 52,
+   "birth_raw": "浙之鄞人",
+   "zi_raw": "常甫",
+   "hao_raw": "甬川"
+  },
+  "张岳": {
+   "school": "诸儒学案",
+   "vol": 52,
+   "birth_raw": "福之惠安",
+   "zi_raw": "維喬",
+   "hao_raw": "淨峰"
+  },
+  "徐问": {
+   "school": "诸儒学案",
+   "vol": 52,
+   "birth_raw": "常之武進",
+   "zi_raw": "用中",
+   "hao_raw": "養齋"
+  },
+  "李经纶": {
+   "school": "诸儒学案",
+   "vol": 52,
+   "birth_raw": "建昌南豐",
+   "zi_raw": "大經",
+   "hao_raw": "大经"
+  },
+  "李中": {
+   "school": "诸儒学案",
+   "vol": 53,
+   "birth_raw": "吉水",
+   "zi_raw": "子庸",
+   "hao_raw": "谷平"
+  },
+  "薛蕙": {
+   "school": "诸儒学案",
+   "vol": 53,
+   "birth_raw": "亳州",
+   "zi_raw": "君采",
+   "hao_raw": "西原"
+  },
+  "舒芬": {
+   "school": "诸儒学案",
+   "vol": 53,
+   "birth_raw": "江西進賢",
+   "zi_raw": "國裳",
+   "hao_raw": "梓溪"
+  },
+  "卢甯忠": {
+   "school": "诸儒学案",
+   "vol": 54,
+   "birth_raw": "嶺南人",
+   "zi_raw": "獻甫",
+   "hao_raw": "冠巖"
+  },
+  "吕坤": {
+   "school": "诸儒学案",
+   "vol": 54,
+   "birth_raw": "河南寧陵",
+   "zi_raw": "叔簡",
+   "hao_raw": "心吾"
+  },
+  "曹于汴": {
+   "school": "诸儒学案",
+   "vol": 54,
+   "birth_raw": "平陽安邑",
+   "zi_raw": "自梁",
+   "hao_raw": "贞予"
+  },
+  "吕维祺": {
+   "school": "诸儒学案",
+   "vol": 54,
+   "birth_raw": "河南新安",
+   "zi_raw": "介孺",
+   "hao_raw": "豫石"
+  },
+  "郝敬": {
+   "school": "诸儒学案",
+   "vol": 55,
+   "birth_raw": "楚之京山",
+   "zi_raw": "仲輿",
+   "hao_raw": "楚望"
+  },
+  "吴执御": {
+   "school": "诸儒学案",
+   "vol": 55,
+   "birth_raw": "台州人",
+   "zi_raw": "朗公",
+   "hao_raw": "朗公"
+  },
+  "黄道周": {
+   "school": "诸儒学案",
+   "vol": 56,
+   "birth_raw": "福之鎮海衛",
+   "zi_raw": "幼玄",
+   "hao_raw": "石齋"
+  },
+  "金铉": {
+   "school": "诸儒学案",
+   "vol": 57,
+   "birth_raw": "",
+   "zi_raw": "伯玉",
+   "hao_raw": "伯玉"
+  },
+  "金声": {
+   "school": "诸儒学案",
+   "vol": 57,
+   "birth_raw": "徽之休寧",
+   "zi_raw": "正希",
+   "hao_raw": "正希"
+  },
+  "朱天麟": {
+   "school": "诸儒学案",
+   "vol": 57,
+   "birth_raw": "吳之崑山",
+   "zi_raw": "震青",
+   "hao_raw": "震青"
+  },
+  "孙奇逢": {
+   "school": "诸儒学案",
+   "vol": 57,
+   "birth_raw": "北直容城",
+   "zi_raw": "啟泰",
+   "hao_raw": "鍾元"
+  },
+  "史孟鱗": {
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "常州宜興",
+   "zi_raw": "際明",
+   "hao_raw": "玉池"
+  },
+  "刘永澄": {
+   "school": "东林学案",
+   "vol": 60,
+   "birth_raw": "揚州寶應",
+   "zi_raw": "靜之",
+   "hao_raw": "靜之"
+  },
+  "吴鍾峦": {
+   "school": "东林学案",
+   "vol": 61,
+   "birth_raw": "武進人",
+   "zi_raw": "巒稚",
+   "hao_raw": "霞舟"
+  },
+  "应典": {
+   "school": "浙中王门学案",
+   "vol": 63,
+   "birth_raw": "永康",
+   "zi_raw": "天彝",
+   "hao_raw": "天彝"
+  },
+  "周莹": {
+   "school": "浙中王门学案",
+   "vol": 63,
+   "birth_raw": "永康",
+   "zi_raw": "德純",
+   "hao_raw": "德純"
+  },
+  "卢可久": {
+   "school": "浙中王门学案",
+   "vol": 63,
+   "birth_raw": "永康",
+   "zi_raw": "德卿",
+   "hao_raw": "德卿"
+  },
+  "杜惟熙": {
+   "school": "浙中王门学案",
+   "vol": 63,
+   "birth_raw": "東陽",
+   "zi_raw": "子光",
+   "hao_raw": "子光"
+  },
+  "颜鲸": {
+   "school": "浙中王门学案",
+   "vol": 63,
+   "birth_raw": "寧之慈谿",
+   "zi_raw": "應雷",
+   "hao_raw": "冲宇"
+  }
+ },
+ "anchors": [
+  {
+   "name": "魏校",
+   "vol": 3,
+   "kind": "jinshi",
+   "year": 1517,
+   "raw": "弘治乙丑進士"
+  },
+  {
+   "name": "余祐",
+   "vol": 3,
+   "kind": "jinshi",
+   "year": 1511,
+   "raw": "登弘治己未進士"
+  },
+  {
+   "name": "夏尚朴",
+   "vol": 4,
+   "kind": "jinshi",
+   "year": 1535,
+   "raw": "登正德辛未進士"
+  },
+  {
+   "name": "张诩",
+   "vol": 6,
+   "kind": "jinshi",
+   "year": 1508,
+   "raw": "登成化甲辰進士"
+  },
+  {
+   "name": "贺钦",
+   "vol": 6,
+   "kind": "jinshi",
+   "year": 1478,
+   "raw": "登成化丙戌進士"
+  },
+  {
+   "name": "陈茂烈",
+   "vol": 6,
+   "kind": "jinshi",
+   "year": 1532,
+   "raw": "登弘治丙辰進士"
+  },
+  {
+   "name": "史桂芳",
+   "vol": 6,
+   "kind": "jinshi",
+   "year": 1553,
+   "raw": "嘉靖癸丑進士"
+  },
+  {
+   "name": "张鼎",
+   "vol": 7,
+   "kind": "jinshi",
+   "year": 1478,
+   "raw": "成化丙戌進士"
+  },
+  {
+   "name": "段坚",
+   "vol": 7,
+   "kind": "jinshi",
+   "year": 1454,
+   "raw": "登景泰甲戌進士"
+  },
+  {
+   "name": "王鸿儒",
+   "vol": 7,
+   "kind": "jinshi",
+   "year": 1487,
+   "raw": "成化丁未進士"
+  },
+  {
+   "name": "张节",
+   "vol": 8,
+   "kind": "age",
+   "age": 80,
+   "raw": "年八十卒"
+  },
+  {
+   "name": "王恕",
+   "vol": 9,
+   "kind": "jinshi",
+   "year": 1436,
+   "raw": "正統戊辰進士"
+  },
+  {
+   "name": "王承裕",
+   "vol": 9,
+   "kind": "jinshi",
+   "year": 1493,
+   "raw": "弘治癸丑進士"
+  },
+  {
+   "name": "马理",
+   "vol": 9,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "登正德甲戌進士"
+  },
+  {
+   "name": "韩邦奇",
+   "vol": 9,
+   "kind": "jinshi",
+   "year": 1556,
+   "raw": "正德戊辰進士"
+  },
+  {
+   "name": "杨爵",
+   "vol": 9,
+   "kind": "jinshi",
+   "year": 1565,
+   "raw": "登嘉靖己丑進士"
+  },
+  {
+   "name": "王阳明",
+   "vol": 10,
+   "kind": "jinshi",
+   "year": 1469,
+   "raw": "成化辛丑進士"
+  },
+  {
+   "name": "王阳明",
+   "vol": 10,
+   "kind": "jinshi",
+   "year": 1511,
+   "raw": "登弘治己未進士"
+  },
+  {
+   "name": "徐爱",
+   "vol": 11,
+   "kind": "jinshi",
+   "year": 1507,
+   "raw": "正德三年進士"
+  },
+  {
+   "name": "季本",
+   "vol": 13,
+   "kind": "jinshi",
+   "year": 1516,
+   "raw": "正德十二年進士"
+  },
+  {
+   "name": "董澐",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1529,
+   "raw": "嘉靖辛丑進士"
+  },
+  {
+   "name": "陆澄",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1541,
+   "raw": "正德丁丑進士"
+  },
+  {
+   "name": "顾应祥",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1517,
+   "raw": "弘治乙丑進士"
+  },
+  {
+   "name": "黄宗明",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "登正德甲戌進士"
+  },
+  {
+   "name": "张元冲",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1562,
+   "raw": "嘉靖戊戌進士"
+  },
+  {
+   "name": "程文德",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1565,
+   "raw": "嘉靖己丑進士"
+  },
+  {
+   "name": "徐用检",
+   "vol": 14,
+   "kind": "jinshi",
+   "year": 1550,
+   "raw": "嘉靖壬戌進士"
+  },
+  {
+   "name": "王宗沐",
+   "vol": 15,
+   "kind": "jinshi",
+   "year": 1568,
+   "raw": "嘉靖甲辰進士"
+  },
+  {
+   "name": "邹守益",
+   "vol": 16,
+   "kind": "jinshi",
+   "year": 1532,
+   "raw": "嘉靖丙辰進士"
+  },
+  {
+   "name": "邹守益",
+   "vol": 16,
+   "kind": "jinshi",
+   "year": 1595,
+   "raw": "隆慶辛未進士"
+  },
+  {
+   "name": "邹守益",
+   "vol": 16,
+   "kind": "jinshi",
+   "year": 1598,
+   "raw": "萬曆丙戌進士"
+  },
+  {
+   "name": "欧阳德",
+   "vol": 17,
+   "kind": "jinshi",
+   "year": 1522,
+   "raw": "登嘉靖二年進士"
+  },
+  {
+   "name": "聂豹",
+   "vol": 18,
+   "kind": "jinshi",
+   "year": 1516,
+   "raw": "正德十二年進士"
+  },
+  {
+   "name": "罗洪先",
+   "vol": 18,
+   "kind": "age",
+   "age": 5,
+   "raw": "年五歲"
+  },
+  {
+   "name": "刘阳",
+   "vol": 19,
+   "kind": "jinshi",
+   "year": 1556,
+   "raw": "登正德戊辰進士"
+  },
+  {
+   "name": "陈九川",
+   "vol": 19,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "正德甲戌進士"
+  },
+  {
+   "name": "魏良弼",
+   "vol": 19,
+   "kind": "jinshi",
+   "year": 1559,
+   "raw": "嘉靖癸未進士"
+  },
+  {
+   "name": "王时槐",
+   "vol": 20,
+   "kind": "jinshi",
+   "year": 1547,
+   "raw": "嘉靖丁未進士"
+  },
+  {
+   "name": "陈嘉谟",
+   "vol": 21,
+   "kind": "jinshi",
+   "year": 1547,
+   "raw": "嘉靖丁未進士"
+  },
+  {
+   "name": "胡直",
+   "vol": 22,
+   "kind": "jinshi",
+   "year": 1532,
+   "raw": "嘉靖丙辰進士"
+  },
+  {
+   "name": "邹元标",
+   "vol": 23,
+   "kind": "jinshi",
+   "year": 1601,
+   "raw": "萬曆丁丑進士"
+  },
+  {
+   "name": "罗大纮",
+   "vol": 23,
+   "kind": "jinshi",
+   "year": 1598,
+   "raw": "萬曆丙戌進士"
+  },
+  {
+   "name": "冯应京",
+   "vol": 24,
+   "kind": "jinshi",
+   "year": 1604,
+   "raw": "萬曆壬辰進士"
+  },
+  {
+   "name": "周怡",
+   "vol": 25,
+   "kind": "jinshi",
+   "year": 1562,
+   "raw": "嘉靖戊戌進士"
+  },
+  {
+   "name": "薛应旂",
+   "vol": 25,
+   "kind": "jinshi",
+   "year": 1523,
+   "raw": "嘉靖乙未進士"
+  },
+  {
+   "name": "薛甲",
+   "vol": 25,
+   "kind": "jinshi",
+   "year": 1577,
+   "raw": "嘉靖乙丑進士"
+  },
+  {
+   "name": "唐鹤徵",
+   "vol": 26,
+   "kind": "jinshi",
+   "year": 1595,
+   "raw": "隆慶辛未進士"
+  },
+  {
+   "name": "徐阶",
+   "vol": 27,
+   "kind": "jinshi",
+   "year": 1559,
+   "raw": "登嘉靖癸未進士"
+  },
+  {
+   "name": "杨豫孙",
+   "vol": 27,
+   "kind": "jinshi",
+   "year": 1547,
+   "raw": "嘉靖丁未進士"
+  },
+  {
+   "name": "蒋信",
+   "vol": 28,
+   "kind": "jinshi",
+   "year": 1531,
+   "raw": "登嘉靖十一年進士"
+  },
+  {
+   "name": "穆孔晖",
+   "vol": 29,
+   "kind": "jinshi",
+   "year": 1517,
+   "raw": "弘治乙丑進士"
+  },
+  {
+   "name": "孟秋",
+   "vol": 29,
+   "kind": "jinshi",
+   "year": 1595,
+   "raw": "隆慶辛未進士"
+  },
+  {
+   "name": "杨东明",
+   "vol": 29,
+   "kind": "jinshi",
+   "year": 1580,
+   "raw": "萬曆庚辰進士"
+  },
+  {
+   "name": "南大吉",
+   "vol": 29,
+   "kind": "jinshi",
+   "year": 1535,
+   "raw": "正德辛未進士"
+  },
+  {
+   "name": "薛侃",
+   "vol": 30,
+   "kind": "jinshi",
+   "year": 1516,
+   "raw": "正德十二年進士"
+  },
+  {
+   "name": "李材",
+   "vol": 31,
+   "kind": "jinshi",
+   "year": 1550,
+   "raw": "登嘉靖壬戌進士"
+  },
+  {
+   "name": "徐樾",
+   "vol": 32,
+   "kind": "jinshi",
+   "year": 1531,
+   "raw": "嘉靖十一年進士"
+  },
+  {
+   "name": "赵贞吉",
+   "vol": 33,
+   "kind": "jinshi",
+   "year": 1531,
+   "raw": "登嘉靖十一年進士"
+  },
+  {
+   "name": "杨起元",
+   "vol": 34,
+   "kind": "jinshi",
+   "year": 1601,
+   "raw": "萬曆丁丑進士"
+  },
+  {
+   "name": "耿定向",
+   "vol": 35,
+   "kind": "jinshi",
+   "year": 1532,
+   "raw": "嘉靖丙辰進士"
+  },
+  {
+   "name": "焦竑",
+   "vol": 35,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "潘士藻",
+   "vol": 35,
+   "kind": "jinshi",
+   "year": 1619,
+   "raw": "萬曆癸未進士"
+  },
+  {
+   "name": "周汝登",
+   "vol": 36,
+   "kind": "jinshi",
+   "year": 1601,
+   "raw": "萬曆丁丑進士"
+  },
+  {
+   "name": "陶望龄",
+   "vol": 36,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "湛若水",
+   "vol": 37,
+   "kind": "jinshi",
+   "year": 1517,
+   "raw": "登弘治乙丑進士"
+  },
+  {
+   "name": "吕怀",
+   "vol": 38,
+   "kind": "jinshi",
+   "year": 1544,
+   "raw": "嘉靖壬辰進士"
+  },
+  {
+   "name": "何迁",
+   "vol": 38,
+   "kind": "jinshi",
+   "year": 1529,
+   "raw": "嘉靖辛丑進士"
+  },
+  {
+   "name": "洪垣",
+   "vol": 39,
+   "kind": "jinshi",
+   "year": 1544,
+   "raw": "嘉靖壬辰進士"
+  },
+  {
+   "name": "唐枢",
+   "vol": 40,
+   "kind": "jinshi",
+   "year": 1538,
+   "raw": "嘉靖丙戌進士"
+  },
+  {
+   "name": "许孚远",
+   "vol": 41,
+   "kind": "jinshi",
+   "year": 1550,
+   "raw": "嘉靖壬戌進士"
+  },
+  {
+   "name": "冯从吾",
+   "vol": 41,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "唐伯元",
+   "vol": 42,
+   "kind": "jinshi",
+   "year": 1574,
+   "raw": "萬曆甲戌進士"
+  },
+  {
+   "name": "杨时乔",
+   "vol": 42,
+   "kind": "jinshi",
+   "year": 1577,
+   "raw": "登嘉靖乙丑進士"
+  },
+  {
+   "name": "王道",
+   "vol": 42,
+   "kind": "jinshi",
+   "year": 1535,
+   "raw": "正德辛未進士"
+  },
+  {
+   "name": "罗伦",
+   "vol": 45,
+   "kind": "jinshi",
+   "year": 1478,
+   "raw": "成化丙戌進士"
+  },
+  {
+   "name": "庄昶",
+   "vol": 45,
+   "kind": "jinshi",
+   "year": 1478,
+   "raw": "成化丙戌進士"
+  },
+  {
+   "name": "张元祯",
+   "vol": 45,
+   "kind": "jinshi",
+   "year": 1460,
+   "raw": "登天順庚辰進士"
+  },
+  {
+   "name": "张吉",
+   "vol": 46,
+   "kind": "jinshi",
+   "year": 1469,
+   "raw": "成化辛丑進士"
+  },
+  {
+   "name": "周瑛",
+   "vol": 46,
+   "kind": "jinshi",
+   "year": 1505,
+   "raw": "成化己丑進士"
+  },
+  {
+   "name": "潘府",
+   "vol": 46,
+   "kind": "jinshi",
+   "year": 1529,
+   "raw": "弘治辛丑進士"
+  },
+  {
+   "name": "罗侨",
+   "vol": 46,
+   "kind": "jinshi",
+   "year": 1511,
+   "raw": "登弘治己未進士"
+  },
+  {
+   "name": "汪俊",
+   "vol": 48,
+   "kind": "jinshi",
+   "year": 1499,
+   "raw": "弘治癸未進士"
+  },
+  {
+   "name": "崔铣",
+   "vol": 48,
+   "kind": "jinshi",
+   "year": 1517,
+   "raw": "登弘治乙丑進士"
+  },
+  {
+   "name": "何瑭",
+   "vol": 49,
+   "kind": "jinshi",
+   "year": 1490,
+   "raw": "登弘治壬戌進士"
+  },
+  {
+   "name": "王廷相",
+   "vol": 50,
+   "kind": "jinshi",
+   "year": 1490,
+   "raw": "弘治壬戌進士"
+  },
+  {
+   "name": "黄佐",
+   "vol": 51,
+   "kind": "jinshi",
+   "year": 1520,
+   "raw": "正德庚辰進士"
+  },
+  {
+   "name": "张岳",
+   "vol": 52,
+   "kind": "jinshi",
+   "year": 1541,
+   "raw": "正德丁丑進士"
+  },
+  {
+   "name": "徐问",
+   "vol": 52,
+   "kind": "jinshi",
+   "year": 1490,
+   "raw": "弘治壬戌進士"
+  },
+  {
+   "name": "李中",
+   "vol": 53,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "正德甲戌進士"
+  },
+  {
+   "name": "霍韬",
+   "vol": 53,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "登正德甲戌進士"
+  },
+  {
+   "name": "薛蕙",
+   "vol": 53,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "正德甲戌進士"
+  },
+  {
+   "name": "舒芬",
+   "vol": 53,
+   "kind": "jinshi",
+   "year": 1541,
+   "raw": "正德丁丑進士"
+  },
+  {
+   "name": "吕坤",
+   "vol": 54,
+   "kind": "jinshi",
+   "year": 1595,
+   "raw": "隆慶辛未進士"
+  },
+  {
+   "name": "吕维祺",
+   "vol": 54,
+   "kind": "jinshi",
+   "year": 1613,
+   "raw": "萬曆癸丑進士"
+  },
+  {
+   "name": "郝敬",
+   "vol": 55,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "黄道周",
+   "vol": 56,
+   "kind": "jinshi",
+   "year": 1670,
+   "raw": "登天啟壬戌進士"
+  },
+  {
+   "name": "金铉",
+   "vol": 57,
+   "kind": "jinshi",
+   "year": 1676,
+   "raw": "崇禎戊辰進士"
+  },
+  {
+   "name": "金声",
+   "vol": 57,
+   "kind": "jinshi",
+   "year": 1676,
+   "raw": "崇禎戊辰進士"
+  },
+  {
+   "name": "朱天麟",
+   "vol": 57,
+   "kind": "jinshi",
+   "year": 1676,
+   "raw": "崇禎戊辰進士"
+  },
+  {
+   "name": "顾宪成",
+   "vol": 58,
+   "kind": "age",
+   "age": 10,
+   "raw": "年十歲"
+  },
+  {
+   "name": "高攀龙",
+   "vol": 58,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "钱一本",
+   "vol": 59,
+   "kind": "jinshi",
+   "year": 1619,
+   "raw": "萬曆癸未進士"
+  },
+  {
+   "name": "孙慎行",
+   "vol": 59,
+   "kind": "jinshi",
+   "year": 1583,
+   "raw": "萬曆乙未進士"
+  },
+  {
+   "name": "史孟鱗",
+   "vol": 60,
+   "kind": "jinshi",
+   "year": 1619,
+   "raw": "萬曆癸未進士"
+  },
+  {
+   "name": "刘永澄",
+   "vol": 60,
+   "kind": "jinshi",
+   "year": 1589,
+   "raw": "登萬曆辛丑進士"
+  },
+  {
+   "name": "薛敷教",
+   "vol": 60,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "登萬曆己丑進士"
+  },
+  {
+   "name": "叶茂才",
+   "vol": 60,
+   "kind": "jinshi",
+   "year": 1625,
+   "raw": "萬曆己丑進士"
+  },
+  {
+   "name": "刘元珍",
+   "vol": 60,
+   "kind": "jinshi",
+   "year": 1583,
+   "raw": "萬曆乙未進士"
+  },
+  {
+   "name": "黄尊素",
+   "vol": 61,
+   "kind": "jinshi",
+   "year": 1592,
+   "raw": "萬曆丙辰進士"
+  },
+  {
+   "name": "吴鍾峦",
+   "vol": 61,
+   "kind": "jinshi",
+   "year": 1634,
+   "raw": "崇禎甲戌進士"
+  },
+  {
+   "name": "华允诚",
+   "vol": 61,
+   "kind": "jinshi",
+   "year": 1670,
+   "raw": "天啟壬戌進士"
+  },
+  {
+   "name": "陈龙正",
+   "vol": 61,
+   "kind": "jinshi",
+   "year": 1634,
+   "raw": "崇禎甲戌進士"
+  },
+  {
+   "name": "刘宗周",
+   "vol": 62,
+   "kind": "jinshi",
+   "year": 1589,
+   "raw": "萬曆辛丑進士"
+  },
+  {
+   "name": "应典",
+   "vol": 63,
+   "kind": "jinshi",
+   "year": 1514,
+   "raw": "正德甲戌進士"
+  },
+  {
+   "name": "颜鲸",
+   "vol": 63,
+   "kind": "jinshi",
+   "year": 1532,
+   "raw": "嘉靖丙辰進士"
+  }
+ ],
+ "relations": [
+  {
+   "sub": "胡九韶",
+   "tgt": "吴与弼",
+   "kind": "少從",
+   "raw": "字鳳儀，金溪人，自少從學康齋。家甚貧，課兒力耕，僅給衣食",
+   "vol": 2
+  },
+  {
+   "sub": "潘润",
+   "tgt": "娄谅",
+   "kind": "師事",
+   "raw": "號玉齋，信之永豐人。師事婁一齋。一齋嚴毅英邁，慨然以師道",
+   "vol": 4
+  },
+  {
+   "sub": "陈献章",
+   "tgt": "吴与弼",
+   "kind": "受學於",
+   "raw": "監讀書。已至崇仁，受學於康齋先生，歸即絕意科舉，築春陽臺",
+   "vol": 5
+  },
+  {
+   "sub": "薛敬之",
+   "tgt": "周蕙",
+   "kind": "从学",
+   "raw": "年七十四。  　　先生從周小泉學，常雞鳴而起，候門開，灑",
+   "vol": 7
+  },
+  {
+   "sub": "李锦",
+   "tgt": "周蕙",
+   "kind": "受學於",
+   "raw": "介菴，陝之咸寧人。受學於周小泉。天順壬午舉於鄉，入太學，",
+   "vol": 7
+  },
+  {
+   "sub": "吕柟",
+   "tgt": "薛敬之",
+   "kind": "師事",
+   "raw": "諡文簡。  　　先生師事薛思菴，所至講學。未第時，即與崔",
+   "vol": 8
+  },
+  {
+   "sub": "吕潜",
+   "tgt": "吕柟",
+   "kind": "師事",
+   "raw": "號愧軒，陝之涇陽人。師事呂涇野，一言一動，鹹以為法。舉嘉",
+   "vol": 8
+  },
+  {
+   "sub": "张节",
+   "tgt": "吕柟",
+   "kind": "受學於",
+   "raw": "。初從湛甘泉遊，繼受學於涇野。涇野贈詩，稱其守道不回。嘗",
+   "vol": 8
+  },
+  {
+   "sub": "李挺",
+   "tgt": "吕柟",
+   "kind": "从学",
+   "raw": "咸寧人。正、嘉間諸生，從涇野學，孤直不隨時俯仰。嘗自誦雲",
+   "vol": 8
+  },
+  {
+   "sub": "蔡宗兖",
+   "tgt": "王阳明",
+   "kind": "从学",
+   "raw": "或先者也。癸酉，三先生從文成遊四明山，我齋自永樂寺返，白",
+   "vol": 11
+  },
+  {
+   "sub": "钱德洪",
+   "tgt": "王阳明",
+   "kind": "親炙",
+   "raw": "之的傳也。先生與龍溪親炙陽明最久，習聞其過重之言。龍溪謂",
+   "vol": 11
+  },
+  {
+   "sub": "钱德洪",
+   "tgt": "王阳明",
+   "kind": "卒業於",
+   "raw": "溪疏通其大旨，而後卒業於文成，一時稱為教授師。嘉靖五年舉",
+   "vol": 11
+  },
+  {
+   "sub": "王畿",
+   "tgt": "王阳明",
+   "kind": "受業於",
+   "raw": "嘉靖癸未下第，歸而受業於文成。丙戌試期，遂不欲往。文成曰",
+   "vol": 12
+  },
+  {
+   "sub": "季本",
+   "tgt": "王阳明",
+   "kind": "師事",
+   "raw": "司輿（名文轅），其後師事陽明。先生之學，貴主宰而惡自然，",
+   "vol": 13
+  },
+  {
+   "sub": "顾应祥",
+   "tgt": "王阳明",
+   "kind": "受業於",
+   "raw": "》，皆其所著也。少受業於陽明。陽明歿，先生見《傳習續錄》",
+   "vol": 14
+  },
+  {
+   "sub": "黄宗明",
+   "tgt": "王阳明",
+   "kind": "受學於",
+   "raw": "申十一月卒官。先生受學於陽明，陽明謂「誠甫自當一日千里，",
+   "vol": 14
+  },
+  {
+   "sub": "程文德",
+   "tgt": "王阳明",
+   "kind": "卒業於",
+   "raw": "生初學於楓山，其後卒業於陽明。以真心為學之要，雖所得淺深",
+   "vol": 14
+  },
+  {
+   "sub": "徐用检",
+   "tgt": "钱德洪",
+   "kind": "師事",
+   "raw": "八十四。  　　先生師事錢緒山，然其為學不以良知，而以志",
+   "vol": 14
+  },
+  {
+   "sub": "王宗沐",
+   "tgt": "欧阳德",
+   "kind": "師事",
+   "raw": "，尋改刑部。先生師事歐陽南野，少從二氏而入，已知「所謂良",
+   "vol": 15
+  },
+  {
+   "sub": "邹守益",
+   "tgt": "耿定理",
+   "kind": "問學於",
+   "raw": "辨其為何如人。」問學於耿楚倥，楚倥不答，先生憤然曰：「吾",
+   "vol": 16
+  },
+  {
+   "sub": "邹守益",
+   "tgt": "耿定向",
+   "kind": "受學於",
+   "raw": "，年五十六。先生受學於耿天臺，鄉舉後卒業太學。天臺謂：「",
+   "vol": 16
+  },
+  {
+   "sub": "刘魁",
+   "tgt": "王阳明",
+   "kind": "受學於",
+   "raw": "還家。  　　先生受學於陽明，卒業東廓。以直節著名，而陶",
+   "vol": 19
+  },
+  {
+   "sub": "王时槐",
+   "tgt": "刘文敏",
+   "kind": "師事",
+   "raw": "  　　先生弱冠師事同邑劉兩峰，刻意為學，仕而求質於四方",
+   "vol": 20
+  },
+  {
+   "sub": "万廷言",
+   "tgt": "王阳明",
+   "kind": "受業於",
+   "raw": "父虞愷，刑部侍郎。受業於陽明先生，登進士第。曆禮部郎官，",
+   "vol": 21
+  },
+  {
+   "sub": "冯应京",
+   "tgt": "邹元标",
+   "kind": "師事",
+   "raw": "辰始出，卒於家。先生師事鄒南臬，其拘幽書草，皆從憂患之際",
+   "vol": 24
+  },
+  {
+   "sub": "周怡",
+   "tgt": "王畿",
+   "kind": "師事",
+   "raw": "年六十四。早歲師事東廓、龍溪，於《傳習錄》身體而力行之。",
+   "vol": 25
+  },
+  {
+   "sub": "周怡",
+   "tgt": "邹守益",
+   "kind": "師事",
+   "raw": "於家，年六十四。早歲師事東廓、龍溪，於《傳習錄》身體而力",
+   "vol": 25
+  },
+  {
+   "sub": "蒋信",
+   "tgt": "湛若水",
+   "kind": "師事",
+   "raw": "事焉。已應貢入京師，師事甘泉。及甘泉在南雍，及其門者甚眾",
+   "vol": 28
+  },
+  {
+   "sub": "尤时熙",
+   "tgt": "刘魁",
+   "kind": "師事",
+   "raw": "師，終不能有成，於是師事劉晴川。晴川言事下獄，先生時書所",
+   "vol": 29
+  },
+  {
+   "sub": "王襞",
+   "tgt": "焦竑",
+   "kind": "从学",
+   "raw": "汝鄉焦弱侯可師也。」歸從弱侯游，得自然旨趣。弱侯曰：「要",
+   "vol": 32
+  },
+  {
+   "sub": "王襞",
+   "tgt": "王畿",
+   "kind": "師事",
+   "raw": "其非越中兒也。」令其師事龍溪、緒山，先後留越中幾二十年。",
+   "vol": 32
+  },
+  {
+   "sub": "王襞",
+   "tgt": "钱德洪",
+   "kind": "師事",
+   "raw": "中兒也。」令其師事龍溪、緒山，先後留越中幾二十年。心齋開",
+   "vol": 32
+  },
+  {
+   "sub": "焦竑",
+   "tgt": "耿定向",
+   "kind": "師事",
+   "raw": "諡文端。  　　先生師事耿天臺、羅近溪，而又篤信卓吾之學",
+   "vol": 35
+  },
+  {
+   "sub": "洪垣",
+   "tgt": "湛若水",
+   "kind": "執贄",
+   "raw": "一博約之說不似。其後執贄甘泉，甘泉曰：「是可傳吾釣颱風月",
+   "vol": 39
+  },
+  {
+   "sub": "唐枢",
+   "tgt": "湛若水",
+   "kind": "師事",
+   "raw": "生初舉於鄉，入南雍，師事甘泉。其後慕陽明之學而不及見也。",
+   "vol": 40
+  },
+  {
+   "sub": "冯从吾",
+   "tgt": "许孚远",
+   "kind": "受學於",
+   "raw": "恭定。  　　先生受學於許敬菴，故其為學，全要在本原處透",
+   "vol": 41
+  },
+  {
+   "sub": "曹端",
+   "tgt": "魏校",
+   "kind": "師事",
+   "raw": "《五經》皆遍，師事宜陽馬子才、太原彭宗古，遠有端緒。永樂",
+   "vol": 44
+  },
+  {
+   "sub": "李中",
+   "tgt": "潘润",
+   "kind": "受學於",
+   "raw": "五。  　　先生受學於楊玉齋之門，玉齋名珠，其學自傳註以",
+   "vol": 53
+  },
+  {
+   "sub": "卢甯忠",
+   "tgt": "黄佐",
+   "kind": "受學於",
+   "raw": "不詳其所至官。先生受學於黃泰泉。泰泉議王、湛之學，而先生",
+   "vol": 54
+  },
+  {
+   "sub": "金铉",
+   "tgt": "刘宗周",
+   "kind": "問學於",
+   "raw": "來不足異也。先生曾問學於蕺山先師，某過其家，門巷蕭然，殘",
+   "vol": 57
+  },
+  {
+   "sub": "史孟鱗",
+   "tgt": "顾宪成",
+   "kind": "師事",
+   "raw": "降五級，調外任。先生師事涇陽，因一時之弊，故好談工夫。夫",
+   "vol": 60
+  },
+  {
+   "sub": "吴鍾峦",
+   "tgt": "顾宪成",
+   "kind": "受業於",
+   "raw": "十五。  　　先生受業於涇陽，而于景逸、玄台、季思皆為深",
+   "vol": 61
+  },
+  {
+   "sub": "华允诚",
+   "tgt": "高攀龙",
+   "kind": "師事",
+   "raw": "而死。  　　先生師事高忠憲，忠憲殉節，示先生以末後語雲",
+   "vol": 61
+  }
+ ]
+}
