@@ -76,13 +76,14 @@ export function boot(core) {
 
   buildTabs();
   registerRoutes();
-  router.migrateLegacyHash();
-  router.start();
-
+  // 先订阅 ROUTE_CHANGED 再启动路由：否则首帧（首次加载/带 hash 刷新）的
+  // dispatch 会落在监听器注册之前，页签与视图拿不到 .on，整页空白。
   on(EV.ROUTE_CHANGED, ({ name }) => {
     $$('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.t === name));
     $$('section.tab').forEach((s) => s.classList.toggle('on', s.id === `sec-${name}`));
   });
+  router.migrateLegacyHash();
+  router.start();
 
   function buildTabs() {
     const tabs = $('#tabs');

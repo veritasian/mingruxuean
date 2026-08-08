@@ -89,6 +89,18 @@ home.tabs.join(',') === wantTabs.join(',')
   ? ok('菜单次序', wantTabs.join(' / '))
   : bad('菜单次序', `实得 ${home.tabs.join(',')}`);
 
+/* ---------- 带 hash 刷新（回归：migrateLegacyHash 不得改写 #content/ 格式） ---------- */
+await page.goto(`file://${TARGET}#content/kg`, { waitUntil: 'load' });
+await page.waitForFunction(() => !!window.__MRXA_APP__, { timeout: 30000 });
+await new Promise((r) => setTimeout(r, 1200));
+const ref = await page.evaluate(() => ({
+  hash: location.hash,
+  kgOn: document.querySelector('#sec-kg')?.classList.contains('on'),
+}));
+ref.hash === '#content/kg' && ref.kgOn
+  ? ok('带hash刷新', '#content/kg 刷新后正常显示知识图谱')
+  : bad('带hash刷新', `hash=${ref.hash} kgOn=${ref.kgOn}`);
+
 /* ---------- 逐视图 ---------- */
 const PROBE = {
   graph: '#graph .node', roster: '#roster details', time: '#tline rect',

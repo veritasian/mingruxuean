@@ -24,7 +24,7 @@ python3 scripts/build/bundle.py
 python3 scripts/pipeline.py          # ingest + build 全跑
 python3 scripts/pipeline.py build    # 数据已就绪，只重打包
 
-# 跑测试（78 项：数据 / 架构 / 产物 / 浏览器）
+# 跑测试（79 项：数据 / 架构 / 产物 / 浏览器）
 python3 tests/run.py
 python3 tests/run.py --no-web        # 跳过浏览器冒烟，快
 
@@ -174,7 +174,7 @@ tests/
 ├── test_data.py     20 项：数据完整性、外键、孤点自洽、明史方向、卷前三篇、阳明心学、简体一致
 ├── test_source.py   13 项：分层方向、行数上限、单一入口、文档在不在
 ├── test_build.py    12 项：产物完整、离线可用、无模块环、语法可过
-├── smoke.mjs        33 项：真浏览器跑 8 个视图、默认首页/菜单次序、点人物、验箭头朝向、验卷前三篇、默认页、阳明心学章节目录/置顶/原版结构/渐入/滚动监听、旧链接兼容
+├── smoke.mjs        34 项：真浏览器跑 8 个视图、默认首页/菜单次序、带hash刷新、点人物、验箭头朝向、验卷前三篇、默认页、阳明心学章节目录/置顶/原版结构/渐入/滚动监听、旧链接兼容
 └── run.py           串起来，源码比产物新时自动重打包
 ```
 

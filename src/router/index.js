@@ -87,10 +87,11 @@ export function start() {
   dispatch();
 }
 
-/** 兼容旧版链接：#kg / #v12 / #kg王阳明 / #all */
+/** 兼容旧版链接：#kg / #v12 / #kg王阳明 / #all / #graph */
 export function migrateLegacyHash() {
   const h = String(location.hash || '').replace(/^#/, '');
-  if (!h || h.startsWith('/')) return;
+  // 新格式 #content/<view> 与旧格式 #/<view> 都由 parse 处理，不在这里改写
+  if (!h || h.startsWith('/') || h.startsWith(`${PREFIX}/`)) return;
   let target = null;
   if (/^v\d+$/.test(h)) target = stringify({ name: 'book', params: [h.slice(1)] });
   else if (h.startsWith('kgf')) target = stringify({ name: 'kg', params: [decodeURIComponent(h.slice(3))] });

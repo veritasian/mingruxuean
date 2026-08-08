@@ -4,6 +4,23 @@
 
 ---
 
+## [8.8.1] — 2026-08-08
+
+修复：带 hash 刷新（如 `#content/kg`）页面空白。
+
+### 修正
+
+- **带 hash 刷新页面空白**（用户报告）。两个根因：
+  1. `migrateLegacyHash()` 把新格式 `#content/kg`（不以 `/` 开头）误当旧链接，改写成 `#content/content/kg` →
+     路由解析出未知 `content`，视图不激活。修复：跳过 `content/` 前缀（与 `/` 前缀同样交由 parse 处理）。
+  2. `app.controller.js` 里 `on(EV.ROUTE_CHANGED, …)` 注册在 `router.start()` **之后**，首帧 dispatch 的事件
+     落在监听器注册前 → 页签/视图永远拿不到 `.on`，整页空白（首次加载与刷新都受影响，此前靠用户点页签触发
+     hashchange 才恢复显示）。修复：把订阅挪到 `router.start()` 之前。
+- 新增 smoke 回归「带hash刷新」：直接以 `#content/kg` 载入，断言 hash 不变且 `sec-kg` 激活。测试 **78 → 79**，全绿 16.2s。
+- README 测试数 78→79、smoke 33→34。
+
+---
+
 ## [8.8.0] — 2026-08-08
 
 首页默认知识图谱并置顶菜单；菜单更名（线索化）；URL 改为 `#content/` 单词组合；新增 SEO 注入脚本。
