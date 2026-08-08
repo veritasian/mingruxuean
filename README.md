@@ -44,6 +44,7 @@ python3 -m http.server 8080 && open http://localhost:8080/
 
 ```
 .
+├── LICENSE                MIT 许可证
 ├── src/                    前端源码（分层，每个文件 ≤300 行）
 │   ├── core/               总线 / 状态 / DOM 工具——不认识业务
 │   ├── data/               仓库 / 领域模型 / 图模型 / 古文渲染
@@ -195,3 +196,11 @@ tests/
 
 更新记录见 [CHANGELOG.md](CHANGELOG.md)，架构细节见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)，
 字段含义见 [docs/DATA.md](docs/DATA.md)。
+
+---
+
+## 许可证
+
+[MIT License](LICENSE)。可以自由使用、修改、商用（含衍生作品），保留版权声明即可；
+作者不对软件作任何担保。数据内容（《明儒学案》六十三卷、卷前三篇、阳明心学）整理自
+维基文库（zh.wikisource.org）与《明史》儒林传等公开文献。
