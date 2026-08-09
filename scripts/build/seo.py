@@ -165,8 +165,7 @@ def re_compile():
 def main():
     s = stats()
     out_meta = {}
-    web_mode = '--web' in sys.argv
-    TARGET = ROOT / 'web' if web_mode else DIST
+    TARGET = DIST
     for spec in PAGES:
         title, desc, keywords = page_copy(spec, s)
         ld = json_ld(spec, title, desc, keywords, s)

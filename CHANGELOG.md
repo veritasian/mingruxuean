@@ -4,6 +4,26 @@
 
 ---
 
+## [10.1.0] — 2026-08-09
+
+回退：弃用 web 在线版，线上站点恢复为 dist 离线版（原始网页）。
+
+### 变更
+- `vercel.json` 的 `buildCommand` 去掉 web 构建步骤，仅保留
+  `python3 scripts/build/bundle.py && python3 scripts/build/seo.py`；
+  `outputDirectory` 由 `web` 改回 `dist`。
+- 删除 web 专属源码（web 版渲染始终不全，无法达到本地 dist 的效果）：
+  - `scripts/build/web_build.py`、`scripts/build/wikitext_html.py`
+  - `src/controllers/web_boot.js`
+  - `src/pages/web_*.js`（kg / graph / roster / time / geo / orphan / book / yangming 共 8 个）
+- `seo.py` 移除 `--web` 分支，始终输出到 `dist/`。
+- `.gitignore` 移除已无意义的 `web/` 忽略项。
+
+### 说明
+- 线上站点（`mingruxuean.vercel.app`）现为与本地一致的 dist 版：图谱、谱系总图、
+  时间轴、地理线索等可视化页均正常渲染（与本地部署效果相同）。
+- [10.0.1] 的 web 图谱修复随之失效（web 版已整体移除）。
+
 ## [10.0.1] — 2026-08-09
 
 Web 版（web/）可视化页修复：知识图谱等四张图恢复渲染。

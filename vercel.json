@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "python3 scripts/build/bundle.py && python3 scripts/build/seo.py && python3 scripts/build/web_build.py && python3 scripts/build/seo.py --web",
-  "outputDirectory": "web",
+  "buildCommand": "python3 scripts/build/bundle.py && python3 scripts/build/seo.py",
+  "outputDirectory": "dist",
   "rewrites": [
     { "source": "/book/index.html", "destination": "/chapter-Preface.html" },
     { "source": "/book/chapter-:slug", "destination": "/chapter-:slug" }
