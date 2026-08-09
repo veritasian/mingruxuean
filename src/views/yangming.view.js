@@ -35,6 +35,7 @@ const FIG = {
 export function render(root, data, { onNav } = {}) {
   clear(root);
   root.appendChild(hero(data));
+  if (data.note && data.note.length) root.appendChild(note(data.note));
   const shell = el('div.ym-shell');
   shell.appendChild(nav(data, { onNav }));
   const main = el('div.ym-main');
@@ -43,6 +44,15 @@ export function render(root, data, { onNav } = {}) {
   shell.appendChild(main);
   root.appendChild(shell);
   return { side: $('.ym-nav', shell), main };
+}
+
+/* ---------- 四句教下的心学总纲说明（边框 + 淡蓝透明底） ---------- */
+function note(paras) {
+  const box = el('div.ym-note');
+  const cap = el('p.ym-note-cap', { text: '读图先读此：' });
+  box.appendChild(cap);
+  paras.forEach((p) => box.appendChild(el('p', { text: p })));
+  return box;
 }
 
 /* ---------- Hero：眉标 + 四句教渐次升起 ---------- */

@@ -34,10 +34,10 @@ _html = {}
 
 def html(spec):
     f = DIST / spec['file']
-    if spec['id'] not in _html:
+    if spec['file'] not in _html:
         check(f.exists(), '缺产物 %s，先跑 scripts/build/bundle.py' % f)
-        _html[spec['id']] = f.read_text(encoding='utf-8')
-    return _html[spec['id']]
+        _html[spec['file']] = f.read_text(encoding='utf-8')
+    return _html[spec['file']]
 
 
 def data_of(spec):
@@ -50,7 +50,7 @@ def data_of(spec):
 
 
 def test_pages_built():
-    """8 个页面都在，体量正常"""
+    """71 个页面都在，体量正常"""
     big = []
     for spec in PAGES:
         f = DIST / spec['file']
@@ -59,8 +59,8 @@ def test_pages_built():
         if not (0.05 < mb < 8.0):
             big.append('%s %.2fMB' % (spec['file'], mb))
     check(not big, '体量异常：%s' % sample(big))
-    return '%d 页 · book %.2f MB（含 volumes）' % (
-        len(PAGES), (DIST / 'book.html').stat().st_size / 1048576)
+    n_ch = sum(1 for p in PAGES if p.get('book_vol') and p['book_vol'] != 'front')
+    return '%d 页（卷前 1 + 正编 %d 卷各 1 页）' % (len(PAGES), n_ch)
 
 
 def test_placeholders_replaced():
@@ -91,35 +91,40 @@ def test_menu_highlight():
     pat = re.compile(r'data-page="[^"]+" class="on"')
     for spec in PAGES:
         h = html(spec)
-        check('<a href="%s" data-page="%s" class="on">' % (spec['file'], spec['id']) in h,
-              '%s 菜单未高亮' % spec['id'])
-        check_eq(len(pat.findall(h)), 1, '%s 菜单高亮数量' % spec['id'])
+        anchor = 'book/index.html' if spec['id'] == 'book' else spec['file']
+        check('<a href="%s" data-page="%s" class="on">' % (anchor, spec['id']) in h,
+              '%s 菜单未高亮' % spec['file'])
+        check_eq(len(pat.findall(h)), 1, '%s 菜单高亮数量' % spec['file'])
     return 'ok'
 
 
 def test_data_slices():
-    """每页数据切片正确：核心 7 份都在，volumes 只进 book、yangming 只进阳明页"""
+    """每页数据切片正确：核心 7 份都在；book 64 页各带本页卷；yangming 只进阳明页"""
     for spec in PAGES:
         d = data_of(spec)
         for k in ('persons', 'schools', 'relations', 'orphans', 'geo', 'timeline', 'toc'):
-            check(k in d, '%s 缺核心数据 %s' % (spec['id'], k))
+            check(k in d, '%s 缺核心数据 %s' % (spec['file'], k))
         has_vol = 'volumes' in d
         has_ym = 'yangming' in d
-        if spec['id'] == 'book':
-            check(has_vol, 'book 页缺 volumes')
+        if spec.get('book_vol'):
+            check(has_vol, '%s 缺 volumes' % spec['file'])
             vols = d['volumes']
-            check_eq(len([k for k in vols if k.isdigit()]), 63, 'book 内联卷数')
-            for k in ('x1', 'x2', 'x3'):
-                check(k in vols and len(vols[k].get('text', '')) > 500,
-                      'book 卷前篇 %s 缺失或过短' % k)
+            if spec['book_vol'] == 'front':
+                check_eq(sorted(vols.keys()), ['x1', 'x2', 'x3'], '卷前页应只带 3 篇')
+                for k in ('x1', 'x2', 'x3'):
+                    check(len(vols[k].get('text', '')) > 500, '卷前 %s 缺失或过短' % k)
+            else:
+                check_eq(list(vols.keys()), [spec['book_vol']], '卷页应只带本卷')
+                check(len(vols[spec['book_vol']].get('text', '')) > 500,
+                      '卷 %s 正文缺失' % spec['book_vol'])
         else:
-            check(not has_vol, '%s 页不该有 volumes' % spec['id'])
+            check(not has_vol, '%s 页不该有 volumes' % spec['file'])
         if spec['id'] == 'yangming':
             check(has_ym and len(d['yangming'].get('chapters', [])) >= 14,
                   'yangming 页数据不全')
         else:
-            check(not has_ym, '%s 页不该有 yangming' % spec['id'])
-    return '核心 7 份 × 8 页 · volumes→book · yangming→阳明页'
+            check(not has_ym, '%s 页不该有 yangming' % spec['file'])
+    return '核心 7 份 × 71 页 · book 64 页各带本卷 · yangming→阳明页'
 
 
 def test_seo_per_page():

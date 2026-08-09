@@ -10,8 +10,11 @@
 dist/index.html           ← 首页（知识图谱），双击即开，无需服务器、无需联网
 dist/graph.html           谱系总图 · roster.html 人物线索 · time.html 时间线索
 dist/geo.html             地理线索 · orphan.html 孤点现象
-dist/book.html            学案原文（63 卷 + 卷前三篇，体量最大）
 dist/yangming.html        阳明心学
+dist/book/               学案原文：按卷分页（64 页 = 卷前一篇 + 63 卷各一页）
+  index.html                卷前三篇（原序/发凡/师说，三个 tab）
+  chapter-one.html …        63 卷各一页（chapter-sixty-three.html）
+  ../book.html              旧版单文件跳板（自动跳转 → book/ 分页）
 ```
 
 ---
@@ -30,7 +33,7 @@ python3 scripts/build/seo.py           # 逐页注入 title/description/keywords
 python3 scripts/pipeline.py          # ingest + build 全跑
 python3 scripts/pipeline.py build    # 数据已就绪，只重打包
 
-# 跑测试（103 项：数据 / 架构 / 产物 / 浏览器）
+# 跑测试（109 项：数据 / 架构 / 产物 / 浏览器）
 python3 tests/run.py
 python3 tests/run.py --no-web        # 跳过浏览器冒烟，快
 
@@ -80,7 +83,7 @@ python3 -m http.server 8080 && open http://localhost:8080/
 
 ---
 
-## 八个页面（菜单互链，一分类一页）
+## 71 个页面（菜单互链，一分类一页；学案原文按卷分页）
 
 | 页面 | 分类 | 看什么 | 本页专属 SEO |
 |---|---|---|---|
@@ -90,15 +93,19 @@ python3 -m http.server 8080 && open http://localhost:8080/
 | `time.html` | 时间线索 | 按生卒年排布 | 生卒年时间轴 |
 | `geo.html` | 地理线索 | 17 省份，可与名录联动 | 籍贯地理分布 |
 | `orphan.html` | **孤点现象** | 52 个孤点为什么孤——见下 | 孤点因由详解 |
-| `book.html` | 学案原文 | 卷前三篇 + 63 卷正文，古文竖读排版 | 六十三卷全文 |
+| `book/` | 学案原文（64 页） | 卷前三篇（原序/发凡/师说，三个 tab）+ 63 卷各一页 | 每卷独立标题 |
 | `yangming.html` | 阳明心学 | 四句教 + 14 章（镜像/矩阵/四象），顶部章节目录随滚动高亮 | 四句教图解 |
 
-页面之间用普通 `<a>` 互链；每页只带自己的 CSS/JS/数据，meta 标题、描述、关键词、
-JSON-LD 都围绕本分类生成（`scripts/build/seo.py`）。深链用查询参数：
-`book.html?v=12`（第 12 卷）、`book.html?v=x2`（发凡）、`index.html?focus=王阳明`（图谱聚焦）、
-`graph.html?all=1`（全览）、`index.html?orphans=1`（只看孤点）。
+**学案原文 64 页拆页**：卷前一篇 `book/index.html`（三个 tab 切原序/发凡/师说）+ 63 卷各一页
+（`book/chapter-one.html` … `book/chapter-sixty-three.html`），每页只内联本卷正文 + 自己的
+title/description/keywords。加载更快（单页 ~0.31 MB）、互不影响。深链：
+`book/chapter-twelve.html`（直接进卷十二）、`book/index.html?p=x2`（卷前发凡）。
 
-旧版哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`）会自动重定向到
+页面之间用普通 `<a>` 互链；每页只带自己的 CSS/JS/数据，meta 标题、描述、关键词、
+JSON-LD 都围绕本分类生成（`scripts/build/seo.py`）。其他深链用查询参数：
+`index.html?focus=王阳明`（图谱聚焦）、`graph.html?all=1`（全览）、`index.html?orphans=1`（只看孤点）。
+
+旧版哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`、`book.html?v=12`）会自动重定向到
 对应新页面，老书签不会 404。
 
 ---
@@ -185,9 +192,9 @@ tests/
 ├── harness.py       零依赖的极简测试框架
 ├── test_data.py     20 项：数据完整性、外键、孤点自洽、明史方向、卷前三篇、阳明心学、简体一致
 ├── test_source.py   13 项：分层方向、行数上限、页面清单与源码对账、文档在不在
-├── test_build.py    13 项：8 页产物完整、数据切片正确、逐页 SEO、无模块环、语法可过
-├── smoke.mjs        57 项：真浏览器逐个开 8 页，验内容纯净/菜单高亮/SEO 独立/数据切片、
-│                    跨页聚焦（?focus/?v/?orphans）、旧链接重定向、箭头朝向、阳明心学全检
+├── test_build.py    13 项：71 页产物完整、数据切片正确、逐页 SEO、无模块环、语法可过
+├── smoke.mjs        63 项：真浏览器逐个开 8 页 + book 族深检，验内容纯净/菜单高亮/SEO 独立、
+│                    跨页聚焦（?focus/?v/?orphans）、旧链接重定向、卷前 3 tab、阳明心学读图说明
 └── run.py           串起来，源码比产物新时自动重打包
 ```
 

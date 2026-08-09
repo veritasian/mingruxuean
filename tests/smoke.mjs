@@ -41,7 +41,7 @@ const PAGES = [
   { id: 'time',     file: 'time.html',     probe: '#tline rect',      kw: '时间线索' },
   { id: 'geo',      file: 'geo.html',      probe: '#geoGrid .gprov',  kw: '地理线索' },
   { id: 'orphan',   file: 'orphan.html',   probe: '#orphanBody .orphan-chip', kw: '孤点现象' },
-  { id: 'book',     file: 'book.html',     probe: '#tocPane .toc-item', kw: '学案原文' },
+  { id: 'book',     file: 'book/index.html', probe: '#tocPane .toc-item', kw: '学案原文' },
   { id: 'yangming', file: 'yangming.html', probe: '#yangmingRoot .ym-chapter', kw: '阳明心学' },
 ];
 const results = [];
@@ -110,6 +110,15 @@ meta
 meta?.coverage.length > 8 ? ok('概览行', meta.coverage) : bad('概览行', '为空');
 meta?.menuCount === 8 ? ok('菜单项', '8 个分类') : bad('菜单项', `实得 ${meta?.menuCount}`);
 
+/* ---------- 顶部「明儒学案」是 home 链接 ---------- */
+const homeLink = await page.evaluate(() => ({
+  href: document.querySelector('h1.title a')?.getAttribute('href') || '',
+  text: document.querySelector('h1.title')?.textContent.trim() || '',
+}));
+homeLink.href === 'index.html'
+  ? ok('标题链接', `「${homeLink.text}」→ ${homeLink.href}`)
+  : bad('标题链接', `href=${homeLink.href}`);
+
 /* ---------- kg 跨页聚焦与孤点态 ---------- */
 await open('index.html', '?focus=王阳明');
 const focus = await page.evaluate(() => {
@@ -150,11 +159,16 @@ const card = await page.evaluate(() => {
 });
 card.show ? ok('人物卡', card.text.replace(/\s+/g, ' ')) : bad('人物卡', card.err || '点击后未弹出');
 
-/* ---------- 学案原文：默认原序 / 指定卷 / 卷前三篇 ---------- */
-await open('book.html');
-const def = await page.evaluate(() =>
-  document.querySelector('#tocPane .toc-item.on')?.dataset.v || '');
-def === 'x1' ? ok('默认页', '打开学案原文默认显示 原序（x1）') : bad('默认页', `默认激活 ${def}`);
+/* ---------- 学案原文（按卷分页 64 页） ---------- */
+// 卷前页 book/index.html：默认原序 + 三个 tab + 目录次序
+await open('book/index.html');
+const def = await page.evaluate(() => ({
+  active: document.querySelector('#tocPane .toc-item.on')?.dataset.v || '',
+  tabs: document.querySelectorAll('#frontTabs button').length,
+  tabOn: document.querySelector('#frontTabs button.on')?.dataset.p || '',
+}));
+def.active === 'x1' ? ok('默认页', '卷前页默认显示 原序（x1）') : bad('默认页', `默认激活 ${def.active}`);
+def.tabs === 3 ? ok('卷前三 tab', '原序/发凡/师说') : bad('卷前三 tab', `实得 ${def.tabs} 个`);
 
 const order = await page.evaluate(() => [...document.querySelectorAll('#tocPane .toc-item')]
   .slice(0, 4).map((x) => x.dataset.v));
@@ -162,20 +176,53 @@ order.join(',') === 'x1,x2,x3,1'
   ? ok('卷前次序', '原序 → 发凡 → 师说 → 卷一')
   : bad('卷前次序', `目录前四项是 ${order.join(',')}`);
 
-await open('book.html', '?v=12');
-const vol = await page.evaluate(() => (document.querySelector('#reader')?.textContent || '').length);
-vol > 500 ? ok('卷次正文', `第 12 卷 ${vol} 字`) : bad('卷次正文', `只读到 ${vol} 字`);
+// 切 tab：发凡
+await page.evaluate(() => {
+  const b = [...document.querySelectorAll('#frontTabs button')].find((x) => x.dataset.p === 'x2');
+  b && b.click();
+});
+await new Promise((r) => setTimeout(r, 500));
+const fafan = await page.evaluate(() => ({
+  title: document.querySelector('#reader .reader-head h3')?.textContent || '',
+  chars: (document.querySelector('#reader .reader-body')?.textContent || '').length,
+}));
+fafan.chars > 500 && fafan.title.includes('发凡')
+  ? ok('卷前 tab 切换', `${fafan.title} ${fafan.chars} 字`)
+  : bad('卷前 tab 切换', `标题「${fafan.title}」正文 ${fafan.chars} 字`);
 
-for (const [key, label] of [['x2', '发凡'], ['x3', '师说']]) {
-  await open('book.html', `?v=${key}`);
-  const fm = await page.evaluate(() => ({
-    title: document.querySelector('#reader .reader-head h3')?.textContent || '',
+// 独立卷页：chapter-one.html（崇仁学案一）、chapter-twelve.html（浙中王门学案二）
+for (const [file, volNo, name] of [['chapter-one.html', '1', '崇仁学案一'],
+                                   ['chapter-twelve.html', '12', '浙中王门学案二']]) {
+  await open(`book/${file}`);
+  const v = await page.evaluate(() => ({
+    active: document.querySelector('#tocPane .toc-item.on')?.dataset.v || '',
     chars: (document.querySelector('#reader .reader-body')?.textContent || '').length,
+    title: document.title,
   }));
-  const good = fm.chars > 500 && !fm.title.startsWith('卷');
-  good ? ok(`卷前 ${label}`, `${fm.title} ${fm.chars} 字`)
-       : bad(`卷前 ${label}`, `标题「${fm.title}」正文 ${fm.chars} 字`);
+  const good = v.active === volNo && v.chars > 500 && v.title.includes(name);
+  good ? ok(`卷页 ${file}`, `激活卷${volNo} ${name} · ${v.chars} 字 · title 独立`)
+       : bad(`卷页 ${file}`, `active=${v.active} chars=${v.chars} title=${v.title.slice(0, 30)}`);
 }
+
+// 卷页内 TOC 点其他卷 → 跳到对应独立页（chapter-one → 卷 2）
+await open('book/chapter-one.html');
+await page.evaluate(() => {
+  const t = [...document.querySelectorAll('#tocPane .toc-item')].find((x) => x.dataset.v === '2');
+  t && t.click();
+});
+await new Promise((r) => setTimeout(r, 1400));
+const nav2 = await page.evaluate(() => location.pathname.split('/').pop());
+nav2 === 'chapter-two.html'
+  ? ok('目录跨页跳转', '卷一 → 卷二独立页')
+  : bad('目录跨页跳转', `实得 ${nav2}`);
+
+// 旧版单文件 book.html 跳板：book.html?v=12 → chapter-twelve.html
+await page.goto(`file://${DIST}/book.html?v=12`, { waitUntil: 'load' });
+await new Promise((r) => setTimeout(r, 1500));
+const stub = await page.evaluate(() => location.pathname.split('/').pop());
+stub === 'chapter-twelve.html'
+  ? ok('book.html 跳板', 'book.html?v=12 → chapter-twelve.html')
+  : bad('book.html 跳板', `实得 ${stub}`);
 
 /* ---------- 阳明心学专页 ---------- */
 await open('yangming.html');
@@ -193,6 +240,18 @@ const ym = await page.evaluate(() => ({
 ym.hero === 4 && ym.chapters === 14
   ? ok('阳明 内容', `四句教 ${ym.hero} 句 · ${ym.chapters} 章`)
   : bad('阳明 内容', `hero=${ym.hero} ch=${ym.chapters}`);
+
+/* 四句教下的心学总纲说明块（边框 + 淡蓝透明底） */
+const ymNote = await page.evaluate(() => {
+  const box = document.querySelector('#yangmingRoot .ym-note');
+  return {
+    n: box ? box.querySelectorAll('p').length : 0,
+    text: box ? (box.textContent || '') : '',
+  };
+});
+ymNote.n && ymNote.text.includes('惟精惟一') && ymNote.text.includes('学贵自得')
+  ? ok('阳明 读图说明', `${ymNote.n} 段 · 学贵自得…惟精惟一`)
+  : bad('阳明 读图说明', `段数 ${ymNote.n}，text=${ymNote.text.slice(0, 30)}`);
 ym.links === 15 ? ok('阳明 目录', `${ym.links} 个章节链接`) : bad('阳明 目录', `链接 ${ym.links} 个`);
 ym.navTop > 0 && ym.navTop < ym.mainTop
   ? ok('阳明 目录置顶', '章节目录在正文上方')
@@ -219,7 +278,8 @@ spy === 'ch13' ? ok('阳明 滚动监听', `滚到 拾叁 后高亮 ${spy}`) : b
 const cases = [
   ['#content/graph', 'graph.html', ''],
   ['#/graph', 'graph.html', ''],
-  ['#v12', 'book.html', '?v=12'],
+  ['#v12', 'book/chapter-twelve.html', ''],
+  ['#content/book/12', 'book/chapter-twelve.html', ''],
   ['#all', 'graph.html', '?all=1'],
   ['#kgf王阳明', 'index.html', '?focus=%E7%8E%8B%E9%98%B3%E6%98%8E'],
 ];
@@ -227,7 +287,8 @@ for (const [legacy, wantFile, wantQ] of cases) {
   await page.goto(`file://${DIST}/index.html${legacy}`, { waitUntil: 'load' });
   await new Promise((r) => setTimeout(r, 1600));       // location.replace + 新页启动
   const got = await page.evaluate(() => ({
-    file: location.pathname.split('/').pop(), q: location.search,
+    file: location.pathname.split('/dist/')[1] || '',
+    q: location.search,
   }));
   got.file === wantFile && (!wantQ || got.q === wantQ)
     ? ok(`旧链接 ${legacy}`, `→ ${wantFile}${wantQ}`)

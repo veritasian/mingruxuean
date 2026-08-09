@@ -43,12 +43,13 @@ def stats():
 
 def page_copy(spec, s):
     """每页一套文案：title 核心词+长尾+吸引力；desc 带真实数字；keywords 围绕本分类"""
+    if spec.get('book_vol'):
+        return book_copy(spec, s)
     p = s['persons']; sc = s['schools']; r = s['relations']; c = s['cited']; o = s['orphans']
     name = {
         'kg': '知识图谱', 'graph': '谱系总图', 'roster': '人物线索', 'time': '时间线索',
-        'geo': '地理线索', 'orphan': '孤点现象', 'book': '学案原文', 'yangming': '阳明心学',
+        'geo': '地理线索', 'orphan': '孤点现象', 'yangming': '阳明心学',
     }[spec['id']]
-    tail = '· 离线可读' if spec['id'] in ('book', 'kg', 'graph') else ''
     titles = {
         'kg': ('名儒学案图谱 | 黄宗羲《明儒学案》师承知识图谱'
                ' · %d 位明代大儒关系网一图看懂' % p),
@@ -62,8 +63,6 @@ def page_copy(spec, s):
                 ' · 明代地名对照今省市'),
         'orphan': ('名儒学案图谱 · 孤点现象 | %d 位不与师承相连的学者'
                    ' · 因由逐类详解' % o),
-        'book': ('名儒学案图谱 · 学案原文 | 黄宗羲《明儒学案》六十三卷全文'
-                 '在线阅读 · 原序发凡师说 · 离线可读'),
         'yangming': ('名儒学案图谱 · 阳明心学 | 王阳明四句教与心学思维模型图解'
                      ' · 致良知体系一页通'),
     }
@@ -86,9 +85,6 @@ def page_copy(spec, s):
         'orphan': ('%d 个不与任何师承相连的「孤点」各有来由：'
                    '传记不全、门派开山、外来学者、关联存疑……'
                    '逐类解读，是读《明儒学案》时最容易被忽略的一页。' % o),
-        'book': ('《明儒学案》六十三卷全文 + 卷前黄梨洲先生原序、发凡、'
-                 '师说，全部据维基文库整理，内嵌离线可读；'
-                 '左目录右阅读、全文检索，点人物直接跳知识图谱。'),
         'yangming': ('四句教、明镜喻、三教九阶、一体四用：'
                      '把王阳明心学拆成思维模型、根器论、体用论十四讲，'
                      '图文并茂，适合入门也适合温故。'),
@@ -100,10 +96,35 @@ def page_copy(spec, s):
         'time': '明儒学案,时间线索,明代年号,生卒年,时间轴,明代儒学史',
         'geo': '明儒学案,地理线索,籍贯分布,明代地名,今省市对照',
         'orphan': '明儒学案,孤点现象,师承断链,孤点学者,黄宗羲',
-        'book': '明儒学案,全文,六十三卷,在线阅读,黄梨洲先生原序,师说,维基文库',
         'yangming': '阳明心学,王阳明,四句教,致良知,心学,思维模型',
     }
     return titles[spec['id']], descs[spec['id']], keywords[spec['id']]
+
+
+def book_copy(spec, s):
+    """学案原文 64 页：卷前一篇（3 tab）+ 63 卷各一页，每页独立文案"""
+    toc = json.loads(read(DATA / 'toc.json'))
+    vols = {str(v['volume']): v for v in toc.get('volumes', [])}
+    if spec['book_vol'] == 'front':
+        title = '名儒学案图谱 · 学案原文 | 黄梨洲先生原序 · 发凡 · 师说（卷前）'
+        desc = ('《明儒学案》卷前三篇：黄梨洲先生原序（一本万殊）、发凡（编纂体例）、'
+                '师说（刘宗周评骘明儒二十五家）。据维基文库整理，离线可读，'
+                '全书六十三卷按卷分页、卷内可检索。')
+        keywords = '明儒学案,黄梨洲先生原序,发凡,师说,黄宗羲,维基文库'
+        return title, desc, keywords
+    v = spec['book_vol']
+    info = vols.get(v)
+    if not info:
+        return '名儒学案图谱 · 学案原文 | 卷%s' % v, '', '明儒学案'
+    people = '、'.join((info.get('persons') or [])[:5])
+    more = ' 等' if len(info.get('persons') or []) > 5 else ''
+    title = ('名儒学案图谱 · 学案原文 | 卷%s %s · 黄宗羲《明儒学案》全文'
+             % (info['volume'], info['name']))
+    desc = ('黄宗羲《明儒学案》卷%s「%s」：%s%s，共 %s 字。'
+            '据维基文库整理，按卷分页、离线可读，卷内全文可检索。'
+            % (info['volume'], info['name'], people, more, info.get('chars', 0)))
+    keywords = '明儒学案,卷%s,%s,黄宗羲,全文阅读' % (info['volume'], info['name'])
+    return title, desc, keywords
 
 
 def json_ld(spec, title, desc, keywords, s):
@@ -113,11 +134,11 @@ def json_ld(spec, title, desc, keywords, s):
         'alternateName': '明儒学案师承知识图谱',
         'description': desc, 'inLanguage': 'zh-CN',
     }]
-    if spec['id'] == 'book':
+    if spec.get('book_vol'):
+        # 学案原文按卷分页：每卷一个 Book/WebPage 节点
         nodes.append({'@type': 'Book', 'name': '明儒学案', 'url': url,
                       'author': {'@type': 'Person', 'name': '黄宗羲'},
-                      'inLanguage': 'zh-CN', 'about': '明代儒学',
-                      'isAccessibleForFree': True})
+                      'inLanguage': 'zh-CN', 'about': title, 'isAccessibleForFree': True})
     elif spec['id'] == 'yangming':
         nodes.append({'@type': 'Article', 'headline': title, 'url': url,
                       'inLanguage': 'zh-CN', 'about': '阳明心学'})
@@ -162,9 +183,9 @@ def main():
                     json.dumps(ld, ensure_ascii=False)))
         f = DIST / spec['file']
         f.write_text(inject(f.read_text(encoding='utf-8'), block), encoding='utf-8')
-        out_meta[spec['id']] = {'file': spec['file'], 'title': title,
-                                'description': desc, 'keywords': keywords, 'jsonLd': ld}
-        print('  SEO[%s] %s' % (spec['id'], title))
+        out_meta[spec['file']] = {'title': title, 'description': desc,
+                                  'keywords': keywords, 'jsonLd': ld}
+        print('  SEO[%s] %s' % (spec['file'], title))
 
     (DIST / 'seo.json').write_text(
         json.dumps({'siteUrl': SITE_URL, 'stats': s, 'pages': out_meta},

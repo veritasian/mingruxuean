@@ -1,15 +1,21 @@
 /**
- * book.controller.js —— 学案原文控制器
+ * book.controller.js —— 学案原文控制器（按卷分页版）
  *
- * 六十三卷按需取，取到就顺手进检索索引 —— 所以「读过的卷才搜得到」。
- * 为了让检索一上来就可用，进入本页时后台把全部卷预热一遍，
- * 分批 requestIdleCallback，不抢渲染线程。
+ * 学案原文已拆成 64 个独立页面（卷前一篇 3 tab + 63 卷各一页），
+ * 每个页面只内联自己那份正文，加载快、互不影响。本控制器是它们共用的：
+ *
+ *   · 本页是哪一篇？由打包时注入的 window.__BOOK__ 决定（'front' 或卷号）
+ *   · 左目录点击 → 跳到对应卷的页面（跨页），卷前篇在本页内切 tab
+ *   · 检索只建「本页内联的卷」的索引（卷前页 3 篇、卷页 1 篇）
  */
 import { $, esc } from '../core/dom.js';
 import { loadVolume } from '../data/repository.js';
 import { toPlain } from '../data/wikitext.js';
 import { createIndex } from '../engines/search.engine.js';
+import { chapterFile } from '../router/index.js';
 import * as view from '../views/book.view.js';
+
+const MINE = (typeof window !== 'undefined' && window.__BOOK__) || 'front';
 
 export function create(model, { onPick }) {
   const tocPane = $('#tocPane');
@@ -24,10 +30,44 @@ export function create(model, { onPick }) {
   function build() {
     if (built) return;
     built = true;
-    view.renderToc(tocPane, model, { onOpen: (v) => open(v) });
+    view.renderToc(tocPane, model, { onOpen: (v) => navTo(v) });
     $('#qBtn').addEventListener('click', () => runSearch($('#q').value));
     $('#q').addEventListener('keydown', (e) => { if (e.key === 'Enter') runSearch(e.target.value); });
     $('#qClear').addEventListener('click', () => { $('#q').value = ''; sres.style.display = 'none'; });
+    if (MINE === 'front') buildFrontTabs();
+  }
+
+  /** 卷前篇页：原序 / 发凡 / 师说 三个 tab，本页内切换 */
+  function buildFrontTabs() {
+    const box = $('#frontTabs');
+    if (!box) return;
+    box.hidden = false;
+    for (const it of model.tocEntries().filter((x) => x.front)) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = it.label || it.name;
+      b.dataset.p = String(it.key);
+      b.addEventListener('click', () => open(it.key));
+      box.appendChild(b);
+    }
+  }
+
+  function markFrontTab(v) {
+    const box = $('#frontTabs');
+    if (!box) return;
+    box.querySelectorAll('button').forEach((b) =>
+      b.classList.toggle('on', b.dataset.p === String(v)));
+  }
+
+  /** 左目录点击：卷前篇（本页）切 tab，正编卷号跳独立页（同目录相对路径） */
+  function navTo(v) {
+    if (MINE === 'front' && (v === 'x1' || v === 'x2' || v === 'x3')) {
+      open(v);
+      return;
+    }
+    // chapterFile 返回相对站点根的路径（book/chapter-N.html）；
+    // 本页已位于 book/ 目录内，剥掉前缀即为同目录相对路径。
+    location.href = chapterFile(v).replace(/^book\//, '');
   }
 
   async function ingest(v) {
@@ -45,6 +85,7 @@ export function create(model, { onPick }) {
     if (!info) return;
     current = v;
     view.markActive(tocPane, v);
+    markFrontTab(v);
     view.renderLoading(reader, info);
     try {
       const vol = await loadVolume(v);
@@ -56,17 +97,19 @@ export function create(model, { onPick }) {
     }
   }
 
-  /** 后台把全部卷灌进索引，一次三卷，空闲时才做 */
+  /** 只建本页内联的卷的索引（卷前页 3 篇、卷页 1 篇），空闲时做 */
   function warm() {
     if (warming) return;
     warming = true;
-    const queue = model.tocEntries().map((x) => x.key).filter((v) => !plain.has(v));
+    const avail = new Set(Object.keys((window.__MRXA__ && window.__MRXA__.volumes) || {}));
+    const queue = model.tocEntries().map((x) => x.key)
+      .filter((v) => avail.has(String(v)) && !plain.has(v));
     const total = queue.length;
     const idle = window.requestIdleCallback || ((fn) => setTimeout(() => fn({ timeRemaining: () => 8 }), 30));
     const step = () => {
-      if (!queue.length) { setStatus(`全文检索就绪：${index.size} 篇已入索引`); return; }
+      if (!queue.length) { setStatus(`本卷已入索引（${index.size} 篇），可检索。`); return; }
       Promise.all(queue.splice(0, 3).map((v) => ingest(v).catch(() => null)))
-        .then(() => { setStatus(`正在建立全文索引… ${index.size}/${total} 篇`); idle(step); });
+        .then(() => { setStatus(`正在建立本卷索引… ${index.size}/${total} 篇`); idle(step); });
     };
     idle(step);
   }
@@ -98,13 +141,12 @@ export function create(model, { onPick }) {
     enter({ params }) {
       build();
       warm();
-      // 正编卷号是数字，卷前篇是 x1/x2/x3 字符串，路由参数统一在这里还原成对应类型。
-      // 不指定篇目时默认打开卷前首篇（原序），与原书开篇次序一致。
-      const raw = params[0];
-      let v = /^\d+$/.test(String(raw || '')) ? Number(raw) : raw;
-      if (!v) v = model.tocEntries()[0] && model.tocEntries()[0].key;
+      // 本页固定是哪一篇由 window.__BOOK__ 决定（'front' 或卷号字符串）；
+      // ?v= 参数可覆盖（深链用）。卷号还原成数字以匹配目录表。
+      let v = params[0];
+      if (!v) v = MINE === 'front' ? 'x1' : Number(MINE);
       if (v && v !== current) open(v);
-      else if (!current) setStatus('点击左侧篇目开始阅读；全文检索在后台建索引，稍候即可使用。');
+      else if (!current) setStatus('点击左侧篇目开始阅读；本卷索引稍候即可用。');
     },
     open,
     currentVolume: () => current,
