@@ -4,16 +4,27 @@
 
 17 个学案、260 位学者、247 条师承关系（174 条带原文出处），
 每一条关系都能点回原文出处。**一分类一页面**的菜单式站点：
-8 个页面各自独立、只带自己的内容与 SEO，每个页面都能双击打开、断网可用。
+71 个页面各自独立、只带自己的内容与 SEO。
+
+站点部署在 Vercel（`mingruxuean.vercel.app`）。`dist/` 是构建产物，由
+`vercel.json` 中的 `buildCommand` 现场生成，**不入库**（见 `.gitignore`）。
+数据、CSS、JS 全部外链并带内容指纹——浏览器缓存一次、跨页复用，爬虫无 JS 也能读到
+文本页的预渲染正文。
 
 ```
-dist/index.html           ← 首页（知识图谱），双击即开，无需服务器、无需联网
+dist/index.html           ← 首页（知识图谱）
 dist/graph.html           谱系总图 · roster.html 人物线索 · time.html 时间线索
 dist/geo.html             地理线索 · orphan.html 孤点现象
 dist/yangming.html        阳明心学
 dist/chapter-Preface.html 学案原文 · 卷前三篇（原序/发凡/师说，三个 tab）
 dist/chapter-one.html …   学案原文 · 63 卷各一页（chapter-sixty-three.html，全部平铺在根目录）
 dist/book.html            旧版单文件跳板（自动跳转到 chapter-* 平铺页）
+dist/data/                7 份核心 JSON + volumes/ 63 卷 + yangming.json（全站共用一份）
+dist/js/                  8 套指纹化 JS（kg/graph/roster/time/geo/orphan/yangming/book）+ d3.v3.min.js
+dist/styles/              8 套指纹化 CSS（与 JS 一一对应）
+dist/sitemap.xml          SEO 站点地图（71 条 URL）
+dist/robots.txt           指向 sitemap，屏蔽老跳板
+dist/favicon.svg          印章图标
 ```
 
 ---
@@ -21,23 +32,24 @@ dist/book.html            旧版单文件跳板（自动跳转到 chapter-* 平�
 ## 快速开始
 
 ```bash
-# 看成品（首页 = 知识图谱）
-open dist/index.html
+# 本地预览（数据靠 HTTP fetch，必须用服务器，不能 file:// 双击）
+python3 scripts/build/online.py && python3 scripts/build/seo.py
+python3 -m http.server 8080 && open http://localhost:8080/
 
-# 改完源码重新打包（8 个页面一次生成）
-python3 scripts/build/bundle.py
-python3 scripts/build/seo.py           # 逐页注入 title/description/keywords/JSON-LD
+# 改完源码重新构建（Vercel 线上走的就是这条命令）
+python3 scripts/build/online.py
+python3 scripts/build/seo.py           # 逐页注入 title/description/keywords/JSON-LD + sitemap/robots
 
 # 数据也要重跑（改了抽取规则、订正了人物时）
 python3 scripts/pipeline.py          # ingest + build 全跑
 python3 scripts/pipeline.py build    # 数据已就绪，只重打包
 
-# 跑测试（110 项：数据 / 架构 / 产物 / 浏览器）
+# 跑测试（数据 20 + 源码结构 13 + 产物 16 + 浏览器 52 + 在线渲染核验 11）
 python3 tests/run.py
 python3 tests/run.py --no-web        # 跳过浏览器冒烟，快
 
-# 开发模式：原生 ES module + fetch，改完刷新即可，不用打包
-python3 -m http.server 8080 && open http://localhost:8080/
+# 部署：push 到 main 分支，Vercel 按 vercel.json 自动构建并发布
+git push origin main
 ```
 
 ---
@@ -57,6 +69,7 @@ python3 -m http.server 8080 && open http://localhost:8080/
 │   ├── pages/              每页入口（只引自己的控制器，控制本页打包体积）
 │   ├── sections/           每个分类一个 <section> 内容块
 │   ├── styles/             一视图一份 CSS
+│   ├── favicon.svg         印章图标
 │   └── shell.html          页面骨架（菜单 / 页脚）+ 四个注入点
 ├── data/                   ★ JSON 数据库（可溯源）
 │   ├── persons.json        260 人：字号、籍贯、生卒、学案归属
@@ -70,14 +83,14 @@ python3 -m http.server 8080 && open http://localhost:8080/
 │   └── intermediate/       中间产物，可删可重生成
 ├── scripts/
 │   ├── ingest/             原文 → 结构化（抽取、订正、对齐、明史精读）
-│   ├── build/              结构化 → 判读 → 打包
+│   ├── build/              online.py 结构化 → 外链/指纹/预渲染；seo.py → 逐页 SEO + sitemap
 │   └── pipeline.py         一条命令跑完
 ├── tests/                  自动化测试
 ├── resources/              原始素材（63 卷原文、原书目录、明史儒林传、阳明心学手稿页）
 ├── vendor/                 d3.v3.min.js（本地化，不走 CDN）
 ├── legacy/                 v7.10 单体版及其脚本，只读留档
 ├── docs/                   架构说明 / 数据字典
-└── dist/                   打包产物
+└── dist/                   构建产物（gitignore，Vercel 现场生成）
 ```
 
 ---
@@ -90,24 +103,42 @@ python3 -m http.server 8080 && open http://localhost:8080/
 | `graph.html` | 谱系总图 | 纵向树，一眼看清代际 | 师承树状总览 |
 | `roster.html` | 人物线索 | 17 学案分组展开 | 儒者名录 |
 | `time.html` | 时间线索 | 按生卒年排布 | 生卒年时间轴 |
-| `geo.html` | 地理线索 | 17 省份，可与名录联动 | 籍贯地理分布 |
+| `geo.html` | 地理线索 | 17 省份，可与名录联动 + `<noscript>` 对照表 | 籍贯地理分布 |
 | `orphan.html` | **孤点现象** | 52 个孤点为什么孤——见下 | 孤点因由详解 |
 | `chapter-Preface.html` | 学案原文（64 页） | 卷前三篇（原序/发凡/师说，三个 tab）+ 63 卷各一页 | 每卷独立标题 |
 | `yangming.html` | 阳明心学 | 四句教 + 14 章（镜像/矩阵/四象），顶部章节目录随滚动高亮 | 四句教图解 |
 
-**学案原文 64 页拆页**（全部平铺在站点根，不设 book/ 二级目录）：卷前一篇
+**学案原文 64 页拆页**（全部平铺在站点根，不设 `book/` 二级目录）：卷前一篇
 `chapter-Preface.html`（三个 tab 切原序/发凡/师说）+ 63 卷各一页
 （`chapter-one.html` … `chapter-sixty-three.html`），每页只内联本卷正文 + 自己的
 title/description/keywords（标题格式「卷12 浙中王门学案二 · 黄宗羲《明儒学案》全文」）。
-加载更快（单页 ~0.31 MB）、互不影响。深链：`chapter-twelve.html`（直接进卷十二）、
+加载更快、互不影响。深链：`chapter-twelve.html`（直接进卷十二）、
 `chapter-Preface.html?p=x2`（卷前发凡）。
 
-页面之间用普通 `<a>` 互链；每页只带自己的 CSS/JS/数据，meta 标题、描述、关键词、
+页面之间用普通 `<a>` 互链；每页外链自己的指纹化 CSS/JS，**但 64 个卷页内容相同，
+落到同一对文件上**（一个指纹 = 一个 URL，浏览器强缓存跨页复用）。数据全站共用
+`/data/` 下一份（7 份核心 JSON + `volumes/` + `yangming.json`），由
+`src/data/repository.js` 的 `loadCore()` 在运行时并行 fetch。meta 标题、描述、关键词、
 JSON-LD 都围绕本分类生成（`scripts/build/seo.py`）。其他深链用查询参数：
 `index.html?focus=王阳明`（图谱聚焦）、`graph.html?all=1`（全览）、`index.html?orphans=1`（只看孤点）。
 
 旧版哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`、`book.html?v=12`）会自动重定向到
 对应新页面，老书签不会 404。
+
+---
+
+## 架构：数据 / 视图 / 控制 三层分离
+
+代码层按 data / view / control 分层（`src/core`、`src/data`、`src/views`、
+`src/controllers`、`src/sections`、`src/pages`），问题出在**交付层**：
+
+- 旧版把全量 JSON 内联进 `<script>` 的 `window.__MRXA__`——71 页重复同一份数据、
+  不利爬虫、首屏重。
+- 修正后的线上版：**数据全部外链**，运行时由控制器 fetch；CSS/JS 外链并按内容指纹
+  去重；文本页（book/roster/orphan/yangming）在构建期预渲染成静态 HTML，爬虫无 JS 也能读到。
+
+分层约定（见 `tests/test_source.py`）：engines 不 import 任何东西；views 不碰 store；
+只有 `data/repository.js` 能 `fetch`。
 
 ---
 
@@ -193,10 +224,13 @@ tests/
 ├── harness.py       零依赖的极简测试框架
 ├── test_data.py     20 项：数据完整性、外键、孤点自洽、明史方向、卷前三篇、阳明心学、简体一致
 ├── test_source.py   13 项：分层方向、行数上限、页面清单与源码对账、文档在不在
-├── test_build.py    13 项：71 页产物完整、数据切片正确、逐页 SEO、无模块环、语法可过
-├── smoke.mjs        64 项：真浏览器逐个开 8 页 + book 族深检，验内容纯净/菜单高亮/SEO 独立、
-│                    跨页聚焦（?focus/?v/?orphans）、菜单跨页跳转、旧链接重定向、卷前 3 tab
-└── run.py           串起来，源码比产物新时自动重打包
+├── test_build.py    16 项：71 页产物完整、数据层共用(非按页切片)、指纹去重、逐页 SEO、
+│                    sitemap/robots、无大块内联脚本、无模块环、语法可过
+├── smoke.mjs        52 项：真浏览器逐个开页面 + 跨页跳转，验内容纯净/菜单高亮/SEO 独立/
+│                    跨页聚焦(?focus/?v/?orphans)、旧链接重定向、卷前 3 tab
+├── verify_online.mjs 11 项：真实浏览器核验图谱 260 节点/谱系 260/时间 200/地理 17/
+│                    roster 6510 字·book 静态正文·yangming 1735 字·0 控制台错误
+└── run.py           串起来，源码比产物新时自动重打包(online.py + seo.py)
 ```
 
 浏览器冒烟用 puppeteer-core 驱动系统 Chrome（jsdom 量不了 SVG 的 `getBBox`）。
