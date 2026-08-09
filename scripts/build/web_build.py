@@ -282,27 +282,28 @@ def section_static(spec):
                 + '<div class="tab-head">孤点现象'
                 + '<small>图上不连线的那些点，各有各的来由</small></div>'
                 + '<div id="orphanBody">%s</div></section>\n' % orphan_static())
-    if sid == 'geo':
-        return ('<section class="tab on" id="sec-geo">'
-                + '<div class="tab-head">籍贯地理线索'
-                + '<small>明代籍贯 → 今省·市对照</small></div>'
-                + '<div id="geoBody">%s</div></section>\n' % geo_static())
-    if sid == 'time':
-        return ('<section class="tab on" id="sec-time">'
-                + '<div class="tab-head">时间线索'
-                + '<small>洪武 1368 — 崇祯 1644 · 人物按其活动年代落位</small></div>'
-                + '<div id="time-chart">'
-                + '<p style="text-align:center;color:var(--ink-soft);padding:40px 0">'
-                + '时间轴图表由 JavaScript 渲染（d3 力导向）。加载后可交互筛选年号与人物。</p>'
-                + '</div></section>\n')
-    if sid in ('kg', 'graph'):
-        return ('<section class="tab on" id="sec-%s">' % sid
-                + '<div class="tab-head">%s'
-                % ('知识图谱' if sid == 'kg' else '谱系总图')
-                + '<small>%s</small></div>'
-                % ('散落态 · 点击人物即聚合其师承 · 可拖拽 · 滚轮缩放'
-                   if sid == 'kg' else '拖拽平移 · 滚轮缩放 · 点击人物弹卡')
-                + '<svg id="%s" xmlns="http://www.w3.org/2000/svg"></svg></section>\n' % sid)
+    if sid == 'geo' or sid == 'time':
+        # 这两个是 JS 可视化页，统一走下面的「可视化类」分支（复用 dist section）
+        pass
+    # 可视化类（kg 知识图谱 · graph 谱系总图 · time 时间轴 · geo 地理）：
+    # 由 JS 渲染，必须用与离线版完全相同的 section（含工具栏 DOM）。
+    # 之前只发裸 <svg>，控制器一绑定 addEventListener 就遇 null 抛错、
+    # 整个控制器中断、图就不画了。它们没有可预渲染的纯文本，直接复用
+    # dist 的 section 文件，行为与离线版一致。
+    if sid in ('kg', 'graph', 'time', 'geo'):
+        sf = SRC / 'sections' / ('%s.html' % sid)
+        if sf.exists():
+            html = sf.read_text(encoding='utf-8')
+            if sid == 'geo':
+                # 无 JS 时仍能看到「省→人物」对照表（SEO + 纯读场景）。
+                # 有 JS 时 <noscript> 内容不进 DOM，由控制器接管渲染。
+                html = html.rstrip() + (
+                    '<noscript><div class="geo-noscript">%s</div></noscript>\n'
+                    % geo_static())
+            return html
+        return ('<section class="tab on" id="sec-%s">'
+                '<svg id="%s" xmlns="http://www.w3.org/2000/svg"></svg>'
+                '</section>\n' % (sid, sid))
     # fallback: 读原始 section 文件
     sf = SRC / 'sections' / ('%s.html' % sid)
     if sf.exists():
