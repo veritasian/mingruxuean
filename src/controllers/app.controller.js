@@ -102,8 +102,10 @@ function readParams() {
   let query = '';
   const f = q.get('focus');
   const v = q.get('v');
+  const p = q.get('p');               // 卷前篇 tab 深链（chapter-Preface.html?p=x2）
   if (f) params.push(f);
   else if (v) params.push(v);
+  else if (p) params.push(p);
   if (q.get('all')) query = 'all';
   else if (q.get('orphans')) query = 'orphans';
   return { params, query };

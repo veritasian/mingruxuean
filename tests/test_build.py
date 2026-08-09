@@ -91,7 +91,7 @@ def test_menu_highlight():
     pat = re.compile(r'data-page="[^"]+" class="on"')
     for spec in PAGES:
         h = html(spec)
-        anchor = 'book/index.html' if spec['id'] == 'book' else spec['file']
+        anchor = 'chapter-Preface.html' if spec['id'] == 'book' else spec['file']
         check('<a href="%s" data-page="%s" class="on">' % (anchor, spec['id']) in h,
               '%s 菜单未高亮' % spec['file'])
         check_eq(len(pat.findall(h)), 1, '%s 菜单高亮数量' % spec['file'])

@@ -59,15 +59,13 @@ export function create(model, { onPick }) {
       b.classList.toggle('on', b.dataset.p === String(v)));
   }
 
-  /** 左目录点击：卷前篇（本页）切 tab，正编卷号跳独立页（同目录相对路径） */
+  /** 左目录点击：卷前篇（本页）切 tab，正编卷号跳独立页（都平铺在站点根） */
   function navTo(v) {
     if (MINE === 'front' && (v === 'x1' || v === 'x2' || v === 'x3')) {
       open(v);
       return;
     }
-    // chapterFile 返回相对站点根的路径（book/chapter-N.html）；
-    // 本页已位于 book/ 目录内，剥掉前缀即为同目录相对路径。
-    location.href = chapterFile(v).replace(/^book\//, '');
+    location.href = chapterFile(v);
   }
 
   async function ingest(v) {

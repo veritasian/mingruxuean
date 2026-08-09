@@ -5,18 +5,18 @@ bundle.py —— 多页面构建器：src/ + data/ + vendor/ → dist/ 71 个页
 
 站点是「一分类一页面」的菜单结构，每个页面只带自己的内容：
 
-  index.html      知识图谱（默认首页，唯一 d3 力导向页）
-  graph.html      谱系总图（自研 tree-layout）
-  roster.html     人物线索
-  time.html       时间线索
-  geo.html        地理线索
-  orphan.html     孤点现象
-  book/           学案原文：按卷分页，64 页
-    index.html          卷前一篇（原序/发凡/师说，页内三个 tab）
-    chapter-one.html …  63 卷各一页（chapter-sixty-three.html），
+  index.html            知识图谱（默认首页，唯一 d3 力导向页）
+  graph.html            谱系总图（自研 tree-layout）
+  roster.html           人物线索
+  time.html             时间线索
+  geo.html              地理线索
+  orphan.html           孤点现象
+  chapter-Preface.html  学案原文 · 卷前三篇（原序/发凡/师说，页内三个 tab）
+  chapter-one.html …    学案原文 · 63 卷各一页（chapter-sixty-three.html），
                         每页只内联本卷正文，加载快、互不影响
-  yangming.html   阳明心学
+  yangming.html         阳明心学
 
+全部页面平铺在站点根目录（不设 book/ 二级目录），菜单相对链接任何页面都不失效。
 每页只内联：
   · 本页的 CSS（tokens + base + 本视图样式 + 人物卡）
   · 本页的 JS（core + model/repository + 本页控制器与视图，由入口模块可达图决定）
@@ -57,15 +57,15 @@ def num_to_words(n):
 
 
 def book_pages():
-    """学案原文 64 页：卷前一篇（3 tab）+ 63 卷各一页"""
+    """学案原文 64 页（全部平铺在站点根）：卷前一篇 + 63 卷各一页"""
     css = ['tokens', 'base', 'book', 'card']
     pages = [{
-        'id': 'book', 'file': 'book/index.html', 'css': css,
+        'id': 'book', 'file': 'chapter-Preface.html', 'css': css,
         'entry': 'pages/book.js', 'extra_data': ['volumes'], 'book_vol': 'front',
     }]
     for i in range(1, 64):
         pages.append({
-            'id': 'book', 'file': 'book/chapter-%s.html' % num_to_words(i),
+            'id': 'book', 'file': 'chapter-%s.html' % num_to_words(i),
             'css': css, 'entry': 'pages/book.js',
             'extra_data': ['volumes'], 'book_vol': str(i),
         })
@@ -166,8 +166,8 @@ def build_page(spec):
             .replace('<!--SECTION-->', section)
             .replace('<!--SCRIPTS-->', '\n'.join(scripts)))
     # 菜单里当前页高亮（构建期注入，避免 JS 闪烁）。
-    # 学案原文 64 页共用同一条菜单锚点（book/index.html），用 id 定位。
-    menu_file = 'book/index.html' if spec['id'] == 'book' else spec['file']
+    # 学案原文 64 页共用同一条菜单锚点（chapter-Preface.html），用 id 定位。
+    menu_file = 'chapter-Preface.html' if spec['id'] == 'book' else spec['file']
     html = html.replace('<a href="%s" data-page="%s">'
                         % (menu_file, spec['id']),
                         '<a href="%s" data-page="%s" class="on">'
@@ -200,11 +200,11 @@ BOOK_STUB = """<!DOCTYPE html>
     return tens[Math.floor(n / 10)] + (o ? '-' + w[o] : '');
   }
   var m = location.search.match(/[?&]v=([^&]+)/);
-  if (!m) { location.replace('book/index.html'); return; }
+  if (!m) { location.replace('chapter-Preface.html'); return; }
   var v = decodeURIComponent(m[1]);
-  if (/^\\d+$/.test(v)) { location.replace('book/chapter-' + words(+v) + '.html'); return; }
-  if (v === 'x1' || v === 'x2' || v === 'x3') { location.replace('book/index.html?p=' + v); return; }
-  location.replace('book/index.html');
+  if (/^\\d+$/.test(v)) { location.replace('chapter-' + words(+v) + '.html'); return; }
+  if (v === 'x1' || v === 'x2' || v === 'x3') { location.replace('chapter-Preface.html?p=' + v); return; }
+  location.replace('chapter-Preface.html');
 })();
 </script>
 </head>
@@ -222,7 +222,7 @@ def main():
         print('  %-13s %s（%d 模块 · %.2f MB）'
               % (spec['id'], out.relative_to(DIST), nmod, size / 1048576))
     (DIST / 'book.html').write_text(BOOK_STUB, encoding='utf-8')   # 旧书签跳板
-    print('  book.html     旧版单文件跳板（→ book/ 分页）')
+    print('  book.html     旧版单文件跳板（→ chapter-* 平铺页）')
     print('  共 %d 页 · %.2f MB' % (len(PAGES), total / 1048576))
 
 

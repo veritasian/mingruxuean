@@ -106,7 +106,7 @@ def book_copy(spec, s):
     toc = json.loads(read(DATA / 'toc.json'))
     vols = {str(v['volume']): v for v in toc.get('volumes', [])}
     if spec['book_vol'] == 'front':
-        title = '名儒学案图谱 · 学案原文 | 黄梨洲先生原序 · 发凡 · 师说（卷前）'
+        title = '黄梨洲先生原序 · 发凡 · 师说 · 黄宗羲《明儒学案》全文'
         desc = ('《明儒学案》卷前三篇：黄梨洲先生原序（一本万殊）、发凡（编纂体例）、'
                 '师说（刘宗周评骘明儒二十五家）。据维基文库整理，离线可读，'
                 '全书六十三卷按卷分页、卷内可检索。')
@@ -115,11 +115,10 @@ def book_copy(spec, s):
     v = spec['book_vol']
     info = vols.get(v)
     if not info:
-        return '名儒学案图谱 · 学案原文 | 卷%s' % v, '', '明儒学案'
+        return '卷%s · 黄宗羲《明儒学案》全文' % v, '', '明儒学案'
     people = '、'.join((info.get('persons') or [])[:5])
     more = ' 等' if len(info.get('persons') or []) > 5 else ''
-    title = ('名儒学案图谱 · 学案原文 | 卷%s %s · 黄宗羲《明儒学案》全文'
-             % (info['volume'], info['name']))
+    title = '卷%s %s · 黄宗羲《明儒学案》全文' % (info['volume'], info['name'])
     desc = ('黄宗羲《明儒学案》卷%s「%s」：%s%s，共 %s 字。'
             '据维基文库整理，按卷分页、离线可读，卷内全文可检索。'
             % (info['volume'], info['name'], people, more, info.get('chars', 0)))

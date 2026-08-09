@@ -41,7 +41,7 @@ const PAGES = [
   { id: 'time',     file: 'time.html',     probe: '#tline rect',      kw: '时间线索' },
   { id: 'geo',      file: 'geo.html',      probe: '#geoGrid .gprov',  kw: '地理线索' },
   { id: 'orphan',   file: 'orphan.html',   probe: '#orphanBody .orphan-chip', kw: '孤点现象' },
-  { id: 'book',     file: 'book/index.html', probe: '#tocPane .toc-item', kw: '学案原文' },
+  { id: 'book',     file: 'chapter-Preface.html', probe: '#tocPane .toc-item', kw: '明儒学案' },
   { id: 'yangming', file: 'yangming.html', probe: '#yangmingRoot .ym-chapter', kw: '阳明心学' },
 ];
 const results = [];
@@ -160,8 +160,8 @@ const card = await page.evaluate(() => {
 card.show ? ok('人物卡', card.text.replace(/\s+/g, ' ')) : bad('人物卡', card.err || '点击后未弹出');
 
 /* ---------- 学案原文（按卷分页 64 页） ---------- */
-// 卷前页 book/index.html：默认原序 + 三个 tab + 目录次序
-await open('book/index.html');
+// 卷前页 chapter-Preface.html：默认原序 + 三个 tab + 目录次序
+await open('chapter-Preface.html');
 const def = await page.evaluate(() => ({
   active: document.querySelector('#tocPane .toc-item.on')?.dataset.v || '',
   tabs: document.querySelectorAll('#frontTabs button').length,
@@ -193,7 +193,7 @@ fafan.chars > 500 && fafan.title.includes('发凡')
 // 独立卷页：chapter-one.html（崇仁学案一）、chapter-twelve.html（浙中王门学案二）
 for (const [file, volNo, name] of [['chapter-one.html', '1', '崇仁学案一'],
                                    ['chapter-twelve.html', '12', '浙中王门学案二']]) {
-  await open(`book/${file}`);
+  await open(file);
   const v = await page.evaluate(() => ({
     active: document.querySelector('#tocPane .toc-item.on')?.dataset.v || '',
     chars: (document.querySelector('#reader .reader-body')?.textContent || '').length,
@@ -205,7 +205,7 @@ for (const [file, volNo, name] of [['chapter-one.html', '1', '崇仁学案一'],
 }
 
 // 卷页内 TOC 点其他卷 → 跳到对应独立页（chapter-one → 卷 2）
-await open('book/chapter-one.html');
+await open('chapter-one.html');
 await page.evaluate(() => {
   const t = [...document.querySelectorAll('#tocPane .toc-item')].find((x) => x.dataset.v === '2');
   t && t.click();
@@ -215,6 +215,18 @@ const nav2 = await page.evaluate(() => location.pathname.split('/').pop());
 nav2 === 'chapter-two.html'
   ? ok('目录跨页跳转', '卷一 → 卷二独立页')
   : bad('目录跨页跳转', `实得 ${nav2}`);
+
+// 回归：卷页上点菜单「阳明心学」必须跳根级 yangming.html，不能变成 book/yangming.html
+await open('chapter-one.html');
+await page.evaluate(() => {
+  const a = document.querySelector('#menu a[data-page="yangming"]');
+  a && a.click();
+});
+await new Promise((r) => setTimeout(r, 1400));
+const menuNav = await page.evaluate(() => location.pathname.split('/dist/')[1] || '');
+menuNav === 'yangming.html'
+  ? ok('菜单跨页跳转', '卷页 → 根级 yangming.html')
+  : bad('菜单跨页跳转', `实得 ${menuNav}`);
 
 // 旧版单文件 book.html 跳板：book.html?v=12 → chapter-twelve.html
 await page.goto(`file://${DIST}/book.html?v=12`, { waitUntil: 'load' });
@@ -278,8 +290,8 @@ spy === 'ch13' ? ok('阳明 滚动监听', `滚到 拾叁 后高亮 ${spy}`) : b
 const cases = [
   ['#content/graph', 'graph.html', ''],
   ['#/graph', 'graph.html', ''],
-  ['#v12', 'book/chapter-twelve.html', ''],
-  ['#content/book/12', 'book/chapter-twelve.html', ''],
+  ['#v12', 'chapter-twelve.html', ''],
+  ['#content/book/12', 'chapter-twelve.html', ''],
   ['#all', 'graph.html', '?all=1'],
   ['#kgf王阳明', 'index.html', '?focus=%E7%8E%8B%E9%98%B3%E6%98%8E'],
 ];

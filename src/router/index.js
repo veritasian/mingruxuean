@@ -5,14 +5,15 @@
  * 页面之间用普通 <a href> 互相链接，不再有 #content/ 路由。
  * 这个模块只保留两件事：
  *   1. 把旧地址（#content/kg、#v12、#kgf王阳明、#all、#/graph 等）重定向到对应新页面
- *   2. 学案原文的跨页跳转帮助（卷号 → book/chapter-one.html 式文件名）
+ *   2. 学案原文的跨页跳转帮助（卷号 → chapter-one.html 式文件名）
  *
+ * 全部页面平铺在站点根目录（不设 book/ 二级目录）。
  * 全站只有这里碰 location.hash。
  */
 const FILE = {
   kg: 'index.html', graph: 'graph.html', roster: 'roster.html',
   time: 'time.html', geo: 'geo.html', orphan: 'orphan.html',
-  book: 'book/index.html', yangming: 'yangming.html',
+  book: 'chapter-Preface.html', yangming: 'yangming.html',
 };
 
 const ONES = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
@@ -31,13 +32,13 @@ export function numToWords(n) {
 }
 
 /**
- * 学案原文某个篇目 → 它所在的页面：
- *   卷前篇 x1/x2/x3 → book/index.html?p=xN（同一页内切 tab）
- *   卷 N（1–63）    → book/chapter-<英文数字>.html（独立页）
+ * 学案原文某个篇目 → 它所在的页面（都平铺在站点根）：
+ *   卷前篇 x1/x2/x3 → chapter-Preface.html?p=xN（同一页内切 tab）
+ *   卷 N（1–63）    → chapter-<英文数字>.html（独立页）
  */
 export function chapterFile(v) {
-  if (v === 'x1' || v === 'x2' || v === 'x3') return `book/index.html?p=${v}`;
-  return `book/chapter-${numToWords(v)}.html`;
+  if (v === 'x1' || v === 'x2' || v === 'x3') return `chapter-Preface.html?p=${v}`;
+  return `chapter-${numToWords(v)}.html`;
 }
 
 /**
@@ -58,7 +59,7 @@ export function redirectLegacy() {
     const view = segs[1];
     const param = segs[2];
     if (view === 'book') {
-      target = param ? chapterFile(param) : 'book/index.html';
+      target = param ? chapterFile(param) : 'chapter-Preface.html';
     } else if (FILE[view]) {
       target = param ? `${FILE[view]}?focus=${encodeURIComponent(param)}` : FILE[view];
     }
