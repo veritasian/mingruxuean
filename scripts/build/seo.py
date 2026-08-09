@@ -190,9 +190,41 @@ def main():
     (TARGET / 'seo.json').write_text(
         json.dumps({'siteUrl': SITE_URL, 'stats': s, 'pages': out_meta},
                    ensure_ascii=False, indent=1), encoding='utf-8')
+    write_sitemap(TARGET)
     print('  统计：%d 学案 · %d 人 · %d 关系（%d 有出处）· 孤点 %d'
           % (s['schools'], s['persons'], s['relations'], s['cited'], s['orphans']))
     return 0
+
+
+def write_sitemap(target):
+    """sitemap.xml + robots.txt
+
+    71 个页面全都是独立可索引的内容页，光有 canonical 不够 —— 卷 2 到卷 63
+    只在页内目录里链着，爬虫要靠 sitemap 才能一次看全。
+    首页权重最高，八个分类页次之，卷页再次之。
+    """
+    from datetime import date
+    today = date.today().isoformat()
+    urls = []
+    for spec in PAGES:
+        if spec['file'] == 'index.html':
+            prio, freq = '1.0', 'weekly'
+        elif spec.get('book_vol'):
+            prio, freq = '0.6', 'yearly'
+        else:
+            prio, freq = '0.8', 'monthly'
+        urls.append('  <url><loc>%s%s</loc><lastmod>%s</lastmod>'
+                    '<changefreq>%s</changefreq><priority>%s</priority></url>'
+                    % (SITE_URL, spec['file'], today, freq, prio))
+    (target / 'sitemap.xml').write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s\n</urlset>\n'
+        % '\n'.join(urls), encoding='utf-8')
+    # book.html 是老书签跳板，本身没内容，别让它进索引
+    (target / 'robots.txt').write_text(
+        'User-agent: *\nAllow: /\nDisallow: /book.html\nDisallow: /seo.json\n'
+        '\nSitemap: %ssitemap.xml\n' % SITE_URL, encoding='utf-8')
+    print('  sitemap.xml %d 条 · robots.txt' % len(urls))
 
 
 if __name__ == '__main__':

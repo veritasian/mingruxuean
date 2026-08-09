@@ -61,8 +61,10 @@ def ensure_built():
     src_new = max((f.stat().st_mtime for f in (ROOT / 'src').rglob('*') if f.is_file()),
                   default=0)
     if not dist.exists() or dist.stat().st_mtime < src_new:
-        print('  源码比产物新，先重新打包……')
-        subprocess.run([sys.executable, str(ROOT / 'scripts' / 'build' / 'bundle.py')],
+        print('  源码比产物新，先构建在线版……')
+        subprocess.run([sys.executable, str(ROOT / 'scripts' / 'build' / 'online.py')],
+                       cwd=ROOT, check=True)
+        subprocess.run([sys.executable, str(ROOT / 'scripts' / 'build' / 'seo.py')],
                        cwd=ROOT, check=True)
 
 

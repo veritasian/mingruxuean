@@ -11,6 +11,9 @@ import { createRequire } from 'node:module';
 import { existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import http from 'node:http';
+import { readFile } from 'node:fs/promises';
+import { extname, join, normalize } from 'node:path';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(HERE, '..', 'dist');
@@ -49,9 +52,27 @@ const errors = [];
 const ok = (n, d = '') => results.push(['PASS', n, d]);
 const bad = (n, d = '') => { results.push(['FAIL', n, d]); errors.push(`${n} ${d}`); };
 
+// 在线版数据走 fetch，必须用 http 服务（file:// 下 CORS 拦 fetch）
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css',
+  '.json': 'application/json', '.svg': 'image/svg+xml' };
+const server = http.createServer(async (req, res) => {
+  try {
+    let p = decodeURIComponent(req.url.split('?')[0]);
+    if (p === '/') p = '/index.html';
+    const fp = normalize(join(DIST, p));
+    if (!fp.startsWith(DIST)) { res.writeHead(403); return res.end(); }
+    const buf = await readFile(fp);
+    res.writeHead(200, { 'content-type': MIME[extname(fp)] || 'application/octet-stream' });
+    res.end(buf);
+  } catch { res.writeHead(404); res.end('404'); }
+});
+await new Promise((r) => server.listen(0, r));
+const PORT = server.address().port;
+const BASE = `http://localhost:${PORT}`;
+
 const browser = await puppeteer.launch({
   executablePath: CHROME, headless: 'new',
-  args: ['--no-sandbox', '--allow-file-access-from-files'],
+  args: ['--no-sandbox'],
 });
 const page = await browser.newPage();
 await page.setViewport({ width: 1440, height: 900 });
@@ -61,7 +82,7 @@ page.on('pageerror', (e) => consoleErrors.push(`[pageerror] ${e.message}`));
 
 async function open(file, hash = '') {
   consoleErrors = [];
-  await page.goto(`file://${DIST}/${file}${hash}`, { waitUntil: 'load', timeout: 60000 });
+  await page.goto(`${BASE}/${file}${hash}`, { waitUntil: 'load', timeout: 60000 });
   await page.waitForFunction(() => !!window.__MRXA_APP__, { timeout: 30000 });
   await new Promise((r) => setTimeout(r, 700));
 }
@@ -89,7 +110,9 @@ for (const p of PAGES) {
   r.title.includes(p.kw) && r.desc > 20
     ? ok(`SEO ${p.id}`, `title 含「${p.kw}」· desc ${r.desc} 字`)
     : bad(`SEO ${p.id}`, `title=${r.title.slice(0, 30)} desc=${r.desc}`);
-  if (consoleErrors.length) bad(`控制台 ${p.id}`, `${consoleErrors.length} 条错误`);
+  if (consoleErrors.length) {
+    bad(`控制台 ${p.id}`, `${consoleErrors.length} 条错误：${consoleErrors[0].slice(0, 160)}`);
+  }
 }
 ok('菜单链接', `${PAGES.length} 个分类互链`);
 
@@ -223,13 +246,13 @@ await page.evaluate(() => {
   a && a.click();
 });
 await new Promise((r) => setTimeout(r, 1400));
-const menuNav = await page.evaluate(() => location.pathname.split('/dist/')[1] || '');
+const menuNav = await page.evaluate(() => location.pathname.replace(/^\//, ''));
 menuNav === 'yangming.html'
   ? ok('菜单跨页跳转', '卷页 → 根级 yangming.html')
   : bad('菜单跨页跳转', `实得 ${menuNav}`);
 
 // 旧版单文件 book.html 跳板：book.html?v=12 → chapter-twelve.html
-await page.goto(`file://${DIST}/book.html?v=12`, { waitUntil: 'load' });
+await page.goto(`${BASE}/book.html?v=12`, { waitUntil: 'load' });
 await new Promise((r) => setTimeout(r, 1500));
 const stub = await page.evaluate(() => location.pathname.split('/').pop());
 stub === 'chapter-twelve.html'
@@ -296,10 +319,10 @@ const cases = [
   ['#kgf王阳明', 'index.html', '?focus=%E7%8E%8B%E9%98%B3%E6%98%8E'],
 ];
 for (const [legacy, wantFile, wantQ] of cases) {
-  await page.goto(`file://${DIST}/index.html${legacy}`, { waitUntil: 'load' });
+  await page.goto(`${BASE}/index.html${legacy}`, { waitUntil: 'load' });
   await new Promise((r) => setTimeout(r, 1600));       // location.replace + 新页启动
   const got = await page.evaluate(() => ({
-    file: location.pathname.split('/dist/')[1] || '',
+    file: location.pathname.replace(/^\//, ''),
     q: location.search,
   }));
   got.file === wantFile && (!wantQ || got.q === wantQ)
@@ -323,4 +346,5 @@ if (errors.length) {
 }
 const failed = results.filter(([s]) => s === 'FAIL').length;
 console.log(`\n  ${results.length - failed} 通过 / ${failed} 失败`);
+server.close();
 process.exit(failed ? 1 : 0);

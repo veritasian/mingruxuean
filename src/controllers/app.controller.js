@@ -9,14 +9,14 @@
  *   1. 还原持久化（主题）
  *   2. 旧链接（#content/kg、#v12 …）重定向到新页面
  *   3. 主题切换器
- *   4. 由 window.__MRXA__（本页内联的数据切片）构建模型
+ *   4. 构建模型（内联 window.__MRXA__ 或 repository.loadCore() 外链）
  *   5. 人物卡（本页需要才挂）
  *   6. 读地址栏参数（?focus= / ?v= / ?orphans / ?all）→ enter
  */
 import { $ } from '../core/dom.js';
 import * as store from '../core/store.js';
 import { createModel } from '../data/model.js';
-import { coreFromInline } from '../data/repository.js';
+import { coreFromInline, loadCore } from '../data/repository.js';
 import { create as themeCtl } from './theme.controller.js';
 import { redirectLegacy } from '../router/index.js';
 import * as card from '../views/person-card.view.js';
@@ -27,15 +27,21 @@ const PAGE_FILE = {
   book: 'book.html', yangming: 'yangming.html',
 };
 
-export function boot(pageId, { needsCard = true, mount } = {}) {
+export async function boot(pageId, { needsCard = true, mount } = {}) {
   store.restore();
   if (redirectLegacy()) return null;            // 旧书签 → 新页面，本页不再启动
 
   themeCtl();
 
-  // 内联数据是原始 JSON（relations 是 {relations:[], meta:{}}），
-  // 先经 repository 同步装配成 core（数组 + period/place 挂回人物），再建模型
-  const model = createModel(coreFromInline(window.__MRXA__));
+  // 数据来源只有两条路，都收在 repository 里：
+  //   · 内联（离线单文件版）：window.__MRXA__ → coreFromInline 同步装配
+  //   · 外链（在线版）：loadCore() 并行拉 /data/ 下那 7 份核心 JSON
+  // 关键是在线版**全站共用同一批 URL**，不按页切片 —— 切片会让同样的
+  // 43 万字核心数据在 71 个页面各存一份（26MB），且跨页跳转无法命中缓存。
+  // 共用之后浏览器只下一次，之后每页都是 304/from cache。
+  const model = createModel(
+    window.__MRXA__ ? coreFromInline(window.__MRXA__) : await loadCore(),
+  );
   store.set('data', model, { silent: true });
 
   const api = {

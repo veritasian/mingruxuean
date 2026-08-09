@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="明儒学案">
+  <rect width="64" height="64" rx="8" fill="#F4F1E9"/>
+  <g transform="rotate(-6 32 32)">
+    <rect x="9" y="9" width="46" height="46" rx="5" fill="none" stroke="#A23B2E" stroke-width="4"/>
+    <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
+          font-family="Songti SC, STSong, SimSun, serif" font-size="30" font-weight="700"
+          fill="#A23B2E" letter-spacing="-2">案</text>
+  </g>
+</svg>
