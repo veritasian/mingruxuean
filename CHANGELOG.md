@@ -4,6 +4,20 @@
 
 ---
 
+## [10.0.1] — 2026-08-09
+
+Web 版（web/）可视化页修复：知识图谱等四张图恢复渲染。
+
+### 修复：web 版图谱消失
+- 根因：`web_build.py` 的 `section_static` 对 kg / graph / time / geo 只输出裸
+  `<svg>`，缺少控制器绑定工具栏所需的 DOM（`#kgZoomIn` `#legend` `#tline`
+  `#geoSum` 等）。控制器一 `addEventListener` 就遇到 `null` 抛错、整页中断，图不绘制。
+- 修复：改为复用与离线版一致的 `src/sections/*.html`（含完整工具栏）；geo 额外
+  保留 `<noscript>` 省→人物对照表，供搜索引擎与无 JS 场景使用。
+- 影响页：知识图谱（index.html）、谱系总图（graph.html）、时间线索（time.html）、
+  地理线索（geo.html）。
+- 验证：64 项冒烟测试全绿。
+
 ## [9.2.0] — 2026-08-09
 
 学案原文 URL 平铺 + 菜单跳转 bug 修复 + 卷页标题精简。
