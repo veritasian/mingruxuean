@@ -165,6 +165,8 @@ def re_compile():
 def main():
     s = stats()
     out_meta = {}
+    web_mode = '--web' in sys.argv
+    TARGET = ROOT / 'web' if web_mode else DIST
     for spec in PAGES:
         title, desc, keywords = page_copy(spec, s)
         ld = json_ld(spec, title, desc, keywords, s)
@@ -180,13 +182,13 @@ def main():
                  '<script type="application/ld+json">%s</script>'
                  % (title, desc, keywords, file_url, title, desc, file_url,
                     json.dumps(ld, ensure_ascii=False)))
-        f = DIST / spec['file']
+        f = TARGET / spec['file']
         f.write_text(inject(f.read_text(encoding='utf-8'), block), encoding='utf-8')
         out_meta[spec['file']] = {'title': title, 'description': desc,
                                   'keywords': keywords, 'jsonLd': ld}
-        print('  SEO[%s] %s' % (spec['file'], title))
+        print('  SEO[%s] %s' % (spec['file'], title[:50]))
 
-    (DIST / 'seo.json').write_text(
+    (TARGET / 'seo.json').write_text(
         json.dumps({'siteUrl': SITE_URL, 'stats': s, 'pages': out_meta},
                    ensure_ascii=False, indent=1), encoding='utf-8')
     print('  统计：%d 学案 · %d 人 · %d 关系（%d 有出处）· 孤点 %d'
