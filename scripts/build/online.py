@@ -27,11 +27,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from bundle import (SRC, DATA, DIST, VENDOR, PAGES, CORE_JSON,  # noqa: E402
-                    BOOK_STUB, collect_css, book_pages)
+                    BOOK_STUB, collect_css, book_pages, lit_pages)
 from esm_bundle import bundle                            # noqa: E402
 import prerender                                          # noqa: E402
 
 BOOK_VOLS = ['x1', 'x2', 'x3'] + [str(i) for i in range(1, 64)]
+RESOURCES = ROOT / 'resources'
+LIT_PAGES = lit_pages()
 
 
 def fingerprint(text):
@@ -105,6 +107,24 @@ def geo_section(spec):
                            % prerender.geo_html(geo))
 
 
+def lit_section(spec):
+    """心学文献单篇：左栏标题 + 三篇互链 + 目录，右栏正文（均为静态预渲染）"""
+    sec = read(SRC / 'sections' / ('%s.html' % spec.get('section', 'literature')))
+    body, toc, title = prerender.literature_html(
+        RESOURCES / ('literature/%s.md' % spec['lit']))
+    # 三篇互链导航（当前篇高亮）
+    nav = []
+    for lp in LIT_PAGES:
+        on = ' on' if lp['file'] == spec['file'] else ''
+        nav.append('<a class="lit-nav-item%s" href="%s">%s</a>'
+                   % (on, lp['file'], prerender.esc(lp['title'])))
+    sec = inject('h1', 'litTitle', prerender.esc(title), sec)
+    sec = inject('nav', 'litNav', ''.join(nav), sec)
+    sec = inject('nav', 'litToc', ''.join(toc), sec)
+    sec = inject('article', 'litBody', body, sec)
+    return sec
+
+
 def section_html(spec):
     sid = spec['id']
     bv = spec.get('book_vol')
@@ -116,6 +136,8 @@ def section_html(spec):
         return geo_section(spec)
     if sid in ('roster', 'orphan', 'yangming'):
         return text_section(spec)
+    if sid.startswith('lit-'):
+        return lit_section(spec)
     return read(SRC / 'sections' / ('%s.html' % sid))
 
 
@@ -173,12 +195,12 @@ def build_online():
                 .replace('<!--STYLES-->', '<link rel="stylesheet" href="%s"/>' % css_url)
                 .replace('<!--SECTION-->', section_html(spec))
                 .replace('<!--SCRIPTS-->', scripts))
-        # 菜单里当前页高亮（构建期注入，避免 JS 接管前闪一下）。
-        # 学案原文 64 页共用同一条菜单锚点（chapter-Preface.html），用 id 定位。
-        menu_file = 'chapter-Preface.html' if spec['id'] == 'book' else spec['file']
-        html = html.replace(
-            '<a href="%s" data-page="%s">' % (menu_file, spec['id']),
-            '<a href="%s" data-page="%s" class="on">' % (menu_file, spec['id']))
+        # 菜单当前页高亮（构建期注入，避免 JS 接管前闪一下）。
+        # 按 data-page 匹配：学案原文 64 页共用 data-page=book；
+        # 心学文献 3 页共用 data-page=literature，三页都高亮同一条菜单。
+        dp = re.escape(spec.get('data-page', spec['id']))
+        html = re.sub(r'(<a href="[^"]*" data-page="%s")>' % dp,
+                      r'\1 class="on">', html, count=1)
         (DIST / spec['file']).write_text(html, encoding='utf-8')
         n_pages += 1
     n_vol = copy_data()

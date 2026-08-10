@@ -37,7 +37,7 @@ ASSET_PAT = {
     'js': re.compile(r'<script src="(/js/[^"]+\.js)" defer>'),
     'css': re.compile(r'<link rel="stylesheet" href="(/styles/[^"]+\.css)"'),
 }
-FINGERPRINT = re.compile(r'^[a-z]+\.[0-9a-f]{10}\.(?:js|css)$')
+FINGERPRINT = re.compile(r'^[a-z0-9-]+\.[0-9a-f]{10}\.(?:js|css)$')
 # 内联脚本里只允许留 window.__BOOK__ 这类一行开关，JSON-LD 由 SEO 块负责
 INLINE_JS = re.compile(r'<script(?![^>]*\bsrc=)(?![^>]*ld\+json)[^>]*>([\s\S]*?)</script>')
 
@@ -167,24 +167,31 @@ def test_prerendered_body():
 
 
 def test_single_section_per_page():
-    """每页只有自己的 section，其他分类的内容不出现"""
+    """每页只有自己的 section，其他分类的内容不出现（心学文献 3 篇共用 sec-literature）"""
     for spec in PAGES:
         h = html(spec)
-        check('id="sec-%s"' % spec['id'] in h, '%s 缺自己的 section' % spec['id'])
+        secid = spec.get('section', spec['id'])
+        check('id="sec-%s"' % secid in h, '%s 缺自己的 section' % spec['id'])
         check('class="tab on"' in h, '%s section 未点亮' % spec['id'])
-        stray = [p['id'] for p in PAGES if p['id'] != spec['id']
-                 and ('id="sec-%s"' % p['id']) in h]
+        stray = [p['id'] for p in PAGES if p.get('section', p['id']) != secid
+                 and ('id="sec-%s"' % p.get('section', p['id'])) in h]
         check(not stray, '%s 混入了其他分类：%s' % (spec['id'], sample(stray)))
     return 'ok'
 
 
 def test_menu_highlight():
-    """菜单里当前页链接带 .on，且只有一处（JS 代码里的字符串不算）"""
+    """菜单里当前页链接带 .on，且只有一处（JS 代码里的字符串不算）
+
+    共享分类（学案原文 64 页 / 心学文献 3 篇）的菜单指向该分类首页，
+    而非当前页文件；高亮按 data-page 匹配，三页都高亮同一条菜单。"""
     pat = re.compile(r'data-page="[^"]+" class="on"')
     for spec in PAGES:
         h = html(spec)
-        anchor = 'chapter-Preface.html' if spec['id'] == 'book' else spec['file']
-        check('<a href="%s" data-page="%s" class="on">' % (anchor, spec['id']) in h,
+        dp = spec.get('data-page', spec['id'])
+        anchor = ('chapter-Preface.html' if dp == 'book'
+                  else 'lit-tiyong.html' if dp == 'literature'
+                  else spec['file'])
+        check('<a href="%s" data-page="%s" class="on">' % (anchor, dp) in h,
               '%s 菜单未高亮' % spec['file'])
         check_eq(len(pat.findall(h)), 1, '%s 菜单高亮数量' % spec['file'])
     return 'ok'

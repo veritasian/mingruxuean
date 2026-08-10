@@ -72,7 +72,36 @@ def book_pages():
     return pages
 
 
-# 页面清单：7 个分类 + 学案原文 64 页（css 按层叠顺序）
+def lit_pages():
+    """心学文献 3 篇（外部文章，原封不动展示）：每篇独立 URL + 独立 meta。
+
+    三篇共用 data-page=literature（菜单只高亮一次）；内容由构建期把
+    resources/literature/<lit>.md 预渲染成静态 HTML（见 prerender.literature_html）。
+    css 只带 literature 层（不引入 card / 图谱样式）。
+    """
+    items = [
+        ('tiyong', 'lit-tiyong.html', '体用论：儒·道·释三家“体—用”概念系统归类',
+         '儒·道·释三家“体—用”概念系统归类：以明镜为本体论喻、磨镜为功夫论喻，'
+         '把性/理/良知、元神/玄牝、佛性/空寂统一到“体用一源”的框架里，原著引录逐条对照。',
+         '体用论,明儒学案,王阳明,儒家本体论,道家,佛家,体用一源,良知'),
+        ('mojing', 'lit-mojing.html', '功夫论：磨镜喻归类（如何修炼、如何去病）',
+         '功夫论“磨镜喻”系统归类：从病（傲/习心/七情之着）到磨（敬/慎独/事上练心），'
+         '到明（一物不留、万物毕照），并以指月喻防文字病——原典引录，逐条溯源。',
+         '功夫论,磨镜喻,王阳明,致良知,慎独,事上磨练,明儒学案'),
+        ('bingyao', 'lit-bingyao.html', '病药论研究：作为“药方”的经典与因材施教的心学传统',
+         '病药论研究：经典是治病的药方，须视根器而投。串起“因病立方/因人立教/因才成就”'
+         '三条辅线，并警惕“因药发病”，原典引录，逐条溯源。',
+         '病药论,王阳明,传习录,因材施教,因才成就,明儒学案,知行合一'),
+    ]
+    return [{
+        'id': 'lit-%s' % lit, 'file': file, 'data-page': 'literature',
+        'section': 'literature',   # 三篇共用同一骨架，避免重复 3 份相同 section
+        'css': ['tokens', 'base', 'literature'], 'entry': 'pages/literature.js',
+        'lit': lit, 'title': title, 'desc': desc, 'keywords': kw,
+    } for lit, file, title, desc, kw in items]
+
+
+# 页面清单：7 个分类 + 学案原文 64 页 + 心学文献 3 篇（css 按层叠顺序）
 PAGES = [
     {'id': 'kg',       'file': 'index.html', 'd3': True,
      'css': ['tokens', 'base', 'kg', 'card'], 'entry': 'pages/kg.js', 'extra_data': []},
@@ -89,7 +118,7 @@ PAGES = [
     {'id': 'yangming', 'file': 'yangming.html',
      'css': ['tokens', 'base', 'yangming', 'yangming-quad'],
      'entry': 'pages/yangming.js', 'extra_data': ['yangming']},
-] + book_pages()
+] + book_pages() + lit_pages()
 
 
 def read(p):
@@ -138,7 +167,7 @@ def js_literal(payload):
 
 def build_page(spec):
     shell = read(SRC / 'shell.html')
-    section = read(SRC / 'sections' / ('%s.html' % spec['id']))
+    section = read(SRC / 'sections' / ('%s.html' % spec.get('section', spec['id'])))
     css = collect_css(spec['css'])
     code, order = bundle(SRC / spec['entry'], SRC)
     payload = collect_data(spec.get('extra_data', []), spec.get('book_vol'))

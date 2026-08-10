@@ -212,3 +212,171 @@ def geo_html(geo):
         parts.append('<tr><td>%s</td><td>%s</td></tr>' % (esc(prov), esc(people)))
     parts.append('</tbody></table>')
     return '\n'.join(parts)
+
+
+# ---------------------------------------------------------------------------
+# 心学文献：Markdown（子集）→ 静态 HTML
+# 三篇外部文章（体用论 / 磨镜喻 / 病药论）原封不动作为文章展示。
+# 只做安全转义 + 结构转换，不改写任何文字。支持子集：
+#   #/##/### 标题（带锚点）、> 引用（可内嵌列表/粗体）、表格、--- 分割、
+#   **粗体** / *斜体*、- 列表、普通段落。
+# ---------------------------------------------------------------------------
+
+def _inline_md(s):
+    """行内格式：先转义，再处理 **粗体** 与 *斜体*"""
+    s = esc(s)
+    s = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', s)
+    s = re.sub(r'\*(.+?)\*', r'<i>\1</i>', s)
+    return s
+
+
+def _is_table_sep(line):
+    s = line.strip()
+    if '|' not in s:
+        return False
+    inner = s.strip('|').replace(' ', '')
+    # 分隔行只可能是 | - : 三种字符（去掉首尾 | 后内部仍含列分隔 |）
+    return bool(inner) and set(inner) <= set('-:|')
+
+
+def _is_block_start(s):
+    if re.match(r'^#{1,6}\s', s):
+        return True
+    if s.startswith('>'):
+        return True
+    if re.match(r'^(?:---|\*\*\*|___)\s*$', s):
+        return True
+    if re.match(r'^[-*+]\s+', s) or re.match(r'^\d+[.)]\s+', s):
+        return True
+    return False
+
+
+def _md_blocks(text):
+    """把 markdown 文本切成块序列；标题带递增锚点 id（正文与目录共用）"""
+    lines = text.split('\n')
+    blocks, hc = [], [0]
+    n = len(lines)
+
+    def next_anchor():
+        hc[0] += 1
+        return 'h-%d' % hc[0]
+
+    i = 0
+    while i < n:
+        stripped = lines[i].strip()
+        if not stripped:
+            i += 1
+            continue
+        m = re.match(r'^(#{1,6})\s+(.*)$', stripped)          # 标题
+        if m:
+            blocks.append(('h', len(m.group(1)), m.group(2).strip(), next_anchor()))
+            i += 1
+            continue
+        if re.match(r'^(?:---|\*\*\*|___)\s*$', stripped):    # 分割线
+            blocks.append(('hr',))
+            i += 1
+            continue
+        if '|' in stripped and i + 1 < n and _is_table_sep(lines[i + 1]):  # 表格
+            rows, j = [], i
+            while j < n and '|' in lines[j]:
+                r = lines[j].strip()
+                if _is_table_sep(r):
+                    j += 1
+                    continue
+                cells = [c.strip() for c in r.strip('|').split('|')]
+                rows.append(cells)
+                j += 1
+            i = j
+            if rows:
+                blocks.append(('table', rows))
+            continue
+        if stripped.startswith('>'):                           # 引用（可多行）
+            q = []
+            while i < n and lines[i].strip().startswith('>'):
+                q.append(re.sub(r'^>\s?', '', lines[i].strip()))
+                i += 1
+            blocks.append(('quote', q))
+            continue
+        if re.match(r'^[-*+]\s+', stripped) or re.match(r'^\d+[.)]\s+', stripped):  # 列表
+            items = []
+            while i < n and (re.match(r'^[-*+]\s+', lines[i].strip())
+                             or re.match(r'^\d+[.)]\s+', lines[i].strip())):
+                items.append(re.sub(r'^(?:[-*+]|\d+[.)])\s+', '', lines[i].strip()))
+                i += 1
+            blocks.append(('list', items))
+            continue
+        para = []                                              # 段落
+        while i < n and lines[i].strip() and not _is_block_start(lines[i].strip()) \
+                and '|' not in lines[i]:
+            para.append(lines[i].strip())
+            i += 1
+        if para:
+            blocks.append(('p', ' '.join(para)))
+    return blocks
+
+
+def _render_table(rows):
+    head = rows[0]
+    th = ''.join('<th>%s</th>' % _inline_md(c) for c in head)
+    trs = ''.join('<tr>%s</tr>'
+                  % ''.join('<td>%s</td>' % _inline_md(c) for c in r)
+                  for r in rows[1:])
+    return ('<table class="lit-table"><thead><tr>%s</tr></thead>'
+            '<tbody>%s</tbody></table>' % (th, trs))
+
+
+def _render_blocks(blocks, toc=None):
+    out = []
+    seen_title = False
+    for b in blocks:
+        kind = b[0]
+        if kind == 'h':
+            level, txt, aid = b[1], b[2], b[3]
+            if level == 1:
+                if not seen_title:
+                    seen_title = True   # 首行 H1 → 左栏标题，正文不重复渲染
+                    continue
+                # 后续 H1（如「卷一…」「卷二…」）→ 大节标题，进正文也进目录
+                out.append('<h1 id="%s" class="lit-vol">%s</h1>' % (aid, _inline_md(txt)))
+                if toc is not None:
+                    toc.append('<li class="lit-toc-l1"><a href="#%s">%s</a></li>'
+                               % (aid, _inline_md(txt)))
+                continue
+            out.append('<h%d id="%s">%s</h%d>' % (level, aid, _inline_md(txt), level))
+            if toc is not None and level in (2, 3):
+                cls = 'lit-toc-l%d' % level
+                toc.append('<li class="%s"><a href="#%s">%s</a></li>'
+                           % (cls, aid, _inline_md(txt)))
+        elif kind == 'hr':
+            out.append('<hr class="lit-hr"/>')
+        elif kind == 'quote':
+            inner = _render_blocks(_md_blocks('\n'.join(b[1])), None)
+            out.append('<blockquote class="lit-quote">%s</blockquote>' % inner)
+        elif kind == 'list':
+            out.append('<ul class="lit-list">%s</ul>'
+                       % ''.join('<li>%s</li>' % _inline_md(it) for it in b[1]))
+        elif kind == 'table':
+            out.append(_render_table(b[1]))
+        else:                          # p
+            out.append('<p class="lit-par">%s</p>' % _inline_md(b[1]))
+    return ''.join(out)
+
+
+def literature_html(md_path):
+    """一篇文献 markdown → (body_html, toc_html, title)
+
+    body：除 H1 外的全部正文（标题带锚点，供左栏目录跳转）。
+    toc：## / ### 两级目录（带锚点）。
+    title：首行 H1 文本（注入左栏 #litTitle）。
+    内容原封不动，仅做转义与结构转换。
+    """
+    text = Path(md_path).read_text(encoding='utf-8')
+    blocks = _md_blocks(text)
+    toc = []
+    body = _render_blocks(blocks, toc)
+    title = ''
+    for b in blocks:
+        if b[0] == 'h' and b[1] == 1:
+            title = b[2]
+            break
+    return body, toc, title

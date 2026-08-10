@@ -191,11 +191,11 @@ def test_every_page_has_entry_and_section():
     bad = []
     for p in B.PAGES:
         entry = SRC / p['entry']
-        sec = SRC / 'sections' / ('%s.html' % p['id'])
+        sec = SRC / 'sections' / ('%s.html' % p.get('section', p['id']))
         if not entry.exists():
             bad.append('缺入口 %s' % p['entry'])
         if not sec.exists():
-            bad.append('缺 section %s' % p['id'])
+            bad.append('缺 section %s' % p.get('section', p['id']))
     check(not bad, '页面清单与源码对不上：%s' % sample(bad))
     files = sorted({p['file'] for p in B.PAGES})
     check_eq(len(files), len(B.PAGES), '页面文件名重复')

@@ -45,6 +45,9 @@ def page_copy(spec, s):
     """每页一套文案：title 核心词+长尾+吸引力；desc 带真实数字；keywords 围绕本分类"""
     if spec.get('book_vol'):
         return book_copy(spec, s)
+    if spec['id'].startswith('lit-'):
+        # 心学文献：文案随 spec 走（bundle.py 单一来源），不重复硬编码
+        return spec['title'], spec['desc'], spec['keywords']
     p = s['persons']; sc = s['schools']; r = s['relations']; c = s['cited']; o = s['orphans']
     name = {
         'kg': '知识图谱', 'graph': '谱系总图', 'roster': '人物线索', 'time': '时间线索',
@@ -141,6 +144,9 @@ def json_ld(spec, title, desc, keywords, s):
     elif spec['id'] == 'yangming':
         nodes.append({'@type': 'Article', 'headline': title, 'url': url,
                       'inLanguage': 'zh-CN', 'about': '阳明心学'})
+    elif spec['id'].startswith('lit-'):
+        nodes.append({'@type': 'Article', 'headline': title, 'url': url,
+                      'inLanguage': 'zh-CN', 'about': '心学文献'})
     else:
         nodes.append({'@type': 'CollectionPage', 'name': title, 'url': url,
                       'inLanguage': 'zh-CN', 'keywords': keywords})

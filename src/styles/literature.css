@@ -1,0 +1,78 @@
+/* 明儒学案 · 样式层 literature.css
+   心学文献三篇：左栏标题 + 三篇互链 + 目录，右栏正文（原典逐条溯源）。
+   两栏布局仿「学案原文」阅读体验。依赖 tokens.css 的 CSS 变量。单文件 ≤300 行。 */
+.lit-shell{display:grid;grid-template-columns:300px 1fr;gap:44px;
+  max-width:1180px;margin:0 auto;padding:26px 22px 90px;align-items:start;}
+.lit-aside{position:sticky;top:72px;align-self:start;max-height:calc(100vh - 88px);
+  overflow:auto;padding-right:6px;}
+.lit-eyebrow{font-size:11px;letter-spacing:.5em;color:var(--accent);
+  padding-bottom:10px;margin-bottom:12px;border-bottom:1px solid var(--line);}
+.lit-title{font-size:21px;font-weight:700;line-height:1.55;letter-spacing:.02em;
+  color:var(--ink);margin:0 0 16px;padding-left:14px;border-left:4px solid var(--accent);}
+
+/* 三篇互链导航 */
+.lit-nav{display:flex;flex-direction:column;gap:3px;margin:0 0 18px;
+  padding:10px 0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);}
+.lit-nav-item{display:block;padding:6px 12px;font-size:12.5px;line-height:1.5;
+  color:var(--ink-soft);text-decoration:none;border-radius:2px;transition:.16s;
+  border-left:2px solid transparent;}
+.lit-nav-item:hover{background:var(--paper2);color:var(--ink);}
+.lit-nav-item.on{background:var(--paper2);color:var(--ink);border-left-color:var(--accent);
+  font-weight:600;}
+
+/* 目录（## / ### / 后续 # 卷题） */
+.lit-toc{list-style:none;margin:0;padding:0;}
+.lit-toc li{margin:0;}
+.lit-toc a{display:block;padding:5px 12px;font-size:13px;line-height:1.5;
+  color:var(--ink-soft);text-decoration:none;border-radius:2px;transition:.16s;
+  border-left:2px solid transparent;}
+.lit-toc a:hover{background:var(--paper2);color:var(--ink);}
+.lit-toc a.on{color:var(--ink);border-left-color:var(--accent);font-weight:600;
+  background:var(--paper2);}
+.lit-toc-l3 a{padding-left:26px;font-size:12.5px;}
+.lit-toc-l1 a{padding-left:12px;font-weight:600;color:var(--ink);}
+
+/* 右栏正文 */
+.lit-body{max-width:760px;line-height:2;font-size:15.5px;color:var(--ink);
+  text-align:justify;word-break:break-word;}
+.lit-body h1.lit-vol{font-size:clamp(22px,2.6vw,30px);letter-spacing:.1em;
+  margin:54px 0 22px;padding:14px 0 12px;border-bottom:2px solid var(--accent);
+  color:var(--ink);scroll-margin-top:80px;}
+.lit-body h2{font-size:clamp(19px,2.2vw,24px);letter-spacing:.06em;
+  margin:40px 0 14px;color:var(--ink);scroll-margin-top:80px;}
+.lit-body h3{font-size:17px;letter-spacing:.04em;margin:28px 0 10px;
+  color:var(--accent);scroll-margin-top:80px;}
+.lit-par{margin:0 0 14px;text-indent:2em;}
+.lit-body > .lit-par:first-child{margin-top:0;}
+
+/* 引用：原典引录块 */
+.lit-quote{margin:0 0 16px;padding:12px 18px;border-left:4px solid var(--line);
+  background:var(--paper2);border-radius:0 3px 3px 0;color:var(--ink);}
+.lit-quote .lit-par{text-indent:0;text-align:left;margin:0 0 8px;font-size:14.5px;
+  line-height:1.95;color:var(--ink-soft);}
+.lit-quote .lit-par:last-child{margin-bottom:0;}
+.lit-quote .lit-list{margin:6px 0 0;}
+.lit-quote b{color:var(--ink);}
+
+/* 列表 */
+.lit-list{margin:0 0 14px;padding-left:1.6em;}
+.lit-list li{margin:0 0 6px;line-height:1.9;}
+
+/* 表格（如三家同名异称对照） */
+.lit-table{border-collapse:collapse;width:100%;margin:0 0 18px;font-size:14px;
+  background:var(--card);border:1px solid var(--line);}
+.lit-table th,.lit-table td{border:1px solid var(--line);padding:8px 12px;text-align:left;
+  vertical-align:top;line-height:1.8;}
+.lit-table th{background:var(--paper2);font-weight:700;letter-spacing:.05em;}
+
+/* 分割线（卷内小节） */
+.lit-hr{border:none;border-top:1px solid var(--line);margin:30px 0;}
+
+@media (max-width:880px){
+  .lit-shell{grid-template-columns:1fr;gap:18px;padding:18px 14px 60px;}
+  .lit-aside{position:static;max-height:none;overflow:visible;
+    border:1px solid var(--line);border-radius:3px;padding:14px;
+    background:var(--card);}
+  .lit-title{font-size:19px;}
+  .lit-body{font-size:15px;}
+}

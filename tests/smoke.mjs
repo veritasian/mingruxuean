@@ -1,7 +1,7 @@
 /**
  * smoke.mjs —— 真浏览器冒烟测试（多页面版）
  *
- * 站点是「一分类一页面」：对 dist/ 下 8 个页面逐个打开真浏览器，
+ * 站点是「一分类一页面」：对 dist/ 下 9 个页面逐个打开真浏览器，
  * 验证「只显示本页内容、菜单高亮、SEO 独立、数据切片不串页」，
  * 再单独验证旧链接重定向与跨页聚焦（?focus= / ?v= / ?orphans）。
  *
@@ -46,6 +46,7 @@ const PAGES = [
   { id: 'orphan',   file: 'orphan.html',   probe: '#orphanBody .orphan-chip', kw: '孤点现象' },
   { id: 'book',     file: 'chapter-Preface.html', probe: '#tocPane .toc-item', kw: '明儒学案' },
   { id: 'yangming', file: 'yangming.html', probe: '#yangmingRoot .ym-chapter', kw: '阳明心学' },
+  { id: 'lit-tiyong', file: 'lit-tiyong.html', section: 'literature', 'data-page': 'literature', probe: '#litBody .lit-par', kw: '体用论' },
 ];
 const results = [];
 const errors = [];
@@ -92,19 +93,21 @@ for (const p of PAGES) {
   const f = `${DIST}/${p.file}`;
   if (!existsSync(f)) { bad(`页面 ${p.file}`, '产物缺失'); continue; }
   await open(p.file);
-  const r = await page.evaluate((pid, probe) => ({
-    sectionOn: document.querySelector(`#sec-${pid}`)?.classList.contains('on') || false,
+  const secid = p.section || p.id;
+  const dp = p['data-page'] || p.id;
+  const r = await page.evaluate((pid, secid, dp, probe) => ({
+    sectionOn: document.querySelector(`#sec-${secid}`)?.classList.contains('on') || false,
     n: document.querySelectorAll(probe).length,
     menuOn: document.querySelector('#menu a.on')?.dataset.page || '',
     menuCount: document.querySelectorAll('#menu a').length,
     title: document.title,
     desc: document.querySelector('meta[name="description"]')?.content?.length || 0,
     stray: [...document.querySelectorAll('section.tab')]
-      .map((s) => s.id.replace('sec-', '')).filter((x) => x !== pid),
-  }), p.id, p.probe);
+      .map((s) => s.id.replace('sec-', '')).filter((x) => x !== secid),
+  }), p.id, secid, dp, p.probe);
   if (!r.sectionOn || !r.n) bad(`页面 ${p.id}`, `section=${r.sectionOn} 内容=${r.n}`);
   else ok(`页面 ${p.id}`, `${p.probe} × ${r.n}`);
-  r.menuOn === p.id ? ok(`菜单 ${p.id}`, `高亮 ${r.menuOn}`) : bad(`菜单 ${p.id}`, `高亮 ${r.menuOn}`);
+  r.menuOn === dp ? ok(`菜单 ${p.id}`, `高亮 ${r.menuOn}`) : bad(`菜单 ${p.id}`, `高亮 ${r.menuOn}`);
   r.stray.length ? bad(`纯净 ${p.id}`, `混入 ${r.stray.join(',')}`)
                  : ok(`纯净 ${p.id}`, '无其他分类内容');
   r.title.includes(p.kw) && r.desc > 20
@@ -131,7 +134,7 @@ meta
   ? ok('模型', `${meta.schools} 学案 / ${meta.persons} 人 / ${meta.relations} 关系 / ${meta.edges} 连线`)
   : bad('模型', '取不到 model');
 meta?.coverage.length > 8 ? ok('概览行', meta.coverage) : bad('概览行', '为空');
-meta?.menuCount === 8 ? ok('菜单项', '8 个分类') : bad('菜单项', `实得 ${meta?.menuCount}`);
+meta?.menuCount === 9 ? ok('菜单项', '9 个分类') : bad('菜单项', `实得 ${meta?.menuCount}`);
 
 /* ---------- 顶部「明儒学案」是 home 链接 ---------- */
 const homeLink = await page.evaluate(() => ({

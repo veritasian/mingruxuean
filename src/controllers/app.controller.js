@@ -27,7 +27,7 @@ const PAGE_FILE = {
   book: 'book.html', yangming: 'yangming.html',
 };
 
-export async function boot(pageId, { needsCard = true, mount } = {}) {
+export async function boot(pageId, { needsCard = true, needsData = true, mount } = {}) {
   store.restore();
   if (redirectLegacy()) return null;            // 旧书签 → 新页面，本页不再启动
 
@@ -39,9 +39,10 @@ export async function boot(pageId, { needsCard = true, mount } = {}) {
   // 关键是在线版**全站共用同一批 URL**，不按页切片 —— 切片会让同样的
   // 43 万字核心数据在 71 个页面各存一份（26MB），且跨页跳转无法命中缓存。
   // 共用之后浏览器只下一次，之后每页都是 304/from cache。
-  const model = createModel(
-    window.__MRXA__ ? coreFromInline(window.__MRXA__) : await loadCore(),
-  );
+  // needsData=false 的页（如心学文献，正文已静态预渲染）跳过拉取，model 置空。
+  const model = (window.__MRXA__ || !needsData)
+    ? (window.__MRXA__ ? createModel(coreFromInline(window.__MRXA__)) : null)
+    : createModel(await loadCore());
   store.set('data', model, { silent: true });
 
   const api = {
@@ -79,7 +80,7 @@ export async function boot(pageId, { needsCard = true, mount } = {}) {
     });
   }
 
-  reportCoverage(model);
+  if (model) reportCoverage(model);
 
   const { params, query } = readParams();
   if (ctl && ctl.enter) ctl.enter({ params, query });
