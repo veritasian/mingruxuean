@@ -112,12 +112,12 @@ def lit_section(spec):
     sec = read(SRC / 'sections' / ('%s.html' % spec.get('section', 'literature')))
     body, toc, title = prerender.literature_html(
         RESOURCES / ('literature/%s.md' % spec['lit']))
-    # 三篇互链导航（当前篇高亮）
+    # 三篇互链导航（当前篇高亮）：用短名（体用论/功夫论/病药论），菜单只高亮一次
     nav = []
     for lp in LIT_PAGES:
         on = ' on' if lp['file'] == spec['file'] else ''
         nav.append('<a class="lit-nav-item%s" href="%s">%s</a>'
-                   % (on, lp['file'], prerender.esc(lp['title'])))
+                   % (on, lp['file'], prerender.esc(lp.get('name', lp['title']))))
     sec = inject('h1', 'litTitle', prerender.esc(title), sec)
     sec = inject('nav', 'litNav', ''.join(nav), sec)
     sec = inject('nav', 'litToc', ''.join(toc), sec)

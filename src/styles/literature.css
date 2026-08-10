@@ -10,15 +10,25 @@
 .lit-title{font-size:21px;font-weight:700;line-height:1.55;letter-spacing:.02em;
   color:var(--ink);margin:0 0 16px;padding-left:14px;border-left:4px solid var(--accent);}
 
-/* 三篇互链导航 */
-.lit-nav{display:flex;flex-direction:column;gap:3px;margin:0 0 18px;
-  padding:10px 0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);}
-.lit-nav-item{display:block;padding:6px 12px;font-size:12.5px;line-height:1.5;
-  color:var(--ink-soft);text-decoration:none;border-radius:2px;transition:.16s;
-  border-left:2px solid transparent;}
-.lit-nav-item:hover{background:var(--paper2);color:var(--ink);}
-.lit-nav-item.on{background:var(--paper2);color:var(--ink);border-left-color:var(--accent);
-  font-weight:600;}
+/* 三篇互链导航：做成醒目的「篇目切换卡」，与正文标题/目录明显区分 */
+.lit-nav-card{margin:4px 0 20px;padding:14px 12px 16px;
+  border:1px solid var(--accent);border-radius:8px;
+  background:linear-gradient(180deg, rgba(162,59,46,.06), rgba(162,59,46,.02));
+  box-shadow:0 1px 4px rgba(42,40,35,.05);}
+.lit-nav-cap{font-size:11px;letter-spacing:.32em;color:var(--accent);
+  text-align:center;font-weight:700;margin-bottom:12px;
+  padding-bottom:9px;border-bottom:1px dashed var(--line);}
+.lit-nav{display:flex;flex-direction:column;gap:10px;}
+.lit-nav-item{display:block;text-align:center;padding:12px 10px;font-size:17px;
+  font-weight:700;line-height:1.35;letter-spacing:.12em;color:var(--ink);
+  text-decoration:none;border:1px solid var(--line);border-radius:5px;
+  background:var(--card);transition:.16s;}
+.lit-nav-item:hover{background:var(--paper2);border-color:var(--accent);
+  color:var(--ink);transform:translateY(-1px);
+  box-shadow:0 3px 10px rgba(162,59,46,.12);}
+.lit-nav-item.on{background:var(--accent);color:#fff;border-color:var(--accent);
+  box-shadow:0 3px 12px rgba(162,59,46,.32);cursor:default;}
+.lit-nav-item.on:hover{transform:none;box-shadow:0 3px 12px rgba(162,59,46,.32);}
 
 /* 目录（## / ### / 后续 # 卷题） */
 .lit-toc{list-style:none;margin:0;padding:0;}
