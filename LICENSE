@@ -1,3 +1,12 @@
+# 许可说明 / License Notice
+
+本仓库采用**分许可（split license）**模式：
+
+- **软件代码**（除下方"保留所有权利的内容"之外的一切文件，含 `src/`、`scripts/`、`vendor/`、`docs/`、`vercel.json`、构建与工具脚本、README/CHANGELOG 等）依本文件所载 MIT 许可证发布。
+- **原创研究文字**（`resources/literature/` 三篇研究文章与 `data/yangming.json`）**保留所有权利**，详见 [`RESEARCH-LICENSE.md`](RESEARCH-LICENSE.md)，**不**适用 MIT 许可。
+
+---
+
 MIT License
 
 Copyright (c) 2026 Andy <keniskey@gmail.com>

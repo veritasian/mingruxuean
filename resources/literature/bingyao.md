@@ -1,3 +1,9 @@
+<!--
+Copyright © 2026 Andy <keniskey@gmail.com>. All rights reserved.
+本文件为作者原创研究文字，保留所有权利，不适用本仓库 MIT 许可。
+未经书面许可，不得复制、分发、展示或创作衍生作品。详见 RESEARCH-LICENSE.md。
+-->
+
 # 病药论：作为"药方"的经典与"因材施教"的心学传统
 
 > 主题：病药论 · 因病立方 · 因人立教 · 因才成就

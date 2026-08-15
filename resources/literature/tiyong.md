@@ -1,3 +1,9 @@
+<!--
+Copyright © 2026 Andy <keniskey@gmail.com>. All rights reserved.
+本文件为作者原创研究文字，保留所有权利，不适用本仓库 MIT 许可。
+未经书面许可，不得复制、分发、展示或创作衍生作品。详见 RESEARCH-LICENSE.md。
+-->
+
 # 体用论：儒·道·释三家"体—用"概念系统归类
 
 > **分析架构**：
