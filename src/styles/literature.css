@@ -86,3 +86,12 @@
   .lit-title{font-size:19px;}
   .lit-body{font-size:15px;}
 }
+
+/* ---------- 原创研究权利声明（篇末） ---------- */
+.lit-rights{margin:48px 0 0;padding:18px 22px;
+  border:1px solid rgba(162,59,46,.45);border-radius:6px;
+  background:rgba(162,59,46,.05);}
+.lit-rights-tag{display:block;font-size:11px;letter-spacing:.28em;font-weight:700;
+  color:var(--accent);margin-bottom:8px;}
+.lit-rights-text{margin:0;font-size:12.5px;line-height:1.9;color:var(--ink-soft);
+  letter-spacing:.02em;}

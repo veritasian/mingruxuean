@@ -168,3 +168,13 @@
   .ym-subbox-head{font-size:14px;letter-spacing:.15em;}
   .ym-subbox-rows{font-size:12px;}
 }
+
+/* ---------- 原创研究权利声明（页脚） ---------- */
+.ym-rights{margin:56px auto 0;max-width:760px;padding:18px 22px;
+  border:1px solid rgba(162,59,46,.45);border-radius:6px;
+  background:rgba(162,59,46,.05);}
+.ym-rights-tag{display:block;font-size:11px;letter-spacing:.28em;font-weight:700;
+  color:var(--ym-r);margin-bottom:8px;}
+.ym-rights-text{margin:0;font-size:12.5px;line-height:1.9;color:var(--ink-soft);
+  letter-spacing:.02em;}
+@media(max-width:860px){.ym-rights{margin:40px auto 0;padding:14px 16px;}}

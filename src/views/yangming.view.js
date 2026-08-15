@@ -41,6 +41,7 @@ export function render(root, data, { onNav } = {}) {
   const main = el('div.ym-main');
   (data.chapters || []).forEach((c) => main.appendChild(chapter(c)));
   if (data.outro && data.outro.length) main.appendChild(outro(data.outro));
+  main.appendChild(rightsFooter(data));
   shell.appendChild(main);
   root.appendChild(shell);
   return { side: $('.ym-nav', shell), main };
@@ -235,6 +236,16 @@ function outro(lines) {
   const o = el('section.ym-outro', { id: 'ym-outro' });
   lines.forEach((l, i) => o.appendChild(el(i === 0 ? 'p.ym-outro-line' : 'p.ym-outro-sub', { text: l })));
   return o;
+}
+
+/* ---------- 原创研究权利声明（页脚，始终渲染） ---------- */
+function rightsFooter(data) {
+  const txt = data.rights
+    || '本页内容由 Andy 原创撰写，属个人学术研究，保留所有权利。';
+  const f = el('footer.ym-rights');
+  f.appendChild(el('span.ym-rights-tag', { text: '原创学术研究 · 保留所有权利' }));
+  f.appendChild(el('p.ym-rights-text', { text: txt }));
+  return f;
 }
 
 /** 滚动监听高亮侧边栏当前章节 */

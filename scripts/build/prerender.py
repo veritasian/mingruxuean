@@ -26,6 +26,24 @@ def esc(s):
             .replace('>', '&gt;').replace('"', '&quot;'))
 
 
+# 原创研究权利声明（阳明心学 + 心学文献三篇），构建期注入页脚。
+# 与 RESEARCH-LICENSE.md 一致：作者原创学术研究，保留所有权利。
+_YM_RIGHTS_DEFAULT = ('原创学术研究 · 保留所有权利 —— 本页（阳明心学）由 Andy'
+                     '（keniskey@gmail.com）原创撰写，属个人学术研究，保留所有权利。'
+                     '未经书面许可，不得复制、转载、用于衍生作品或商业用途。'
+                     '详见仓库 RESEARCH-LICENSE.md。')
+_LIT_RIGHTS_TEXT = ('本文为作者原创研究文字，保留所有权利 —— 由 Andy（keniskey@gmail.com）'
+                   '撰写，属个人学术研究。未经书面许可，不得复制、转载、用于衍生作品'
+                   '或商业用途。详见仓库 RESEARCH-LICENSE.md。')
+
+
+def rights_footer_html(text, cls='ym-rights', label='原创学术研究 · 保留所有权利'):
+    """统一的「保留所有权利」页脚（阳明/文献共用），返回静态 HTML 片段。"""
+    return ('<footer class="%s"><span class="%s-tag">%s</span>'
+            '<p class="%s-text">%s</p></footer>'
+            % (cls, cls, esc(label), cls, esc(text)))
+
+
 def wikitext_to_html(src):
     """移植 src/data/wikitext.js 的 toHTML（纯文本 → 语义化 HTML）"""
     s = str(src or '')
@@ -189,6 +207,8 @@ def yangming_html(ym):
             if leaves:
                 parts.append('<div class="%s">%s</div>'
                              % (cls, ''.join('<p>%s</p>' % esc(s) for s in leaves)))
+    parts.append(rights_footer_html(ym.get('rights') or _YM_RIGHTS_DEFAULT,
+                                    cls='ym-rights'))
     return '\n'.join(parts)
 
 
@@ -379,4 +399,5 @@ def literature_html(md_path):
         if b[0] == 'h' and b[1] == 1:
             title = b[2]
             break
+    body = body + rights_footer_html(_LIT_RIGHTS_TEXT, cls='lit-rights')
     return body, toc, title
