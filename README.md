@@ -246,6 +246,6 @@ tests/
 本仓库采用**分许可**模式：
 
 - **软件代码**以 [MIT License](LICENSE) 发布，可自由使用、修改、商用（含衍生作品），保留版权声明即可；作者不对软件作任何担保。
-- **原创研究文字**（`resources/literature/` 三篇研究文章与 `data/yangming.json`）**保留所有权利**，不适用 MIT 许可，详见 [RESEARCH-LICENSE.md](RESEARCH-LICENSE.md)。
+- **原创研究文字**（`resources/literature/` 三篇研究文章与 `data/yangming.json`）依 **CC BY-NC 4.0**（署名—非商业性使用）授权：允许非商业性引用与传播，须注明作者与来源，不适用 MIT 许可，详见 [RESEARCH-LICENSE.md](RESEARCH-LICENSE.md)。
 
 数据内容（《明儒学案》六十三卷、卷前三篇、阳明心学）整理自维基文库（zh.wikisource.org）与《明史》儒林传等公开文献，相关古籍原文属公共领域。

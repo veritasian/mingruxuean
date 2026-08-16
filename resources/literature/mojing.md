@@ -1,7 +1,8 @@
 <!--
-Copyright © 2026 Andy <keniskey@gmail.com>. All rights reserved.
-本文件为作者原创研究文字，保留所有权利，不适用本仓库 MIT 许可。
-未经书面许可，不得复制、分发、展示或创作衍生作品。详见 RESEARCH-LICENSE.md。
+Copyright © 2026 Andy <keniskey@gmail.com>. Licensed under CC BY-NC 4.0.
+本文件为作者原创研究文字，依知识共享「署名—非商业性使用 4.0 国际」许可（CC BY-NC 4.0）
+授权：允许非商业性复制、分发、引用与改编，但须注明作者与来源，且不得用于商业目的。
+不适用本仓库 MIT 许可。详见 RESEARCH-LICENSE.md。
 -->
 
 # 功夫论：磨镜喻归类（如何修炼、如何去病）

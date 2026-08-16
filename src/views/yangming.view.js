@@ -241,9 +241,9 @@ function outro(lines) {
 /* ---------- 原创研究权利声明（页脚，始终渲染） ---------- */
 function rightsFooter(data) {
   const txt = data.rights
-    || '本页内容由 Andy 原创撰写，属个人学术研究，保留所有权利。';
+    || '本页内容由 Andy 原创撰写，依 CC BY-NC 4.0 许可发布：允许非商业性引用与传播，须注明来源与作者。';
   const f = el('footer.ym-rights');
-  f.appendChild(el('span.ym-rights-tag', { text: '原创学术研究 · 保留所有权利' }));
+  f.appendChild(el('span.ym-rights-tag', { text: '原创学术研究 · CC BY-NC 4.0' }));
   f.appendChild(el('p.ym-rights-text', { text: txt }));
   return f;
 }
