@@ -1,251 +1,138 @@
 # 名儒学案图谱
 
-> 把黄宗羲《明儒学案》六十三卷读成一张网，再用《明史》儒林传补强。
+![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)
+![Research: CC BY-NC 4.0](https://img.shields.io/badge/research-CC%20BY--NC%204.0-orange.svg)
+![Static: 74 pages](https://img.shields.io/badge/static-74%20pages-2e6f73.svg)
 
-17 个学案、260 位学者、247 条师承关系（174 条带原文出处），
-每一条关系都能点回原文出处。**一分类一页面**的菜单式站点：
-71 个页面各自独立、只带自己的内容与 SEO。
+把黄宗羲《明儒学案》六十三卷读成一张可溯源的师承知识图谱：260 位儒者、247 条关系、63 卷全文——每条线索独立成页，每条关系都能点回原文出处。
 
-站点部署在 Vercel（`mingruxuean.vercel.app`）。`dist/` 是构建产物，由
-`vercel.json` 中的 `buildCommand` 现场生成，**不入库**（见 `.gitignore`）。
-数据、CSS、JS 全部外链并带内容指纹——浏览器缓存一次、跨页复用，爬虫无 JS 也能读到
-文本页的预渲染正文。
+**在线体验：https://mingruxuean.pages.dev**
 
-```
-dist/index.html           ← 首页（知识图谱）
-dist/graph.html           谱系总图 · roster.html 人物线索 · time.html 时间线索
-dist/geo.html             地理线索 · orphan.html 孤点现象
-dist/yangming.html        阳明心学
-dist/chapter-Preface.html 学案原文 · 卷前三篇（原序/发凡/师说，三个 tab）
-dist/chapter-one.html …   学案原文 · 63 卷各一页（chapter-sixty-three.html，全部平铺在根目录）
-dist/book.html            旧版单文件跳板（自动跳转到 chapter-* 平铺页）
-dist/data/                7 份核心 JSON + volumes/ 63 卷 + yangming.json（全站共用一份）
-dist/js/                  8 套指纹化 JS（kg/graph/roster/time/geo/orphan/yangming/book）+ d3.v3.min.js
-dist/styles/              8 套指纹化 CSS（与 JS 一一对应）
-dist/sitemap.xml          SEO 站点地图（71 条 URL）
-dist/robots.txt           指向 sitemap，屏蔽老跳板
-dist/favicon.svg          印章图标
+```mermaid
+flowchart LR
+    subgraph D["data/ · 可溯源 JSON"]
+        P["260 儒者 · 247 关系 · 52 孤点 · 63 卷 · 阳明心学"]
+    end
+    subgraph B["scripts/build/ · Python 流水线"]
+        O["online.py：外链 · 内容指纹 · 预渲染"]
+        S["seo.py：逐页 SEO · sitemap"]
+    end
+    subgraph L["dist/ · 74 个静态页"]
+        H["知识图谱 / 谱系 / 人物 / 时间 / 地理 / 孤点"]
+        C["学案原文 chapter-*.html ×64"]
+        Y["阳明心学 + 心学文献 ×3"]
+    end
+    D --> O --> S --> H & C & Y
 ```
 
----
+## 目录
+
+- [快速开始](#快速开始)
+- [功能](#功能)
+- [页面一览](#页面一览)
+- [数据可溯源](#数据可溯源)
+- [目录结构](#目录结构)
+- [开发约定](#开发约定)
+- [贡献](#贡献)
+- [数据来源](#数据来源)
+- [许可证](#许可证)
 
 ## 快速开始
 
 ```bash
-# 本地预览（数据靠 HTTP fetch，必须用服务器，不能 file:// 双击）
+# 1) 构建（线上用的同一条命令）
 python3 scripts/build/online.py && python3 scripts/build/seo.py
-python3 -m http.server 8080 && open http://localhost:8080/
 
-# 改完源码重新构建（Vercel 线上走的就是这条命令）
-python3 scripts/build/online.py
-python3 scripts/build/seo.py           # 逐页注入 title/description/keywords/JSON-LD + sitemap/robots
+# 2) 本地预览（数据走 HTTP，需要起服务器）
+python3 -m http.server 8080     # http://localhost:8080
 
-# 数据也要重跑（改了抽取规则、订正了人物时）
-python3 scripts/pipeline.py          # ingest + build 全跑
-python3 scripts/pipeline.py build    # 数据已就绪，只重打包
-
-# 跑测试（数据 20 + 源码结构 13 + 产物 16 + 浏览器 52 + 在线渲染核验 11）
-python3 tests/run.py
-python3 tests/run.py --no-web        # 跳过浏览器冒烟，快
-
-# 部署：push 到 main 分支，Vercel 按 vercel.json 自动构建并发布
-git push origin main
+# 3) 部署
+git push origin main            # 静态托管平台自动重建 dist/ 并发布
 ```
 
----
+## 功能
 
-## 目录
+- **五条线索切入**：知识图谱（D3 力导向）、谱系总图、人物名录、时间轴、地理分布；支持 `index.html?focus=王阳明` 等深链聚焦。
+- **全文可读**：63 卷每卷独立页面（`chapter-twelve.html`），可直接深链；64 个卷页共用同一对指纹化 CSS/JS，浏览器强缓存跨页复用。
+- **每条关系可溯源**：247 条师承关系，174 条带卷次与原文引文；四路来源（《明史》人工精读 / 63 卷正则抽取 / 旧抽 / 手绘边）按置信度加权，上限 0.99。
+- **孤点不是缺数据**：52 个不连线点按 5 类归因（编纂设计 / 横向结社 / 附传 / 未立传 / 真缺口），结论存在 `data/orphans.json`，补齐后页面自动更新。
+- **SEO 友好**：文本页在构建期预渲染成静态 HTML，爬虫无 JS 也能读到正文；每页独立 title / description / keywords / JSON-LD。
+- **原创研究**：阳明心学四句教图解 + 体用论 / 功夫论 / 病药论三篇文献，署名作者，依 CC BY-NC 4.0 授权。
 
-```
-.
-├── LICENSE                MIT 许可证
-├── src/                    前端源码（分层，每个文件 ≤300 行）
-│   ├── core/               总线 / 状态 / DOM 工具——不认识业务
-│   ├── data/               仓库 / 领域模型 / 图模型 / 古文渲染
-│   ├── engines/            布局与交互引擎（纯函数，零 import）
-│   ├── router/             旧链接重定向（多页面下已无哈希路由）
-│   ├── controllers/        编排：听事件、取数据、喂视图；app.controller = 每页启动器
-│   ├── views/              只管画，不存状态
-│   ├── pages/              每页入口（只引自己的控制器，控制本页打包体积）
-│   ├── sections/           每个分类一个 <section> 内容块
-│   ├── styles/             一视图一份 CSS
-│   ├── favicon.svg         印章图标
-│   └── shell.html          页面骨架（菜单 / 页脚）+ 四个注入点
-├── data/                   ★ JSON 数据库（可溯源）
-│   ├── persons.json        260 人：字号、籍贯、生卒、学案归属
-│   ├── relations.json      247 条关系 + 每条的 provenance
-│   ├── orphans.json        52 个孤点的判读结论
-│   ├── schools/geo/timeline/toc.json
-│   ├── volumes/x1,x2,x3.json    卷前三篇（原序、发凡、师说）
-│   ├── volumes/v01–v63.json  63 卷正文
-│   ├── yangming.json         阳明心学专页（四句教 + 14 章：镜像/矩阵/四象）
-│   ├── schema/             7 份 JSON Schema
-│   └── intermediate/       中间产物，可删可重生成
-├── scripts/
-│   ├── ingest/             原文 → 结构化（抽取、订正、对齐、明史精读）
-│   ├── build/              online.py 结构化 → 外链/指纹/预渲染；seo.py → 逐页 SEO + sitemap
-│   └── pipeline.py         一条命令跑完
-├── tests/                  自动化测试
-├── resources/              原始素材（63 卷原文、原书目录、明史儒林传、阳明心学手稿页）
-├── vendor/                 d3.v3.min.js（本地化，不走 CDN）
-├── legacy/                 v7.10 单体版及其脚本，只读留档
-├── docs/                   架构说明 / 数据字典
-└── dist/                   构建产物（gitignore，Vercel 现场生成）
-```
+## 页面一览
 
----
+| 页面 | 内容 |
+|---|---|
+| `index.html` | 知识图谱（默认首页，可 `?focus=` / `?orphans=1`） |
+| `graph.html` · `roster.html` · `time.html` · `geo.html` | 谱系 · 人物 · 时间 · 地理四条线索 |
+| `orphan.html` | 孤点现象与分类归因 |
+| `chapter-Preface.html` · `chapter-*.html` | 学案原文：卷前三篇（三个 tab）+ 63 卷各一页 |
+| `yangming.html` · `lit-*.html` | 阳明心学图解 + 心学文献三篇 |
 
-## 71 个页面（菜单互链，一分类一页；学案原文按卷分页）
+## 数据可溯源
 
-| 页面 | 分类 | 看什么 | 本页专属 SEO |
-|---|---|---|---|
-| `index.html` | 知识图谱 | d3 力导向，可聚焦某人的关系网（默认首页） | 师承知识图谱 |
-| `graph.html` | 谱系总图 | 纵向树，一眼看清代际 | 师承树状总览 |
-| `roster.html` | 人物线索 | 17 学案分组展开 | 儒者名录 |
-| `time.html` | 时间线索 | 按生卒年排布 | 生卒年时间轴 |
-| `geo.html` | 地理线索 | 17 省份，可与名录联动 + `<noscript>` 对照表 | 籍贯地理分布 |
-| `orphan.html` | **孤点现象** | 52 个孤点为什么孤——见下 | 孤点因由详解 |
-| `chapter-Preface.html` | 学案原文（64 页） | 卷前三篇（原序/发凡/师说，三个 tab）+ 63 卷各一页 | 每卷独立标题 |
-| `yangming.html` | 阳明心学 | 四句教 + 14 章（镜像/矩阵/四象），顶部章节目录随滚动高亮 | 四句教图解 |
-
-**学案原文 64 页拆页**（全部平铺在站点根，不设 `book/` 二级目录）：卷前一篇
-`chapter-Preface.html`（三个 tab 切原序/发凡/师说）+ 63 卷各一页
-（`chapter-one.html` … `chapter-sixty-three.html`），每页只内联本卷正文 + 自己的
-title/description/keywords（标题格式「卷12 浙中王门学案二 · 黄宗羲《明儒学案》全文」）。
-加载更快、互不影响。深链：`chapter-twelve.html`（直接进卷十二）、
-`chapter-Preface.html?p=x2`（卷前发凡）。
-
-页面之间用普通 `<a>` 互链；每页外链自己的指纹化 CSS/JS，**但 64 个卷页内容相同，
-落到同一对文件上**（一个指纹 = 一个 URL，浏览器强缓存跨页复用）。数据全站共用
-`/data/` 下一份（7 份核心 JSON + `volumes/` + `yangming.json`），由
-`src/data/repository.js` 的 `loadCore()` 在运行时并行 fetch。meta 标题、描述、关键词、
-JSON-LD 都围绕本分类生成（`scripts/build/seo.py`）。其他深链用查询参数：
-`index.html?focus=王阳明`（图谱聚焦）、`graph.html?all=1`（全览）、`index.html?orphans=1`（只看孤点）。
-
-旧版哈希链接（`#content/kg`、`#v12`、`#kgf王阳明`、`#all`、`#/graph`、`book.html?v=12`）会自动重定向到
-对应新页面，老书签不会 404。
-
----
-
-## 架构：数据 / 视图 / 控制 三层分离
-
-代码层按 data / view / control 分层（`src/core`、`src/data`、`src/views`、
-`src/controllers`、`src/sections`、`src/pages`），问题出在**交付层**：
-
-- 旧版把全量 JSON 内联进 `<script>` 的 `window.__MRXA__`——71 页重复同一份数据、
-  不利爬虫、首屏重。
-- 修正后的线上版：**数据全部外链**，运行时由控制器 fetch；CSS/JS 外链并按内容指纹
-  去重；文本页（book/roster/orphan/yangming）在构建期预渲染成静态 HTML，爬虫无 JS 也能读到。
-
-分层约定（见 `tests/test_source.py`）：engines 不 import 任何东西；views 不碰 store；
-只有 `data/repository.js` 能 `fetch`。
-
----
-
-## 「孤点」不是数据缺失
-
-图上 52 个不连线的点，很容易被误读成「没抽全」。实际拆开看：
-
-| 类别 | 数量 | 说明 |
-|---|---|---|
-| 编纂设计使然 | 27 | 诸儒学案本就是收录「不列于宗派者」，无师承是它的定义 |
-| 横向结社 | 8 | 东林诸子是同人讲会，不是师徒纵贯 |
-| 附于他人传后 | 2 | 樵夫朱恕、陶匠韩乐吾之类，原书附见，不另立传 |
-| 原书未立本传 | 6 | 黄宗羲只提名字，未记学脉 |
-| **真数据缺口** | **9** | 这 9 个才是待补的 |
-
-结论写在数据里（`data/orphans.json` 的 `meta.headline`），不是硬编码在页面上——
-以后补齐了 9 个缺口，页面文案会自己变。
-
----
-
-## 每条关系都能溯源
+每条师承关系都带出处，例如：
 
 ```json
 {
   "from": "冯应京", "to": "邹元标", "type": "师承",
-  "sources": ["legacy-mining", "mined"],
-  "confidence": 0.99,
-  "cited": true,
+  "sources": ["legacy-mining", "mined"], "confidence": 0.99,
   "provenance": [{
-    "volume": 24,
-    "volume_name": "江右王门学案九",
-    "section": "佥事冯慕冈先生应京",
-    "pattern": "师事",
-    "quote": "……先生师事邹南臬，其拘幽书草，皆从忧患之际……",
-    "alias_hit": "邹南",
-    "method": "regex-mining"
+    "volume": 24, "section": "佥事冯慕冈先生应京",
+    "quote": "……先生师事邹南臬……", "method": "regex-mining"
   }]
 }
 ```
 
-247 条里 174 条带原文出处，来源四路：
-
-| 来源 | 说明 | 可信度 |
-|---|---|---|
-| `mingshi` | 《明史》卷282/283 儒林传**人工精读**，带卷次+原文引文 | 0.95 |
-| `mined` | 63 卷学案正文正则抽取，带章节+引文 | 依置信度 |
-| `legacy-mining` | 上一轮抽取，带卷次+片段 | 0.80 |
-| `drawio` | 谱系总图手绘边，无引文（`needs_citation` 标着） | 0.70 |
-
-多条来源互相印证会加权，上限 0.99。点开人物卡就能看到出处（明史出处显示为《明史》卷N，
-与学案卷 1–63 区分开）。
-
----
-
-## 三条不许破的规矩
-
-1. **每个 js / css 文件 ≤300 行**，测试会卡。
-2. **分层不许倒挂**：engines 不 import 任何东西；views 不碰 store；
-   只有 `data/repository.js` 能 `fetch`，只有 `router/index.js` 能改 `location.hash`。
-3. **数据只有一个真相**：孤点数只登记在 `orphans.json`，
-   `relations.json` 不重复存——重复的字段迟早会打架。
-
-这三条都由 `tests/test_source.py` 和 `tests/test_data.py` 自动执行，不靠自觉。
-
----
-
-## 人物称呼：姓名+字
-
-古人以「姓名+字」记录（如 陈献章，字公甫；娄谅，字克贞；湛若水，字元明），
-称呼时以「姓+字」为主。人物库的 `zi` 字段照此补齐（明史儒林传提供了大量字的考据），
-人物卡与花名册会显示「字X」。图谱节点与搜索仍用通行名（王阳明），
-避免「王伯安」这种生疏称谓割裂认知——通行名与字在数据里并存，互不覆盖。
-
-《明史》补充人物的档案（字号、籍贯、学问风格、所在卷）存于
-`resources/mingshi/mingshi.json`，人物卡会显示其学问风格并标注「《明史》儒林传」。
-
----
-
-## 测试
+## 目录结构
 
 ```
-tests/
-├── harness.py       零依赖的极简测试框架
-├── test_data.py     20 项：数据完整性、外键、孤点自洽、明史方向、卷前三篇、阳明心学、简体一致
-├── test_source.py   13 项：分层方向、行数上限、页面清单与源码对账、文档在不在
-├── test_build.py    16 项：71 页产物完整、数据层共用(非按页切片)、指纹去重、逐页 SEO、
-│                    sitemap/robots、无大块内联脚本、无模块环、语法可过
-├── smoke.mjs        52 项：真浏览器逐个开页面 + 跨页跳转，验内容纯净/菜单高亮/SEO 独立/
-│                    跨页聚焦(?focus/?v/?orphans)、旧链接重定向、卷前 3 tab
-├── verify_online.mjs 11 项：真实浏览器核验图谱 260 节点/谱系 260/时间 200/地理 17/
-│                    roster 6510 字·book 静态正文·yangming 1735 字·0 控制台错误
-└── run.py           串起来，源码比产物新时自动重打包(online.py + seo.py)
+├── src/          前端源码（分层，每文件 ≤300 行）
+│   ├── core/        总线 / 状态 / DOM 工具——不认识业务
+│   ├── data/        仓库 / 领域模型 / 图模型 / 古文渲染
+│   ├── engines/     布局与交互引擎（纯函数，零 import）
+│   ├── router/      旧链接重定向
+│   ├── controllers/ 编排：听事件、取数据、喂视图
+│   ├── views/       只管画，不存状态
+│   ├── pages/       每页入口（控制本页打包体积）
+│   ├── sections/    每个分类一个 <section> 内容块
+│   └── styles/      一视图一份 CSS
+├── data/         ★ JSON 数据库：7 份核心 + volumes/63 卷 + yangming.json + schema/
+├── scripts/      ingest/（原文→结构化）· build/（online.py 构建，seo.py SEO）· pipeline.py 一键跑通
+├── resources/    原始素材（63 卷原文、明史儒林传、阳明手稿页、心学文献）
+├── tests/        零依赖测试（数据 20 · 源码 13 · 构建 16 · 浏览器冒烟 52 · 在线核验 11）
+├── ARCHITECTURE.md   架构说明
+├── DATA.md           数据字典
+└── dist/         构建产物（gitignore，现场生成，不入库）
 ```
 
-浏览器冒烟用 puppeteer-core 驱动系统 Chrome（jsdom 量不了 SVG 的 `getBBox`）。
-没装 Chrome 就加 `--no-web`。
+## 开发约定
 
-更新记录见 [CHANGELOG.md](CHANGELOG.md)，架构细节见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)，
-字段含义见 [docs/DATA.md](docs/DATA.md)。
+1. 每个 js / css 文件 ≤300 行（测试会卡）。
+2. 分层不许倒挂：engines 零 import；views 不碰 store；只有 `data/repository.js` 能 `fetch`。
+3. 数据只有一个真相：孤点数只登记在 `orphans.json`，不重复存。
 
----
+```bash
+python3 tests/run.py            # 全量（含浏览器冒烟）
+python3 tests/run.py --no-web   # 跳过浏览器，快速
+```
+
+## 贡献
+
+- 发现数据问题（人物、关系、出处）→ 开 Issue，附卷次与原文。
+- 改动代码 → 先跑 `python3 tests/run.py --no-web`，再提 PR。
+- 架构细节见 [ARCHITECTURE.md](ARCHITECTURE.md)，字段含义见 [DATA.md](DATA.md)，更新记录见 [CHANGELOG.md](CHANGELOG.md)。
+
+## 数据来源
+
+《明儒学案》六十三卷及卷前三篇整理自 [维基文库](https://zh.wikisource.org)（zh.wikisource.org），儒林传考据来自《明史》；相关古籍原文属公共领域。
 
 ## 许可证
 
-本仓库采用**分许可**模式：
+本仓库采用**分许可（split license）**模式：
 
-- **软件代码**以 [MIT License](LICENSE) 发布，可自由使用、修改、商用（含衍生作品），保留版权声明即可；作者不对软件作任何担保。
-- **原创研究文字**（`resources/literature/` 三篇研究文章与 `data/yangming.json`）依 **CC BY-NC 4.0**（署名—非商业性使用）授权：允许非商业性引用与传播，须注明作者与来源，不适用 MIT 许可，详见 [RESEARCH-LICENSE.md](RESEARCH-LICENSE.md)。
-
-数据内容（《明儒学案》六十三卷、卷前三篇、阳明心学）整理自维基文库（zh.wikisource.org）与《明史》儒林传等公开文献，相关古籍原文属公共领域。
+| 内容 | 许可 |
+|---|---|
+| 软件代码（`src/` `scripts/` 等） | [MIT](LICENSE) |
+| 原创研究文字（阳明心学 + 心学文献三篇） | [CC BY-NC 4.0](RESEARCH-LICENSE.md) |
+| 古籍原文（《明儒学案》《明史》） | 公共领域 |

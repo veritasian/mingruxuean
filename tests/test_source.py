@@ -204,7 +204,7 @@ def test_every_page_has_entry_and_section():
 
 def test_docs_present():
     """四份文档都在，且 README 的目录树跟真实分层对得上"""
-    need = ['README.md', 'CHANGELOG.md', 'docs/ARCHITECTURE.md', 'docs/DATA.md']
+    need = ['README.md', 'CHANGELOG.md', 'ARCHITECTURE.md', 'DATA.md']
     missing = [p for p in need if not (ROOT / p).exists()]
     check(not missing, '缺文档：%s' % sample(missing))
 
